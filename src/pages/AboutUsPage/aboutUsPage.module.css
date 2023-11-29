@@ -1,0 +1,91 @@
+.root {
+    composes: mt-5 from global;
+    composes: mb-7.5 from global;
+    composes: lg_mt-7.5 from global;
+    composes: lg_mb-17.5 from global;
+}
+
+.root :global .au-page__title {
+    @apply lg_mb-5
+        lg_text-center;
+}
+
+.root :global p {
+    @apply text-gray-dark;
+}
+
+.root :global .au-page__main-img-wrap {
+    @apply min-h-[150px]
+        lg_min-h-[280px];
+}
+
+.root :global .au-page__main-img-wrap figure {
+    @apply relative
+        w-screen
+        left-1/2
+        right-1/2
+        mx-[-50vw]
+        my-0
+        lg_static
+        lg_w-full
+        lg_mx-0;
+}
+
+.root :global .au-page__main-img-wrap img {
+    @apply w-full
+        rounded-none
+        lg_rounded;
+}
+
+.root :global .au-page__join-us {
+    @apply overflow-hidden
+        relative
+        z-1
+        grid
+        justify-center
+        justify-items-center
+        pt-5
+        pb-3.75
+        px-5
+        mt-7.5
+        h-[272px]
+        bg-primary
+        bg-circles
+        rounded
+        lg_mt-17.5
+        lg_py-12.5
+        lg_h-[317px];
+}
+
+.root :global .au-page__join-us > div {
+    @apply z-3;
+}
+
+.root :global .au-page__join-us figure {
+    @apply m-0;
+}
+
+.root :global .au-page__join-us img {
+    @apply m-0;
+}
+
+.root :global .au-page__join-us h3 {
+    @apply m-0
+        mt-5
+        text-white
+        text-center
+        font-semibold;
+}
+
+.root :global .au-page__join-us p {
+    @apply mb-1.25
+        text-white
+        text-center
+        font-normal
+        lg_mt-1;
+}
+
+.root :global .au-page__join-us button {
+    @apply !min-w-[275px]
+        lg_!min-w-[303px];
+}

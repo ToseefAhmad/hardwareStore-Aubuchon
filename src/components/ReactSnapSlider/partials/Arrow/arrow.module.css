@@ -1,0 +1,34 @@
+.base {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: -translate-y-1/2 from global;
+    composes: z-1 from global;
+}
+
+.root {
+    composes: root_highPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base;
+}
+
+.disabled {
+    composes: root_highDisabledPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base;
+}
+
+.root_isInverted {
+    composes: root_normalPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base;
+}
+
+.disabled_isInverted {
+    composes: root_normalDisabledPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base;
+}
+
+.left {
+    composes: -left-6 from global;
+}
+
+.right {
+    composes: -right-6 from global;
+}

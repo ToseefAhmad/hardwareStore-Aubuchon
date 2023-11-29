@@ -1,0 +1,121 @@
+.header {
+    composes: mb-5 from global;
+
+    composes: lg_mb-7.5 from global;
+}
+
+.shortFormContainer {
+    composes: grid from global;
+    composes: grid-rows-max-content from global;
+    composes: h-full from global;
+
+    composes: lg_block from global;
+}
+
+.shortFormWrapper {
+    composes: h-full from global;
+}
+
+.shortForm {
+    composes: relative from global;
+    composes: grid from global;
+    composes: h-full from global;
+    composes: pt-[21px] from global;
+    composes: before_block from global;
+    composes: before_absolute from global;
+    composes: before_-left-5 from global;
+    composes: before_top-0 from global;
+    composes: before_h-px from global;
+    composes: before_w-screen from global;
+    composes: before_bg-gray-light from global;
+    composes: lg_pt-0 from global;
+    composes: lg_before_hidden from global;
+}
+
+.shortFormFooter {
+    composes: self-end from global;
+}
+
+.fieldRoot {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-1.25 from global;
+    composes: w-full from global;
+}
+
+.tinyText {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.inputNote {
+    composes: tinyText;
+    composes: mt-2.5 from global;
+}
+
+.textArea_base {
+    composes: input from '@app/components/TextArea/textArea.module.css';
+    composes: h-[130px] from global;
+}
+
+.imageContainer {
+    composes: relative from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: p-[9px] from global;
+    composes: border-solid from global;
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+    composes: overflow-hidden from global;
+}
+
+.imageRoot {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: overflow-hidden from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-cover from global;
+}
+
+.mediaIcon {
+    composes: text-opacity-40 from global;
+}
+
+.submitButtonContainer {
+    composes: pt-5 from global;
+    composes: mt-5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pt-7.5 from global;
+    composes: lg_mt-7.5 from global;
+}
+
+.mediaFormButtonsWrapper {
+    composes: submitButtonContainer;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-2 from global;
+    composes: gap-1.25 from global;
+    composes: mb-5 from global;
+
+    composes: lg_gap-2.5 from global;
+    composes: lg_mb-2.5 from global;
+}
+
+.removeMediaItemButton {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: right-0 from global;
+    composes: w-5 from global;
+    composes: h-5 from global;
+    composes: bg-black from global;
+    composes: text-white from global;
+}

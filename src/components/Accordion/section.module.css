@@ -1,0 +1,63 @@
+.root {
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: py-4 from global;
+
+    composes: md_py-5 from global;
+}
+
+.root ul {
+    @apply list-none
+        pl-0
+        text-justify;
+}
+
+.contents_container {
+    composes: pt-0 from global;
+}
+
+.contents_container:empty {
+    @apply hidden;
+}
+
+.contents_container_closed {
+    composes: contents_container;
+    composes: hidden from global;
+}
+
+.title {
+    composes: font-light from global;
+}
+
+.title_container {
+    composes: cursor-pointer from global;
+    composes: block from global;
+    composes: w-full from global;
+    composes: m-0 from global;
+}
+
+.title_wrapper {
+    composes: align-center from global;
+    composes: flex from global;
+    composes: gap-3 from global;
+    composes: py-0 from global;
+}
+
+.open {
+    composes: !border-b-green from global;
+    composes: relative from global;
+}
+
+.iconClose {
+    composes: text-black from global;
+    composes: duration-500 from global;
+}
+
+.iconOpen {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: -rotate-180 from global;
+    composes: transition-transform from global;
+    composes: duration-300 from global;
+}

@@ -1,0 +1,16 @@
+.sliderRoot {
+    composes: mb-[30px] from global;
+    composes: lg_mb-[70px] from global;
+}
+
+.sliderTitle {
+    composes: block from global;
+    composes: text-3xl from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-black from global;
+    composes: mb-[20px] from global;
+
+    composes: lg_text-6xl from global;
+    composes: lg_mb-[50px] from global;
+}

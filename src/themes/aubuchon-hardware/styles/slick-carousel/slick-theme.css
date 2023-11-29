@@ -1,0 +1,21 @@
+/* Dots */
+.slick-dots {
+    @apply w-full
+        text-center;
+}
+
+.slick-dots li {
+    @apply inline-block
+        w-1.5
+        h-1.5
+        rounded-full
+        bg-black
+        bg-opacity-20
+        leading-[0px];
+
+    font-size: 0;
+}
+
+.slick-dots li.slick-active {
+    @apply bg-opacity-40;
+}

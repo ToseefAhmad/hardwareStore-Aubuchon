@@ -1,0 +1,52 @@
+.root {
+    composes: grid from global;
+    composes: auto-cols-min from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-1.25 from global;
+
+    composes: lg_overflow-auto from global;
+    composes: lg_auto-cols-auto from global;
+    composes: lg_grid-flow-row from global;
+    composes: lg_max-h-[660px] from global;
+}
+
+.isExpanded {
+    composes: !auto-cols-auto from global;
+    composes: !grid-flow-row from global;
+}
+
+.header {
+    composes: sticky from global;
+    composes: top-0 from global;
+    composes: z-1 from global;
+    composes: hidden from global;
+    composes: px-7.5 from global;
+    composes: h-15 from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+    composes: bg-white from global;
+    composes: border-t from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-cols from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_grid-cols-orderProductsItemsLg from global;
+    composes: lg_content-center from global;
+    composes: lg_text-sm from global;
+}
+
+.counterListItem {
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: text-black from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: bg-gray from global;
+    composes: rounded from global;
+
+    composes: lg_hidden from global;
+}

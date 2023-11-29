@@ -1,0 +1,9 @@
+.root {
+    composes: desktopRowView from '../Row/row.module.css';
+
+    composes: hidden from global;
+    composes: font-semibold from global;
+    composes: bg-white from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+}

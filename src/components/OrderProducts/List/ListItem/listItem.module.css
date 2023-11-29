@@ -1,0 +1,245 @@
+.dl {
+    composes: inline from global;
+}
+
+.dt {
+    composes: inline from global;
+    composes: mr-1.25 from global;
+
+    composes: lg_hidden from global;
+}
+
+.dd {
+    composes: inline from global;
+    composes: font-semibold from global;
+
+    composes: lg_font-normal from global;
+    composes: lg_text-sm from global;
+}
+
+.root {
+    composes: overflow-hidden from global;
+    composes: grid from global;
+    composes: grid-cols-orderProductsItems from global;
+    composes: gap-x-2.5 from global;
+    composes: gap-y-1.25 from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+
+    composes: lg_overflow-visible from global;
+    composes: lg_grid-cols-orderProductsItemsLg from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_gap-y-0 from global;
+    composes: lg_w-full from global;
+    composes: lg_h-auto from global;
+    composes: lg_px-7.5 from global;
+    composes: lg_py-[19px] from global;
+    composes: lg_border-t-0 from global;
+    composes: lg_border-r-0 from global;
+    composes: lg_border-b from global;
+    composes: lg_border-l-0 from global;
+    composes: lg_border-gray from global;
+    composes: lg_rounded-none from global;
+    composes: lg_rounded-none from global;
+
+    grid-template-areas:
+        'preview info'
+        'price price'
+        'discount discount'
+        'tax tax'
+        'total total';
+}
+
+.root:nth-child(n + 5) {
+    @apply hidden lg_grid;
+}
+
+.root + .root {
+    @apply lg_border-t-0;
+}
+
+.isExpanded {
+    composes: !grid from global;
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: !w-full from global;
+    composes: !h-auto from global;
+    composes: border from global;
+    composes: border-gray from global;
+    composes: !rounded-none from global;
+}
+
+.isExpanded:nth-of-type(2) {
+    @apply !rounded-t
+        lg_!rounded-t-none; /* stylelint-disable-line */
+}
+
+.isExpanded:last-of-type {
+    @apply !rounded-b
+        lg_!rounded-b-none; /* stylelint-disable-line */
+}
+
+.isExpanded + .isExpanded {
+    @apply border-t-0;
+}
+
+.productPreview {
+    composes: relative from global;
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-gray from global;
+    composes: rounded from global;
+
+    composes: lg_transition-opacity from global;
+    composes: lg_hover_opacity-70 from global;
+
+    grid-area: preview;
+}
+
+.productPreviewImage {
+    height: var(--height);
+    width: var(--width);
+}
+
+.productPreviewQuantity {
+    composes: absolute from global;
+    composes: left-1 from global;
+    composes: bottom-1 from global;
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: h-[24px] from global;
+    composes: min-w-[24px] from global;
+    composes: text-white from global;
+    composes: text-xs from global;
+    composes: font-semibold from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+
+    composes: lg_!h-[24px] from global; /* stylelint-disable-line */
+    composes: lg_!min-w-[24px] from global; /* stylelint-disable-line */
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+}
+
+.productPreviewQuantitySmall {
+    composes: !h-[18px] from global;
+    composes: !min-w-[18px] from global;
+    composes: !text-2xs from global;
+}
+
+.infoBlock {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-1.5 from global;
+    composes: items-start from global;
+    composes: auto-rows-min from global;
+    composes: content-center from global;
+
+    composes: lg_content-center from global;
+    composes: lg_gap-y-2.5 from global;
+    composes: lg_pt-0 from global;
+
+    grid-area: info;
+}
+
+.blockBase {
+    composes: dl;
+
+    composes: lg_grid from global;
+    composes: lg_content-center from global;
+}
+
+.priceBlock {
+    composes: blockBase;
+    composes: mt-2.5 from global;
+
+    composes: lg_mt-0 from global;
+
+    grid-area: price;
+}
+
+.discountBlock {
+    composes: blockBase;
+
+    grid-area: discount;
+}
+
+.taxBlock {
+    composes: blockBase;
+
+    grid-area: tax;
+}
+
+.totalBlock {
+    composes: blockBase;
+
+    grid-area: total;
+}
+
+.sku {
+    composes: dl;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+    composes: gap-2.5 from global;
+    composes: text-2xs from global;
+    composes: text-gray-dark from global;
+
+    composes: lg_text-xs from global;
+}
+
+.skuLabel {
+    composes: dt;
+
+    composes: !inline from global;
+    composes: font-semibold from global;
+}
+
+.skuValue {
+    composes: dd;
+
+    composes: !font-normal from global;
+}
+
+.totalValue {
+    composes: dd;
+
+    composes: text-black from global;
+    composes: lg_font-semibold from global;
+}
+
+.productName {
+    composes: font-semibold from global;
+    composes: text-xs from global;
+    composes: text-black from global;
+    composes: leading-[18px] from global;
+
+    composes: lg_text-sm from global;
+}
+
+.orderItemChangesWrapper {
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: gap-2.5 from global;
+    composes: text-red from global;
+}
+
+.orderItemChanges {
+    composes: text-2xs from global;
+    composes: font-bold from global;
+
+    composes: lg_text-xs from global;
+}
+
+@media (min-width: 1024px) {
+    .root {
+        grid-template-areas: 'preview info price discount tax total';
+    }
+}

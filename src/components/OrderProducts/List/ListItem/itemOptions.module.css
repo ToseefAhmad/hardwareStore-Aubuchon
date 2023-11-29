@@ -1,0 +1,21 @@
+.root {
+    composes: root from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.list {
+    composes: list from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.item {
+    composes: item from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.label {
+    composes: label from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.value {
+    composes: value from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.color {
+    composes: color from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}
+.colorItem {
+    composes: colorItem from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+}

@@ -1,0 +1,49 @@
+.root {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: ml-auto from global;
+    composes: mr-[20px] from global;
+    composes: group from global;
+
+    composes: lg_ml-0 from global;
+    composes: xl_mr-[3%] from global;
+    composes: xxl_mr-[50px] from global;
+}
+
+.trigger {
+    composes: clickable from global;
+    composes: ml-[10px] from global;
+    composes: text-sm from global;
+    composes: z-1 from global;
+
+    composes: lg_ml-0 from global;
+}
+
+.icon {
+    composes: pr-[10px] from global;
+    composes: text-primary from global;
+
+    composes: lg_pr-[15px] from global;
+}
+
+.info {
+    composes: text-left from global;
+}
+
+.text {
+    composes: inline-block from global;
+    composes: -mt-px from global;
+    composes: -mb-0.5 from global;
+    composes: text-xs from global;
+}
+
+.actionText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: leading-5 from global;
+
+    composes: lg_leading-6 from global;
+    composes: lg_group-hover_text-decoration-dotted from global;
+}

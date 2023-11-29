@@ -1,0 +1,18 @@
+.root {
+    composes: grid from global;
+    composes: justify-items-center from global;
+}
+
+.root :global .createAccountButton button {
+    @apply hidden;
+}
+
+.createAccountButton {
+    /* Mobile */
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: w-45 from global;
+
+    /* Desktop */
+    composes: md_mt-5 from global;
+    composes: md_w-48 from global;
+}

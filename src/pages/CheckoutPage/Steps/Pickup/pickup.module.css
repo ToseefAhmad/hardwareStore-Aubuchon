@@ -1,0 +1,121 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-5 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-checkoutContent from global;
+}
+
+.content {
+    composes: pt-5 from global;
+
+    composes: lg_pt-7.5 from global;
+}
+
+.mailingSection {
+    composes: gap-y-[3px] from global;
+
+    composes: lg_pb-8 from global;
+    composes: lg_gap-y-7.5 from global;
+}
+
+.storeInfoRoot {
+    composes: root from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: !p-0 from global;
+    composes: grid-cols-minContentMax from global;
+    composes: items-center from global;
+    composes: bg-white from global;
+
+    composes: lg_!gap-7.5 from global; /* stylelint-disable-line */
+    composes: lg_border from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-light-gray from global;
+    composes: lg_rounded from global;
+}
+
+.imageRoot {
+    composes: imageRoot from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+
+    composes: lg_!w-[250px] from global; /* stylelint-disable-line */
+    composes: lg_!min-h-[186px] from global; /* stylelint-disable-line */
+
+    composes: xl_!w-[305px] from global; /* stylelint-disable-line */
+}
+
+.image {
+    composes: image from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: !w-full from global;
+    composes: !h-full from global;
+
+    composes: lg_!rounded-r-none from global; /* stylelint-disable-line */
+}
+
+.info {
+    composes: info from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: lg_!gap-5 from global; /* stylelint-disable-line */
+}
+
+.storeName {
+    composes: storeName from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: !text-xs from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+}
+
+.address {
+    composes: text from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: !text-xs from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+}
+
+.logo {
+    composes: logo from '@app/components/CurrentStoreInfo/currentStoreInfo.module.css';
+
+    composes: lg_!w-[118px] from global; /* stylelint-disable-line */
+    composes: lg_!h-6 from global; /* stylelint-disable-line */
+}
+
+.close {
+    composes: close from '@app/components/StoreComponents/Status/status.module.css';
+
+    composes: !text-xs from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+    composes: lg_!pl-[18px] from global; /* stylelint-disable-line */
+}
+
+.open {
+    composes: open from '@app/components/StoreComponents/Status/status.module.css';
+
+    composes: !text-xs from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+    composes: lg_!pl-[18px] from global; /* stylelint-disable-line */
+}
+
+.workHours {
+    composes: workHours from '@app/components/StoreComponents/Status/status.module.css';
+
+    composes: !text-xs from global;
+    composes: !font-normal from global;
+    composes: !leading-[18px] from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+}
+
+.text {
+    composes: grid from global;
+}

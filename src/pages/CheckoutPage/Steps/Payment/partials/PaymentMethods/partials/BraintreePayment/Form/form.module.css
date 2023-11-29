@@ -1,0 +1,99 @@
+.root {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-1.25 from global;
+}
+
+.label {
+    composes: text-xs from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-sm from global;
+}
+
+.error {
+    composes: absolute from global;
+    composes: right-0 from global;
+    composes: -top-0.5 from global;
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: gap-x-2.5 from global;
+    composes: text-xs from global;
+    composes: text-red from global;
+    composes: font-semibold from global;
+    composes: leading-6 from global;
+}
+
+.hostedField {
+    composes: relative from global;
+    composes: h-6 from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.hostedField:not(:last-of-type) {
+    @apply after_absolute
+        after_top-1/2
+        after_transform
+        after_-translate-y-1/2
+        after_-right-3.5
+        after_w-px
+        after_h-2.5
+        after_bg-gray
+        xl_after_h-3.75
+        xl_after_-right-1.5;
+}
+
+.fieldset {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-creditCardInput from global;
+    composes: gap-[31px] from global;
+    composes: px-5 from global;
+    composes: py-3 from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: rounded from global;
+
+    composes: lg_py-3.5 from global;
+    composes: lg_px-6 from global;
+    composes: lg_hover_border-black from global;
+
+    composes: xl_grid-cols-creditCardInputXl from global;
+}
+
+.fieldsetShimmerWrapper {
+    composes: absolute from global;
+    composes: -inset-px from global;
+    composes: z-1 from global;
+    composes: overflow-hidden from global;
+    composes: rounded from global;
+}
+
+.fieldsetFocused {
+    composes: !text-black from global;
+    composes: !border-primary from global;
+}
+
+.checkboxContainer {
+    composes: mt-3.75 from global;
+}
+
+.checkboxLabel {
+    composes: label from '@app/components/Checkbox/checkbox.module.css';
+    composes: !font-normal from global;
+}
+
+/* Supported Braintree Hosted Fields style options https://i.imgur.com/R5ccvYj.png */
+:global(.hws-braintree__input) {
+    @apply appearance-none text-base text-black;
+}
+
+:global(.hws-braintree__input--mobile) {
+    @apply appearance-none text-sm text-black;
+}

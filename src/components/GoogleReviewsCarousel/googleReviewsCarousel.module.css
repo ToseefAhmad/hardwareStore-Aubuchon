@@ -1,0 +1,137 @@
+.wrapper {
+    composes: mt-5 from global;
+
+    composes: lg_mt-17.5 from global;
+}
+.root {
+    composes: mt-5 from global;
+    composes: w-full from global;
+    composes: mb-7.5 from global;
+
+    composes: lg_mt-7 from global;
+    composes: lg_mb-17.5 from global;
+}
+
+.customerTitle {
+    composes: block from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-3xl from global;
+
+    composes: lg_text-6xl from global;
+}
+
+.review {
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: pl-6 from global;
+    composes: pr-[0.6875rem] from global;
+    composes: pb-4.5 from global;
+    composes: rounded from global;
+    composes: flex-col from global;
+    composes: items-start from global;
+
+    composes: lg_mt-12.5 from global;
+    composes: xl_flex-row from global;
+    composes: xl_items-center from global;
+}
+
+.reviewMargin {
+    composes: mt-5 from global;
+}
+
+.reviewPadding {
+    composes: pt-4.5 from global;
+    composes: lg_pl-7.5 from global;
+    composes: lg_py-5 from global;
+    composes: lg_pr-6 from global;
+}
+
+.reviewMarginStorePage {
+    composes: mt-4 from global;
+    composes: lg_mt-7.5 from global;
+}
+
+.reviewPaddingStorePage {
+    composes: pt-5 from global;
+    composes: pr-3 from global;
+    composes: pb-4 from global;
+    composes: pl-6 from global;
+}
+
+.ratingStars {
+    composes: mt-[-2px] from global;
+    composes: lg_mt-0 from global;
+}
+
+.reviewAddress {
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: text-base from global;
+
+    composes: xl_text-lg from global;
+}
+
+.reviewTotal {
+    composes: text-xs from global;
+    composes: text-black-small from global;
+    composes: font-roboto from global;
+    composes: font-semibold from global;
+    composes: leading-4 from global;
+}
+
+.semiBoldReviewTotal {
+    composes: lg_font-normal from global;
+}
+
+.reviewAverage {
+    composes: text-xs from global;
+    composes: text-black-small from global;
+    composes: font-roboto from global;
+    composes: font-semibold from global;
+    composes: mr-1.25 from global;
+    composes: leading-4 from global;
+}
+
+.reviewLink {
+    composes: hover_text-white from global;
+    composes: hover_no-underline from global;
+}
+
+.reviewStarsWrapper {
+    composes: flex from global;
+    composes: items-center from global;
+    composes: mt-1.25 from global;
+}
+
+.reviewStars {
+    composes: flex from global;
+    composes: items-center from global;
+}
+
+.hideReviewStars {
+    composes: xl_hidden from global;
+}
+
+.slash {
+    composes: mx-2.5 from global;
+    composes: bg-gray from global;
+    composes: h-[15px] from global;
+    composes: w-[1px] from global;
+}
+
+.button {
+    composes: mt-3.75 from global;
+    composes: w-full from global;
+
+    composes: xl_mt-0 from global;
+    composes: xl_max-w-[182px] from global;
+}
+
+.arrowRoot {
+    composes: root_normalPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+}

@@ -1,0 +1,189 @@
+.header {
+    composes: pb-3.75 from global;
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-minMaxAuto from global;
+    composes: items-start from global;
+    composes: flex-shrink-0 from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pb-5 from global;
+}
+
+.closeButton {
+    composes: h-[35px] from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_absolute from global;
+    composes: lg_top-2.5 from global;
+    composes: lg_right-7.5 from global;
+    composes: lg_w-auto from global;
+    composes: lg_hover_text-opacity-100 from global;
+}
+
+.content {
+    composes: pb-3.75 from global;
+    composes: flex-shrink-0 from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: h-fit from global;
+
+    composes: lg_pb-5 from global;
+}
+
+.text {
+    composes: mb-1.25 from global;
+    composes: block from global;
+    composes: overflow-auto from global;
+    composes: text-sm from global;
+    composes: text-gray-dark from global;
+    composes: !leading-7 from global;
+
+    composes: lg_mb-7.5 from global;
+    composes: lg_text-base from global;
+}
+
+.controls {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+    composes: flex-shrink-0 from global;
+
+    composes: lg_grid-cols-2 from global;
+    composes: lg_gap-2.5 from global;
+}
+
+.button {
+    composes: !h-10 from global;
+    composes: outline-none from global;
+
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.primary {
+    composes: primary from '@app/components/Button/button.module.css';
+
+    composes: button;
+}
+
+.secondary {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: button;
+}
+
+/* Stores item classes */
+.storesItemRoot {
+    composes: grid from global;
+}
+
+.storesItemContent {
+    composes: grid from global;
+}
+
+.storesItemInfo {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-1.25 from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+
+    composes: lg_text-base from global;
+}
+
+.icon {
+    composes: mr-1.25 from global;
+}
+
+.logo {
+    composes: mb-3.75 from global;
+    composes: w-[98px] from global;
+    composes: h-5 from global;
+}
+
+.placeholder {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+
+    composes: logo;
+}
+
+.distance {
+    composes: text-black from global;
+}
+
+.status {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: text-green-lightest from global;
+
+    composes: lg_text-gray-dark from global;
+}
+
+.closed {
+    composes: !text-red from global;
+}
+
+.base {
+    composes: base from '@app/components/StoreComponents/Status/status.module.css';
+
+    composes: !pl-0 from global;
+    composes: !text-sm from global;
+    composes: !leading-7 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+
+    composes: lg_!text-base from global; /* stylelint-disable-line */
+    composes: lg_!leading-7 from global; /* stylelint-disable-line */
+
+    @apply !gap-0
+        before_!content-['(']
+        before_!h-auto
+        before_!w-auto
+        before_!relative
+        before_!top-0
+        before_!translate-y-0
+        after_!content-[')'];
+}
+
+.open {
+    composes: base;
+
+    composes: !text-green-lightest from global;
+
+    composes: lg_before_!text-black from global; /* stylelint-disable-line */
+    composes: lg_after_!text-black from global; /* stylelint-disable-line */
+}
+
+.close {
+    composes: base;
+
+    composes: !text-red from global;
+
+    composes: lg_before_!text-black from global; /* stylelint-disable-line */
+    composes: lg_after_!text-black from global; /* stylelint-disable-line */
+}
+
+.workHours {
+    composes: workHours from '@app/components/StoreComponents/Status/status.module.css';
+
+    composes: !hidden from global;
+
+    composes: lg_!ml-1.25 from global; /* stylelint-disable-line */
+    composes: lg_!block from global; /* stylelint-disable-line */
+}
+
+.title {
+    composes: font-normal from global;
+}
+
+.strong {
+    composes: font-semibold from global;
+}

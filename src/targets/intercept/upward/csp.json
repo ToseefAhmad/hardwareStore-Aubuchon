@@ -1,0 +1,54 @@
+{
+    "script-src": [
+        "http: https: {{ backend }}{{#pageTypeNonce}} 'nonce-{{ pageTypeNonce }}'{{/pageTypeNonce}}",
+        "'unsafe-eval'",
+        "'unsafe-hashes'",
+        "https://tagmanager.google.com https://*.googletagmanager.com",
+        "https://www.google-analytics.com https://ssl.google-analytics.com",
+        "https://connect.facebook.net",
+        "*.wknd.ai",
+        "*.bounceexchange.com",
+        "'sha256-+hSsSV2IXXRsl5bMQeEDYHtphbqnY8bJDu6xoakSuXA='",
+        "https://cdn.logrocket.io https://cdn.lr-ingest.io https://cdn.lr-in.com https://cdn.lr-in-prod.com",
+        "*.turnto.com"
+    ],
+    "style-src": [
+        "'self' blob: https: 'unsafe-inline' {{ backend }}",
+        "https://tagmanager.google.com https://fonts.googleapis.com",
+        "*.bounceexchange.com"
+    ],
+    "img-src": [
+        "data: http: https:",
+        "https://*.gstatic.com",
+        "https://*.google-analytics.com https://*.googletagmanager.com",
+        "https://www.facebook.com",
+        "*.bounceexchange.com",
+        "*.bouncex.net"
+    ],
+    "object-src": [
+        "'none'"
+    ],
+    "base-uri": [
+        "'none'"
+    ],
+    "child-src": [
+        "'self'",
+        "blob:",
+        "*.bounceexchange.com"
+    ],
+    "font-src": [
+        "'self'",
+        "use.typekit.net",
+        "https://fonts.gstatic.com data",
+        "https://cdn.userway.org",
+        "*.bounceexchange.com"
+    ],
+    "frame-src": [
+        "assets.braintreegateway.com",
+        "*.google.com *.youtube.com *.youtu.be *.vimeo.com *.googletagmanager.com",
+        "*.userway.org",
+        "*.facebook.com",
+        "*.bounceexchange.com",
+        "https://photos.pixlee.co/"
+    ]
+}

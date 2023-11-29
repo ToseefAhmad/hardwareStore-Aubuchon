@@ -1,0 +1,26 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: content-start from global;
+    composes: gap-2.5 from global;
+
+    composes: lg_py-7.5 from global;
+    composes: lg_h-fit from global;
+    composes: lg_sticky from global;
+    composes: lg_top-[100px] from global;
+}
+
+.termsLink {
+    composes: text-xs from global;
+    composes: text-center from global;
+}
+
+/* stylelint-disable max-line-length */
+.error {
+    composes: error from '@app/pages/CheckoutPage/Steps/Payment/partials/PaymentMethods/partials/BraintreePayment/Form/form.module.css';
+
+    composes: !relative from global;
+    composes: !top-0 from global;
+    composes: !gap-x-0 from global;
+}
+/* stylelint-enable max-line-length */

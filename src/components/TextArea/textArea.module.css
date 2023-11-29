@@ -1,0 +1,13 @@
+.root {
+    composes: inputRoot from '../Field/message.module.css';
+}
+
+.input {
+    composes: h-auto from global;
+    composes: resize-none from global;
+    composes: input_base from '../Field/field.module.css';
+}
+
+.input_shimmer {
+    composes: input;
+}

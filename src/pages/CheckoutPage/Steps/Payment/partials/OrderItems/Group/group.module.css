@@ -1,0 +1,67 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-2.5 from global;
+}
+
+.row {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-min from global;
+    composes: gap-x-1.25 from global;
+    composes: gap-y-5 from global;
+
+    composes: lg_gap-x-2.5 from global;
+    composes: lg_gap-y-[18px] from global;
+    composes: lg_max-h-[591px] from global;
+    composes: lg_overflow-auto from global;
+}
+
+.itemPlaceholder {
+    composes: itemsShortViewLastItem from '@app/components/MiniCart/miniCart.module.css';
+
+    composes: lg_w-[150px] from global;
+    composes: lg_h-full from global;
+}
+
+.grid {
+    composes: !grid-cols-1 from global;
+    composes: !grid-flow-row from global;
+}
+
+.head {
+    composes: hidden from global;
+
+    composes: lg_block from global;
+    composes: lg_py-[17px] from global;
+    composes: lg_pr-5 from global;
+    composes: lg_pl-7.5 from global;
+    composes: lg_grid from global;
+    composes: lg_grid-cols-orderItemsInfoFullLg from global;
+    composes: xl_grid-cols-orderItemsInfoFull from global;
+    composes: lg_gap-5 from global;
+    composes: lg_border-b from global;
+    composes: lg_border-t from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray-light from global;
+}
+
+.col {
+    composes: text-sm from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: capitalize from global;
+}
+
+.button {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.buttonText {
+    composes: lg_capitalize from global;
+}
+
+.buttonIcon {
+    composes: text-green from global;
+}

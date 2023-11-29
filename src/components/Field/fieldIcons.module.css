@@ -1,0 +1,16 @@
+.root {
+    composes: relative from global;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: right-[25px] from global;
+    composes: top-1/2 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+}
+
+.secondIcon {
+    composes: icon;
+    composes: right-[50px] from global;
+}

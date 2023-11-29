@@ -1,0 +1,17 @@
+# Get available store pickup brands.
+query {
+    pickupStoreBrands {
+        uid
+        name
+        identifier
+        logo
+        cms_about_us_page
+        primary_color
+        primary_hover_color
+        primary_active_color
+        social_facebook
+        social_instagram
+        social_twitter
+        social_youtube
+    }
+}

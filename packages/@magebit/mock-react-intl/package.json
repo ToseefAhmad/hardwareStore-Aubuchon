@@ -1,0 +1,11 @@
+{
+  "name": "@magebit/mock-react-intl",
+  "version": "0.0.1",
+  "description": "Create FormattedMessage and useIntl mocks",
+  "main": "index.js",
+  "author": "Magebit <info@magbeit.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "~17.0.1"
+  }
+}

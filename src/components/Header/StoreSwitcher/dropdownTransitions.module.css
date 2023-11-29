@@ -1,0 +1,12 @@
+.enter {
+    @apply opacity-0;
+}
+.enterActive {
+    @apply opacity-100 transition-opacity;
+}
+.exit {
+    @apply opacity-100;
+}
+.exitActive {
+    @apply opacity-0 transition-opacity;
+}

@@ -1,0 +1,49 @@
+.root {
+    grid-template-areas:
+        'storeBlock mapBlock'
+        'storeBlock googleReviews';
+    grid-template-columns: 400px calc(100% - 400px - 20px);
+
+    composes: lg_grid from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_gap-y-7.5 from global;
+    composes: lg_mb-12.5 from global;
+}
+
+.storeBlock {
+    grid-area: storeBlock;
+    composes: -ml-5 from global;
+    composes: w-filled from global;
+    composes: lg_w-full from global;
+    composes: lg_m-0 from global;
+}
+
+.mapBlock {
+    grid-area: mapBlock;
+}
+
+.map {
+    composes: -ml-5 from global;
+    composes: relative from global;
+    composes: h-[350px] from global;
+    composes: w-filled from global;
+
+    composes: lg_w-full from global;
+    composes: lg_ml-0 from global;
+    composes: lg_h-[300px] from global;
+    composes: lg_max-h-[300px] from global;
+}
+
+.arrows {
+    composes: root_highPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+}
+
+.customerTitle {
+    composes: block from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-xl from global;
+
+    composes: lg_text-4xl from global;
+}

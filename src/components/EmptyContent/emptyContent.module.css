@@ -1,0 +1,13 @@
+.title {
+    composes: mb-2.5 from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+    composes: text-lg from global;
+
+    composes: lg_mb-5 from global;
+    composes: lg_text-4xl from global;
+}
+
+.normal {
+    composes: font-normal from global;
+}

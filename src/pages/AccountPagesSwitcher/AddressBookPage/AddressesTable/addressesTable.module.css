@@ -1,0 +1,38 @@
+.base {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+}
+
+.root {
+    composes: base;
+    composes: relative from global;
+
+    composes: lg_gap-y-7.5 from global;
+}
+
+.disabled {
+    composes: after_absolute from global;
+    composes: after_inset-0 from global;
+    composes: after_bg-gray from global;
+    composes: after_opacity-10 from global;
+}
+
+.table {
+    composes: base;
+    composes: lg_gap-y-0 from global;
+    composes: lg_overflow-x-auto from global;
+}
+
+.footer {
+    composes: grid from global;
+    composes: justify-items-stretch from global;
+
+    composes: lg_justify-items-center from global;
+}
+
+.paginationRoot {
+    composes: root from '@app/components/Pagination/pagination.module.css';
+
+    composes: !m-0 from global;
+}

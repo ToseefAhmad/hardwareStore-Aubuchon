@@ -1,0 +1,12 @@
+# Get available store pickup brands.
+query {
+    storeConfig {
+        analytics_active
+        analytics_catalog_page
+        analytics_crosssell_block
+        analytics_upsell_block
+        analytics_related_block
+        analytics_search_page
+        analytics_promotions
+    }
+}

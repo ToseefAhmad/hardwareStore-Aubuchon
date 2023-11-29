@@ -1,0 +1,14 @@
+.root {
+    composes: bottom-0 from global;
+    composes: hidden from global;
+    composes: w-full from global;
+    composes: z-2 from global;
+    composes: bg-white from global;
+
+    composes: lg_grid from global;
+}
+
+.listItem {
+    composes: grid from global;
+    composes: lg_mb-7.5 from global;
+}

@@ -1,0 +1,14 @@
+.root {
+    composes: relative from global;
+}
+
+.logo {
+    height: var(--height);
+    width: var(--width);
+}
+
+.shimmer {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+}

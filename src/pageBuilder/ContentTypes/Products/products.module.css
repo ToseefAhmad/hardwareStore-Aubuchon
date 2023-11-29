@@ -1,0 +1,42 @@
+.productsCarousel [class*='carousel-root'] {
+    @apply lg_!auto-cols-[269px]
+        !auto-cols-[165px]
+        no-underline;
+}
+
+.productsCarousel [class*='carousel-root'] a:not([class*='categoryLinkBoss']) {
+    @apply no-underline;
+}
+
+.productsCarousel [class*='carousel-root'] img {
+    @apply m-0;
+}
+
+.productsCarousel [class^='shimmer'] {
+    @apply align-top;
+}
+
+.base {
+    composes: !top-[135px] from global;
+    composes: !translate-y-none from global;
+}
+
+.root {
+    composes: root from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.disabled {
+    composes: disabled from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.root_isInverted {
+    composes: root_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.disabled_isInverted {
+    composes: disabled_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}

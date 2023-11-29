@@ -1,0 +1,1 @@
+export { getStoreOpenCloseData } from './getStoreOpenCloseData';

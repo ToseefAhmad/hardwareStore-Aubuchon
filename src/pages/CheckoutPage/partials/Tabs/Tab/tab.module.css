@@ -1,0 +1,45 @@
+.tabButton {
+    composes: pb-1.5 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: text-center from global;
+    composes: text-xs from global;
+    composes: font-semibold from global;
+    composes: outline-none from global;
+
+    composes: lg_pb-3.75 from global;
+    composes: lg_text-sm from global;
+}
+
+.num {
+    composes: hidden from global;
+    composes: text-primary from global;
+
+    composes: lg_inline from global;
+}
+
+.container {
+    composes: relative from global;
+    composes: pointer-events-none from global;
+}
+
+.allowedTab {
+    composes: pointer-events-auto from global;
+    composes: before_absolute from global;
+    composes: before_right-0 from global;
+    composes: before_-bottom-px from global;
+    composes: before_left-0 from global;
+    composes: before_z-0 from global;
+    composes: before_h-px from global;
+    composes: before_bg-primary from global;
+}
+
+.activeTab {
+    composes: after_absolute from global;
+    composes: after_right-0 from global;
+    composes: after_-bottom-px from global;
+    composes: after_left-0 from global;
+    composes: after_z-1 from global;
+    composes: after_h-0.5 from global;
+    composes: after_bg-primary from global;
+}

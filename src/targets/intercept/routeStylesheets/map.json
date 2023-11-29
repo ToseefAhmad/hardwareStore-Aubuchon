@@ -1,0 +1,18 @@
+[
+    {
+        "path": "/home",
+        "stylesheet": "@app/themes/aubuchon-hardware/styles/pages/home-page.css"
+    },
+    {
+        "path": "/membership",
+        "stylesheet": "@app/themes/aubuchon-hardware/styles/pages/membership-page.css"
+    },
+    {
+        "path": "/privacy-policy",
+        "stylesheet": "@app/themes/aubuchon-hardware/styles/pages/privacy-policy-page.css"
+    },
+    {
+        "path": "/terms-and-conditions",
+        "stylesheet": "@app/themes/aubuchon-hardware/styles/pages/terms-and-conditions-page.css"
+    }
+]

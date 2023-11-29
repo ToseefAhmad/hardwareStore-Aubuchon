@@ -1,0 +1,9 @@
+.root {
+    composes: flex from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+}
+
+.icon {
+    composes: text-current from global;
+}

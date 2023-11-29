@@ -1,0 +1,7 @@
+.paragraph {
+    composes: mb-5 from global;
+    composes: leading-7 from global;
+
+    composes: lg_leading-6 from global;
+    composes: lg_mb-7.5 from global;
+}

@@ -1,0 +1,9 @@
+.root {
+    composes: grid from global;
+    composes: py-5 from global;
+    composes: px-[19px] from global;
+    composes: lg_px-[50px] from global;
+    composes: lg_py-12 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+}

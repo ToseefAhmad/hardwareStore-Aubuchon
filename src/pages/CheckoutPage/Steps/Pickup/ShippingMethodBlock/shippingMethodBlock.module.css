@@ -1,0 +1,50 @@
+.radioContainer {
+    composes: root from '@app/components/RadioGroup/radio.module.css';
+    composes: !items-start from global;
+
+    composes: !py-[15px] from global;
+    composes: lg_!py-[19px] from global; /* stylelint-disable-line */
+}
+
+.radioContainerNormal {
+    composes: rootNormal from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioContainerActive {
+    composes: rootActive from '@app/components/RadioGroup/radio.module.css';
+
+    composes: !py-[14px] from global;
+
+    /* I used this because "composes" does not override the priority of "lg_py-[19px]" class */
+    @apply lg_!py-[18px]; /* stylelint-disable-line */
+}
+
+.radioContainerDisabled {
+    composes: rootDisabled from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioInput {
+    composes: input from '@app/components/RadioGroup/radio.module.css';
+
+    composes: mt-px from global;
+    composes: lg_!mt-0.5 from global; /* stylelint-disable-line */
+}
+
+.item {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-0.5 from global;
+
+    composes: lg_gap-1.25 from global;
+}
+
+.strong {
+    composes: text-black from global;
+}
+
+.paragraph {
+    composes: font-normal from global;
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}

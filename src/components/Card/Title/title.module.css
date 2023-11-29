@@ -1,0 +1,4 @@
+.root {
+    composes: mb-2.5 from global;
+    composes: lg_mb-5 from global;
+}

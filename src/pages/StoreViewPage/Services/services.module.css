@@ -1,0 +1,73 @@
+.root {
+    grid-area: services;
+    composes: grid from global;
+    composes: mb-5 from global;
+    composes: pt-[29px] from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_my-0 from global;
+    composes: lg_border-b-0 from global;
+}
+
+.title {
+    composes: text-xl from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: mb-5 from global;
+
+    composes: lg_mb-[31px] from global;
+    composes: lg_text-4xl from global;
+}
+
+.container {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-x-5 from global;
+}
+
+.list {
+    composes: grid from global;
+    composes: grid-dense from global;
+    composes: gap-x-2.5 from global;
+
+    composes: lg_grid-cols-servicesList from global;
+    composes: lg_gap-x-5 from global;
+}
+
+.item {
+    composes: py-2.5 px-5 from global;
+    composes: border-t border-solid border-inherit from global;
+    composes: even_bg-gray-light from global;
+    composes: truncate from global;
+    composes: last_border-solid from global;
+    composes: last_border-inherit from global;
+
+    composes: lg_even_bg-transparent from global;
+    composes: lg_py-3.75 from global;
+    composes: lg_leading-6 from global;
+    composes: xl_last_border-b from global;
+}
+
+.item:nth-child(4n + 3) {
+    @apply lg_bg-gray-light !important;
+}
+
+.item:nth-child(4n + 4) {
+    @apply lg_bg-gray-light !important;
+}
+
+.serviceToggle {
+    composes: lg_hidden from global;
+    composes: mb-7.5 from global;
+}
+
+.hiddenItem {
+    composes: hidden from global;
+    composes: lg_block from global;
+}
+
+.buttonContent {
+    composes: text-primary from global;
+}

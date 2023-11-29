@@ -1,0 +1,38 @@
+.root {
+    composes: menuItem from '@app/components/Navigation/navigationRoot.module.css';
+
+    composes: !py-0 from global;
+    composes: !px-0 from global;
+    composes: !grid-cols-none from global;
+    composes: first_text-black from global;
+    composes: first_bg-gray-lightest from global;
+}
+
+.target {
+    composes: py-[17px] from global;
+    composes: px-5 from global;
+    composes: grid from global;
+    composes: grid-cols-menuItem from global;
+    composes: gap-x-[10px] from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: w-full from global;
+    composes: text-left from global;
+    composes: group from global;
+
+    composes: lg_py-5 from global;
+    composes: lg_px-[50px] from global;
+    composes: lg_hover_text-black from global;
+}
+
+.text {
+    composes: inline-block from global;
+    composes: truncate from global;
+}
+
+.icon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_group-hover_text-opacity-100 from global;
+}

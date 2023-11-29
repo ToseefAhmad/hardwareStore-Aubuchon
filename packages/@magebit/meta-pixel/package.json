@@ -1,0 +1,20 @@
+{
+  "name": "@magebit/meta-pixel",
+  "version": "0.0.1",
+  "description": "Meta Pixel events based on EventingContext",
+  "main": "index.js",
+  "author": "Magebit <info@magbeit.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@magento/pwa-buildpack": "*",
+    "@magento/venia-ui": "*",
+    "react": "*",
+    "react-router-dom": "*",
+    "uuid": "*"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercept": "lib/targets/intercept"
+    }
+  }
+}

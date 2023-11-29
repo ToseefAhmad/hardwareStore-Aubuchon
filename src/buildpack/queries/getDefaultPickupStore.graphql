@@ -1,0 +1,9 @@
+# Get default pickup store ID.
+query {
+    pickupStore {
+        id
+        brand {
+            uid
+        }
+    }
+}

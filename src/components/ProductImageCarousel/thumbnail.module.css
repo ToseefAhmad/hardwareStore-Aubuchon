@@ -1,0 +1,23 @@
+.root {
+    composes: w-productCarouselThumbnail from global;
+    composes: h-productCarouselThumbnail from global;
+    composes: rounded from global;
+    composes: overflow-hidden from global;
+}
+
+.rootSelected {
+    composes: root;
+}
+
+.imageContainer {
+    composes: w-full from global;
+    composes: h-full from global;
+}
+
+.image {
+    composes: block from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-center from global;
+    composes: scale-110 from global;
+}

@@ -1,0 +1,3 @@
+.root {
+    composes: mb-7.5 from global;
+}

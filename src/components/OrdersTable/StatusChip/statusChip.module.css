@@ -1,0 +1,21 @@
+.root {
+    composes: py-[3px] from global;
+    composes: px-1.5 from global;
+    composes: w-max from global;
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: whitespace-nowrap from global;
+    composes: text-black from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    composes: xl_py-1 from global;
+    composes: xl_px-2.5 from global;
+    composes: xl_text-xs from global;
+}
+
+.highlight {
+    composes: !text-white from global;
+    composes: bg-green from global;
+}

@@ -1,0 +1,53 @@
+.root {
+    composes: overflow-hidden from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-nearestStorePopupQuantityMobile from global;
+    composes: w-fit from global;
+    composes: rounded from global;
+
+    composes: lg_grid-cols-nearestStorePopupQuantity from global;
+}
+
+.block {
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: h-10 from global;
+    composes: w-10 from global;
+    composes: text-black from global;
+    composes: bg-gray-light from global;
+
+    composes: lg_h-12.5 from global;
+    composes: lg_w-12.5 from global;
+}
+
+.btn {
+    composes: block;
+
+    composes: focus_outline-none from global;
+
+    composes: disabled_opacity-70 from global;
+
+    composes: lg_transition-colors from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_focus_bg-gray from global;
+    composes: lg_disabled_cursor-not-allowed from global;
+    composes: lg_disabled_hover_bg-gray-light from global;
+}
+
+.icon {
+    composes: text-black-light from global;
+}
+
+.input {
+    composes: input from '@app/components/MiniCart/ProductList/quantity.module.css';
+    composes: !h-full from global;
+    composes: !bg-gray-light from global;
+    composes: !text-black from global;
+    composes: !rounded-none from global;
+    composes: !border-0 from global;
+}
+
+.error {
+    composes: input;
+}

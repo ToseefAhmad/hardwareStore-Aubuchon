@@ -1,0 +1,74 @@
+.slideWidth {
+    composes: w-[165px] from global;
+
+    composes: lg_w-[330px] from global;
+}
+
+.root {
+    composes: slideWidth;
+    composes: !m-0 from global;
+    composes: h-full from global;
+    composes: overflow-hidden from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    /* stylelint-disable */
+    /* Fix Webkit bug,
+       thanks https://stackoverflow.com/questions/14383632/webkit-border-radius-and-overflow-bug-when-using-any-animation-transition/16681137#16681137
+    */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    /* stylelint-enable */
+}
+
+.imageButton {
+    composes: relative from global;
+    composes: grid from global;
+
+    composes: after_absolute from global;
+    composes: after_inset-0 from global;
+    composes: after_grid from global;
+    composes: after_place-content-center from global;
+    composes: after_opacity-0 from global;
+    composes: after_transition-opacity from global;
+    composes: after_bg-black/80 from global;
+
+    composes: hover_after_opacity-100 from global;
+    composes: focus_after_opacity-100 from global;
+}
+
+.imageButton::after {
+    content: url('/assets/icons/zoom-in.svg') !important;
+}
+
+.imageBase {
+    composes: slideWidth;
+    composes: h-[93px] from global;
+
+    composes: lg_h-[185px] from global;
+}
+
+.imageRoot {
+    composes: imageBase;
+    composes: pointer-event-none from global;
+}
+
+.image {
+    composes: imageBase;
+    composes: object-cover from global;
+    composes: object-top from global;
+    composes: rounded from global;
+
+    composes: lg_rounded-none from global;
+}
+
+.description {
+    composes: hidden from global;
+    composes: py-2.5 from global;
+    composes: px-5 from global;
+    composes: text-xs from global;
+
+    composes: lg_block from global;
+}

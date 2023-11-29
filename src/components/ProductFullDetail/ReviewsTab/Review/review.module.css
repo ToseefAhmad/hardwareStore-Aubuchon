@@ -1,0 +1,244 @@
+.root {
+    composes: py-5 from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-reviewItemsDesktop from global;
+    composes: lg_gap-5 from global;
+}
+
+.icon {
+    composes: inline-block from global;
+    composes: mr-1.25 from global;
+}
+
+.productInfo {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-reviewProductInfoMobile from global;
+    composes: gap-5 from global;
+    composes: items-center from global;
+    composes: pb-2.5 from global;
+
+    composes: lg_block from global;
+    composes: lg_gap-2.5 from global;
+    composes: lg_pb-0 from global;
+}
+
+.reviewInfo {
+    composes: lg_grid from global;
+}
+
+.imageContainer {
+    composes: block from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: p-[9px] from global;
+    composes: m-1 from global;
+    composes: border-solid from global;
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_m-1.25 from global;
+}
+
+.imageRoot {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: overflow-hidden from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-cover from global;
+}
+
+.aboutTitle {
+    composes: text-xs from global;
+    composes: font-semibold from global;
+
+    composes: lg_pt-2.5 from global;
+    composes: lg_text-sm from global;
+}
+
+.productName {
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}
+
+.reviewTitle {
+    composes: font-semibold from global;
+}
+
+.reviewMedia {
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: pt-2.5 from global;
+    composes: -m-1 from global;
+
+    composes: lg_pt-5 from global;
+    composes: lg_-m-1.25 from global;
+}
+
+.authorAndDateWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-5 from global;
+}
+
+.authorName {
+    composes: mr-2.5 from global;
+}
+
+.verifiedPurchaserIcon {
+    composes: icon;
+    composes: text-green from global;
+}
+
+.verifiedPurchaserText {
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: truncate from global;
+
+    composes: lg_text-xs from global;
+}
+
+.createDate {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.title {
+    composes: mt-2.5 from global;
+    composes: font-semibold from global;
+}
+
+.text {
+    composes: mt-1 from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_mt-[18px] from global;
+    composes: lg_mb-5 from global;
+}
+
+.locationAndPurchasedOnContainer {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+}
+
+.detailsKey {
+    composes: font-semibold from global;
+}
+
+.voting {
+    composes: mt-2 from global;
+    composes: text-xs from global;
+
+    composes: lg_self-end from global;
+    composes: lg_justify-self-end from global;
+    composes: lg_mt-5 from global;
+    composes: lg_text-sm from global;
+}
+
+.wasThisHelpful {
+    composes: mr-2.5 from global;
+
+    composes: xxl_mr-5 from global;
+}
+
+.votingButtons {
+    composes: inline-block from global;
+    composes: inline-grid from global;
+    composes: grid-cols-2 from global;
+    composes: gap-4 from global;
+
+    composes: xxl_gap-[22px] from global;
+}
+
+.votingButton {
+    composes: mr-2 from global;
+    composes: opacity-40 from global;
+
+    composes: xxl_mr-1.5 from global;
+    composes: hover_opacity-100 from global;
+}
+
+.votingButtonActivated {
+    composes: votingButton;
+    composes: !opacity-100 from global;
+}
+
+.votingIcon {
+    composes: icon;
+    composes: mr-1.25 from global;
+}
+
+.upVoteIcon {
+    composes: relative from global;
+    composes: top-px from global;
+    composes: votingIcon;
+}
+
+.downVoteIcon {
+    composes: relative from global;
+    composes: top-1.5 from global;
+    composes: votingIcon;
+
+    composes: lg_top-1 from global;
+}
+
+.votes {
+    composes: font-semibold from global;
+    composes: inline-block from global;
+}
+
+.downVotes {
+    composes: votes;
+}
+
+.flagButtonWrapper {
+    composes: inline-block from global;
+    composes: ml-[44px] from global;
+
+    composes: before_relative from global;
+    composes: before_inline-block from global;
+    composes: before_w-px from global;
+    composes: before_h-4 from global;
+    composes: before_bg-gray-light from global;
+    composes: before_top-1 from global;
+    composes: before_right-[21px] from global;
+
+    composes: lg_ml-[26px] from global;
+    composes: lg_before_right-3.5 from global;
+
+    composes: xxl_ml-[46px] from global;
+    composes: xxl_before_right-[21px] from global;
+}
+
+.flagButton {
+    composes: font-semibold from global;
+}
+
+.flagIcon {
+    composes: relative from global;
+    composes: top-1 from global;
+    composes: icon;
+    composes: mr-[9px] from global;
+    composes: opacity-40 from global;
+    composes: hover_opacity-100 from global;
+
+    composes: lg_mr-[18px] from global;
+}
+
+.flagIconActivated {
+    composes: flagIcon;
+    composes: !opacity-100 from global;
+}

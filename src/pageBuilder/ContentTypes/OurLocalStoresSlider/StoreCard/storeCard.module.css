@@ -1,0 +1,49 @@
+.root {
+    composes: w-[313px] from global;
+    composes: relative from global;
+
+    composes: lg_w-[285px] from global;
+}
+
+.storeImage {
+    composes: w-[375px] from global;
+    composes: lg_w-auto from global;
+}
+
+.imageRoot {
+    composes: max-w[124px] from global;
+    composes: my-0 from global;
+    composes: mx-auto from global;
+    composes: h-[21px] from global;
+
+    composes: lg_h-6 from global;
+}
+
+.button {
+    composes: h-[30px] from global;
+    composes: my-0 from global;
+    composes: mx-auto from global;
+    composes: w-[375px] from global;
+
+    composes: lg_w-[100px] from global;
+}
+
+.circle {
+    composes: w-5 from global;
+    composes: h-5 from global;
+    composes: mt-[20px] from global;
+    composes: mx-auto from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: rounded-full from global;
+
+    composes: lg_mt-[30px] from global;
+}
+
+.circleHover {
+    composes: circle;
+    composes: border-8 from global;
+    composes: border-primary from global;
+}

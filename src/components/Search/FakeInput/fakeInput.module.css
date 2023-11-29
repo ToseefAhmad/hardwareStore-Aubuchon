@@ -1,0 +1,8 @@
+.fakeInput {
+    composes: input_base from '@app/components/Field/field.module.css';
+    composes: caret-transparent from global;
+    composes: outline-none from global;
+    composes: py-[12px] from global;
+    composes: h-[40px] from global;
+    composes: focus_border-none from global;
+}

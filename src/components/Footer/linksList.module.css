@@ -1,0 +1,25 @@
+.content p {
+    @apply mb-[15px]
+        text-base
+        lg_text-lg
+        font-semibold
+        text-black;
+}
+
+.content ul {
+    @apply p-0;
+}
+
+.content li {
+    @apply list-none
+        leading-loose
+        !pl-0;
+}
+
+.content li::before {
+    content: none !important;
+}
+
+.content a {
+    @apply no-underline;
+}

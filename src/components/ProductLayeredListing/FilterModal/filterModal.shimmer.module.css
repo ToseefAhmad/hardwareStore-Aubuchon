@@ -1,0 +1,11 @@
+.header {
+    composes: headerRoot from './content.module.css';
+}
+
+.item {
+    composes: trigger from './filterList.module.css';
+}
+
+.footer {
+    composes: root from './footer.module.css';
+}

@@ -1,0 +1,13 @@
+.modal {
+    composes: !overflow-visible from global;
+    composes: top-[106px] from global;
+    composes: right-5 from global;
+    composes: left-5 from global;
+    composes: bottom-auto from global;
+    composes: !rounded-none from global;
+    composes: !bg-transparent from global;
+
+    composes: lg_top-[106px] from global;
+    composes: lg_-translate-y-0 from global;
+    composes: lg_w-[806px] from global;
+}

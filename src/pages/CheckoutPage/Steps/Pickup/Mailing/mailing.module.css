@@ -1,0 +1,61 @@
+.root {
+    composes: grid from global;
+}
+
+.policy {
+    composes: mb-5 from global;
+
+    composes: lg_mb-[23px] from global;
+    composes: lg_flex from global;
+    composes: lg_flex-wrap from global;
+    composes: lg_gap-x-1.25 from global;
+}
+
+.text {
+    composes: inline-block from global;
+    composes: text-xs from global;
+    composes: text-gray-dark from global;
+
+    composes: lg_text-sm from global;
+}
+
+.links {
+    composes: mt-[-2px] from global;
+    composes: grid from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: gap-x-1.25 from global;
+    composes: grid-flow-col from global;
+    composes: text-xs from global;
+    composes: font-semibold from global;
+
+    composes: lg_gap-x-2.5 from global;
+    composes: lg_text-sm from global;
+}
+
+.separator {
+    composes: inline-block from global;
+    composes: w-[6px] from global;
+    composes: h-[2px] from global;
+    composes: rounded-[2px] from global;
+    composes: bg-green from global;
+
+    composes: lg_bg-gray from global;
+}
+
+.fieldRoot {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: !mb-5 from global;
+
+    composes: lg_!mb-2.5 from global; /* stylelint-disable-line */
+}
+
+.shouldTextCheckbox {
+    composes: mb-2 from global;
+    composes: lg_mb-3 from global;
+}
+
+.curbsideRequired {
+    composes: font-bold from global;
+}

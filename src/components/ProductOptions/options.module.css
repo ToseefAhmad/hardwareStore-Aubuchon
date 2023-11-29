@@ -1,0 +1,28 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-5 from global;
+
+    composes: lg_gap-y-7.5 from global;
+}
+
+.item {
+    composes: pb-5 from global;
+    composes: grid from global;
+    composes: gap-y-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pb-7.5 from global;
+}
+
+.optionHeader {
+    composes: h-7 from global;
+
+    composes: lg_h-[26px] from global;
+}
+.colorButton {
+    composes: h-[50px] from global;
+
+    composes: lg_h-[54px] from global;
+}

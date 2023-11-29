@@ -1,0 +1,68 @@
+.root {
+    composes: py-5 from global;
+    composes: lg_p-5 from global;
+    composes: lg_px-7.5 from global;
+    composes: lg_rounded from global;
+
+    composes: xl_bg-gray-light from global;
+    composes: xl_rounded-r-none from global;
+}
+
+.searchBoxRoot {
+    composes: !py-0 from global;
+}
+
+.suggestionsHeading {
+    composes: mb-2.5 from global;
+}
+
+.productSuggestionsHeading {
+    composes: mb-5 from global;
+}
+
+.itemsList {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+}
+
+.itemsListBox {
+    composes: itemsList;
+    composes: gap-[15px] from global;
+    composes: text-base from global;
+}
+
+.listItem {
+    composes: flex from global;
+    composes: justify-between from global;
+}
+
+.suggestedIcon {
+    composes: flex from global;
+    composes: opacity-40 from global;
+}
+
+.bottomBorder {
+    composes: lg_pb-3.75 from global;
+    composes: lg_mb-3.75 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray-light from global;
+    composes: lg_border-b from global;
+    composes: lg_pb-5 from global;
+    composes: lg_mb-5 from global;
+    composes: lg_border-gray from global;
+}
+
+.autocompleteSuggestions {
+    composes: bottomBorder;
+}
+
+.catSuggestions {
+    composes: bottomBorder;
+}
+
+.productSuggestions {
+    composes: p-5 from global;
+    composes: rounded-r from global;
+
+    composes: xxl_px-7.5 from global;
+}

@@ -1,0 +1,174 @@
+.root {
+    composes: w-full from global;
+}
+
+.image {
+    composes: relative from global;
+    composes: w-full from global;
+    composes: h-[147px] from global;
+    composes: object-cover from global;
+
+    composes: lg_mb-5 from global;
+    composes: lg_rounded from global;
+    composes: xl_min-h-[200px] from global;
+    composes: after_block from global;
+    composes: after_absolute from global;
+    composes: after_w-full from global;
+    composes: after_h-full from global;
+    composes: after_inset-0 from global;
+    composes: after_bg-black from global;
+    composes: after_opacity-60 from global;
+    composes: after_content from global;
+    composes: after_lg_hidden from global;
+}
+
+.arrowLink {
+    composes: mt-[-2px] from global;
+}
+
+.arrowButton {
+    composes: root_highPriority from '@app/components/ArrowButton/arrowButton.module.css';
+
+    composes: rounded-t from global;
+    composes: rounded-b from global;
+    composes: min-7 from global;
+    composes: max-7 from global;
+    composes: w-7.5 from global;
+    composes: h-6 from global;
+
+    composes: lg_hidden from global;
+}
+
+.title {
+    composes: grid from global;
+    composes: grid-cols-storeInfoTitle from global;
+    composes: gap-x-3.5 from global;
+    composes: p-5 from global;
+    composes: absolute from global;
+    composes: z-2 from global;
+    composes: text-white from global;
+    composes: text-3xl from global;
+
+    composes: lg_block from global;
+    composes: lg_relative from global;
+    composes: lg_text-black from global;
+    composes: lg_text-6xl from global;
+    composes: lg_w-full from global;
+    composes: lg_p-0 from global;
+    composes: lg_mb-7.5 from global;
+}
+
+.place {
+    composes: leading-7 from global;
+    composes: font-semibold from global;
+}
+
+.content {
+    composes: relative from global;
+    composes: z-2 from global;
+    composes: py-7.5 from global;
+    composes: px-5 from global;
+    composes: grid from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_pt-0 from global;
+    composes: lg_px-0 from global;
+    composes: lg_pb-5 from global;
+    composes: lg_m-0 from global;
+    composes: lg_gap-y-5 from global;
+    composes: lg_bg-white from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-b from global;
+    composes: lg_border-gray-light from global;
+}
+
+.logo {
+    composes: mb-[11px] from global;
+
+    composes: lg_mb-0 from global;
+}
+
+.address {
+    composes: relative from global;
+    composes: leading-7 from global;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: -left-7.5 from global;
+    composes: top-2/4 from global;
+    composes: -translate-y-2/4 from global;
+    composes: text-primary from global;
+}
+
+.iconClock {
+    composes: icon;
+    composes: w-4 from global;
+    composes: h-4 from global;
+}
+
+.buttonWrap {
+    composes: lg_mb-2.5 from global;
+}
+
+.status {
+    composes: relative from global;
+}
+
+:global(#root) .storeStatus > p {
+    @apply text-sm
+        leading-7
+        lg_text-base;
+}
+
+.fields {
+    composes: ml-7.5 from global;
+    composes: grid from global;
+    composes: gap-y-2.5 from global;
+    composes: leading-7 from global;
+
+    composes: lg_gap-y-5 from global;
+}
+
+.phone {
+    composes: relative from global;
+}
+
+.mail {
+    composes: relative from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-3 from global;
+}
+
+.link {
+    composes: text-black from global;
+    composes: underline from global;
+
+    composes: lg_hover_text-primary from global;
+
+    text-underline-offset: 1px !important;
+}
+
+.buttonPrimary {
+    composes: primary from '@app/components/Button/button.module.css';
+
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-0 from global;
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.buttonSecondary {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.root :global strong {
+    @apply text-black;
+}
+
+.titleOnly {
+    composes: grid-cols-none from global;
+}

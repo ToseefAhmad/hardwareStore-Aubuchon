@@ -1,0 +1,27 @@
+.header {
+    composes: mb-5 from global;
+    composes: flex-shrink-0 from global;
+}
+
+.currentStoreBlock {
+    composes: lg_hidden from global;
+    composes: mb-5 from global;
+    composes: flex-shrink-0 from global;
+}
+
+.locationInput {
+    composes: mb-3.75 from global;
+    composes: flex-shrink-0 from global;
+}
+
+.list {
+    composes: overflow-y-auto from global;
+    composes: h-250 from global;
+}
+
+.footer {
+    composes: hidden from global;
+    composes: lg_block from global;
+    composes: mt-5 from global;
+    composes: flex-shrink-0 from global;
+}

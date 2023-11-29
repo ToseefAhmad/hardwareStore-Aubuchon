@@ -1,0 +1,71 @@
+.root {
+    composes: p-0 from global;
+    composes: inline-block from global;
+    composes: justify-self-center from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: w-full from global;
+}
+
+.root_open {
+    composes: root;
+    composes: inline-block from global;
+    composes: w-auto from global;
+    composes: flex-grow from global;
+    composes: z-1 from global;
+}
+
+.form {
+    composes: flex from global;
+    composes: items-center from global;
+    composes: w-full from global;
+}
+
+.container {
+    composes: relative from global;
+    composes: inline-flex from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: w-full from global;
+}
+
+.search {
+    composes: flex from global;
+    composes: flex-grow from global;
+}
+
+.fakeInput {
+    composes: input_base from '@app/components/Field/field.module.css';
+    composes: caret-transparent from global;
+    composes: outline-none from global;
+    composes: py-[12px] from global;
+    composes: h-[40px] from global;
+    composes: focus_border-none from global;
+}
+
+.search :global [class*='fieldIcons-root'] {
+    @apply w-full;
+}
+
+.search :global [class*='fieldIcons-icon'] {
+    @apply !right-0
+        flex
+        items-center
+        justify-center
+        w-10
+        h-[38px]
+        bg-gray-light
+        rounded-t-none
+        rounded-r-[6px]
+        rounded-b-[6px]
+        rounded-l-none
+        lg_w-12.5
+        lg_h-[48px]
+        lg_bg-transparent
+        lg_rounded
+        lg_cursor-pointer;
+}
+
+.search :global input::placeholder {
+    @apply text-gray-dark;
+}

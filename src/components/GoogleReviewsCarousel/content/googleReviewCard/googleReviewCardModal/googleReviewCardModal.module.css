@@ -1,0 +1,94 @@
+.image {
+    composes: h-[44px] from global;
+    composes: w-[44px] from global;
+}
+
+.info {
+    composes: flex from global;
+}
+
+.review {
+    composes: ml-2.5 from global;
+}
+
+.reviewerName {
+    composes: w-[169px] from global;
+    composes: whitespace-nowrap from global;
+    composes: overflow-hidden from global;
+    text-overflow: ellipsis;
+}
+.reviewStars {
+    composes: flex from global;
+    composes: items-center from global;
+}
+
+.starColorFilled {
+    composes: text-orange from global;
+}
+.createdAt {
+    composes: ml-2.5 from global;
+    composes: text-xs from global;
+    composes: text-gray-silver from global;
+}
+
+.googleInfo {
+    composes: mt-auto from global;
+}
+
+.readMore {
+    composes: mt-auto from global;
+    composes: mr-auto from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: relative from global;
+
+    composes: before_w-full from global;
+    composes: before_h-[1px] from global;
+    composes: before_absolute from global;
+    composes: before_bottom-px from global;
+    composes: before_border-b from global;
+    composes: before_border-dashed from global;
+    composes: before_border-b-black from global;
+    composes: before_opacity-30 from global;
+}
+
+.posted {
+    composes: mt-3 from global;
+    composes: flex from global;
+}
+
+.postedText {
+    composes: ml-1.25 from global;
+    composes: gray-dark from global;
+    composes: font-roboto from global;
+    composes: text-xs from global;
+}
+
+.modal {
+    composes: fixed from global;
+    composes: inset-0 from global;
+    composes: z-50 from global;
+    composes: overflow-hidden from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: content-start from global;
+    composes: bg-white from global;
+    composes: w-[90%] from global;
+    composes: lg_max-w-[1000px] from global;
+    composes: top-1/2 from global;
+    composes: left-1/2 from global;
+    composes: transform from global;
+    composes: -translate-x-1/2 from global;
+    composes: -translate-y-1/2 from global;
+    composes: m-x-auto from global;
+    composes: p-5 from global;
+    composes: h-fit from global;
+    composes: rounded from global;
+
+    composes: lg_p-12.5 from global;
+    composes: max-h-simpleModalLg from global;
+}
+
+.modalComment {
+    composes: mt-3 from global;
+}

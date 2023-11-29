@@ -1,0 +1,33 @@
+.secondaryLink {
+    composes: link-secondary from global;
+}
+
+.btnBase {
+    composes: tall from '@app/components/Button/button.module.css';
+    composes: inline-grid from global;
+    composes: place-content-center from global;
+    composes: text-center from global;
+    composes: no-underline from global;
+}
+
+.primaryBtn {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: btnBase;
+    composes: hover_text-white from global;
+    composes: hover_no-underline from global;
+    composes: focus_text-white from global;
+    composes: focus_no-underline from global;
+}
+
+.secondaryBtn {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: btnBase;
+    composes: hover_no-underline from global;
+    composes: focus_no-underline from global;
+}
+
+.disabled {
+    composes: disabled from '@app/components/Button/button.module.css';
+    composes: btnBase;
+    composes: pointer-events-none from global;
+}

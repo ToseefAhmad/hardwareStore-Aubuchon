@@ -1,0 +1,11 @@
+.root figure {
+    @apply my-4;
+}
+
+.root ul {
+    @apply list-unordered;
+}
+
+.root ol {
+    @apply list-ordered;
+}

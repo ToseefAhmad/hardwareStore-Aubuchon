@@ -1,0 +1,5 @@
+.root {
+    composes: text-black from global;
+    composes: text-left from global;
+    composes: font-normal from global;
+}

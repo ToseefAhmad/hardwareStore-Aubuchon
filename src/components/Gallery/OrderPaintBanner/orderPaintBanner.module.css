@@ -1,0 +1,119 @@
+.root {
+    composes: relative from global;
+    composes: overflow-hidden from global;
+    composes: rounded from global;
+    composes: w-full from global;
+
+    composes: before_absolute from global;
+    composes: before_top-[-164px] from global;
+    composes: before_right-[-365px] from global;
+    composes: before_transform from global;
+    composes: before_rotate-[-150deg] from global;
+    composes: before_w-[526px] from global;
+    composes: before_h-[358px] from global;
+    composes: before_bg-no-repeat from global;
+    composes: before_bg-cover from global;
+    composes: before_bg-paint-selection-swatch from global;
+
+    composes: xl_before_-top-14 from global;
+    composes: xl_before_right-[-210px] from global;
+    composes: xl_before_-rotate-45 from global;
+
+    composes: xxl_before_top-[-83px] from global;
+    composes: xxl_before_right-[-130px] from global;
+
+    composes: xxxl_before_right-[-113px] from global;
+}
+
+.content :global(.blockTitle) {
+    @apply text-white
+        mb-1.25
+        w-full
+        xxl_mb-[11px];
+}
+
+.content :global(.blockDescription) {
+    @apply text-white
+        text-opacity-80
+        xl_mt-0.5;
+}
+
+.content :global(strong) {
+    @apply text-white
+        text-opacity-80
+        font-semibold;
+}
+
+.content button {
+    @apply w-[132px]
+        h-10
+        bg-white
+        font-semibold
+        rounded
+        grid
+        items-center
+        justify-center
+        m-0
+        mt-3.75
+        cursor-pointer
+        lg_w-[162px]
+        lg_h-[54px]
+        lg_hover_bg-gray
+        lg_active_outline-none
+        lg_focus_outline-none
+        lg_active_bg-black
+        lg_active_text-white
+        xl_mt-4;
+}
+
+.content button {
+    @apply no-underline;
+}
+
+:global(.blockRow) {
+    @apply mb-0;
+}
+
+:global(.blockRow) > div {
+    @apply px-5
+        pt-0.5
+        pb-5
+        h-[341px]
+        md_h-[300px]
+        lg_h-[380px]
+        lg_pl-12.5
+        lg_py-7.5
+        xl_pr-[60px]
+        xl_h-[300px]
+        xxl_h-[280px]
+        xxxxl_h-[225px];
+}
+
+:global(.blockRow) :global(.pagebuilder-column) {
+    @apply !w-full
+        xl_first_!w-1/2
+        xxxxl_first_!w-1/3;
+}
+
+:global(.blockRow) :global([class*='columnGroup-root']) {
+    @apply flex-col
+        xl_flex-row-reverse
+        xl_justify-between gap-0;
+}
+
+:global(.blockRow) figure {
+    @apply xl_self-end
+        mt-auto
+        lg_pb-2
+        xl_absolute
+        xl_top-1/2
+        xl_-translate-y-1/2;
+}
+
+:global(.blockRow) img {
+    @apply w-[85px]
+        h-20
+        z-3
+        xl_w-[168px]
+        xl_h-[160px];
+}

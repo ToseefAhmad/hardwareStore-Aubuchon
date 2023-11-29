@@ -1,0 +1,34 @@
+.content {
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: p-5 from global;
+    composes: h-full from global;
+    composes: text-white from global;
+    composes: text-xs from global;
+    composes: text-center from global;
+    composes: font-semibold from global;
+}
+
+.points {
+    composes: text-xl from global;
+    composes: xl_text-4xl from global;
+}
+
+.paragraph {
+    composes: opacity-90 from global;
+    composes: text-xs from global;
+}
+
+.bgCircle {
+    composes: stroke-current from global;
+    composes: text-white from global;
+    composes: opacity-50 from global;
+}
+
+.progressCircle {
+    composes: stroke-current from global;
+    composes: text-white from global;
+    composes: transition-all from global;
+    composes: duration-1000 from global;
+    composes: ease-in-out from global;
+}

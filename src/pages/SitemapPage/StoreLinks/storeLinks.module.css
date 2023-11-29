@@ -1,0 +1,25 @@
+.title {
+    composes: title from '@app/components/Accordion/section.module.css';
+    composes: text-black from global;
+    composes: text-base from global;
+    composes: text-left from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-lg from global;
+}
+
+.body {
+    composes: root from '@app/components/Accordion/section.module.css';
+    composes: w-full from global;
+}
+
+.linksList {
+    composes: first_mt-5 from global;
+}
+
+.link {
+    composes: text-sm from global;
+    composes: block from global;
+
+    composes: lg_text-base from global;
+}

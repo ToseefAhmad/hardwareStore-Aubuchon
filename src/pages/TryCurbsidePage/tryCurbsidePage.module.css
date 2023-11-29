@@ -1,0 +1,47 @@
+.root {
+    composes: max-w-250 from global;
+    composes: mx-auto from global;
+    composes: pt-5 from global;
+    composes: pb-7.5 from global;
+
+    composes: lg_pt-7.5 from global;
+    composes: lg_pb-17.5 from global;
+}
+
+.textContainer {
+    composes: mb-5 from global;
+
+    composes: lg_grid from global;
+    composes: lg_justify-items-center from global;
+    composes: lg_mb-12.5 from global;
+}
+
+.button {
+    composes: h-12.5 from global;
+    composes: lg_h-14 from global;
+}
+
+.title {
+    composes: text-xl from global;
+
+    composes: lg_mb-1.25 from global;
+    composes: lg_text-4xl from global;
+}
+
+.buttonWrapper {
+    composes: mt-5 from global;
+
+    composes: lg_mt-12.5 from global;
+    composes: lg_w-64 from global;
+}
+
+.discount {
+    composes: font-semibold from global;
+}
+
+.finePrint {
+    composes: mt-2 from global;
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}

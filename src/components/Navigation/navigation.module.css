@@ -1,0 +1,122 @@
+.transition {
+    composes: transition-all from global;
+    composes: duration-300 from global;
+    composes: ease-menu from global;
+}
+
+.open {
+    composes: transition;
+
+    composes: duration-400 from global;
+    composes: !translate-x-0 from global;
+}
+
+.hidden {
+    composes: opacity-0 from global;
+    composes: invisible from global;
+}
+
+.visible {
+    composes: !opacity-100 from global;
+    composes: !visible from global;
+}
+
+.root {
+    composes: transition hidden;
+
+    composes: fixed from global;
+    composes: top-0 from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: z-20 from global;
+    composes: h-full from global;
+    composes: grid from global;
+    composes: grid-rows-nav from global;
+    composes: w-full from global;
+    composes: max-w-[94.668%] from global;
+    composes: text-lg from global;
+    composes: overflow-hidden from global;
+    composes: rounded-tr-[20px] from global;
+    composes: -translate-x-full from global;
+    composes: bg-white from global;
+
+    composes: lg_max-w-[600px] from global;
+    composes: lg_rounded-none from global;
+}
+
+.rootOpen {
+    composes: root transition visible open;
+}
+
+.header {
+    composes: relative from global;
+    composes: z-1 from global;
+    composes: px-[11px] from global;
+    composes: pt-5 from global;
+    composes: pb-3 from global;
+    composes: grid from global;
+    composes: gap-x-2.5 from global;
+    composes: content-center from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-navHeader from global;
+    composes: w-full from global;
+    composes: bg-white from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+
+    composes: lg_pt-12.5 from global;
+    composes: lg_px-10 from global;
+    composes: lg_pb-5 from global;
+}
+
+.headerRoot {
+    composes: header;
+
+    composes: pl-[19px] from global;
+    composes: !grid-cols-menuItem from global;
+
+    composes: lg_pl-12.5 from global;
+}
+
+.body {
+    composes: transition visible;
+
+    composes: relative from global;
+    composes: h-full from global;
+    composes: overflow-hidden from global;
+}
+
+.linksList {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: bg-white from global;
+    composes: overflow-auto from global;
+    composes: transition-all from global;
+    composes: duration-400 from global;
+}
+
+.linksList :global p {
+    @apply hidden;
+}
+
+.linksList :global li {
+    @apply !px-5
+        py-[17px]
+        grid
+        grid-cols-menuItem
+        gap-x-2.5
+        items-center
+        font-medium
+        text-base
+        border-b
+        border-solid
+        border-gray-lightest
+        lg_text-lg
+        lg_py-5
+        lg_!px-12.5;
+}

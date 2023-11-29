@@ -1,0 +1,27 @@
+.root {
+    composes: mb-7.5 from global;
+
+    composes: lg_mb-17.5 from global;
+}
+
+.rootMarginTop {
+    composes: mt-5 from global;
+
+    composes: lg_mt-17.5 from global;
+}
+
+.title {
+    composes: text-center from global;
+}
+
+.reviewInfo {
+    composes: mt-5 from global;
+
+    composes: lg_mt-7.5 from global;
+}
+
+.reviews {
+    composes: mt-5 from global;
+
+    composes: lg_mt-7 from global;
+}

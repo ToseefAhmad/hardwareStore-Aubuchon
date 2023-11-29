@@ -1,0 +1,14 @@
+.root {
+    composes: relative from global;
+    composes: pl-5.5 from global;
+    composes: lg_pl-[27px] from global;
+    composes: before_block from global;
+    composes: before_absolute from global;
+    composes: before_left-0 from global;
+    composes: before_top-2 from global;
+    composes: before_bg-primary from global;
+    composes: before_w-0.5 from global;
+    composes: before_h-5 from global;
+    composes: before_rounded from global;
+    composes: lg_before_h-7.5 from global;
+}

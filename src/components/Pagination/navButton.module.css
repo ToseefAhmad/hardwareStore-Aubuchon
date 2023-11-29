@@ -1,0 +1,26 @@
+.base {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: h-[40px] from global;
+    composes: lg_h-[44px] from global;
+    composes: min-w-[80px] from global;
+}
+
+.root {
+    composes: base;
+    composes: secondary from '../Button/button.module.css';
+}
+
+.root_disabled {
+    composes: base;
+    composes: disabled from '../Button/button.module.css';
+}
+
+.icon {
+    composes: root from '../Icon/icon.module.css';
+}
+
+.icon_disabled {
+    composes: icon;
+}

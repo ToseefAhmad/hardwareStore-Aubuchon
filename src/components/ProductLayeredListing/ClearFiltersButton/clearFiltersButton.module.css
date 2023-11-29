@@ -1,0 +1,6 @@
+.secondary {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: !px-3.75 from global;
+    composes: lg_w-auto from global;
+}

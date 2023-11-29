@@ -1,0 +1,84 @@
+/* Base theme styles */
+@layer base {
+    /* Fix for useScrollLock; 100% height for Safari */
+    html[data-scroll-lock='true'] {
+        @apply overflow-hidden h-full left-0 right-0;
+    }
+
+    /* Fix for useScrollLock for touch devices */
+    html[data-scroll-lock='true'] > body {
+        touch-action: none;
+
+        /* Fix page shift when scroll bar is hidden */
+        @apply lg_w-[calc(100vw-var(--scrollBarWidth))];
+    }
+
+    body {
+        @apply font-sans
+            text-gray-dark
+            text-sm
+            lg_text-base;
+
+        /* Take default scroll bar width variable or set 0px instead */
+        /* stylelint-disable-next-line length-zero-no-unit, custom-property-pattern */
+        --scrollBarWidth: var(--global-scrollbar-width, 0px);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply text-black
+            font-semibold;
+    }
+
+    h1 {
+        @apply text-3xl
+            lg_text-6xl;
+    }
+
+    h2 {
+        @apply text-2xl
+            lg_text-5xl;
+    }
+
+    h3 {
+        @apply text-xl
+            lg_text-4xl;
+    }
+
+    h4 {
+        @apply text-base
+            lg_text-lg;
+    }
+
+    h5 {
+        @apply text-sm
+            lg_text-base;
+    }
+
+    a {
+        @apply link-primary;
+    }
+
+    strong {
+        @apply text-primary
+            font-bold;
+    }
+
+    p {
+        @apply text-sm
+            md_text-base;
+    }
+
+    ::-webkit-scrollbar {
+        @apply w-1.5
+            h-1.5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-black-light
+            rounded-[3px];
+    }
+}

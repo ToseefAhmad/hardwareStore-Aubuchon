@@ -1,0 +1,9 @@
+.content {
+    composes: content from '@app/components/Button/button.module.css';
+
+    composes: gap-x-[15px] from global;
+}
+
+.icon {
+    composes: text-primary from global;
+}

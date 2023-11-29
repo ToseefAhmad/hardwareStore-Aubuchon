@@ -1,0 +1,22 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+}
+
+.infoText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-2.5 from global;
+    composes: text-primary from global;
+    composes: font-semibold from global;
+}
+
+.label {
+    composes: text-sm from global;
+    composes: leading-7 from global;
+    composes: capitalize from global;
+
+    composes: lg_text-base from global;
+}

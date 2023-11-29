@@ -1,0 +1,524 @@
+.root {
+    composes: pt-3.75 from global;
+    composes: xl_pt-5 from global;
+    composes: xl_grid from global;
+    composes: xl_grid-flow-row from global;
+    composes: xl_grid-cols-2 from global;
+    composes: xl_gap-x-[100px] from global;
+    composes: xl_items-start from global;
+    composes: xl_px-[100px] from global;
+    composes: xl_pb-[70px] from global;
+
+    grid-template-areas:
+        'images form'
+        'images details'
+        'images .';
+}
+
+.form {
+    grid-area: form;
+    composes: relative from global;
+}
+
+.breadcrumbsMobile {
+    composes: absolute from global;
+    composes: top-[-7px] from global;
+    composes: left-5 from global;
+    composes: z-10 from global;
+}
+
+.zoomIn {
+    composes: absolute from global;
+    composes: rounded from global;
+    composes: bg-gray-light from global;
+    composes: py-1 from global;
+    composes: px-1.75 from global;
+    composes: top-5 from global;
+    composes: right-5 from global;
+    composes: cursor-pointer from global;
+}
+
+.zoomInIcon {
+    composes: text-black from global;
+    composes: opacity-40 from global;
+}
+
+.imageCarousel {
+    grid-area: images;
+    composes: relative from global;
+}
+
+.imageCarouselMobile {
+    composes: full-bleed from global;
+    composes: relative from global;
+    composes: w-screen from global;
+    composes: mb-5 from global;
+    composes: border-t from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+}
+
+.formErrors {
+    grid-area: errors;
+}
+
+.storeInfo {
+    composes: mt-5 from global;
+    composes: xl_mt-7.5 from global;
+}
+
+.details {
+    composes: my-7.5 from global;
+    composes: xl_mb-0 from global;
+
+    grid-area: details;
+}
+
+/* Specifications Tab styles */
+.specificationsList {
+    composes: pt-0.5 from global;
+    composes: lg_pt-0 from global;
+    composes: list-unordered from global;
+    composes: lg_grid from global;
+    composes: lg_grid-cols-2 from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_gap-y-1.25 from global;
+}
+
+.specificationsItem {
+    composes: leading-7 from global;
+    composes: lg_text-base from global;
+}
+
+.specificationsItemValue {
+    composes: font-semibold from global;
+}
+
+/* Product Details Tab styles */
+.detailsTabContent p {
+    @apply mb-2.5
+        text-sm
+        lg_mb-5
+        lg_text-base;
+}
+
+.detailsTabContent ul {
+    @apply list-none
+        p-0
+        text-sm
+        lg_text-base;
+}
+
+.detailsTabContent li {
+    @apply relative
+        pl-[23px]
+        before_absolute
+        before_left-0
+        before_top-[0.688rem]
+        before_w-2
+        before_h-0.5
+        before_bg-primary
+        before_block
+        lg_before_top-3;
+}
+
+/* Ad Products Styles */
+.adContainer {
+    composes: full-bleed from global;
+    composes: relative from global;
+    composes: pl-5 from global;
+    composes: pt-3.75 from global;
+    composes: h-[203px] from global;
+}
+
+.adContainerFadingPadding {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: right-0 from global;
+    composes: w-5 from global;
+    composes: h-full from global;
+    composes: bg-gradient-to-l from global;
+    composes: from-white from global;
+}
+
+.adTitle {
+    composes: leading-7 from global;
+    composes: pb-5 from global;
+}
+
+.adProductImageContainer {
+    composes: imageContainer from '@app/components/ProductCard/productCard.module.css';
+    composes: w-[140px] from global;
+    composes: h-[140px] from global;
+}
+
+.adProductAddToCartButton {
+    composes: hidden from global;
+}
+
+/* Styles for Price, SKU, Reviews, Quantity, Title and call to action block */
+.topInfoBlock {
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: justify-start from global;
+    composes: gap-x-[21px] from global;
+    composes: gap-y-1.25 from global;
+    composes: lg_gap-x-7.5 from global;
+    composes: min-h-5 from global;
+    composes: lg_min-h-6 from global;
+    composes: text-xs from global;
+    composes: lg_text-sm from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+}
+
+.divider {
+    composes: after_relative from global;
+    composes: after_inline-block from global;
+    composes: after_w-px from global;
+    composes: after_h-2.5 from global;
+    composes: after_bg-gray from global;
+}
+
+.sku {
+    composes: divider;
+    composes: after_top-px from global;
+    composes: after_right-[-11px] from global;
+    composes: lg_after_right-[-15px] from global;
+}
+
+.brand {
+    composes: whitespace-nowrap from global;
+}
+
+.brandWithDivider {
+    composes: brand;
+
+    composes: divider;
+    composes: after_left-[11px] from global;
+    composes: lg_after_left-[15px] from global;
+    composes: after_top-px from global;
+}
+
+.title {
+    composes: pt-2.5 from global;
+    composes: lg_pt-5 from global;
+    composes: pb-5 from global;
+    composes: lg_pb-7.5 from global;
+}
+
+.pricesWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-2.5 from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: lg_pb-7.5 from global;
+}
+
+.price {
+    composes: text-2xl from global;
+    composes: lg_text-4xl from global;
+    composes: font-medium from global;
+}
+
+.regularPrice {
+    composes: price;
+    composes: text-black from global;
+}
+
+.discountedPrice {
+    composes: price;
+    composes: text-orange from global;
+}
+
+.crossedPrice {
+    composes: lg_text-xl from global;
+    composes: text-gray-dark from global;
+    composes: line-through from global;
+}
+
+.currency {
+    composes: mr-1 from global;
+}
+
+.quantity {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+}
+
+.addedPriceWrapper {
+    composes: max-w-[140px] from global;
+    composes: mr-auto from global;
+}
+
+.addToCartWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: lg_gap-2.5 from global;
+    composes: grid-cols-productFullDetailAddToCartMobile from global;
+    composes: lg_grid-cols-productFullDetailAddToCartDesktop from global;
+}
+
+.addToCartWrapperOption {
+    composes: addToCartWrapper;
+    composes: lg_grid-cols-productFullDetailAddToCartMobile from global;
+}
+
+.addButtonContent {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: gap-2.5 from global;
+    composes: xl_gap-3.75 from global;
+}
+
+/* Quantity selector styles */
+.quantityRoot {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-cols-productFullDetailsQuantity from global;
+    composes: lg_grid-cols-3 from global;
+    composes: items-center from global;
+    composes: h-[40px] from global;
+    composes: lg_h-[54px] from global;
+}
+
+.quantityRootOption {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-cols-productFullDetailsQuantity from global;
+    composes: items-center from global;
+    composes: h-[40px] from global;
+}
+
+.quantityButton {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: text-white from global;
+    composes: lg_text-black from global;
+    composes: lg_text-opacity-40 from global;
+    composes: bg-primaryHover from global;
+    composes: lg_bg-gray-light from global;
+
+    composes: lg_hover_text-opacity-100 from global;
+    composes: hover_bg-primaryActive from global;
+    composes: lg_hover_bg-gray from global;
+    composes: focus_outline-none from global;
+    composes: disabled_text-opacity-40 from global;
+    composes: disabled_hover_text-opacity-40 from global;
+    composes: disabled_hover_bg-primaryHover from global;
+    composes: lg_disabled_hover_bg-gray-light from global;
+    composes: disabled_cursor-not-allowed from global;
+}
+
+.quantityButtonOption {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: text-white from global;
+    composes: bg-primaryHover from global;
+    composes: hover_bg-primaryActive from global;
+    composes: focus_outline-none from global;
+    composes: disabled_text-opacity-40 from global;
+    composes: disabled_hover_text-opacity-40 from global;
+    composes: disabled_hover_bg-primaryHover from global;
+    composes: disabled_cursor-not-allowed from global;
+}
+
+.quantityButton_decrement {
+    composes: quantityButton;
+    composes: rounded-l from global;
+}
+
+.quantityButtonOption_decrement {
+    composes: quantityButtonOption;
+    composes: rounded-l from global;
+}
+
+.quantityButton_increment {
+    composes: quantityButton;
+    composes: rounded-r from global;
+}
+
+.quantityButtonOption_increment {
+    composes: quantityButtonOption;
+    composes: rounded-r from global;
+}
+
+.quantityInput {
+    composes: rounded-none from global;
+    composes: w-full from global;
+    composes: h-[40px] from global;
+    composes: lg_h-[54px] from global;
+    composes: text-center from global;
+    composes: lg_leading-[30px] from global;
+    composes: font-semibold from global;
+    composes: lg_font-normal from global;
+    composes: text-white from global;
+    composes: lg_text-black from global;
+    composes: bg-primary from global;
+    composes: lg_bg-gray-light from global;
+    composes: pointer-events-none from global;
+    composes: lg_pointer-events-auto from global;
+}
+
+.quantityInputOption {
+    composes: rounded-none from global;
+    composes: w-full from global;
+    composes: h-[40px] from global;
+    composes: text-center from global;
+    composes: font-semibold from global;
+    composes: text-white from global;
+    composes: bg-primary from global;
+    composes: pointer-events-none from global;
+}
+
+/* Available store info */
+.availableInfo {
+    composes: relative from global;
+    composes: mt-12 from global;
+    composes: mb-7.5 from global;
+    composes: py-[25px] from global;
+    composes: pl-[24px] from global;
+    composes: pr-2.5 from global;
+    composes: grid from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_mt-3 from global;
+    composes: lg_mb-7.5 from global;
+    composes: lg_py-[35px] from global;
+    composes: lg_pl-[50px] from global;
+    composes: lg_pr-5 from global;
+}
+
+.availableInfoBoss {
+    composes: availableInfo;
+    composes: lg_!pl-[52px] from global; /* stylelint-disable-line */
+}
+
+.availableInfoShimmer {
+    composes: availableInfo;
+
+    composes: !p-0 from global;
+    composes: !border-none from global;
+}
+
+.storeName {
+    composes: absolute from global;
+    composes: -top-4.5 from global;
+    composes: left-4 from global;
+    composes: px-1.25 from global;
+    composes: text-lg from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: leading-8 from global;
+    composes: bg-white from global;
+
+    composes: lg_left-7.5 from global;
+    composes: lg_px-5 from global;
+    composes: lg_text-xl from global;
+}
+
+.availableInfoTypographyBase {
+    composes: text-sm from global;
+    composes: text-black from global;
+
+    composes: lg_text-base from global;
+}
+
+.availableInfoRoot {
+    composes: grid from global;
+    composes: gap-x-1.25 from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_flex from global;
+    composes: lg_flex-wrap from global;
+    composes: lg_gap-x-3.75 from global;
+}
+
+.link {
+    composes: availableInfoTypographyBase;
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-max-content from global;
+    composes: items-center from global;
+    composes: gap-3.75 from global;
+    composes: !font-normal from global;
+}
+
+.stock {
+    composes: availableInfoTypographyBase;
+
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-start from global;
+    composes: gap-x-2 from global;
+    composes: after_hidden from global;
+    composes: after_w-[1px] from global;
+    composes: after_my-[7px] from global;
+    composes: after_h-2.5 from global;
+    composes: after_bg-gray from global;
+    composes: after_content-box from global;
+
+    composes: lg_after_block from global;
+    composes: lg_after_my-2 from global;
+    composes: lg_!gap-x-3.75 from global; /* stylelint-disable-line */
+}
+
+.paragraph {
+    composes: availableInfoTypographyBase;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: left-[-26px] from global;
+    composes: h-6 from global;
+    composes: text-primary from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.stockInfo {
+    composes: availableInfoTypographyBase;
+
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-max-content from global;
+    composes: gap-x-2.5 from global;
+
+    composes: lg_gap-x-3.75 from global;
+}
+
+.notInStock {
+    composes: !gap-x-2 from global;
+
+    composes: lg_!gap-x-3.75 from global; /* stylelint-disable-line */
+}
+
+.storeNameShimmer {
+    composes: storeName;
+
+    composes: !py-0 from global;
+    composes: h-8 from global;
+    composes: w-[120px] from global;
+
+    composes: lg_h-[34px] from global;
+    composes: lg_w-[150px] from global;
+}
+
+.zooming {
+    composes: block from global;
+}
+
+.notZooming {
+    composes: hidden from global;
+}

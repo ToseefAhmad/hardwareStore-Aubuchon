@@ -1,0 +1,11 @@
+.imageList {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: place-content-center from global;
+    composes: auto-cols-checkoutFooterPaymentsMobile from global;
+    composes: h-full from global;
+    composes: gap-0.5 from global;
+
+    composes: lg_auto-cols-checkoutFooterPayments from global;
+    composes: lg_gap-1.25 from global;
+}

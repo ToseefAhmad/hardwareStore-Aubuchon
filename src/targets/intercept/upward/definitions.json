@@ -1,0 +1,57 @@
+{
+    "staticFromRoot": {
+        "inline": {
+            "body": {
+                "file": {
+                    "template": {
+                        "inline": "./assets/{{ filename }}"
+                    }
+                }
+            }
+        }
+    },
+    "veniaSecurityHeaders": {
+        "inline": {
+            "content-security-policy": {
+                "template": {
+                    "when": {
+                        "1": {
+                            "use": {
+                                "inline": "loaded from ./csp.json"
+                            }
+                        }
+                    },
+                    "default": {
+                        "inline": "script-src http: https: {{ backend }}; style-src 'self' blob: https: 'unsafe-inline' {{ backend }}; img-src data: http: https:; object-src 'none'; base-uri 'none'; child-src 'self'; font-src 'self' use.typekit.net; frame-src assets.braintreegateway.com *.google.com *.youtube.com *.youtu.be *.vimeo.com *.userway.org"
+                    }
+                }
+            }
+        }
+    },
+    "veniaAppShell": {
+        "inline": {
+            "headers": {
+                "inline": {
+                    "upward-response": {
+                        "inline": "true"
+                    },
+                    "cache-control": {
+                        "inline": "s-maxage=7200"
+                    }
+                }
+            },
+            "body": {
+                "provide": {
+                    "storeConfig": "storeConfig.value",
+                    "brandList": "brandList.value",
+                    "pickupStoreList": "pickupStoreList.value",
+                    "facebookPixelId": "facebookPixelId.value",
+                    "gtmId": "gtmId.value",
+                    "gtmConfig": "gtmConfig.value",
+                    "logRocketApiKey": "logRocketApiKey.value",
+                    "pickupStore": "pickupStore.value"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.root {
+    composes: full-bleed from global;
+    composes: lg_px-[100px] from global;
+}
+
+/* to stretch background for full screen width for large screens */
+@media screen and (min-width: 1926px) {
+    :global([class^='main-page-']) {
+        overflow-x: visible;
+    }
+}
+
+.related {
+    composes: full-bleed from global;
+    composes: max-w-[1926px] from global;
+    composes: lg_!w-[112%] from global; /* stylelint-disable-line */
+    composes: pt-7.5 from global;
+    composes: pb-2.5 from global;
+    composes: lg_py-[70px] from global;
+    composes: px-5 from global;
+    composes: lg_px-[100px] from global;
+}
+
+.related [class*='carousel-root'] {
+    @apply lg_!auto-cols-[269px]
+        !auto-cols-[165px]
+        no-underline;
+}
+
+.relatedShimmerRoot {
+    composes: related;
+    composes: pt-0 from global;
+    composes: h-[485px] from global;
+    composes: lg_h-auto from global;
+}
+
+.relatedTitle {
+    composes: mb-5 from global;
+    composes: xl_mb-[50px] from global;
+    composes: text-center from global;
+    composes: text-2xl from global;
+    composes: lg_text-6xl from global;
+    composes: lg_leading-[48px] from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+}
+
+.arrowRoot {
+    composes: root from 'src/pageBuilder/ContentTypes/Products/products.module.css';
+}
+
+.disabled {
+    composes: disabled from 'src/pageBuilder/ContentTypes/Products/products.module.css';
+}
+
+.root_isInverted {
+    composes: root_isInverted from 'src/pageBuilder/ContentTypes/Products/products.module.css';
+}
+
+.disabled_isInverted {
+    composes: disabled_isInverted from 'src/pageBuilder/ContentTypes/Products/products.module.css';
+}

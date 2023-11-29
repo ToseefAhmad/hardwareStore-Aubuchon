@@ -1,0 +1,132 @@
+.root {
+    composes: hidden from global;
+    composes: group from global;
+
+    composes: lg_flex from global;
+}
+
+.rootMobileContainer {
+    composes: absolute from global;
+    composes: top-[-60px] from global;
+    composes: right-5 from global;
+    composes: left-5 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: pointer-events-none from global;
+}
+
+.rootMobile_base {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: h-[50px] from global;
+    composes: bg-primary from global;
+    composes: hover_primaryHover from global;
+    composes: rounded-full from global;
+    composes: pointer-events-auto from global;
+
+    composes: transition-width from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}
+
+.rootMobile {
+    composes: rootMobile_base;
+    composes: justify-self-end from global;
+    composes: w-[50px] from global;
+}
+
+.rootMobile_expanded {
+    composes: rootMobile_base;
+    composes: justify-self-end from global;
+    composes: gap-3.75 from global;
+    composes: w-full from global;
+}
+
+.mobileCartTriggerText {
+    composes: text-white from global;
+    composes: font-semibold from global;
+    composes: truncate from global;
+}
+
+.trigger {
+    composes: clickable from global;
+    composes: mx-[10px] from global;
+    composes: z-1 from global;
+
+    composes: lg_mx-0 from global;
+}
+
+.icon {
+    composes: pr-[15px] from global;
+    composes: text-primary from global;
+}
+
+.info {
+    composes: w-[82px] from global;
+    composes: text-left from global;
+}
+
+.text {
+    composes: text-xs from global;
+}
+
+.amountWrapper {
+    composes: m-0 from global;
+    composes: grid from global;
+    composes: grid-cols-repeat-3-max from global;
+    composes: items-baseline from global;
+    composes: gap-x-1 from global;
+    composes: min-w-0 from global;
+    composes: font-semibold from global;
+}
+
+.amount {
+    composes: text-primary from global;
+}
+
+.amountAubuchon {
+    composes: text-orange from global;
+}
+
+.chevronIcon {
+    composes: inline-block from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_group-hover_text-opacity-100 from global;
+}
+
+.mobileIcon {
+    composes: text-white from global;
+}
+
+.mobileAmount {
+    composes: absolute from global;
+    composes: top-[-6px] from global;
+    composes: right-[-6px] from global;
+    composes: flex from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: w-3 from global;
+    composes: h-3 from global;
+    composes: text-[7px] from global;
+    composes: text-black from global;
+    composes: leading-[10px] from global;
+    composes: font-bold from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+}
+
+.mobileCart {
+    composes: relative from global;
+}
+
+.statusTextWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: text-sm from global;
+
+    composes: lg_group-hover_text-decoration-dotted from global;
+}

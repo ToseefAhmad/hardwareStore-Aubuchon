@@ -1,0 +1,2 @@
+export const APP_AUTH_MODAL_SIGN_IN_TAB_KEY = 1;
+export const APP_AUTH_MODAL_SIGN_UP_TAB_KEY = 2;

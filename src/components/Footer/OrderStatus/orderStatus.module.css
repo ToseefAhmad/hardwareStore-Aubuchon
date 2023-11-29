@@ -1,0 +1,15 @@
+.root {
+    composes: w-full from global;
+}
+
+.title {
+    composes: mb-2.5 from global;
+}
+
+.text {
+    composes: mb-2.5 from global;
+}
+
+.button {
+    composes: w-full from global;
+}

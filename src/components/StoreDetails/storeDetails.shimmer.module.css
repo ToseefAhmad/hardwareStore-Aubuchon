@@ -1,0 +1,66 @@
+.root {
+    composes: root from './storeDetails.module.css';
+}
+
+.title {
+    composes: title from './storeDetails.module.css';
+
+    composes: w-full from global;
+}
+
+.titleShimmer {
+    composes: h-14 from global;
+
+    composes: lg_h-[92px] from global;
+}
+
+.image {
+    composes: image from './storeDetails.module.css';
+}
+
+.content {
+    composes: content from './storeDetails.module.css';
+
+    composes: lg_!pb-[18px] from global; /* stylelint-disable-line */
+}
+
+.logo {
+    composes: logo from './storeDetails.module.css';
+
+    composes: w-[118px] from global;
+    composes: h-6 from global;
+}
+
+.address {
+    composes: address from './storeDetails.module.css';
+}
+
+.buttonWrap {
+    composes: buttonWrap from './storeDetails.module.css';
+
+    composes: !h-10 from global;
+
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.status {
+    composes: status from './storeDetails.module.css';
+}
+
+.fields {
+    composes: fields from './storeDetails.module.css';
+
+    composes: !ml-0 from global;
+}
+
+.phone {
+    composes: phone from './storeDetails.module.css';
+}
+
+.mail {
+    composes: mail from './storeDetails.module.css';
+}
+
+.schedule {
+    composes: h-[112px] from global;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@magebit/events",
+  "version": "0.0.1",
+  "description": "Event registry for more streamlined subscription to EventingContext events",
+  "main": "index.js",
+  "author": "Magebit <info@magbeit.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@magento/pwa-buildpack": "*",
+    "@magento/venia-ui": "*",
+    "react": "*",
+    "react-router-dom": "*"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercept": "lib/targets/intercept",
+      "declare": "lib/targets/declare"
+    }
+  }
+}

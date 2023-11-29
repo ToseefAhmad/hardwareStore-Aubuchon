@@ -1,0 +1,58 @@
+.header {
+    composes: header from './content.module.css';
+
+    composes: !block from global;
+}
+
+.headerShimmer {
+    composes: h-[102px] from global;
+
+    composes: lg_h-[126px] from global;
+}
+
+.specialHeaderShimmer {
+    composes: !h-[34px] from global;
+
+    composes: lg_!h-[42px] from global; /* stylelint-disable-line */
+}
+
+.contentShimmer {
+    composes: h-[63px] from global;
+}
+
+.paragraphShimmer {
+    composes: mt-2.5 from global;
+    composes: h-6 from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.textShimmer {
+    composes: text from './content.module.css';
+
+    composes: !overflow-hidden from global;
+    composes: h-[84px] from global;
+
+    composes: lg_h-14 from global;
+}
+
+.specialTextShimmer {
+    composes: textShimmer;
+
+    composes: !overflow-hidden from global;
+
+    composes: lg_!h-[52px] from global; /* stylelint-disable-line */
+}
+
+.button {
+    composes: h-10 from global;
+    composes: w-full from global;
+
+    composes: lg_h-[50px] from global;
+}
+
+.special {
+    composes: !mt-1.25 from global;
+
+    composes: lg_!mt-2.5 from global; /* stylelint-disable-line */
+}

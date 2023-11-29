@@ -1,0 +1,14 @@
+.root > div {
+    @apply inline-block;
+}
+
+.root button {
+    @apply m-4
+        w-fit
+        min-w-[122px]
+        lg_min-w-[128px];
+}
+
+.stacked {
+    composes: grid from global;
+}

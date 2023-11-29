@@ -1,0 +1,9 @@
+.root {
+    composes: absolute from global;
+    composes: right-0 from global;
+    composes: z-2 from global;
+    composes: mt-7 from global;
+    composes: min-w-[440px] from global;
+    composes: bg-white from global;
+    composes: shadow-t from global;
+}

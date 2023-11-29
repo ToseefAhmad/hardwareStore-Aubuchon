@@ -1,0 +1,108 @@
+.mobileRowView {
+    composes: mobileRowView from '@app/pages/AccountPagesSwitcher/AddressBookPage/AddressesTable/Row/row.module.css';
+}
+
+.desktopRowView {
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-savedPaymentsRow from global;
+    composes: lg_gap-x-2.5 from global;
+    composes: lg_items-center from global;
+    composes: lg_px-0 from global;
+    composes: lg_pr-8 from global;
+    composes: lg_pl-7.5 from global;
+    composes: lg_min-h-[80px] from global;
+    composes: lg_text-sm from global;
+    composes: lg_font-semibold from global;
+    composes: lg_text-black from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_border-l-0 from global;
+    composes: lg_border-r-0 from global;
+    composes: lg_rounded-none from global;
+}
+
+.root {
+    composes: mobileRowView;
+    composes: desktopRowView;
+
+    composes: lg_border-b-0 from global;
+    composes: lg_last_border-b from global;
+}
+
+.cell {
+    composes: cell from '@app/pages/AccountPagesSwitcher/AddressBookPage/AddressesTable/Row/row.module.css';
+
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+
+    composes: lg_text-gray-dark from global;
+}
+
+.actionsCell {
+    composes: actionsCell from '@app/pages/AccountPagesSwitcher/AddressBookPage/AddressesTable/Row/row.module.css';
+
+    composes: !mt-[17px] from global;
+
+    composes: lg_!mt-0 from global; /* stylelint-disable-line */
+    composes: lg_relative from global;
+    composes: lg_-left-1.25 from global;
+}
+
+.actionLink {
+    composes: actionLink from '@app/pages/AccountPagesSwitcher/AddressBookPage/AddressesTable/Row/row.module.css';
+}
+
+.actionButton {
+    composes: actionButton from '@app/pages/AccountPagesSwitcher/AddressBookPage/AddressesTable/Row/row.module.css';
+}
+
+.label {
+    composes: inline-block from global;
+
+    composes: lg_hidden from global;
+}
+
+.labelNumber {
+    composes: label;
+    composes: mr-[14px] from global;
+    composes: w-[84px] from global;
+}
+
+.labelDate {
+    composes: label;
+    composes: mr-1.25 from global;
+    composes: w-[96px] from global;
+}
+
+.value {
+    composes: grid from global;
+    composes: font-semibold from global;
+    composes: break-word from global;
+    composes: text-black from global;
+
+    composes: lg_font-normal from global;
+    composes: lg_text-gray-dark from global;
+}
+
+.delete {
+    composes: text-black from global;
+
+    composes: lg_hidden from global;
+}
+
+.typeValue {
+    composes: value;
+
+    composes: w-11 from global;
+}
+
+.image {
+    composes: w-full from global;
+}
+
+.placeholder {
+    composes: w-11 from global;
+    composes: h-7.5 from global;
+    composes: bg-gray-light from global;
+}

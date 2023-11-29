@@ -1,0 +1,8 @@
+.imageList {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-supportedCards from global;
+    composes: place-content-center from global;
+    composes: h-full from global;
+    composes: gap-[3px] from global;
+}

@@ -1,0 +1,18 @@
+.root {
+    composes: m-0 from global;
+}
+
+.img {
+    composes: max-w-full from global;
+    composes: align-middle from global;
+    composes: inline-block from global;
+}
+
+.root img {
+    @apply rounded-lg
+        md_rounded-xl;
+}
+
+.mobileOnly {
+    composes: md_hidden from global;
+}

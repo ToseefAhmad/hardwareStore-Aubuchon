@@ -1,0 +1,77 @@
+.root {
+    composes: relative from global;
+    composes: py-5 from global;
+
+    composes: before_absolute from global;
+    composes: before_bg-gray-light from global;
+    composes: before_top-0 from global;
+    composes: before_-right-5 from global;
+    composes: before_bottom-0 from global;
+    composes: before_-left-5 from global;
+    composes: before_-z-1 from global;
+
+    composes: lg_hidden from global;
+}
+
+.title {
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+}
+
+.showMoreBtn {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: text-primary from global;
+
+    /* leading-none fixes issue on iphone when text go down after conditional rendering */
+    composes: leading-none from global;
+}
+
+.details {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: pt-1.5 from global;
+    composes: mb-1.25 from global;
+}
+
+.detailsItem {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-max from global;
+    composes: items-center from global;
+    composes: gap-3.75 from global;
+    composes: w-max from global;
+    composes: leading-7 from global;
+    composes: underline from global;
+    text-underline-offset: 1px; /* @todo rewrite after update to TailWind v3.*  */
+}
+
+.detailsIcon {
+    composes: pt-1.5 from global;
+    composes: self-start from global;
+    composes: text-primary from global;
+}
+
+.detailsIconClock {
+    composes: detailsIcon;
+    composes: w-4 from global;
+    composes: h-4 from global;
+}
+
+.scheduleWrap {
+    composes: detailsItem;
+    composes: pb-2.5 from global;
+    composes: no-underline from global;
+}
+
+.workHours {
+    composes: workHours from '@app/components/StoreComponents/Status/status.module.css';
+    composes: !font-normal from global;
+}
+
+.openStatus {
+    composes: open from '@app/components/StoreComponents/Status/status.module.css';
+}
+
+.closeStatus {
+    composes: close from '@app/components/StoreComponents/Status/status.module.css';
+}

@@ -1,0 +1,48 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-[5px] from global;
+    composes: mb-[10px] from global;
+}
+
+.label {
+    composes: text-xs from global;
+    composes: lg_text-sm from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+}
+
+.input_base {
+    composes: w-full from global;
+    composes: max-w-full from global;
+    composes: px-[19px] from global;
+    composes: lg_px-[24px] from global;
+    composes: py-[12px] from global;
+    composes: lg_py-[13px] from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: m-0 from global;
+    composes: rounded from global;
+    composes: text-gray-dark from global;
+    composes: placeholder-gray from global;
+    composes: appearance-none from global;
+    composes: outline-none from global;
+    composes: lg_hover_border-black from global;
+    composes: focus_text-black from global;
+    composes: focus_border-primary from global;
+    composes: focus_outline-none from global;
+    composes: disabled_border-gray from global;
+    composes: disabled_bg-gray-light from global;
+    composes: disabled_cursor-not-allowed from global;
+}
+
+.optional {
+    composes: font-normal from global;
+}
+
+.required {
+    composes: ml-1 from global;
+    composes: text-red from global;
+}

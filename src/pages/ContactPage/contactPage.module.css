@@ -1,0 +1,180 @@
+.root {
+    composes: pt-5 from global;
+
+    composes: lg_pt-7.5 from global;
+}
+
+.title {
+    composes: mb-5 from global;
+    composes: grid from global;
+    composes: grid-cols-maxContentFull from global;
+    composes: gap-3.75 from global;
+    composes: items-start from global;
+    composes: justify-start from global;
+    composes: text-3xl from global;
+
+    composes: lg_mb-[50px] from global;
+    composes: lg_grid-cols-none from global;
+    composes: lg_justify-center from global;
+    composes: lg_text-6xl from global;
+}
+
+.list {
+    composes: mb-7.5 from global;
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: max-w-[335px] from global;
+    composes: mx-auto from global;
+
+    composes: md_grid-cols-3 from global;
+    composes: md_max-w-250 from global;
+
+    composes: lg_mb-[50px] from global;
+}
+
+.item {
+    composes: p-[19px] from global;
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: rounded from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: md_p-[29px] from global;
+    composes: md_gap-5 from global;
+    composes: md_grid-rows-maxContent-2 from global;
+    composes: md_items-start from global;
+}
+
+.itemTitle {
+    composes: grid from global;
+    composes: grid-cols-maxContentFull from global;
+    composes: gap-3.75 from global;
+
+    composes: before from global;
+    composes: before_my-1.25 from global;
+    composes: before_block from global;
+    composes: before_w-0.5 from global;
+    composes: before_bg-primary from global;
+    composes: before_rounded-sm from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+}
+
+.phoneNumbers {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+}
+
+.bottom {
+    composes: md_mt-auto from global;
+}
+
+.line {
+    composes: block from global;
+}
+
+.buttonLink {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: p-[7px] from global;
+    composes: block from global;
+    composes: w-full from global;
+    composes: text-center from global;
+    composes: capitalize from global;
+    composes: !no-underline from global;
+
+    composes: lg_p-2 from global;
+}
+
+.iconWrapper {
+    composes: grid from global;
+    composes: grid-cols-maxContentFull from global;
+    composes: gap-3.75 from global;
+}
+
+.icon {
+    composes: text-green from global;
+}
+
+.phoneIcon {
+    composes: icon;
+
+    composes: mt-[3px] from global;
+}
+
+.phoneIcon {
+    composes: !text-primary from global;
+}
+
+.emailIcon {
+    composes: icon;
+
+    composes: self-center from global;
+}
+
+.emailIcon {
+    composes: !text-primary from global;
+}
+
+.link {
+    composes: block from global;
+    composes: !font-normal from global;
+    composes: link-secondary from global;
+}
+
+.backButton {
+    composes: my-[7px] from global;
+    composes: py-2 from global;
+    composes: px-3 from global;
+    composes: inline-block from global;
+    composes: !text-black/40 from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+}
+
+.map {
+    composes: h-[580px] from global;
+
+    composes: lg_h-[400px] from global;
+}
+
+.mapShimmer {
+    composes: grid from global;
+    composes: full-bleed from global;
+    composes: h-full from global;
+}
+
+.subTitle {
+    composes: mb-5 from global;
+    composes: text-center from global;
+
+    composes: lg_mb-7.5 from global;
+}
+
+.phoneWithText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-1.25 from global;
+    composes: justify-start from global;
+    composes: text-sm from global;
+
+    composes: md_grid-flow-row from global;
+
+    composes: lg_text-base from global;
+    composes: lg_grid-flow-col from global;
+}
+
+.social {
+    composes: mt-1.25 from global;
+
+    composes: lg_mt-3.75 from global;
+}
+
+.socialLinkList {
+    composes: flex from global;
+}

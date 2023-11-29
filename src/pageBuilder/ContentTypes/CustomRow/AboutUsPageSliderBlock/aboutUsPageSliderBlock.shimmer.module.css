@@ -1,0 +1,6 @@
+.shimmer {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+    composes: w-full from global;
+    composes: h-[130px] from global;
+    composes: lg_h-[245px] from global;
+}

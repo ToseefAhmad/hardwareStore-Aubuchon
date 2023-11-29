@@ -1,0 +1,41 @@
+.modalOverlay {
+    composes: fixed from global;
+    composes: inset-0 from global;
+    composes: z-40 from global;
+    composes: overflow-hidden from global;
+    composes: bg-black from global;
+    composes: bg-opacity-40 from global;
+    composes: cursor-pointer from global;
+}
+
+.modalContainer {
+    composes: fixed from global;
+    composes: inset-0 from global;
+    composes: z-50 from global;
+    composes: overflow-hidden from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: content-start from global;
+    composes: max-w-screen from global;
+    composes: max-h-full from global;
+    composes: bg-white from global;
+
+    composes: lg_top-1/2 from global;
+    composes: lg_left-1/2 from global;
+    composes: lg_transform from global;
+    composes: lg_-translate-x-1/2 from global;
+    composes: lg_-translate-y-1/2 from global;
+    composes: lg_max-h-simpleModalLg from global;
+    composes: lg_h-fit from global;
+    composes: lg_rounded from global;
+}
+
+.withDynamicHeight {
+    composes: top-auto from global;
+
+    composes: lg_top-1/2 from global;
+}
+
+.isRounded {
+    composes: rounded-t-3.75 from global;
+}

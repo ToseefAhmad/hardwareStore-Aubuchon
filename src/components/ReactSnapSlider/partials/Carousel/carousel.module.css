@@ -1,0 +1,36 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-max from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: overflow-x-scroll from global;
+    composes: overscroll-auto from global;
+    scrollbar-width: none; /* Hide scrollbar on Firefox */
+    scroll-snap-type: x mandatory;
+}
+
+.extraPaddingRight {
+    composes: last_pr-5 from global;
+    composes: lg_last_pr-0 from global;
+}
+
+/* Hide scrollbar on Chrome, Safari, Edge */
+.root::-webkit-scrollbar {
+    @apply hidden;
+}
+
+/* If you use scroll-snap, you must turn it off when you scroll programmatically,
+    because without it we interrupt the browser's calculations and scrolling does not happen smoothly */
+
+.draggable {
+    scroll-snap-type: unset;
+}
+
+.disabled {
+    composes: draggable;
+}
+
+.localStore {
+    composes: lg_!h-[330px] from global; /* stylelint-disable-line */
+}

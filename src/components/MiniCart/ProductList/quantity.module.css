@@ -1,0 +1,58 @@
+.root {
+    composes: relative from global;
+}
+
+.button {
+    composes: absolute from global;
+    composes: z-1 from global;
+    composes: w-[34px] from global;
+    composes: h-[34px] from global;
+    composes: rounded from global;
+    composes: text-white from global;
+    composes: lg_text-black from global;
+    composes: lg_text-opacity-40 from global;
+    composes: bg-primaryHover from global;
+    composes: lg_bg-gray-light from global;
+    composes: lg_border from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray from global;
+
+    composes: lg_hover_text-opacity-100 from global;
+    composes: hover_bg-primaryActive from global;
+    composes: lg_hover_bg-gray from global;
+    composes: focus_outline-none from global;
+    composes: disabled_text-opacity-40 from global;
+    composes: disabled_hover_text-opacity-40 from global;
+    composes: disabled_hover_bg-primaryHover from global;
+    composes: lg_disabled_hover_bg-gray-light from global;
+    composes: disabled_cursor-not-allowed from global;
+}
+
+.button_decrement {
+    composes: button;
+    composes: top-0 from global;
+    composes: left-0 from global;
+}
+
+.button_increment {
+    composes: button;
+    composes: top-0 from global;
+    composes: right-0 from global;
+}
+
+.input {
+    composes: w-full from global;
+    composes: h-[34px] from global;
+    composes: text-center from global;
+    composes: font-semibold from global;
+    composes: rounded from global;
+    composes: text-white from global;
+    composes: lg_text-black from global;
+    composes: bg-green-light from global;
+    composes: lg_bg-white from global;
+    composes: lg_border from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray from global;
+    composes: pointer-events-none from global;
+    composes: lg_pointer-events-auto from global;
+}

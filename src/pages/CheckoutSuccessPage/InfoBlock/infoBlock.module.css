@@ -1,0 +1,90 @@
+.root {
+    composes: relative from global;
+    composes: z-8 from global;
+    composes: -mt-7.5 from global;
+    composes: mb-[31px] from global;
+    composes: pt-[31px] from global;
+    composes: px-5 from global;
+    composes: bg-white from global;
+    composes: rounded-t-large from global;
+
+    composes: lg_mt-0 from global;
+    composes: lg_mb-10 from global;
+    composes: lg_p-0 from global;
+    composes: lg_max-w-[1000px] from global;
+}
+
+.strong {
+    composes: !text-black from global;
+}
+
+.orderNumber {
+    composes: mb-1.25 from global;
+    composes: text-3xl from global;
+    composes: text-black from global;
+
+    composes: lg_text-4xl from global;
+}
+
+.orderStatus {
+    composes: mb-2.5 from global;
+    composes: px-[6px] from global;
+    composes: w-max from global;
+    composes: font-bold from global;
+    composes: text-2xs from global;
+    composes: uppercase from global;
+    composes: text-white from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+
+    composes: lg_mx-auto from global;
+    composes: lg_mb-[22px] from global;
+    composes: lg_py-[2px] from global;
+    composes: lg_px-2.5 from global;
+    composes: lg_max-w-full from global;
+    composes: lg_text-xs from global;
+}
+
+.orderInfo {
+    composes: mb-[21px] from global;
+
+    composes: lg_mb-7.5 from global;
+}
+
+.strong {
+    composes: font-semibold from global;
+}
+
+.link {
+    composes: secondary tall wide from '@app/components/Button/button.module.css';
+
+    composes: grid from global;
+    composes: items-center from global;
+
+    composes: lg_mx-auto from global;
+    composes: lg_max-w-[215px] from global;
+}
+
+.buttonContent {
+    composes: content from '@app/components/Button/button.module.css';
+}
+
+.pickupTitle {
+    composes: -ml-5 from global;
+    composes: pb-5 from global;
+    composes: w-filled from global;
+    composes: text-center from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: lg_hidden from global;
+}
+
+.content {
+    composes: lg_pb-7.5 from global;
+    composes: lg_text-center from global;
+    composes: lg_border-b from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray-light from global;
+}

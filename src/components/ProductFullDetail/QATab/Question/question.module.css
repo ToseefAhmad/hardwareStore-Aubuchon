@@ -1,0 +1,180 @@
+.root {
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+}
+
+.icon {
+    composes: text-black from global;
+}
+
+.iconEmpty {
+    composes: text-opacity-40 from global;
+    composes: hover_text-opacity-100 from global;
+}
+
+.iconFilled {
+    composes: hover_text-opacity-40 from global;
+}
+
+.questionHeader {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-3.75 from global;
+    composes: grid-cols-auto-1fr from global;
+    composes: justify-start from global;
+    composes: py-5 from global;
+}
+
+.headerDetails {
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_w-full from global;
+    composes: lg_justify-between from global;
+}
+
+.upVote {
+    composes: grid from global;
+    composes: gap-0.5 from global;
+    composes: justify-center from global;
+    composes: content-center from global;
+
+    composes: lg_gap-1.25 from global;
+}
+
+.upVotesCount {
+    composes: text-xs from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-sm from global;
+}
+
+.headerText {
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_justify-between from global;
+}
+
+.createDate {
+    composes: lg_grid from global;
+    composes: lg_items-center from global;
+    composes: lg_order-last from global;
+    composes: text-2xs from global;
+
+    composes: lg_xs from global;
+    composes: lg_w-full from global;
+}
+
+.bestAnswer {
+    composes: -mt-2.5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_mt-0 from global;
+
+    composes: transition from global;
+    composes: duration-100 from global;
+    composes: ease-linear from global;
+}
+
+.bestAnswerHidden {
+    composes: absolute from global;
+    composes: scale-y-0 from global;
+    composes: opacity-0 from global;
+}
+
+.answerControls {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-[26px] from global;
+    composes: justify-start from global;
+    composes: py-2.5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: lg_gap-[36px] from global;
+    composes: lg_py-3.75 from global;
+    composes: lg_ml-[29px] from global;
+}
+
+.answerFormButtonsWrapper {
+    composes: twoButtonsWrapper from '@app/components/ProductFullDetail/QATab/qaTab.module.css';
+}
+
+.answerForm {
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-3.75 from global;
+}
+
+.toggleButton {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: hover_opacity-80 from global;
+
+    composes: lg_gap-3.75 from global;
+}
+
+.toggleAnswersButton {
+    composes: toggleButton;
+    composes: relative from global;
+
+    composes: after_absolute from global;
+    composes: after_h-0.5 from global;
+    composes: after_w-1.5 from global;
+    composes: after_-right-4 from global;
+    composes: after_bg-black from global;
+    composes: after_bg-opacity-40 from global;
+    composes: after_rounded-px from global;
+    composes: lg_after_right-[-21px] from global;
+}
+
+.expandIcon {
+    composes: icon;
+}
+
+.allAnswers {
+    composes: transition from global;
+    composes: duration-100 from global;
+    composes: ease-linear from global;
+}
+
+.allAnswersHidden {
+    composes: absolute from global;
+    composes: scale-y-0 from global;
+    composes: opacity-0 from global;
+}
+
+.answerList {
+    composes: pb-5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: xl_ml-[29px] from global;
+}
+
+.answerListItem {
+    composes: pt-5 from global;
+}
+
+.voteForAnswerWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: py-2.5 from global;
+
+    composes: lg_gap-3.75 from global;
+    composes: py-3.75 from global;
+    composes: lg_ml-[29px] from global;
+}
+
+.voteForAnswerText {
+    composes: font-semibold from global;
+}

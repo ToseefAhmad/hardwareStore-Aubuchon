@@ -1,0 +1,17 @@
+.root {
+    composes: mt-4 from global;
+}
+
+.text {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.link {
+    composes: link-secondary from global;
+}
+
+:global(.grecaptcha-badge) {
+    @apply !hidden;
+}

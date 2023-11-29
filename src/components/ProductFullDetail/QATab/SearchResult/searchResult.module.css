@@ -1,0 +1,39 @@
+.searchResultList {
+    composes: mt-5 from global;
+
+    composes: mt-3.75 from global;
+}
+
+.searchResultWrapper {
+    composes: mt-2.5 from global;
+
+    composes: lg_mt-3.75 from global;
+}
+
+.searchResultButtonWrapper {
+    composes: mb-5 from global;
+
+    composes: lg_w-[236px] from global;
+    composes: lg_mx-auto from global;
+    composes: lg_mb-3.75 from global;
+}
+
+.twoButtonsWrapper {
+    composes: twoButtonsWrapper from '../qaTab.module.css';
+}
+
+.backButtonWrapper {
+    composes: lg_order-first from global;
+}
+
+.searchResultCount {
+    composes: font-semibold from global;
+}
+
+.searchResultItemExpanded {
+    composes: mt-5 from global;
+}
+
+.paginationRoot {
+    composes: paginationRoot from '../qaTab.module.css';
+}

@@ -1,0 +1,5 @@
+.root {
+    composes: lg_h-11 from global;
+    composes: h-10 from global;
+    composes: lg_w-[149px] from global;
+}

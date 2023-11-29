@@ -1,0 +1,9 @@
+.root {
+    composes: desktopRowView from '../creditCard.module.css';
+
+    composes: hidden from global;
+
+    composes: lg_min-h-[60px] from global;
+    composes: lg_border-t from global;
+    composes: lg_border-gray-light from global;
+}

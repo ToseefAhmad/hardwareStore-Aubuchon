@@ -1,0 +1,32 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: divide-y from global;
+    composes: divide-solid from global;
+    composes: divide-gray-light from global;
+}
+
+.link {
+    composes: root from '@app/components/LinkButton/linkButton.module.css';
+
+    composes: py-4 from global;
+    composes: px-7.5 from global;
+    composes: font-semibold from global;
+    composes: no-underline from global;
+    composes: break-all from global;
+    composes: hover_bg-gray-light from global;
+    composes: transition-colors from global;
+}
+
+.linkActive {
+    composes: relative from global;
+    composes: before_absolute from global;
+    composes: before_left-0 from global;
+    composes: before_top-2/4 from global;
+    composes: before_-translate-y-1/2 from global;
+    composes: before_block from global;
+    composes: before_w-[2px] from global;
+    composes: before_h-9 from global;
+    composes: before_bg-primary from global;
+    composes: before_rounded-sm from global;
+}

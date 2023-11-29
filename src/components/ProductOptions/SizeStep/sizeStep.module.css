@@ -1,0 +1,30 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-5 from global;
+}
+
+.item {
+    composes: pb-5 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-start from global;
+    composes: grid-cols-colorSizeItem from global;
+    composes: gap-3.75 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: last_border-b-0 from global;
+    composes: last_pb-0 from global;
+
+    composes: lg_grid-cols-colorSizeItemLg from global;
+    composes: lg_items-center from global;
+}
+
+.addToCart {
+    composes: relative from global;
+    composes: h-10 from global;
+    composes: w-[110px] from global;
+
+    composes: lg_h-11 from global;
+    composes: lg_w-[152px] from global;
+}

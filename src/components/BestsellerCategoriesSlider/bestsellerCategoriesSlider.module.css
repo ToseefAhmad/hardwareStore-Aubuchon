@@ -1,0 +1,13 @@
+.root {
+    composes: m-0 from global;
+}
+
+.title {
+    composes: inline-block from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: mb-2.5 from global;
+    composes: lg_mb-5 from global;
+    composes: text-sm from global;
+    composes: lg_text-base from global;
+}

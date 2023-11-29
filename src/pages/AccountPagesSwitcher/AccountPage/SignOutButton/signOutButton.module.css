@@ -1,0 +1,10 @@
+.link {
+    composes: link from '@app/components/AccountMenu/accountMenuItems.module.css';
+    composes: link-primary from global;
+}
+
+.button {
+    composes: secondaryBtn from '@app/components/Link/link.module.css';
+    composes: text-base from global;
+    composes: h-[44px] from global;
+}

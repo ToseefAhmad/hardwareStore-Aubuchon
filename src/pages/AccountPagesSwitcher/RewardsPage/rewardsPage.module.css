@@ -1,0 +1,19 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-5 from global;
+    composes: mb-7.5 from global;
+
+    composes: xl_gap-y-7.5 from global;
+    composes: xl_mb-17.5 from global;
+}
+
+.cards {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+}
+
+.errorContainer {
+    composes: min-h-[50vh] from global;
+}

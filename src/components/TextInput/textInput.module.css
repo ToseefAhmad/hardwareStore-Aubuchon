@@ -1,0 +1,22 @@
+.root {
+    composes: inputRoot from '../Field/message.module.css';
+}
+
+.input {
+    composes: h-[50px] from global;
+    composes: lg_h-[54px] from global;
+    composes: input_base from '../Field/field.module.css';
+}
+
+.input_error {
+    composes: input;
+}
+
+.input_shimmer {
+    composes: input;
+}
+
+.iconPadding {
+    composes: pr-[39px] from global;
+    composes: lg_pr-[39px] from global;
+}

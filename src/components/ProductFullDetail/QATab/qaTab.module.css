@@ -1,0 +1,105 @@
+.questionForm {
+    composes: pb-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pb-3.75 from global;
+}
+
+.icon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+}
+
+.twoButtonsWrapper {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+    composes: mt-2.5 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-2 from global;
+    composes: lg_max-w-[477px] from global;
+    composes: lg_mx-auto from global;
+    composes: lg_mt-3.75 from global;
+}
+
+.searchNotice {
+    composes: mt-1.25 from global;
+
+    composes: lg_mt-2.5 from global;
+}
+
+.tipsButton {
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: hover_text-opacity-80 from global;
+}
+
+.tips {
+    composes: mt-5 from global;
+
+    composes: lg_mt-3.75 from global;
+    composes: lg_pb-1.25 from global;
+}
+
+.tipsListsWrapper {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_gap-5 from global;
+    composes: lg_mb-3.75 from global;
+}
+
+.tipsUnorderedList {
+    composes: mt-1.25 from global;
+    composes: list-unordered from global;
+
+    composes: mt-2.5 from global;
+}
+
+.tipsOrderedList {
+    composes: mt-2.5 from global;
+    composes: list-ordered from global;
+}
+
+.customerSupport {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_block from global;
+    composes: lg_py-5 from global;
+    composes: lg_px-7.5 from global;
+}
+
+.sortSelectWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-qaTabSort from global;
+    composes: py-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_py-3.75 from global;
+}
+
+.questionsCount {
+    composes: my-auto from global;
+    composes: font-semibold from global;
+}
+
+.paginationRoot {
+    composes: root from '@app/components/Pagination/pagination.module.css';
+    composes: my-0 from global;
+    composes: pt-5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+}

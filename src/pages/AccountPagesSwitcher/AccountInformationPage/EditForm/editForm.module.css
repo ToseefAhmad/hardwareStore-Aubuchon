@@ -1,0 +1,35 @@
+.fieldset {
+    composes: grid from global;
+    composes: lg_grid-cols-2 from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_gap-y-0.5 from global;
+    composes: lg_mb-0.5 from global;
+}
+
+.checkboxes {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-2.5 from global;
+    composes: mt-2.5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_gap-3.5 from global;
+    composes: lg_mb-5.5 from global;
+    composes: lg_mt-3.5 from global;
+}
+
+.buttons {
+    composes: grid from global;
+    composes: mt-2.5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_justify-center from global;
+    composes: lg_mt-5 from global;
+    composes: lg_mb-10 from global;
+    composes: lg_py-7.5 from global;
+    composes: lg_border-t from global;
+}
+
+.buttonWrap {
+    composes: lg_w-[116px] from global;
+}

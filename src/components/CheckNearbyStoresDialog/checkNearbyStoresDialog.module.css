@@ -1,0 +1,3 @@
+.modal {
+    composes: lg_w-[620px] from global;
+}

@@ -1,0 +1,28 @@
+.root {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: h-full from global;
+    composes: p-5 from global;
+    composes: overflow-y-scroll from global;
+
+    composes: lg_p-12.5 from global;
+}
+
+.message {
+    composes: text-lg from global;
+}
+
+.closeButton {
+    composes: absolute from global;
+    composes: top-7.5 from global;
+    composes: right-5 from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: outline-none from global;
+    composes: bg-white from global;
+
+    composes: lg_right-7.5 from global;
+
+    composes: hover_text-opacity-100 from global;
+}

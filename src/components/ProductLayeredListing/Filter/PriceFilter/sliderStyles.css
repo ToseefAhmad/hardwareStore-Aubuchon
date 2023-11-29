@@ -1,0 +1,41 @@
+.noUi-handle {
+    @apply !-top-2
+        !w-5
+        !h-5
+        !border-primary
+        border-solid
+        border-[7px]
+        opacity-100
+        !shadow-none
+        !outline-none
+        !rounded-full
+        after_hidden
+        before_hidden
+        lg_cursor-grab;
+}
+
+.noUi-horizontal {
+    @apply my-2
+        h-1
+        !bg-gray-light
+        !border-none
+        !shadow-none
+        !border-gray-light
+        !rounded;
+}
+
+.noUi-connect {
+    @apply bg-primary;
+}
+
+.noUi-target {
+    @apply !mx-5;
+}
+
+.noUi-handle-lower {
+    @apply !right-[-1px];
+}
+
+.noUi-handle-upper {
+    @apply !right-[-19px];
+}

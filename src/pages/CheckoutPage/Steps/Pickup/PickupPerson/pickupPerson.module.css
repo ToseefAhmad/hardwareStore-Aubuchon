@@ -1,0 +1,36 @@
+.root {
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-0 from global;
+}
+
+.pickupPerson {
+    composes: mt-5 from global;
+
+    composes: lg_mb-2.5 from global;
+    composes: lg_grid from global;
+    composes: lg_gap-x-5 from global;
+    composes: lg_grid-cols-2 from global;
+}
+
+.fieldRoot {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: last_!mb-0 from global; /* stylelint-disable-line */
+
+    composes: lg_!mb-[11px] from global; /* stylelint-disable-line */
+    composes: lg_last_!mb-[11px] from global; /* stylelint-disable-line */
+    composes: lg_!gap-y-[6px] from global; /* stylelint-disable-line */
+}
+
+.radioContainer {
+    composes: root from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioMobileActive {
+    composes: radioContainerActive from '@app/components/RadioGroup/radioGroup.module.css';
+
+    composes: !py-[15px] from global;
+
+    composes: lg_!py-[18px] from global; /* stylelint-disable-line */
+}

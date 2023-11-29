@@ -1,0 +1,49 @@
+.root {
+    composes: relative from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: justify-center from global;
+
+    composes: before_absolute from global;
+    composes: before_top-0 from global;
+    composes: before_bottom-0 from global;
+    composes: before_left-0 from global;
+    composes: before_w-5 from global;
+    composes: lg_before_w-[78px] from global;
+    composes: before_bg-gradient-to-l from global;
+    composes: before_from-transparent from global;
+    composes: before_to-white from global;
+    composes: before_invisible from global;
+    composes: before_opacity-0 from global;
+    composes: before_transition-visibility from global;
+    composes: before_ease-in-out from global;
+    composes: before_delay-150 from global;
+    composes: before_z-1 from global;
+
+    composes: after_absolute from global;
+    composes: after_top-0 from global;
+    composes: after_bottom-0 from global;
+    composes: after_right-0 from global;
+    composes: after_w-5 from global;
+    composes: lg_after_w-[78px] from global;
+    composes: after_bg-gradient-to-r from global;
+    composes: after_from-transparent from global;
+    composes: after_to-white from global;
+    composes: after_invisible from global;
+    composes: after_opacity-0 from global;
+    composes: after_transition-visibility from global;
+    composes: after_ease-in-out from global;
+    composes: after_delay-150 from global;
+}
+
+.showLeftShadow {
+    composes: before_!visible from global; /* stylelint-disable-line */
+    composes: before_opacity-100 from global;
+}
+
+.showRightShadow {
+    composes: after_!visible from global; /* stylelint-disable-line */
+    composes: after_opacity-100 from global;
+}

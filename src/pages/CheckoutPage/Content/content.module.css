@@ -1,0 +1,15 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: py-5 from global;
+
+    composes: lg_mx-auto from global;
+    composes: lg_py-7.5 from global;
+    composes: lg_max-w-250 from global;
+}
+
+.title {
+    composes: mb-5 from global;
+
+    composes: lg_mb-7 from global;
+}

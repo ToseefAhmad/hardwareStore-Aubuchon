@@ -1,0 +1,110 @@
+.content {
+    composes: grid from global;
+    composes: justify-items-center from global;
+    composes: text-center from global;
+    composes: text-black from global;
+    composes: my-7.5 from global;
+
+    composes: max-w-[375px] from global;
+    composes: mx-auto from global;
+
+    composes: lg_justify-items-start from global;
+    composes: lg_max-w-[1024px] from global;
+    composes: lg_gap-x-6 from global;
+
+    composes: xl_gap-x-12 from global;
+    composes: xxl_gap-x-24 from global;
+}
+
+.number404 {
+    composes: max-w-full from global;
+    composes: mt-7.5 from global;
+
+    composes: lg_mt-24 from global;
+    composes: lg_col-start-1 from global;
+    composes: lg_col-end-1 from global;
+    composes: lg_row-start-1 from global;
+    composes: lg_row-end-1 from global;
+}
+
+.header {
+    composes: text-3xl from global;
+    composes: text-left from global;
+    composes: font-semibold from global;
+    composes: mt-8 from global;
+
+    composes: lg_col-start-1 from global;
+    composes: lg_col-end-1 from global;
+    composes: lg_row-start-2 from global;
+    composes: lg_row-end-2 from global;
+    composes: lg_text-6xl from global;
+}
+
+.message {
+    composes: font-normal from global;
+    composes: mt-4 from global;
+
+    composes: lg_row-start-3 from global;
+    composes: lg_row-end-3 from global;
+    composes: lg_text-base from global;
+    composes: lg_mt-0 from global;
+    composes: lg_text-left from global;
+}
+
+.actionsContainer {
+    composes: mt-4 from global;
+    composes: w-full from global;
+
+    composes: lg_row-start-4 from global;
+    composes: lg_row-end-4 from global;
+    composes: lg_mt-4 from global;
+    composes: lg_max-w-50 from global;
+    composes: lg_mb-16 from global;
+}
+
+.image404 {
+    composes: lg_col-start-2 from global;
+    composes: lg_col-end-2 from global;
+    composes: lg_row-start-1 from global;
+    composes: lg_row-end-5 from global;
+}
+
+.errorImage {
+    composes: relative from global;
+}
+
+:global .error-view-rvp img {
+    @apply w-full;
+}
+
+.rvpContainer [class*='recentlyViewedProducts-title'] {
+    @apply pt-7.5
+        lg_pt-17.5;
+}
+
+.rvpContainer [class*='recentlyViewedProducts'] > div:last-child {
+    @apply pb-7.5
+        lg_pb-17.5;
+}
+
+.rvpContainer {
+    composes: before_absolute from global;
+    composes: before_left-0 from global;
+    composes: before_h-[475px] from global;
+    composes: before_w-screen from global;
+    composes: before_-z-1 from global;
+    composes: before_bg-gray-light from global;
+    composes: before_lg_h-[678px] from global;
+}
+
+.rvpContainer [class*='productCard-imageContainer'] {
+    @apply border-0
+        bg-white;
+}
+
+.rvpContainer [class*='recentlyViewedProducts'][class*='arrow'] {
+    @apply bg-white
+        border
+        border-solid
+        border-gray-light;
+}

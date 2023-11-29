@@ -1,0 +1,111 @@
+.mobileRowView {
+    composes: py-[18px] from global;
+    composes: px-5 from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+}
+
+.desktopRowView {
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-ordersTableRow from global;
+    composes: lg_items-center from global;
+    composes: lg_gap-x-1.5 from global;
+    composes: xl_gap-x-5 from global;
+    composes: lg_py-0 from global;
+    composes: lg_px-2.5 from global;
+    composes: lg_min-h-[80px] from global;
+    composes: lg_min-w-[576px] from global;
+    composes: lg_border-l-0 from global;
+    composes: lg_border-r-0 from global;
+    composes: lg_rounded-none from global;
+
+    composes: xxl_grid-cols-ordersTableRowXXL from global;
+    composes: xxl_px-7.5 from global;
+    composes: xxl_min-w-[750px] from global;
+}
+
+.root {
+    composes: mobileRowView;
+    composes: desktopRowView;
+}
+
+.defaultRow {
+    composes: border from global;
+    composes: border-gray-light from global;
+
+    composes: lg_border-b-0 from global;
+    composes: lg_last_border-b from global;
+}
+
+.highlightRow {
+    composes: bg-primary-light from global;
+    composes: border from global;
+    composes: border-primary from global;
+}
+
+.highlightRow + .highlightRow,
+.highlightRow + .defaultRow {
+    @apply lg_!border-t-0;
+}
+
+.cell {
+    composes: overflow-hidden from global;
+
+    composes: lg_text-sm from global;
+}
+
+.cell:nth-child(1) {
+    @apply mb-[17px] lg_m-0;
+}
+
+.cell:nth-child(2) {
+    @apply mb-2.5 lg_m-0;
+}
+
+.cell:nth-child(3) {
+    @apply mb-1.25 lg_m-0;
+}
+
+.cell:nth-child(4) {
+    @apply mb-1.25 lg_m-0;
+}
+
+.cell:nth-child(5) {
+    @apply mb-5 lg_m-0;
+}
+
+.cell:nth-child(6) {
+    @apply grid grid-flow-col justify-center;
+}
+
+.logo {
+    composes: mb-1.5 from global;
+    composes: w-[98px] from global;
+    composes: h-5 from global;
+}
+
+.link {
+    @apply no-underline;
+}
+
+.value {
+    composes: pl-0.5 from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+
+    composes: lg_pl-0 from global;
+    composes: lg_font-normal from global;
+}
+
+.valueLabel {
+    composes: lg_hidden from global;
+}
+
+.addressValue {
+    composes: value;
+    composes: !pl-0 from global;
+
+    composes: lg_text-sm from global;
+    composes: lg_!font-semibold from global; /* stylelint-disable-line */
+}

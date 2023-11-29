@@ -1,0 +1,13 @@
+[class*='home-page'] /* stylelint-disable-line */
+[class*='row-fullBleed'] /* stylelint-disable-line */
+[class*='banner-shimmer-shimmerRoot'] {
+    /* stylelint-disable-line */
+    @apply lg_!min-h-[500px];
+}
+
+[class*='home-page'] /* stylelint-disable-line */
+[class*='row-contained'] /* stylelint-disable-line */
+[class*='banner-shimmer-shimmerRoot'] {
+    /* stylelint-disable-line */
+    @apply lg_!min-h-[400px];
+}

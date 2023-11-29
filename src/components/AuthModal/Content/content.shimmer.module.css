@@ -1,0 +1,17 @@
+.header {
+    composes: pt-5 from global;
+    composes: px-5 from global;
+    composes: pb-3 from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+
+    composes: lg_p-0 from global;
+    composes: lg_border-none from global;
+}
+
+.main {
+    composes: overflow-y-auto from global;
+    composes: p-5 from global;
+
+    composes: lg_p-0 from global;
+}

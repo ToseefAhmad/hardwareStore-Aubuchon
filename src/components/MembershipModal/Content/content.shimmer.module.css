@@ -1,0 +1,7 @@
+.header {
+    composes: header from '@app/components/AuthModal/Content/content.shimmer.module.css';
+}
+
+.main {
+    composes: main from '@app/components/AuthModal/Content/content.shimmer.module.css';
+}

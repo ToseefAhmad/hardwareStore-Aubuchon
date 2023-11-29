@@ -1,0 +1,40 @@
+.header {
+    composes: header from '@app/components/WarningContent/Content/content.module.css';
+}
+
+.closeButton {
+    composes: closeButton from '@app/components/CheckNearbyStoresDialog/Content/content.module.css';
+}
+
+.paragraph {
+    composes: mt-2.5 from global;
+    composes: block from global;
+    composes: text-sm from global;
+    composes: text-gray-dark from global;
+
+    composes: lg_text-base from global;
+}
+
+.text {
+    composes: text from '@app/components/WarningContent/Content/content.module.css';
+}
+
+.controls {
+    composes: controls from '@app/components/WarningContent/Content/content.module.css';
+
+    composes: mt-1.25 from global;
+
+    composes: lg_mt-2.5 from global;
+}
+
+.secondary {
+    composes: secondary from '@app/components/WarningContent/Content/content.module.css';
+}
+
+.primary {
+    composes: primary from '@app/components/WarningContent/Content/content.module.css';
+}
+
+.strong {
+    composes: font-semibold from global;
+}

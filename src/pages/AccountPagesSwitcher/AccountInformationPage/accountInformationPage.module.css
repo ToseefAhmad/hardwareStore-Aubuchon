@@ -1,0 +1,3 @@
+.errorContainer {
+    composes: min-h-[50vh] from global;
+}

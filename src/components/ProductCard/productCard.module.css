@@ -1,0 +1,235 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-7.5 from global;
+    composes: text-black from global;
+}
+
+.rootRows {
+    composes: root;
+    composes: h-full from global;
+    composes: grid-rows-productCardRowsMobile from global;
+
+    composes: lg_grid-rows-productCardRowsDesktop from global;
+}
+
+.rootColumns {
+    composes: root;
+
+    composes: pb-[35px] from global;
+    composes: grid-cols-productCardColumns from global;
+    composes: gap-x-[15px] from global;
+    composes: items-start from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: md_pb-0 from global;
+    composes: md_grid-cols-none from global;
+    composes: md_border-none from global;
+}
+
+.rootCart {
+    composes: rootColumns;
+
+    composes: !pb-0 from global;
+    composes: !border-none from global;
+}
+
+.imageContainer {
+    composes: relative from global;
+    composes: p-[9px] from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_p-[19px] from global;
+}
+
+.smallThumbnail {
+    composes: w-[80px] from global;
+    composes: h-[80px] from global;
+    composes: p-[5px] from global;
+}
+
+.addToCart {
+    composes: absolute from global;
+    composes: -bottom-5 from global;
+    composes: right-2.5 from global;
+    composes: left-0 from global;
+    composes: lg_right-5 from global;
+}
+
+.sku {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.name {
+    composes: text-xs from global;
+    composes: font-semibold from global;
+    composes: line-clamp-2 from global;
+    composes: h-[41px] from global;
+
+    composes: lg_text-sm from global;
+    composes: lg_h-12 from global;
+}
+
+.nameColumns {
+    composes: text-xs from global;
+    composes: font-semibold from global;
+    composes: line-clamp-3 from global;
+    composes: h-15 from global;
+
+    composes: xs_h-auto from global;
+    composes: lg_h-12 from global;
+    composes: lg_line-clamp-2 from global;
+    composes: lg_text-sm from global;
+}
+
+.price {
+    composes: inline-block from global;
+    composes: text-base from global;
+    composes: font-medium from global;
+
+    composes: lg_text-xl from global;
+    composes: lg_leading-[30px] from global;
+}
+
+.bottomPanel {
+    composes: grid from global;
+    composes: grid-cols-productCardBottom from global;
+    composes: gap-x-[10px] from global;
+    composes: items-start from global;
+
+    composes: lg_grid-cols-productCardBottomLg from global;
+    composes: lg_items-center from global;
+}
+
+.store {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.label {
+    composes: absolute from global;
+    composes: top-[10px] from global;
+    composes: right-0 from global;
+    composes: z-1 from global;
+    composes: px-[6px] from global;
+    composes: text-2xs from global;
+    composes: text-white from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+    composes: bg-orange from global;
+    composes: rounded-tl-[5px] from global;
+    composes: rounded-bl-[5px] from global;
+    composes: bg-orange from global;
+
+    composes: lg_top-[19px] from global;
+    composes: lg_px-[10px] from global;
+    composes: lg_py-[2px] from global;
+    composes: lg_text-xs from global;
+}
+
+.image {
+    height: var(--height);
+    width: var(--width);
+
+    composes: block from global;
+    composes: !left-1/2 from global;
+    composes: object-contain from global;
+    composes: translate-x-[-50%] from global;
+    composes: animate-productCardImage from global;
+}
+
+.loaded {
+    composes: loaded from '~@magento/venia-ui/lib/components/Image/image.module.css';
+    composes: opacity-100 from global;
+}
+
+.info {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-productCardInfo from global;
+    composes: gap-x-[9px] from global;
+    composes: items-center from global;
+}
+
+.infoFull {
+    composes: info;
+
+    composes: !grid-cols-none from global;
+}
+
+.nearbyStores {
+    composes: font-semibold from global;
+    composes: link-secondary from global;
+
+    composes: lg_cursor-pointer from global;
+}
+
+.separator {
+    composes: inline-block from global;
+    composes: h-[10px] from global;
+    composes: w-[1px] from global;
+    composes: bg-gray-light from global;
+
+    composes: lg_h-3 from global;
+}
+
+.storeName {
+    composes: font-semibold from global;
+}
+
+.priceWrapper {
+    composes: mt-auto from global;
+}
+
+.units {
+    composes: mr-1.25 from global;
+    composes: text-gray-dark from global;
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.priceRoot {
+    composes: inline-block from global;
+}
+
+.newPrice {
+    composes: price;
+    composes: mr-[5px] from global;
+    composes: text-orange from global;
+}
+
+.oldPrice {
+    composes: text-2xs from global;
+    composes: text-gray-dark from global;
+    composes: line-through from global;
+
+    composes: lg_text-xs from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: lg_gap-y-[10px] from global;
+}
+
+.contentColumns {
+    composes: content;
+}
+
+.contentRows {
+    composes: content;
+    composes: lg_h-full from global;
+    composes: grid-rows-productCardContentMobile from global;
+    composes: lg_grid-rows-none from global;
+}
+
+.contentHidden {
+    composes: hidden from global;
+}

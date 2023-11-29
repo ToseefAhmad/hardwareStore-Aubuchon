@@ -1,0 +1,139 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-3.75 from global;
+    composes: items-center from global;
+}
+
+.label {
+    composes: text-sm from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-base from global;
+}
+
+.availableInfo {
+    composes: text-2xs from global;
+
+    composes: lg_text-xs from global;
+}
+
+.qty {
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: text-black from global;
+
+    composes: lg_text-2xs from global;
+}
+
+.iconContainer {
+    composes: stock from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.icon {
+    composes: !text-primary from global;
+}
+
+.price {
+    composes: price from '@app/components/ProductCard/productCard.module.css';
+
+    composes: !text-base from global;
+    composes: !font-bold from global;
+}
+
+.newPrice {
+    composes: price;
+    composes: mr-[5px] from global;
+}
+
+.oldPrice {
+    composes: text-xs from global;
+    composes: text-gray-dark from global;
+    composes: line-through from global;
+}
+
+.stock {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-max-content from global;
+    composes: gap-x-2 from global;
+    composes: items-center from global;
+}
+
+.strong {
+    composes: strong from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.paragraph {
+    composes: paragraph from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.link {
+    composes: link from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+/* Available store info */
+.availableInfoTypographyBase {
+    composes: !text-2xs from global;
+
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+}
+
+.availableInfoRoot {
+    composes: availableInfoRoot from '@app/components/ProductFullDetail/productFullDetail.module.css';
+
+    composes: pl-[22px] from global;
+
+    composes: lg_pl-[26px] from global;
+    composes: !gap-y-1.25 from global;
+}
+
+.link {
+    composes: link from '@app/components/ProductFullDetail/productFullDetail.module.css';
+    composes: availableInfoTypographyBase;
+}
+
+.availableInfoStock {
+    composes: stock from '@app/components/ProductFullDetail/productFullDetail.module.css';
+    composes: availableInfoTypographyBase;
+
+    composes: after_!hidden from global; /* stylelint-disable-line */
+}
+
+.icon {
+    composes: absolute from global;
+    composes: -left-5 from global;
+    composes: h-[18px] from global;
+    composes: text-primary from global;
+
+    composes: lg_left-[-26px] from global;
+    composes: lg_h-5 from global;
+}
+
+.stockInfo {
+    composes: stockInfo from '@app/components/ProductFullDetail/productFullDetail.module.css';
+    composes: availableInfoTypographyBase;
+}
+
+.notInStock {
+    composes: notInStock from '@app/components/ProductFullDetail/productFullDetail.module.css';
+}
+
+.unAvailable {
+    composes: !grid-cols-none from global;
+}
+
+.unAvailableInfoRoot {
+    composes: !flex from global;
+    composes: !flex-wrap from global;
+}
+
+.categoryLink {
+    composes: root from '@app/components/ProductParentCategoryLink/productParentCategoryLink.module.css';
+
+    composes: !text-2xs from global;
+    composes: !font-normal from global;
+    composes: capitalize from global;
+
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+}

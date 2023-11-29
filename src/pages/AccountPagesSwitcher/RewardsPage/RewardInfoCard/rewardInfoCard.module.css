@@ -1,0 +1,78 @@
+.root {
+    composes: relative from global;
+    composes: overflow-hidden from global;
+    composes: grid from global;
+    composes: gap-5 from global;
+    composes: p-5 from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+
+    composes: xl_grid-cols-2 from global;
+    composes: xl_px-12.5 from global;
+    composes: xl_py-7.5 from global;
+
+    /* Big circle */
+    composes: before_block from global;
+    composes: before_absolute from global;
+    composes: before_top-[50px] from global;
+    composes: before_left-1/2 from global;
+    composes: before_-translate-x-1/2 from global;
+    composes: before_w-[136vw] from global;
+    composes: before_h-[136vw] from global;
+    composes: before_bg-white from global;
+    composes: before_opacity-5 from global;
+    composes: before_rounded-full from global;
+    composes: xl_before_top-1/2 from global;
+    composes: xl_before_left-auto from global;
+    composes: xl_before_right-[-48%] from global;
+    composes: xl_before_translate-x-0 from global;
+    composes: xl_before_-translate-y-1/2 from global;
+    composes: xl_before_w-[960px] from global;
+    composes: xl_before_h-[960px] from global;
+
+    /* Small circle */
+    composes: after_block from global;
+    composes: after_absolute from global;
+    composes: after_top-[90px] from global;
+    composes: after_left-1/2 from global;
+    composes: after_-translate-x-1/2 from global;
+    composes: after_w-[110vw] from global;
+    composes: after_h-[110vw] from global;
+    composes: after_bg-white from global;
+    composes: after_opacity-5 from global;
+    composes: after_rounded-full from global;
+    composes: xl_after_top-1/2 from global;
+    composes: xl_after_left-auto from global;
+    composes: xl_after_right-[-40%] from global;
+    composes: xl_after_translate-x-0 from global;
+    composes: xl_after_-translate-y-1/2 from global;
+    composes: xl_after_w-[800px] from global;
+    composes: xl_after_h-[800px] from global;
+}
+
+.title {
+    composes: text-white from global;
+}
+
+.paragraph {
+    composes: opacity-80 from global;
+}
+
+.info {
+    composes: grid from global;
+    composes: row-start-2 from global;
+    composes: text-white from global;
+    composes: text-center from global;
+
+    composes: xl_content-center from global;
+    composes: xl_gap-1.25 from global;
+    composes: xl_row-start-1 from global;
+    composes: xl_text-left from global;
+}
+
+.counter {
+    composes: grid from global;
+    composes: place-content-center from global;
+
+    composes: xl_place-content-end from global;
+}

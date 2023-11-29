@@ -1,0 +1,153 @@
+.root {
+    composes: grid from global;
+    composes: grid-cols-categoryContainer from global;
+
+    composes: lg_block from global;
+}
+
+.breadcrumbsRoot {
+    composes: relative from global;
+    composes: pr-[14px] from global;
+    composes: inline-block from global;
+    composes: h-auto from global;
+
+    composes: lg_pt-5 from global;
+    composes: lg_pr-0 from global;
+    composes: lg_pb-2.5 from global;
+    composes: lg_block from global;
+    composes: lg_h-14 from global;
+    composes: lg_truncate from global;
+}
+
+.breadcrumbsEmptyRoot {
+    composes: breadcrumbsRoot;
+
+    composes: !pr-0 from global;
+}
+
+.contentWrapper {
+    composes: w-full from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-cols-categoryPageColumns from global;
+    composes: lg_gap-x-[18px] from global;
+}
+
+.header {
+    composes: mt-[19px] from global;
+    composes: mb-2.5 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-max-content from global;
+    composes: items-center from global;
+
+    composes: lg_mt-0 from global;
+    composes: lg_mb-7.5 from global;
+    composes: lg_grid-flow-row from global;
+    composes: lg_grid-cols-none from global;
+}
+
+.sidebar {
+    composes: hidden from global;
+
+    composes: lg_flex from global;
+    composes: lg_w-full from global;
+    composes: lg_self-start from global;
+}
+
+.content {
+    composes: pb-7.5 from global;
+    composes: grid from global;
+    composes: gap-y-5 from global;
+
+    composes: lg_pb-[70px] from global;
+    composes: lg_h-min from global;
+}
+
+.heading {
+    composes: relative from global;
+    composes: z-2 from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: gap-x-1.25 from global;
+    composes: lg_gap-0 from global;
+    composes: lg_grid-cols-1 from global;
+}
+
+.info {
+    composes: min-h-[26px] from global;
+    composes: mb-2.5 from global;
+    composes: hidden from global;
+    composes: w-full from global;
+    composes: basis-full from global;
+    composes: text-center from global;
+
+    composes: lg_grid from global;
+    composes: lg_text-left from global;
+    composes: lg_items-center from global;
+    composes: lg_mb-0 from global;
+}
+
+.headerButtons {
+    composes: flex from global;
+    composes: w-full from global;
+    composes: justify-between from global;
+    composes: items-start from global;
+    composes: gap-x-1.25 from global;
+    composes: overflow-hidden from global;
+
+    composes: lg_grid from global;
+    composes: lg_ !grid-cols-auto-maxContent from global;
+    composes: lg_gap-x-2.5 from global;
+    composes: lg_min-h-11 from global;
+    composes: lg_overflow-visible from global;
+}
+
+.sortButton {
+    composes: headerButtons;
+    composes: lg_ !justify-end from global;
+}
+
+.infoWrapper {
+    composes: flex from global;
+    composes: gap-x-1.25 from global;
+    composes: lg_gap-x-2.5 from global;
+}
+
+.pagination {
+    composes: relative from global;
+    composes: bottom-0 from global;
+}
+
+.paginationRoot {
+    composes: root from '@app/components/Pagination/pagination.module.css';
+
+    composes: !my-0 from global;
+}
+
+.description {
+    composes: -mt-1.25 from global;
+    composes: p-5 from global;
+    composes: grid from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+    composes: self-end from global;
+
+    composes: lg_mt-0 from global;
+    composes: lg_px-7.5 from global;
+}
+
+.filterContainer {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-1.25 from global;
+    composes: min-h-10 from global;
+
+    composes: lg_block from global;
+    composes: lg_mt-2 from global;
+}
+
+.description :global p {
+    @apply text-sm
+        lg_text-base;
+}

@@ -1,0 +1,41 @@
+.root {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: grow from global;
+    composes: min-h-0 from global;
+    composes: max-h-[350px] from global;
+    composes: lg_max-h-full from global;
+}
+
+.rootRadioGroup {
+    composes: root from '@app/components/RadioGroup/radioGroup.module.css';
+    composes: overflow-auto from global;
+    composes: grow from global;
+    composes: min-h-0 from global;
+}
+
+.radioGroup {
+    composes: radioGroup from '@app/components/RadioGroup/radioGroup.module.css';
+    composes: gap-y-1.25 from global;
+
+    composes: lg_gap-y-2.5 from global;
+}
+
+.buttons {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-1.25 from global;
+    composes: pt-5 from global;
+
+    composes: lg_7.5 from global;
+}
+
+.submitBtn {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: lg_h-[56px] from global;
+}
+
+.cancelBtn {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: lg_h-[56px] from global;
+}

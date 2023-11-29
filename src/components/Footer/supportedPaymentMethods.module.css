@@ -1,0 +1,21 @@
+.root {
+    composes: flex from global;
+    composes: items-center from global;
+}
+
+.title {
+    composes: hidden from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+
+    composes: lg_inline-block from global;
+}
+
+.imageList {
+    composes: flex from global;
+    composes: flex-row from global;
+    composes: -mr-0.5 from global;
+
+    composes: lg_ml-2.5 from global;
+}

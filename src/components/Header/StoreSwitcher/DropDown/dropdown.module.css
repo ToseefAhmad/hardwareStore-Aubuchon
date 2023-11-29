@@ -1,0 +1,93 @@
+.root {
+    composes: absolute from global;
+    composes: -left-5.5 from global;
+    composes: z-2 from global;
+    composes: rounded from global;
+    composes: shadow-t from global;
+    composes: p-5 from global;
+    composes: mt-1.25 from global;
+    composes: min-w-[400px] from global;
+    composes: bg-white from global;
+
+    composes: after_absolute from global;
+    composes: after_top-[-3px] from global;
+    composes: after_left-1/2 from global;
+    composes: after_-translate-x-1/2 from global;
+    composes: after_w-0 from global;
+    composes: after_h-0 from global;
+    composes: after_border-l-6 from global;
+    composes: after_border-r-6 from global;
+    composes: after_border-b-6 from global;
+    composes: after_border-solid from global;
+    composes: after_border-l-transparent from global;
+    composes: after_border-r-transparent from global;
+    composes: after_border-b-white from global;
+}
+
+.info {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-pickupStoreDropdownInfo from global;
+    composes: gap-3.5 from global;
+    composes: mb-3.75 from global;
+}
+
+.imageRoot {
+    composes: w-[156px] from global;
+    composes: h-[116px] from global;
+}
+
+.image {
+    composes: object-cover from global;
+    composes: rounded from global;
+    height: var(--height);
+    width: var(--width);
+}
+
+.imagePlaceholder {
+    composes: h-full from global;
+    composes: w-full from global;
+}
+
+.desc {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+}
+
+.storeName {
+    composes: font-semibold from global;
+    composes: text-black from global;
+    composes: text-sm from global;
+}
+
+.address {
+    composes: text-sm from global;
+}
+
+.phone {
+    composes: relative from global;
+    composes: pl-[26px] from global;
+    composes: my-2.5 from global;
+    composes: font-semibold from global;
+    composes: text-sm from global;
+}
+
+.phoneIcon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-primary from global;
+}
+
+.link {
+    composes: font-semibold from global;
+    composes: leading-6 from global;
+    composes: text-primary from global;
+}
+
+.button {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: !h-[46px] from global;
+}

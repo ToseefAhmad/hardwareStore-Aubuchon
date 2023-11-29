@@ -1,0 +1,5 @@
+.root {
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: gap-1.25 from global;
+}

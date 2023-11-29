@@ -1,0 +1,5 @@
+export const CREATE_ACCOUNT_SCREENS = {
+    INITIAL: 'INITIAL',
+    THAT_IS_ME: 'THAT_IS_ME',
+    REG_FORM: 'REG_FORM'
+};

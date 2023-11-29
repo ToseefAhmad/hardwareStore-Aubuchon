@@ -1,0 +1,11 @@
+.root {
+    composes: root from './storesItem.module.css';
+
+    composes: !grid-cols-none from global;
+    composes: !p-0 from global;
+}
+
+.content {
+    composes: h-[63px] from global;
+    composes: w-full from global;
+}

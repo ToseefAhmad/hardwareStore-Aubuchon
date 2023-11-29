@@ -1,0 +1,40 @@
+.filtersBlock {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-1.25 from global;
+    composes: pt-5 from global;
+    composes: px-5 from global;
+    composes: pb-3.75 from global;
+
+    composes: lg_px-12.5 from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_gap-2.5 from global;
+    composes: lg_grid-cols-nearestStorePopupFilterBlock from global;
+}
+
+.selectInput {
+    composes: input from '@app/components/Select/select.module.css';
+    composes: !h-10 from global;
+    composes: !py-0 from global;
+}
+
+.locationSearchRoot {
+    composes: root from '@app/components/StoreLocationSearch/storeLocationSearch.module.css';
+
+    composes: lg_!grid-cols-storeSearchBarL from global; /* stylelint-disable-line */
+    composes: lg_!gap-x-2.5 from global; /* stylelint-disable-line */
+}
+
+.searchButton {
+    composes: searchButton from '@app/components/StoreLocationSearch/storeLocationSearch.module.css';
+
+    composes: lg_!w-12.5 from global; /* stylelint-disable-line */
+    composes: lg_!h-12.5 from global; /* stylelint-disable-line */
+}
+
+.searchInput {
+    composes: searchInput from '@app/components/StoreLocationSearch/storeLocationSearch.module.css';
+
+    composes: lg_!h-12.5 from global; /* stylelint-disable-line */
+    composes: lg_!px-3 from global; /* stylelint-disable-line */
+}

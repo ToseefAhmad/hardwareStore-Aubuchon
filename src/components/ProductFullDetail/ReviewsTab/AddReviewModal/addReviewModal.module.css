@@ -1,0 +1,38 @@
+.modalRoot {
+    composes: lg_w-[520px] from global;
+}
+
+.header {
+    composes: header from './shared.module.css';
+}
+
+.contentWrapper {
+    composes: relative from global;
+    composes: h-full from global;
+    composes: p-5 from global;
+    composes: pr-3.5 from global;
+    composes: overflow-y-scroll from global;
+    composes: overflow-x-hidden from global;
+
+    composes: lg_p-12.5 from global;
+    composes: lg_pr-11 from global;
+}
+
+.closeButton {
+    composes: absolute from global;
+    composes: top-7.5 from global;
+    composes: right-3.5 from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: outline-none from global;
+    composes: bg-white from global;
+    composes: z-1 from global;
+
+    composes: lg_right-6 from global;
+
+    composes: hover_text-opacity-100 from global;
+
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}

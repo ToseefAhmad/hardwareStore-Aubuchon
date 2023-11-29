@@ -1,0 +1,97 @@
+.header {
+    composes: relative from global;
+    composes: p-5 from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+
+    composes: lg_p-0 from global;
+    composes: lg_border-none from global;
+}
+
+.title {
+    composes: relative from global;
+    composes: pl-10 from global;
+    composes: lg_pl-12.5 from global;
+    composes: lg_mt-[-26px] from global;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-primary from global;
+}
+
+.closeButton {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: right-1.5 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: !h-[42px] from global;
+    composes: !w-[42px] from global;
+    composes: !text-black from global;
+    composes: !bg-transparent from global;
+    composes: opacity-40 from global;
+    composes: !border-transparent from global;
+
+    composes: lg_top-[-34px] from global;
+    composes: lg_right-[-34px] from global;
+    composes: lg_transform-none from global;
+    composes: lg_hover_opacity-100 from global;
+}
+
+.forgotPasswordSection {
+    composes: p-5 from global;
+}
+
+.tabsContainer {
+    composes: tabsContainer from '@app/components/Tabs/tabs.module.css';
+    composes: mt-6 from global;
+
+    composes: lg_mt-7.5 from global;
+}
+
+.tabs {
+    composes: tabs from '@app/components/Tabs/tabs.module.css';
+    composes: !left-0 from global;
+    composes: gap-x-1.25 from global;
+
+    composes: lg_gap-x-2.5 from global;
+    composes: xxl_grid-cols-2 from global;
+}
+
+.tabButton {
+    composes: tabButton from '@app/components/Tabs/tab.module.css';
+    composes: lg_pb-[13px] from global;
+}
+
+.tabContent {
+    composes: tabContent from '@app/components/Tabs/tabs.module.css';
+    composes: overflow-hidden from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: p-5 from global;
+
+    composes: lg_overflow-auto from global;
+    composes: lg_px-0 from global;
+    composes: lg_pb-0 from global;
+    composes: lg_pt-7.5 from global;
+}
+
+.tabContentAddPadding {
+    composes: tabContent from '@app/components/Tabs/tabs.module.css';
+    composes: overflow-hidden from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: p-5 from global;
+
+    composes: lg_overflow-auto from global;
+    composes: lg_px-0 from global;
+    composes: lg_pb-0 from global;
+    composes: lg_pt-7.5 from global;
+    composes: lg_pr-3 from global;
+}

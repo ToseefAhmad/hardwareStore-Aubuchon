@@ -1,0 +1,168 @@
+.root {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: z-1 from global;
+    composes: grid from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: gap-y-5 from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+    composes: bg-white from global;
+    composes: transition-all from global;
+    composes: duration-400 from global;
+    composes: overflow-y-auto from global;
+    composes: no-scrollbar from global;
+}
+
+.rootLeft {
+    composes: root;
+
+    composes: -translate-x-full from global;
+}
+
+.item {
+    composes: px-5 from global;
+    composes: py-[17px] from global;
+    composes: grid from global;
+    composes: grid-cols-menuItem from global;
+    composes: gap-x-[10px] from global;
+    composes: items-center from global;
+    composes: text-base from global;
+    composes: font-medium from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+
+    composes: lg_px-[50px] from global;
+    composes: lg_py-5 from global;
+    composes: lg_text-lg from global;
+}
+
+.menuItem {
+    composes: item;
+    composes: group from global;
+
+    composes: hover_lg_cursor-pointer from global;
+    composes: hover_lg_text-decoration-dotted from global;
+}
+
+.menuItemIcon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_group-hover_text-opacity-100 from global;
+}
+
+.menuItemIconProfile {
+    composes: p-[17px] from global;
+    composes: text-primary from global;
+    composes: rounded-full from global;
+    composes: gap-x-[15px] from global;
+    composes: bg-white from global;
+
+    composes: lg_group-hover_text-white from global;
+    composes: lg_group-hover_bg-primary from global;
+}
+
+.menuItemLink {
+    composes: px-5 from global;
+    composes: py-[17px] from global;
+    composes: grid from global;
+    composes: grid-cols-menuItem from global;
+    composes: gap-x-[10px] from global;
+    composes: items-center from global;
+
+    composes: lg_px-[50px] from global;
+    composes: lg_py-5 from global;
+}
+
+.menuItemLinkContainer {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: text-base from global;
+    composes: font-medium from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+    composes: group from global;
+
+    composes: lg_text-lg from global;
+}
+
+.menuItemButton {
+    composes: menuItemLink;
+
+    composes: grid from global;
+    composes: text-left from global;
+    composes: text-base from global;
+    composes: font-medium from global;
+
+    composes: lg_text-lg from global;
+    composes: lg_hover_text-black from global;
+    composes: lg_hover_text-decoration-dotted from global;
+    composes: lg_hover_text-decoration-black from global;
+}
+
+.membershipButtonTypo {
+    composes: grid from global;
+    composes: text-left from global;
+}
+
+.menuItemMembership {
+    composes: item menuItemLinkContainer;
+
+    composes: !py-0 from global;
+    composes: !px-0 from global;
+    composes: !gap-x-0 from global;
+    composes: !bg-gray-light from global;
+}
+
+.menuItemMembershipLink {
+    composes: menuItemLink;
+
+    composes: grid-cols-menuItemMembership from global;
+    composes: !font-semibold from global;
+}
+
+.menuItemMembershipButton {
+    composes: menuItemMembershipLink;
+
+    composes: !py-[16px] from global;
+    composes: !gap-x-[15px] from global;
+    composes: group from global;
+
+    composes: !lg_py-5 from global;
+}
+
+.membershipButtonBold {
+    composes: text-sm from global;
+
+    composes: lg_text-base from global;
+    composes: lg_leading-6 from global;
+}
+
+.membershipButtonText {
+    composes: text-xs from global;
+    composes: lg_leading-5 from global;
+
+    composes: lg_text-sm from global;
+    composes: lg_leading-6 from global;
+}
+
+.footer {
+    composes: mt-auto from global;
+    composes: px-5 from global;
+    composes: pb-[54px] from global;
+
+    composes: lg_px-[50px] from global;
+    composes: lg_pb-[52px] from global;
+}
+
+.loaderIcon {
+    composes: indicator from '@magento/venia-ui/lib/components/LoadingIndicator/indicator.module.css';
+    composes: w-4 from global;
+    composes: h-4 from global;
+}

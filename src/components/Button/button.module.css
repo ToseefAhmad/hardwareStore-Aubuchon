@@ -1,0 +1,101 @@
+.base {
+    composes: font-semibold from global;
+    composes: outline-none from global;
+    composes: appearance-none from global;
+    composes: transition-colors from global;
+    composes: rounded from global;
+    composes: p-1 from global;
+}
+
+.primary {
+    composes: base;
+    composes: text-white from global;
+    composes: bg-primary from global;
+    composes: lg_hover_bg-primaryHover from global;
+    composes: lg_active_bg-primaryActive from global;
+}
+
+.secondary {
+    composes: base;
+    composes: bg-white from global;
+    composes: text-black from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_hover_border-gray from global;
+    composes: lg_hover_text-black from global;
+    composes: lg_active_bg-black from global;
+    composes: lg_active_border-black from global;
+    composes: lg_active_text-white from global;
+}
+
+.disabled {
+    composes: base;
+    composes: bg-gray-light from global;
+    composes: border-none from global;
+    composes: text-black from global;
+    composes: cursor-not-allowed from global;
+}
+
+.tall {
+    composes: h-[50px] from global;
+    composes: lg_h-[54px] from global;
+}
+
+.short {
+    composes: h-[40px] from global;
+    composes: lg_h-[44px] from global;
+}
+
+.wide {
+    composes: w-full from global;
+}
+
+.narrow {
+    composes: w-[122px] from global;
+    composes: lg_w-[128px] from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-[10px] from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+}
+
+/* Retain support for core classes */
+.root_lowPriority {
+    composes: secondary;
+    composes: tall;
+    composes: wide;
+}
+
+.root_normalPriority {
+    composes: secondary;
+    composes: tall;
+    composes: wide;
+}
+
+.root_highPriority {
+    composes: primary;
+    composes: tall;
+    composes: wide;
+}
+
+/* Loader styles */
+.loader {
+    composes: animate-spin from global;
+}
+
+.checkmark {
+    composes: text-gray-light from global;
+    composes: opacity-0 from global;
+    composes: visibility-hidden from global;
+}
+
+.show {
+    composes: !opacity-100 from global;
+    composes: !visibility-visible from global;
+}

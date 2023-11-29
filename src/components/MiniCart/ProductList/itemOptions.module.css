@@ -1,0 +1,56 @@
+.root {
+    composes: text-2xs from global;
+    composes: lg_text-xs from global;
+    composes: truncate from global;
+}
+
+.list {
+    composes: flex-wrap from global;
+    composes: flex from global;
+    composes: ml-[-10px] from global;
+    composes: lg_ml-[-20px] from global;
+}
+
+.item {
+    composes: flex from global;
+    composes: ml-[5px] from global;
+    composes: pl-[5px] from global;
+    composes: lg_ml-2.5 from global;
+    composes: lg_pl-2.5 from global;
+    composes: relative from global;
+    composes: before_bg-gray from global;
+    composes: before_absolute from global;
+    composes: before_w-[1px] from global;
+    composes: before_h-2.5 from global;
+    composes: before_top-[4px] from global;
+    composes: lg_before_top-[5px] from global;
+    composes: before_left-0 from global;
+    composes: before_bottom-0 from global;
+}
+
+.label {
+    composes: text-gray-dark from global;
+    composes: mr-[5px] from global;
+}
+
+.value {
+    composes: inline-flex from global;
+    composes: items-center from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+    composes: whitespace-normal from global;
+}
+
+.color {
+    composes: mr-[5px] from global;
+    composes: inline-block from global;
+    composes: rounded-full from global;
+    composes: bg-black from global;
+    composes: pl-2.5 from global;
+    composes: h-2.5 from global;
+    composes: w-2.5 from global;
+}
+
+.colorItem {
+    composes: flex-grow from global;
+}

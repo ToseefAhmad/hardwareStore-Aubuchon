@@ -1,0 +1,3 @@
+.mediaIcon {
+    composes: mediaIcon from '../../../shared.module.css';
+}

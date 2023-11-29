@@ -1,0 +1,4 @@
+.root {
+    composes: border-none from global;
+    composes: w-full from global;
+}

@@ -1,0 +1,52 @@
+.radioContainer {
+    composes: root from '@app/components/RadioGroup/radio.module.css';
+    composes: relative from global;
+    composes: !items-start from global;
+    composes: !py-[13px] from global;
+    composes: !leading-7 from global;
+
+    composes: lg_!py-[18px] from global; /* stylelint-disable-line */
+}
+
+.radioContainerNormal {
+    composes: rootNormal from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioContainerActive {
+    composes: rootActive from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioContainerDisabled {
+    composes: rootDisabled from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioInput {
+    composes: input from '@app/components/RadioGroup/radio.module.css';
+
+    composes: mt-1 from global;
+}
+
+.radioInputWrapper {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-x-[21px] from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_gap-y-[18px] from global;
+}
+
+.logoWrapper {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: right-5 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+
+    composes: lg_right-6 from global;
+}
+
+.tall {
+    composes: tall from '@app/components/Button/button.module.css';
+
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}

@@ -1,0 +1,77 @@
+.modalRoot {
+    composes: lg_w-[520px] from global;
+}
+
+.root {
+    composes: grid from global;
+    composes: h-full from global;
+    composes: p-5 from global;
+    composes: overflow-y-scroll from global;
+
+    composes: lg_p-[50px] from global;
+}
+
+.title {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: pb-5 from global;
+    composes: mb-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pb-0 from global;
+    composes: lg_mb-7.5 from global;
+    composes: lg_border-0 from global;
+}
+
+.fields {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+}
+
+.fieldRoot {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-[5px] from global;
+    composes: w-full from global;
+}
+
+.textUnderField {
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}
+
+.submitButtonContainer {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: self-end from global;
+    composes: pt-5 from global;
+    composes: mt-2.5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: lg_pt-7.5 from global;
+    composes: lg_mt-5 from global;
+}
+
+.skipButton {
+    composes: hover_text-black from global;
+}
+
+.closeButton {
+    composes: absolute from global;
+    composes: top-7.5 from global;
+    composes: right-5 from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: outline-none from global;
+    composes: bg-white from global;
+    composes: z-1 from global;
+
+    composes: lg_right-7.5 from global;
+
+    composes: hover_text-opacity-100 from global;
+}

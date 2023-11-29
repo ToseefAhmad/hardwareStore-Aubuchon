@@ -1,0 +1,21 @@
+.root {
+    composes: lg_hidden from global;
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: justify-center from global;
+    composes: gap-2.5 from global;
+    composes: my-5 from global;
+}
+
+.btn {
+    composes: w-1.5 from global;
+    composes: h-1.5 from global;
+    composes: bg-black from global;
+    composes: rounded from global;
+    composes: opacity-20 from global;
+    composes: transition-opacity from global;
+}
+
+.active {
+    composes: !opacity-100 from global;
+}

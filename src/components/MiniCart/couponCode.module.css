@@ -1,0 +1,65 @@
+/* Styles for "add" view. */
+.entryForm {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-miniCartCouponMobile from global;
+    composes: lg_grid-cols-miniCartCouponDesktop from global;
+}
+
+.inputWrapper {
+    composes: w-full from global;
+}
+
+.input {
+    composes: input from '@app/components/TextInput/textInput.module.css';
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.label {
+    composes: hidden from global;
+}
+
+.button {
+    composes: primary from '@app/components/Button/button.module.css';
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.buttonDisabled {
+    composes: disabled from '@app/components/Button/button.module.css';
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+/* Styles for "remove" view. */
+.appliedCoupon {
+    composes: input from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+    composes: h-[50px] from global;
+    composes: lg_h-[54px] from global;
+    composes: px-5 from global;
+    composes: lg_px-[25px] from global;
+    composes: py-[11px] from global;
+    composes: lg_py-15px from global;
+    composes: rounded from global;
+    composes: leading-7 from global;
+    composes: lg_leading-normal from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: bg-gray-light from global;
+}
+
+.removeButton {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: hover_text-opacity-100 from global;
+}
+
+.errorLabel {
+    composes: text-red from global;
+}

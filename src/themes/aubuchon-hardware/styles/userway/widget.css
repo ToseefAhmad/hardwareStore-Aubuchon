@@ -1,0 +1,23 @@
+/* stylelint-disable-next-line selector-id-pattern */
+#userwayAccessibilityIcon {
+    @apply scale-100
+        hover_!scale-110
+        !top-auto
+        !right-auto
+        !bottom-[70px]
+        !left-5
+        lg_!bottom-4
+        lg_!left-4;
+}
+
+/* stylelint-disable-next-line selector-id-pattern */
+.checkout-layout #userwayAccessibilityIcon {
+    @apply !bottom-5
+        lg_!bottom-4;
+}
+
+body > .uwy {
+    @apply top-auto
+        bottom-0
+        !z-10;
+}

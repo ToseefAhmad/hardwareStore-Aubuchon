@@ -1,0 +1,104 @@
+.searchInput {
+    composes: input_base from '@app/components/Field/field.module.css';
+    composes: m-0 from global;
+    composes: pl-[15px] from global;
+    composes: pr-10 from global;
+    composes: h-10 from global;
+    composes: w-full from global;
+    composes: max-w-full from global;
+    composes: text-sm from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+
+    composes: lg_pl-[25px] from global;
+    composes: lg_pr-[30px] from global;
+    composes: lg_h-[50px] from global;
+    composes: lg_text-base from global;
+    composes: lg_bg-gray-light from global;
+    composes: lg_hover_border-primary from global;
+}
+
+.searchBoxInput {
+    composes: searchInput;
+    composes: pl-[20px] from global;
+}
+
+.searchRoot {
+    composes: w-full from global;
+}
+
+.searchIconClickableArea {
+    composes: relative from global;
+
+    composes: before_absolute from global;
+    composes: before_top-1/2 from global;
+    composes: before_left-1/2 from global;
+    composes: before_w-10 from global;
+    composes: before_h-10 from global;
+    composes: before_-translate-x-1/2 from global;
+    composes: before_-translate-y-1/2 from global;
+
+    composes: lg_before_w-12.5 from global;
+    composes: lg_before_h-12.5 from global;
+}
+
+.searchIcon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: searchIconClickableArea;
+}
+
+.searchBoxActive {
+    composes: bg-primary from global;
+    composes: text-white from global;
+    composes: w-10 from global;
+    composes: h-10 from global;
+    composes: rounded-r-[5px] from global;
+}
+
+.searchBoxIcon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: w-10 from global;
+    composes: h-10 from global;
+    composes: rounded-r-[5px] from global;
+}
+
+.eraseButton {
+    composes: w-5 from global;
+    composes: h-5 from global;
+    composes: rounded from global;
+    composes: bg-gray-light from global;
+}
+
+.eraseButtonIcon {
+    composes: opacity-40 from global;
+    composes: flex from global;
+    composes: justify-center from global;
+}
+
+.searchIconActive {
+    composes: text-primary from global;
+    composes: lg_text-white from global;
+    composes: searchIconClickableArea;
+}
+
+.iconActive {
+    composes: icon from '@app/components/Field/fieldIcons.module.css';
+    composes: lg_!bg-primary from global; /* stylelint-disable-line */
+    composes: lg_hover_!bg-primaryHover from global; /* stylelint-disable-line */
+    composes: lg_active_!bg-primaryActive from global; /* stylelint-disable-line */
+    composes: lg_outline-primary from global;
+}
+
+.iconSearchActive {
+    composes: icon from '@app/components/Field/fieldIcons.module.css';
+    composes: lg_!bg-primary from global; /* stylelint-disable-line */
+    composes: lg_active_!bg-primaryActive from global; /* stylelint-disable-line */
+    composes: lg_outline-primary from global;
+    composes: !right-0 from global;
+}
+
+.iconSearchBox {
+    composes: iconSearchActive;
+}

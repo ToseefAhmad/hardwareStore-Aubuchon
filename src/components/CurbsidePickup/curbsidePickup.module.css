@@ -1,0 +1,95 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-7.5 from global;
+    composes: grid-cols-1 from global;
+
+    composes: lg_mb-[60px] from global;
+    composes: lg_gap-y-[50px] from global;
+}
+
+.normal {
+    composes: font-normal from global;
+}
+
+.section {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+}
+
+.map {
+    composes: mt-5 from global;
+    composes: h-[200px] from global;
+    composes: w-full from global;
+
+    composes: lg_overflow-hidden from global;
+    composes: lg_mt-0 from global;
+    composes: lg_h-auto from global;
+}
+
+.storeDetailsImage {
+    composes: image from '@app/components/StoreDetails/storeDetails.module.css';
+
+    composes: !h-[151px] from global;
+    composes: rounded from global;
+    composes: after_!hidden from global; /* stylelint-disable-line */
+
+    composes: lg_!mb-0 from global; /* stylelint-disable-line */
+}
+
+.storeDetailsContent {
+    composes: content from '@app/components/StoreDetails/storeDetails.module.css';
+
+    composes: !m-0 from global;
+    composes: !pt-5 from global;
+    composes: !px-0 from global;
+    composes: !pb-5 from global;
+    composes: !bg-white from global;
+
+    composes: lg_!pb-0 from global; /* stylelint-disable-line */
+    composes: lg_!border-none from global; /* stylelint-disable-line */
+}
+
+.storeDetailsMail {
+    composes: mail from '@app/components/StoreDetails/storeDetails.module.css';
+
+    composes: lg_!mb-0 from global; /* stylelint-disable-line */
+}
+
+.storeBlockContainer {
+    composes: lg_grid from global;
+    composes: lg_gap-5 from global;
+    composes: lg_grid-cols-orderViewPageStoreBlock from global;
+}
+
+.sectionRoot {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-[11px] from global;
+
+    composes: lg_gap-y-[9px] from global;
+}
+
+.productSectionTitle {
+    composes: root from '@app/components/Section/Title/title.module.css';
+    composes: hidden from global;
+
+    composes: lg_inline from global;
+}
+
+.mobileNavWrapper {
+    composes: root from '@app/components/Section/section.module.css';
+
+    composes: lg_hidden from global;
+}
+
+.desktopNavWrapper {
+    composes: hidden from global;
+
+    composes: lg_block from global;
+}
+
+.text {
+    composes: mb-5 from global;
+
+    composes: lg_mb-[31px] from global;
+}

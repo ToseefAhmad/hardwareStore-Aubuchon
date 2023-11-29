@@ -1,0 +1,5 @@
+.modal {
+    composes: pt-5 from global;
+    composes: lg_p-12.5 from global;
+    composes: lg_w-[620px] from global;
+}

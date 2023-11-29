@@ -1,0 +1,22 @@
+.root {
+    composes: root from './managers.module.css';
+}
+
+.manager {
+    composes: manager from './managers.module.css';
+}
+
+.imageContainer {
+    composes: imageContainer from './managers.module.css';
+
+    composes: !w-15 from global;
+    composes: !h-15 from global;
+}
+
+.description {
+    composes: description from './managers.module.css';
+
+    composes: !h-11 from global;
+
+    composes: lg_!h-12 from global; /* stylelint-disable-line */
+}

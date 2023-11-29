@@ -1,0 +1,41 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: gap-x-2.5 from global;
+}
+
+.stars {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: gap-x-px from global;
+    composes: lg_pb-0.5 from global;
+}
+
+.starRating {
+    composes: stars;
+    composes: relative from global;
+    composes: items-center from global;
+    composes: text-gray-light from global;
+}
+
+.starRatingSmall {
+    composes: starRating;
+    composes: w-[84px] from global;
+}
+
+.starRatingRegular {
+    composes: starRating;
+    composes: w-[114px] from global;
+}
+
+.starRatingFilled {
+    composes: stars;
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: text-gray-dark from global;
+    composes: overflow-hidden from global;
+    composes: pointer-events-none from global;
+}

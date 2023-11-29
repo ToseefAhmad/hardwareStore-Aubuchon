@@ -1,0 +1,39 @@
+.field {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: lg_mb-3 from global;
+}
+
+.buttons {
+    composes: pt-2.5 from global;
+
+    composes: lg_pt-5 from global;
+}
+
+.submitBtn {
+    composes: primary from '@app/components/Button/button.module.css';
+
+    composes: lg_h-14 from global;
+}
+
+.disabled {
+    composes: disabled from '@app/components/Button/button.module.css';
+
+    composes: lg_h-14 from global;
+}
+
+.recaptchaLoading {
+    composes: disabled;
+
+    composes: !bg-primary from global;
+    composes: !text-white from global;
+    composes: !cursor-not-allowed from global;
+}
+
+.paragraph {
+    composes: mb-5 from global;
+    composes: leading-7 from global;
+
+    composes: lg_leading-6 from global;
+    composes: lg_mb-7.5 from global;
+}

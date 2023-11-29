@@ -1,0 +1,19 @@
+.title {
+    composes: text-center from global;
+}
+
+.description {
+    composes: text-center from global;
+    composes: text-2xs from global;
+    composes: mt-1.25 from global;
+
+    composes: lg_mt-2.5 from global;
+}
+
+.icon {
+    composes: text-primary from global;
+    composes: mx-auto from global;
+    composes: mb-5 from global;
+
+    composes: lg_mb-7.5 from global;
+}

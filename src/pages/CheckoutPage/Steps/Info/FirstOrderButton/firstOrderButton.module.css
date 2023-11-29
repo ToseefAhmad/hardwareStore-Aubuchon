@@ -1,0 +1,68 @@
+.wrap {
+    composes: -mx-5 from global;
+    composes: mb-2 from global;
+
+    composes: lg_mx-0 from global;
+}
+
+.root {
+    composes: relative from global;
+    composes: inline-grid from global;
+    composes: justify-items-start from global;
+    composes: w-full from global;
+    composes: py-5 from global;
+    composes: pl-16 from global;
+    composes: pr-5 from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: outline-none from global;
+
+    composes: lg_pl-[100px] from global;
+    composes: lg_rounded from global;
+    composes: lg_hover_text-decoration-dotted from global;
+    composes: lg_focus_text-decoration-dotted from global;
+}
+
+.strong {
+    composes: text-black from global;
+    composes: text-base from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-lg from global;
+    composes: lg_mb-1.5 from global;
+}
+
+.iconBase {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+}
+
+.phoneImageWrap {
+    composes: iconBase;
+    composes: w-7.5 from global;
+    composes: h-7.5 from global;
+    composes: left-[19px] from global;
+
+    composes: lg_w-10 from global;
+    composes: lg_h-10 from global;
+    composes: lg_left-7.5 from global;
+}
+
+.phoneImage {
+    composes: object-cover from global;
+    composes: w-7.5 from global;
+    composes: h-7.5 from global;
+
+    composes: lg_w-10 from global;
+    composes: lg_h-10 from global;
+}
+
+.arrowIcon {
+    composes: iconBase;
+    composes: right-[19px] from global;
+
+    composes: lg_right-7.5 from global;
+}

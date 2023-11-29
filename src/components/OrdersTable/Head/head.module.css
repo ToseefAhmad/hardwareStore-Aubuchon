@@ -1,0 +1,12 @@
+.root {
+    composes: desktopRowView from '../Row/row.module.css';
+
+    composes: hidden from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: bg-white from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: lg_!min-h-[60px] from global; /* stylelint-disable-line */
+}

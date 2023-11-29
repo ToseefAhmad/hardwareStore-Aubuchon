@@ -1,0 +1,10 @@
+.root {
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: grid-rows-max-content from global;
+    composes: gap-x-7.5 from global;
+    composes: gap-y-5 from global;
+
+    composes: xl_grid-cols-2 from global;
+    composes: xxl_grid-cols-3 from global;
+}

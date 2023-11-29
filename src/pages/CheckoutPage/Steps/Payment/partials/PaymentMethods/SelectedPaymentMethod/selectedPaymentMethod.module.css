@@ -1,0 +1,69 @@
+.root {
+    composes: mb-2.5 from global;
+    composes: pointer-events-none from global;
+
+    composes: lg_mb-2 from global;
+}
+
+.radioContainer {
+    composes: radioContainer from '@app/components/RadioGroup/radioGroup.module.css';
+    composes: radioContainerActive from '@app/components/RadioGroup/radioGroup.module.css';
+    composes: !py-[15px] from global;
+    composes: !px-[18px] from global;
+    composes: grid-cols-maxContentFull from global;
+    composes: !text-sm from global;
+
+    composes: lg_!py-[19px] from global; /* stylelint-disable-line */
+    composes: lg_!px-6 from global; /* stylelint-disable-line */
+}
+
+.container {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+}
+
+.title {
+    composes: grid from global;
+    composes: grid-cols-storeBlockTitle from global;
+    composes: gap-x-1.25 from global;
+    composes: text-sm from global;
+    composes: text-black from global;
+
+    composes: lg_text-base from global;
+}
+
+.logo {
+    composes: w-[35px] from global;
+    composes: hidden from global;
+
+    composes: lg_block from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-cover from global;
+}
+
+.background {
+    composes: hidden from global;
+}
+
+.type {
+    composes: uppercase from global;
+
+    composes: lg_font-semibold from global;
+}
+
+.text {
+    composes: font-normal from global;
+
+    composes: lg_font-semibold from global;
+}
+
+.placeholder {
+    composes: w-11 from global;
+    composes: h-7.5 from global;
+    composes: bg-gray-light from global;
+}

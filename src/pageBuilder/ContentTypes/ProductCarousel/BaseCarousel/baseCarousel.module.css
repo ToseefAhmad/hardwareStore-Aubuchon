@@ -1,0 +1,59 @@
+.title {
+    composes: text-3xl from global;
+    composes: leading-[38px] from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-black from global;
+    composes: mb-5 from global;
+
+    composes: lg_mb-12.5 from global;
+    composes: lg_text-6xl from global;
+}
+
+.productsCarousel [class*='carousel-root'] {
+    @apply lg_!auto-cols-[269px]
+        !auto-cols-[165px]
+        lg_mb-[70px];
+}
+
+.smallThumbnail {
+    composes: w-[80px] from global;
+    composes: h-[80px] from global;
+    composes: p-[5px] from global;
+}
+
+.smallTitle {
+    composes: text-base from global;
+    composes: font-semibold from global;
+    composes: mb-2.5 from global;
+}
+
+.productsCarousel {
+    @apply mb-[10px]
+        lg_mb-0;
+}
+
+.sliderBase {
+    composes: !top-[135px] from global;
+    composes: !translate-y-none from global;
+}
+
+.sliderRoot {
+    composes: root from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: sliderBase;
+}
+
+.sliderDisabled {
+    composes: disabled from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: sliderBase;
+}
+
+.sliderRoot_isInverted {
+    composes: root_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: sliderBase;
+}
+
+.sliderDisabled_isInverted {
+    composes: disabled_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: sliderBase;
+}

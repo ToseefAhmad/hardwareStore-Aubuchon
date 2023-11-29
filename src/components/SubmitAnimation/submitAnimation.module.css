@@ -1,0 +1,71 @@
+.root {
+    composes: fixed from global;
+    composes: left-0 from global;
+    composes: top-0 from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: w-0 from global;
+    composes: h-0 from global;
+    composes: bg-primary from global;
+    composes: z-[11] from global;
+    composes: rounded-full from global;
+    composes: bg-circles from global;
+    composes: before_top-[46vh] from global;
+    composes: before_!w-[67%] from global; /* stylelint-disable-line */
+    composes: before_!h-[67%] from global; /* stylelint-disable-line */
+    composes: before_max-w-[960px] from global;
+    composes: before_max-h-[960px] from global;
+    composes: after_top-[57vh] from global;
+    composes: after_!w-[56%] from global; /* stylelint-disable-line */
+    composes: after_!h-[56%] from global; /* stylelint-disable-line */
+    composes: after_max-w-[778px] from global;
+    composes: after_max-h-[778px] from global;
+
+    composes: lg_before_!w-[100%] from global; /* stylelint-disable-line */
+    composes: lg_before_!h-[100%] from global; /* stylelint-disable-line */
+    composes: lg_before_max-w-[1440px] from global;
+    composes: lg_before_max-h-[1440px] from global;
+    composes: lg_after_!w-[100%] from global; /* stylelint-disable-line */
+    composes: lg_after_!h-[100%] from global; /* stylelint-disable-line */
+    composes: lg_after_max-w-[1200px] from global;
+    composes: lg_after_max-h-[1200px] from global;
+}
+
+.content {
+    composes: mt-[12%] from global;
+    composes: p-5 from global;
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: max-w-screen from global;
+    composes: text-center from global;
+    composes: hidden from global;
+}
+
+.iconContainer {
+    composes: mb-[52px] from global;
+    composes: mx-auto from global;
+    composes: w-[58px] from global;
+    composes: h-[43px] from global;
+    composes: overflow-hidden from global;
+}
+
+.icon {
+    composes: w-0 from global;
+    composes: overflow-hidden from global;
+}
+
+.iconRoot {
+    composes: w-[58px] from global;
+    composes: h-[43px] from global;
+}
+
+.text {
+    composes: text-white from global;
+    composes: text-3xl from global;
+}
+
+.strong {
+    composes: block from global;
+    composes: font-semibold from global;
+}

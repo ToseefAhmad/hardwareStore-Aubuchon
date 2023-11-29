@@ -1,0 +1,9 @@
+.linkBtn {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+    composes: mt-5 from global;
+    composes: mb-3 from global;
+    composes: mx-auto from global;
+    composes: w-fit from global;
+
+    composes: lg_mb-0.5 from global;
+}

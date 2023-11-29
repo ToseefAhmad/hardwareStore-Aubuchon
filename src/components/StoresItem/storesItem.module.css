@@ -1,0 +1,72 @@
+.root {
+    composes: grid from global;
+    composes: py-3.75 from global;
+    composes: lg_py-5 from global;
+}
+
+.logo {
+    composes: mb-3.75 from global;
+    composes: h-5 from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: grid-cols-storesListItem from global;
+    composes: lg_grid-cols-storesListItemLg from global;
+}
+
+.address {
+    composes: relative from global;
+    composes: pl-6 from global;
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+}
+
+.addressIcon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: w-3.5 from global;
+    composes: h-4 from global;
+    composes: text-black from global;
+}
+
+.statusBase {
+    composes: pl-[18px] from global;
+
+    composes: before_!w-2 from global; /* stylelint-disable-line */
+    composes: before_!h-2 from global; /* stylelint-disable-line */
+}
+
+.statusOpen {
+    composes: open from '@app/components/StoreComponents/Status/status.module.css';
+    composes: statusBase;
+}
+
+.statusClose {
+    composes: close from '@app/components/StoreComponents/Status/status.module.css';
+    composes: statusBase;
+}
+
+.selectStoreButton {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: !h-[40px] from global;
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+    composes: text-primary from global;
+}
+
+.selectStoreButtonDisabled {
+    composes: disabled from '@app/components/Button/button.module.css';
+    composes: !h-[40px] from global;
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.imageContainer {
+    composes: min-h-5 from global;
+}
+
+.info {
+    composes: grid from global;
+}

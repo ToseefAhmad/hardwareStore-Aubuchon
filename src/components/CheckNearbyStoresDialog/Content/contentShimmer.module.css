@@ -1,0 +1,27 @@
+.header {
+    composes: flex-shrink-0 from global;
+    composes: m-5 from global;
+    composes: h-10 from global;
+
+    composes: lg_mt-10 from global;
+    composes: lg_mx-12 from global;
+    composes: lg_mb-3.5 from global;
+}
+
+.filters {
+    composes: flex-shrink-0 from global;
+    composes: m-5 from global;
+    composes: h-20 from global;
+
+    composes: lg_mx-12 from global;
+    composes: lg_h-12 from global;
+    composes: lg_mb-0 from global;
+}
+
+.main {
+    composes: overflow-hidden from global;
+    composes: m-5 from global;
+    composes: h-250 from global;
+
+    composes: lg_mx-12 from global;
+}

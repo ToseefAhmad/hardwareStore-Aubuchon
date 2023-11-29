@@ -1,0 +1,237 @@
+a.link {
+    @apply !no-underline;
+}
+.wrapper {
+    border-radius: inherit;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    composes: bg-clip-padding from global;
+    composes: overflow-hidden from global;
+}
+.overlay {
+    transition: background-color 500ms ease;
+    composes: items-center from global;
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: relative from global;
+}
+
+.videoOverlay {
+    composes: absolute from global;
+    composes: inset-0 from global;
+    composes: z-0 from global;
+}
+
+.viewportElement {
+    composes: h-full from global;
+    composes: w-px from global;
+    composes: absolute from global;
+    left: var(--leftViewportElement); /* stylelint-disable-line */
+    composes: top-0 from global;
+    composes: z-[-100] from global;
+    transform: translate3d(0, 0, 0);
+}
+
+.content {
+    composes: min-h-[50px] from global;
+    composes: w-full from global;
+}
+.button {
+    text-align: inherit;
+    transition: opacity 500ms ease;
+    word-break: break-word;
+    composes: mt-5 from global;
+    composes: max-w-full from global;
+    composes: w-full from global;
+}
+
+.root {
+    composes: mb-[30px] from global;
+    composes: lg_mb-[70px] from global;
+}
+
+.root:hover .buttonHover {
+    @apply opacity-100;
+}
+.buttonHover {
+    composes: button;
+    composes: opacity-100 from global;
+}
+.posterOverlay {
+    composes: overlay;
+    composes: content-center from global;
+    composes: justify-center from global;
+    composes: p-5 from global;
+
+    composes: lg_!px-[100px] from global; /* stylelint-disable-line */
+}
+.posterOverlayHover {
+    composes: posterOverlay;
+    composes: !bg-transparent from global;
+}
+.collageLeftOverlay {
+    composes: overlay;
+    composes: mr-auto from global;
+    composes: max-w-[540px] from global;
+}
+.collageLeftOverlayHover {
+    composes: collageLeftOverlay;
+    composes: !bg-transparent from global;
+}
+.collageCenteredOverlay {
+    composes: overlay;
+    composes: mr-auto from global;
+    composes: ml-auto from global;
+    composes: max-w-[540px] from global;
+}
+.collageCenteredOverlayHover {
+    composes: collageCenteredOverlay;
+    composes: !bg-transparent from global;
+}
+.collageRightOverlay {
+    composes: overlay;
+    composes: ml-auto from global;
+    composes: max-w-[540px] from global;
+}
+.collageRightOverlayHover {
+    composes: collageRightOverlay;
+    composes: !bg-transparent from global;
+}
+
+.root :global [id*='jarallax-container'] video,
+.root :global [id*='jarallax-container'] iframe,
+.root :global [id*='jarallax-container'] img {
+    @apply !m-auto;
+    transform: none !important;
+}
+
+[class*='row-contained'] {
+    @apply !mb-0;
+}
+
+[class*='banner-wrapper'] {
+    @apply rounded;
+}
+
+[class*='homepage-main-banner'] [class*='banner-posterOverlay'] {
+    @apply lg_!px-[100px]
+        xxl_!px-[200px];
+}
+
+[class*='banner-posterOverlay'] img {
+    @apply mb-[15px]
+        lg_mb-[17px]
+        m-0;
+}
+
+[class*='banner-posterOverlay'] button {
+    @apply inline-block
+        lg_!text-base
+        no-underline
+        !py-1.5
+        lg_!py-3.5
+        lg_!px-[40px]
+        !px-[30px]
+        rounded
+        !leading-7
+        lg_!leading-[26px]
+        hover_no-underline
+        active_no-underline
+        focus_no-underline
+        outline-none
+        font-semibold
+        !w-auto
+        !h-auto
+        !border-0
+        lg_!h-[54px];
+}
+
+[class*='banner-posterOverlay'] a {
+    @apply !mt-0
+        inline-block
+        no-underline
+        px-7.5
+        py-1.5
+        lg_!px-10
+        lg_!py-3
+        rounded
+        hover_no-underline
+        active_no-underline
+        focus_no-underline
+        lg_hover_!bg-gray
+        lg_active_!bg-black
+        lg_active_!text-white
+        lg_disabled_!bg-gray-light
+        outline-none
+        font-semibold;
+}
+
+[class*='banner-posterOverlay'] button:active span {
+    @apply lg_!text-white;
+}
+
+[class*='row-fullBleed'] [class*='banner-posterOverlay'] a {
+    @apply py-2;
+}
+
+[class*='row-fullBleed'] [class*='banner-content'] {
+    @apply max-w-[1720px];
+}
+
+[class*='row-fullBleed'] [class*='banner-button'] {
+    @apply max-w-[1720px];
+}
+
+[class*='row-fullBleed'] [class*='banner-posterOverlay'] img {
+    @apply mb-5
+        lg_mb-10
+        lg_bg-top;
+}
+
+[class*='row-fullBleed'] [class*='banner-wrapper'] {
+    @apply rounded-none
+        bg-top;
+}
+
+[class*='row-fullBleed'] {
+    @apply w-screen;
+}
+
+[class*='richContent-root'] /* stylelint-disable-line */
+[class*='row-contained'] /* stylelint-disable-line */
+[class*='banner-posterOverlay'] /* stylelint-disable-line */
+[class*='button-secondary'] {
+    @apply hover_bg-gray
+        active_bg-black
+        disabled_bg-gray-light;
+}
+
+[class*='richContent-root'] /* stylelint-disable-line */
+[class*='row-contained'] /* stylelint-disable-line */
+[class*='banner-posterOverlay'] /* stylelint-disable-line */
+[class*='button-secondary'] /* stylelint-disable-line */
+span {
+    @apply text-black;
+}
+
+a.linkButton {
+    @apply !p-0
+        mt-7.5;
+}
+
+a.linkButton [class*='button-secondary'] {
+    @apply mt-0;
+}
+
+[class*='home-page'] [class*='banner-posterOverlay'] b,
+strong {
+    @apply !font-semibold;
+}
+
+[class*='home-page'] [class*='pagebuilder-slider'] {
+    @apply !min-h-full;
+}
+
+[class*='home-page'] [class*='pagination-root'] {
+    @apply !mb-5;
+}

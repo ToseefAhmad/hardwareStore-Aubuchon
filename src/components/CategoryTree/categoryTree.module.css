@@ -1,0 +1,22 @@
+.root {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: bg-white from global;
+    composes: overflow-auto from global;
+    composes: transition-all from global;
+    composes: duration-400 from global;
+}
+
+.rootLeft {
+    composes: root;
+    composes: -translate-x-full from global;
+}
+
+.rootRight {
+    composes: root;
+    composes: translate-x-full from global;
+}

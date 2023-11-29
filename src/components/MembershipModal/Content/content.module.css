@@ -1,0 +1,32 @@
+.header {
+    composes: header from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.title {
+    composes: title from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.icon {
+    composes: icon from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.closeButton {
+    composes: closeButton from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.tabsContainer {
+    composes: tabsContainer from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.tabs {
+    composes: tabs from '@app/components/AuthModal/Content/content.module.css';
+    composes: grid-cols-2 from global;
+}
+
+.tabButton {
+    composes: tabButton from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.tabContent {
+    composes: tabContent from '@app/components/AuthModal/Content/content.module.css';
+}

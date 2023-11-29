@@ -1,0 +1,34 @@
+.legal {
+    composes: legal from './newsletter.module.css';
+    composes: w-[257px] from global;
+    composes: h-12 from global;
+    composes: mx-auto from global;
+    composes: lg_h-[26px] from global;
+    composes: lg_mx-0 from global;
+    composes: lg_w-[453px] from global;
+    composes: xl_w-full from global;
+    composes: xl_h-[52px] from global;
+    composes: xxxl_h-[26px] from global;
+    composes: xxxl_w-[453px] from global;
+}
+
+.greetingTextWrapper {
+    composes: w-newsletterFormMobile from global;
+    composes: mx-auto from global;
+    composes: md_w-[50%] from global;
+    composes: lg_mx-0 from global;
+}
+
+.title {
+    composes: mx-auto from global;
+    composes: w-[214px] from global;
+    composes: lg_mx-0 from global;
+    composes: lg_w-[241px] from global;
+}
+
+.infoText {
+    composes: mx-auto from global;
+    composes: w-[239px] from global;
+    composes: lg_mx-0 from global;
+    composes: lg_w-[273px] from global;
+}

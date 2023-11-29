@@ -1,0 +1,19 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_gap-y-5 from global;
+}
+
+.field {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: lg_mb-3 from global;
+}
+
+.submitBtn {
+    composes: primary from '@app/components/Button/button.module.css';
+
+    composes: lg_h-[56px] from global;
+}

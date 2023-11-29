@@ -1,0 +1,102 @@
+.root {
+    composes: relative from global;
+    composes: my-7.5 from global;
+    composes: pt-5 from global;
+    composes: px-5 from global;
+    composes: grid from global;
+    composes: justify-items-center from global;
+    composes: text-white from global;
+    composes: rounded-md from global;
+    composes: bg-primary from global;
+    composes: bg-circles from global;
+    composes: overflow-hidden from global;
+
+    composes: lg_mt-7.5 from global;
+    composes: lg_pt-7.5 from global;
+    composes: lg_pb-5 from global;
+    composes: lg_px-12.5 from global;
+    composes: lg_grid from global;
+    composes: lg_grid-cols-maxContentFull from global;
+    composes: lg_gap-x-7.5 from global;
+    composes: xl_pt-12.5 from global;
+    composes: xl_pb-5 from global;
+    composes: xl_px-12.5 from global;
+}
+
+.title {
+    composes: text-base from global;
+    composes: font-semibold from global;
+
+    composes: lg_mb-1.25 from global;
+    composes: lg_text-lg from global;
+}
+
+.text {
+    composes: mb-[22px] from global;
+
+    composes: lg_mb-5 from global;
+}
+
+.icon {
+    composes: mb-[19px] from global;
+
+    composes: lg_mt-1.25 from global;
+}
+
+.form {
+    composes: pb-5 from global;
+    composes: w-full from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-cols-createAccountForm from global;
+    composes: lg_gap-x-2.5 from global;
+}
+
+.content {
+    composes: relative from global;
+    composes: z-2 from global;
+    composes: text-center from global;
+
+    composes: lg_text-left from global;
+    composes: lg_w-full from global;
+}
+
+.fieldRoot {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: lg_!mb-0 from global; /* stylelint-disable-line */
+    composes: lg_!gap-y-0 from global; /* stylelint-disable-line */
+}
+
+.label {
+    composes: hidden from global;
+}
+
+.rootError {
+    composes: root_error from '@app/components/Field/message.module.css';
+
+    composes: !relative from global;
+    composes: !translate-y-0 from global;
+    composes: !text-white from global;
+    composes: mt-2 from global;
+}
+
+.formError {
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+}
+
+.formErrorIcon {
+    composes: text-white from global;
+}
+
+.formErrorText {
+    composes: font-semibold from global;
+    composes: text-xs from global;
+}
+
+.eyeButton {
+    composes: eyeButton from '@app/components/Password/password.module.css';
+    composes: text-gray-dark from global;
+}

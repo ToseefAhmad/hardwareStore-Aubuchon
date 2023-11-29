@@ -1,0 +1,6 @@
+.root {
+    composes: modalContainer from '@app/components/WarningDialog/warningDialog.module.css';
+
+    composes: grid from global;
+    composes: !h-fit from global;
+}

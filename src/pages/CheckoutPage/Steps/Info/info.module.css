@@ -1,0 +1,111 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-5 from global;
+    composes: pb-2.5 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-checkoutContent from global;
+}
+
+.content {
+    composes: pt-5 from global;
+
+    composes: lg_pt-7.5 from global;
+}
+
+.errorContainer {
+    composes: mb-2.5 from global;
+
+    composes: lg_hidden from global;
+}
+
+.desktopErrorContainer {
+    composes: hidden from global;
+    composes: mb-5 from global;
+
+    composes: lg_block from global;
+}
+
+.textFieldIcon {
+    composes: icon from '@app/components/Field/fieldIcons.module.css';
+    composes: right-2 from global;
+
+    composes: lg_right-3 from global;
+}
+
+.editIcon {
+    composes: text-black-light from global;
+}
+
+.textFieldIconPadding {
+    composes: iconPadding from '@app/components/TextInput/textInput.module.css';
+    composes: !pr-14 from global;
+}
+
+.resetButton {
+    composes: outline-none from global;
+    composes: h-10 from global;
+    composes: w-10 from global;
+}
+
+.fieldsetBase {
+    composes: grid from global;
+
+    composes: lg_gap-x-5 from global;
+    composes: lg_gap-y-0.5 from global;
+}
+
+.fieldsetCredentials {
+    composes: fieldsetBase;
+    composes: items-start from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_auto-cols-fr from global;
+    composes: lg_mb-3 from global;
+}
+
+.fieldsetInfo {
+    composes: fieldsetBase;
+    composes: mb-2.5 from global;
+
+    composes: lg_grid-cols-2 from global;
+    composes: lg_mb-5 from global;
+}
+
+.credentialsInfoMessageMobileContainer {
+    composes: mt-1 from global;
+
+    composes: lg_hidden from global;
+}
+
+.credentialsInfoMessageContainer {
+    composes: hidden from global;
+    composes: mt-3 from global;
+
+    composes: lg_block from global;
+}
+
+.credentialsInfoMessage {
+    composes: relative from global;
+    composes: pl-[26px] from global;
+
+    composes: lg_pl-7.5 from global;
+}
+
+.credentialsInfoMessageIcon {
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: top-1 from global;
+    composes: text-black-light from global;
+}
+
+.link {
+    composes: link-secondary from global;
+    composes: text-2xs from global;
+    composes: lg_text-xs from global;
+}
+
+.recaptcha {
+    composes: my-3 from global;
+}

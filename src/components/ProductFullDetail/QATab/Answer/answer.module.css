@@ -1,0 +1,146 @@
+.root {
+    composes: pl-3.75 from global;
+    composes: border-solid from global;
+    composes: border-l-2 from global;
+    composes: border-gray-light from global;
+
+    composes: xxl_pl-5 from global;
+}
+
+.root_bestAnswer {
+    composes: !border-primary from global;
+}
+
+.answer {
+    composes: xxl_grid from global;
+    composes: xxl_grid-flow-col from global;
+    composes: xxl_gap-5 from global;
+    composes: xxl_items-center from global;
+}
+
+.answer_regularAnswer {
+    composes: grid-cols-qaTabAnswerDesktop from global;
+}
+
+.answer_bestAnswer {
+    composes: justify-between from global;
+    composes: !border-primary from global;
+}
+
+.icon {
+    composes: text-black from global;
+}
+
+.iconEmpty {
+    composes: text-opacity-40 from global;
+    composes: hover_text-opacity-100 from global;
+}
+
+.iconFilled {
+    composes: hover_text-opacity-40 from global;
+}
+
+.button {
+    composes: font-semibold from global;
+    composes: hover_opacity-80 from global;
+}
+
+.createDate {
+    composes: text-2xs from global;
+
+    composes: xxl_order-last from global;
+    composes: xxl_xs from global;
+}
+
+.bestAnswer {
+    composes: font-semibold from global;
+}
+
+.answerDetails {
+    composes: xxl_grid from global;
+    composes: xxl_grid-flow-col from global;
+    composes: xxl_gap-9 from global;
+    composes: justify-start from global;
+}
+
+.answerDetailsGap {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-[26px] from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: xxl_gap-9 from global;
+}
+
+.beforeElementBase {
+    composes: before_absolute from global;
+    composes: before_bottom-1/2 from global;
+    composes: before_block from global;
+    composes: before_h-0.5 from global;
+    composes: before_w-1.5 from global;
+    composes: before_rounded-px from global;
+}
+
+.beforeElementMobile {
+    composes: beforeElementBase;
+    composes: before_-left-4 from global;
+    composes: before_bg-black from global;
+    composes: before_bg-opacity-40 from global;
+}
+
+.beforeElementDesktop {
+    composes: beforeElementBase;
+    composes: xxl_before_left-[-21px] from global;
+    composes: xxl_before_bg-primary from global;
+    composes: xxl_before_bg-opacity-100 from global;
+}
+
+.userDetails {
+    composes: answerDetailsGap;
+}
+
+.answerControls {
+    composes: relative from global;
+    composes: answerDetailsGap;
+    composes: beforeElementDesktop;
+}
+
+.replyForm {
+    composes: mt-2.5 from global;
+}
+
+.replyFormButtonsWrapper {
+    composes: twoButtonsWrapper from '@app/components/ProductFullDetail/QATab/qaTab.module.css';
+}
+
+.buttonWithBeforeElement {
+    composes: relative from global;
+    composes: button;
+    composes: beforeElementMobile;
+    composes: beforeElementDesktop;
+}
+
+.itemWithBeforeElement {
+    composes: relative from global;
+    composes: beforeElementMobile;
+    composes: beforeElementDesktop;
+}
+
+.purchasedOn {
+    composes: font-semibold from global;
+}
+
+.likeButton {
+    composes: block from global;
+    composes: mb-2.5 from global;
+
+    composes: xxl_mb-0 from global;
+}
+
+.replies {
+    composes: ml-3.75 from global;
+    composes: mt-2.5 from global;
+
+    composes: xxl_ml-3.75 from global;
+    composes: xxl_mt-3.75 from global;
+}

@@ -1,0 +1,22 @@
+.root {
+    composes: clickable from global;
+    composes: relative from global;
+
+    composes: before_absolute from global;
+    composes: before_top-1/2 from global;
+    composes: before_left-1/2 from global;
+    composes: before_w-[180%] from global;
+    composes: before_h-[180%] from global;
+    composes: before_-translate-x-1/2 from global;
+    composes: before_-translate-y-1/2 from global;
+}
+
+.mobile {
+    composes: lg_hidden from global;
+}
+
+.desktop {
+    composes: hidden from global;
+
+    composes: lg_flex from global;
+}

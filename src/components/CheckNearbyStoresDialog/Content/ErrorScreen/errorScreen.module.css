@@ -1,0 +1,6 @@
+.root {
+    composes: my-2.5 from global;
+    composes: mx-5 from global;
+
+    composes: lg_mx-12.5 from global;
+}

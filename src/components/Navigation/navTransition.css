@@ -1,0 +1,51 @@
+.navTransition-enter {
+    @apply translate-x-full;
+}
+
+.navTransition-enter-active {
+    @apply transition-transform
+        duration-400
+        ease-menu
+        translate-x-0;
+}
+
+.navTransition-exit {
+    @apply translate-x-0;
+}
+
+.navTransition-exit-active {
+    @apply transition-transform
+        duration-400
+        ease-menu
+        translate-x-full;
+}
+
+.navTransitionLeft-enter {
+    @apply -translate-x-full;
+}
+
+.navTransitionLeft-enter-active {
+    @apply absolute
+        top-0
+        right-0
+        left-0
+        transition-transform
+        duration-400
+        ease-menu
+        translate-x-0;
+}
+
+.navTransitionLeft-exit {
+    @apply absolute
+        top-0
+        right-0
+        left-0
+        translate-x-0;
+}
+
+.navTransitionLeft-exit-active {
+    @apply transition-transform
+        duration-400
+        ease-menu
+        -translate-x-full;
+}

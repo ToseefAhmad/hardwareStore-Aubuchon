@@ -1,0 +1,94 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-7.5 from global;
+    composes: mb-7.5 from global;
+
+    composes: lg_gap-y-12.5 from global;
+    composes: lg_mb-2 from global;
+}
+
+.section {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_gap-y-3 from global;
+}
+
+.shimmer {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+
+    composes: w-full from global;
+}
+
+.sectionTitleShimmer {
+    composes: shimmer;
+
+    composes: h-[34px] from global;
+
+    composes: lg_h-11 from global;
+}
+
+.mobileNavShimmer {
+    composes: shimmer;
+    composes: h-[140px] from global;
+
+    composes: lg_hidden from global;
+}
+
+.desktopNavShimmer {
+    composes: shimmer;
+    composes: hidden from global;
+    composes: h-[45px] from global;
+
+    composes: lg_block from global;
+}
+
+.checkInFormDescriptionShimmer {
+    composes: shimmer;
+
+    composes: mb-5 from global;
+    composes: h-11 from global;
+
+    composes: lg_h-6 from global;
+}
+
+.checkInFormTextAreaShimmer {
+    composes: shimmer;
+
+    composes: h-[80px] from global;
+
+    composes: lg_mb-2 from global;
+    composes: lg_h-[70px] from global;
+}
+
+.checkInFormButtonShimmer {
+    composes: shimmer;
+
+    composes: h-[50px] from global;
+    composes: rounded from global;
+
+    composes: lg_place-self-center from global;
+    composes: lg_w-[195px] from global;
+}
+
+.itemsShimmer {
+    composes: shimmer;
+    composes: h-[130px] from global;
+
+    composes: lg_h-100 from global;
+}
+
+.storeInfoTitleShimmer {
+    composes: sectionTitleShimmer;
+    composes: !h-[65px] from global;
+
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.storeInfoShimmer {
+    composes: shimmer;
+    composes: h-[675px] from global;
+
+    composes: lg_h-[615px] from global;
+}

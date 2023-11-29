@@ -1,0 +1,27 @@
+.overallRatingStarsFilled {
+    composes: absolute from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: pointer-events-none from global;
+
+    composes: lg_-bottom-px from global;
+}
+
+.ratingRadioOption {
+    composes: text-gray from global;
+    composes: text-opacity-40 from global;
+    composes: hover_text-gray-dark from global;
+    composes: hover_text-opacity-100 from global;
+    composes: cursor-pointer from global;
+}
+
+.ratingRadioButtons {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-px from global;
+    composes: justify-start from global;
+}
+
+.ratingRadioButton {
+    composes: hidden from global;
+}

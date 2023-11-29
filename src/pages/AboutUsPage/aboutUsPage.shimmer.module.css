@@ -1,0 +1,18 @@
+.root {
+    composes: root from './aboutUsPage.module.css';
+}
+
+.root [class^='shimmer-root'] {
+    @apply align-top;
+}
+
+.heading {
+    composes: flex from global;
+    composes: justify-start from global;
+    composes: flex-col from global;
+}
+
+.carousel {
+    composes: flex from global;
+    composes: gap-[5px] from global;
+}

@@ -1,0 +1,85 @@
+.whyDidYouChooseThisContainer {
+    composes: pt-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+}
+
+.whyDidYouChooseThisHeader {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-3.75 from global;
+    composes: justify-start from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_mb-5 from global;
+}
+
+.whyDidYouChooseThisIcon {
+    composes: pt-1.25 from global;
+    composes: icon from '../qaTab.module.css';
+
+    composes: pt-1 from global;
+}
+
+.expandIcon {
+    composes: icon from '../qaTab.module.css';
+}
+
+.commentsToggleButton {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: hover_opacity-80 from global;
+
+    composes: lg_gap-3.75 from global;
+}
+
+.whyDidYouChooseThisStoreTitle {
+    composes: text-primary from global;
+}
+
+.whyDidYouChooseThisContent {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: mb-5 from global;
+    composes: text-gray-dark from global;
+
+    composes: lg_pl-[29px] from global;
+}
+
+.comment {
+    composes: pl-3.75 from global;
+    composes: border-solid from global;
+    composes: border-l-2 from global;
+    composes: border-gray-light from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_justify-between from global;
+    composes: lg_pl-5 from global;
+}
+
+.commentDate {
+    composes: text-2xs from global;
+
+    composes: lg_order-last from global;
+    composes: lg_my-auto from global;
+    composes: lg_text-xs from global;
+}
+
+.commentDetails {
+    composes: lg_grid from global;
+    composes: lg_gap-1.25 from global;
+}
+
+.whyDidYouChooseThisFooter {
+    composes: py-2.5 from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: py-3.75 from global;
+}

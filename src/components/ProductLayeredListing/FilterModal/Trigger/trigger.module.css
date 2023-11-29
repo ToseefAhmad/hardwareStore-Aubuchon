@@ -1,0 +1,12 @@
+.filterButton {
+    composes: root_lowPriority from '@app/components/Button/button.module.css';
+}
+
+.inner {
+    composes: flex from global;
+}
+
+.amount {
+    composes: ml-1 from global;
+    composes: text-primary from global;
+}

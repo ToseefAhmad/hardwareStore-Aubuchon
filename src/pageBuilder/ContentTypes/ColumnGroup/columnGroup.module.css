@@ -1,0 +1,5 @@
+.root {
+    composes: flex-col from global;
+    composes: md_flex-row from global;
+    composes: gap-x-4 from global;
+}

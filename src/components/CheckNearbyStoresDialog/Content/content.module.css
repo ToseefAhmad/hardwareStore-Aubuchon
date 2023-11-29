@@ -1,0 +1,43 @@
+.header {
+    composes: relative from global;
+    composes: py-5 from global;
+    composes: pl-5 from global;
+    composes: pr-12 from global;
+    composes: border-b from global;
+    composes: border-gray-lightest from global;
+
+    composes: lg_pt-12.5 from global;
+    composes: lg_px-12.5 from global;
+    composes: lg_pb-0 from global;
+    composes: lg_border-b-0 from global;
+}
+
+.headerSecondary {
+    composes: !pb-4 from global;
+    composes: !border-b-0 from global;
+
+    composes: lg_!pb-5 from global; /* stylelint-disable-line */
+}
+
+.headerTitle {
+    composes: lg_font-xl from global;
+}
+
+.noData {
+    composes: p-5 from global;
+
+    composes: lg_px-12.5 from global;
+}
+
+.closeButton {
+    composes: absolute from global;
+    composes: top-4 from global;
+    composes: right-1.5 from global;
+    composes: !h-[42px] from global;
+    composes: !w-[42px] from global;
+    composes: text-black-light from global;
+    composes: rounded-full from global;
+    composes: outline-none from global;
+
+    composes: lg_right-3.5 from global;
+}

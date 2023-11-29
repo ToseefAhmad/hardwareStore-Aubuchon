@@ -1,0 +1,36 @@
+.root {
+    composes: grid from global;
+    composes: lg_mb-7.5 from global;
+}
+
+.trigger {
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: group from global;
+}
+
+.header {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-filterHeader from global;
+}
+
+.name {
+    composes: text-left from global;
+    composes: uppercase from global;
+}
+
+.icon {
+    composes: text-primary from global;
+    composes: text-opacity-100 from global;
+}
+
+.number {
+    composes: text-primary from global;
+}

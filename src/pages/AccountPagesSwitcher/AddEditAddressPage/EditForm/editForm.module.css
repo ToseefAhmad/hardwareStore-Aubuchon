@@ -1,0 +1,49 @@
+.root {
+    composes: grid from global;
+    composes: gap-y-5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_gap-y-[42px] from global;
+    composes: lg_mb-17.5 from global;
+}
+
+.fieldset {
+    composes: grid from global;
+
+    composes: xl_grid-cols-2 from global;
+    composes: xl_gap-x-5 from global;
+    composes: xl_gap-y-0.5 from global;
+}
+
+.hiddenInput {
+    composes: hidden from global;
+}
+
+.checkboxes {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-2.5 from global;
+    composes: -mt-2 from global;
+
+    composes: lg_gap-3.5 from global;
+    composes: lg_-mt-4 from global;
+}
+
+.buttons {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_justify-center from global;
+    composes: lg_-m-2.5 from global;
+    composes: lg_pt-7.5 from global;
+    composes: lg_border-t from global;
+}
+
+.buttonWrap {
+    composes: lg_w-[180px] from global;
+}
+
+.cancelBtn {
+    composes: lg_w-[180px] from global;
+}

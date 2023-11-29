@@ -1,0 +1,53 @@
+.root {
+    composes: relative from global;
+    composes: overflow-hidden from global;
+    composes: flex from global;
+    composes: flex-col from global;
+
+    composes: lg_block from global;
+}
+
+.items {
+    composes: grid from global;
+    composes: h-screen from global;
+    composes: overflow-hidden from global;
+
+    composes: lg_h-[212px] from global;
+}
+
+.itemsList {
+    composes: items;
+
+    composes: !h-full from global;
+    composes: !overflow-auto from global;
+    composes: content-start from global;
+
+    composes: !lg_h-auto from global;
+}
+
+.itemsListReverse {
+    composes: itemsList;
+
+    composes: !flex from global;
+    composes: flex-col-reverse from global;
+}
+
+.item {
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: lg_mb-2 from global;
+    composes: lg_last_mb-0 from global;
+    composes: lg_p-0 from global;
+    composes: lg_border-b-0 from global;
+}
+
+.itemReverse {
+    composes: lg_last_mb-2 from global;
+    composes: lg_first_mb-0 from global;
+}
+
+.itemDefault {
+    composes: lg_mb-1.25 from global;
+}

@@ -1,0 +1,7 @@
+.root {
+    composes: text-center from global;
+
+    composes: lg_mx-12.5 from global;
+    composes: mb-7.5 from global;
+    composes: lg_mb-17.5 from global;
+}

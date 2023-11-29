@@ -1,0 +1,166 @@
+.root {
+    composes: grid from global;
+    composes: gap-x-3.75 from global;
+    composes: items-center from global;
+
+    composes: lg-pt-1.25 from global;
+}
+
+.rootFull {
+    composes: !grid-cols-orderItemsRowFull from global;
+    composes: pt-5 from global;
+
+    composes: lg_!grid-cols-orderItemsRowFullLg from global; /* stylelint-disable-line */
+    composes: lg_!gap-x-[25px] from global; /* stylelint-disable-line */
+    composes: lg_!pr-5 from global; /* stylelint-disable-line */
+    composes: lg_!pl-7.5 from global; /* stylelint-disable-line */
+    composes: lg_!pt-5 from global; /* stylelint-disable-line */
+    composes: last_lg_pb-[18px] from global;
+    composes: last_lg_border-b from global;
+    composes: last_lg_border-gray-light from global;
+}
+
+.rootFull:not(:first-of-type) {
+    @apply border-t border-gray-light;
+}
+
+.info {
+    composes: grid from global;
+    composes: gap-y-1.25 from global;
+}
+
+.infoFull {
+    composes: lg_grid from global;
+    composes: lg_gap-5 from global;
+    composes: lg_items-center from global;
+    composes: lg_grid-cols-orderItemsInfoFullLg from global;
+    composes: xl_grid-cols-orderItemsInfoFull from global;
+}
+
+.thumbnail {
+    composes: thumbnail from '@app/components/MiniCart/productPreview.module.css';
+
+    composes: !mx-auto from global;
+    composes: !w-full from global;
+    composes: !h-full from global;
+}
+
+.container {
+    composes: block from global;
+    composes: mx-auto from global;
+}
+
+.thumbnailContainer {
+    composes: container;
+    composes: w-[68px] from global;
+    composes: h-[68px] from global;
+
+    composes: lg_w-[138px] from global;
+    composes: lg_h-[138px] from global;
+}
+
+.thumbnailContainerFull {
+    composes: container;
+    composes: !w-[128px] from global;
+    composes: !h-[128px] from global;
+
+    composes: lg_!w-[68px] from global; /* stylelint-disable-line */
+    composes: lg_!h-[68px] from global; /* stylelint-disable-line */
+}
+
+.name {
+    composes: text-xs from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: leading-[18px] from global;
+
+    composes: lg_text-sm from global;
+}
+
+.priceWithDiscount {
+    composes: priceWithDiscount from '@app/components/MiniCart/ProductList/item.module.css';
+
+    composes: lg_!text-sm from global; /* stylelint-disable-line */
+}
+
+.totalPrice {
+    composes: totalPrice from '@app/components/MiniCart/ProductList/item.module.css';
+}
+
+.totalPrice_crossed {
+    composes: totalPrice_crossed from '@app/components/MiniCart/ProductList/item.module.css';
+
+    composes: !text-xs from global;
+    composes: !font-normal from global;
+    composes: !text-gray-dark from global;
+}
+
+.eachPrice {
+    composes: eachPrice from '@app/components/MiniCart/ProductList/item.module.css';
+
+    composes: lg_text-sm from global;
+}
+
+.eachPrice_crossed {
+    composes: lg_line-through from global;
+    composes: lg_font-normal from global;
+    composes: lg_text-gray-dark from global;
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+}
+
+.hidden {
+    composes: hidden from global;
+}
+
+.quantity {
+    composes: quantity from '@app/components/MiniCart/productPreview.module.css';
+
+    composes: lg_!left-2.5 from global; /* stylelint-disable-line */
+    composes: lg_!bottom-2.5 from global; /* stylelint-disable-line */
+    composes: lg_w-6 from global;
+    composes: lg_h-6 from global;
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+    composes: lg_!font-bold from global; /* stylelint-disable-line */
+}
+
+.quantityFull {
+    composes: !left-2.5 from global;
+    composes: !bottom-2.5 from global;
+    composes: !w-[34px] from global;
+    composes: !h-[34px] from global;
+    composes: !text-sm from global;
+
+    composes: lg_!left-1.25 from global; /* stylelint-disable-line */
+    composes: lg_!bottom-1.25 from global; /* stylelint-disable-line */
+    composes: lg_!w-6 from global; /* stylelint-disable-line */
+    composes: lg_!h-6 from global; /* stylelint-disable-line */
+    composes: lg_!text-xs from global; /* stylelint-disable-line */
+}
+
+.totalPriceFull {
+    composes: totalPrice;
+
+    composes: !text-sm from global;
+}
+
+.totalPrice_crossedFull {
+    composes: totalPrice_crossed;
+
+    composes: !text-xs from global;
+}
+
+.optionItems {
+    composes: item from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+
+    composes: lg_flex-col from global;
+    composes: xl_flex-row from global;
+    composes: lg_before_!hidden from global; /* stylelint-disable-line */
+    composes: xl_before_!block from global; /* stylelint-disable-line */
+}
+
+.optionList {
+    composes: list from '@app/components/MiniCart/ProductList/itemOptions.module.css';
+
+    composes: lg_!block from global; /* stylelint-disable-line */
+    composes: xl_!flex from global; /* stylelint-disable-line */
+}

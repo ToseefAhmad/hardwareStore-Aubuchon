@@ -1,0 +1,43 @@
+.root {
+    composes: py-2.5 from global;
+    composes: px-[19px] from global;
+    composes: h-[113px] from global;
+    composes: grid from global;
+    composes: items-start from global;
+    composes: text-xs from global;
+    composes: text-dark-gray from global;
+    composes: semi-bold from global;
+    composes: border-gray-light from global;
+    composes: border-solid from global;
+    composes: border from global;
+    composes: rounded from global;
+    composes: outline-none from global;
+
+    composes: lg_hover_border-primary from global;
+    composes: lg_h-[92px] from global;
+}
+
+.swatchColor {
+    composes: inline-block from global;
+    composes: w-full from global;
+    composes: h-10 from global;
+    composes: rounded from global;
+}
+
+.swatchSelected {
+    composes: !bg-gray-light from global;
+    composes: !border-primary from global;
+}
+
+.content {
+    composes: content from '@app/components/Button/button.module.css';
+
+    composes: grid-cols-items-1 from global;
+}
+
+.label {
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: line-clamp-2 from global;
+    composes: h-auto from global;
+}

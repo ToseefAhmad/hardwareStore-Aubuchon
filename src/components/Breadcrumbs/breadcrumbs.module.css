@@ -1,0 +1,76 @@
+.root {
+    composes: relative from global;
+    composes: h-[68px] from global;
+    composes: pt-[27px] from global;
+    composes: pb-[17px] from global;
+
+    composes: lg_h-14 from global;
+    composes: lg_pt-5 from global;
+    composes: lg_pb-2.5 from global;
+    composes: lg_truncate from global;
+}
+
+.divider {
+    composes: hidden from global;
+    composes: mx-2.5 from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_inline-block from global;
+}
+
+.link {
+    composes: text-sm from global;
+    composes: font-semibold from global;
+}
+
+.breadcrumbsMobile {
+    composes: absolute from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: w-[190px] from global;
+    composes: px-5 from global;
+    composes: py-2.5 from global;
+    composes: mt-2 from global;
+    composes: gap-y-[5px] from global;
+    composes: rounded from global;
+    composes: bg-white from global;
+    composes: shadow-b from global;
+    composes: z-3 from global;
+
+    composes: after_absolute from global;
+    composes: after_top-[-1.5px] from global;
+    composes: after_left-[13.5px] from global;
+    composes: after_block from global;
+    composes: after_w-[3px] from global;
+    composes: after_h-[3px] from global;
+    composes: after_rotate-45 from global;
+    composes: after_bg-white from global;
+}
+
+.button {
+    composes: w-[30px] from global;
+    composes: h-6 from global;
+    composes: rounded from global;
+}
+
+.button_closed {
+    composes: button;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: bg-gray-light from global;
+}
+
+.button_open {
+    composes: button;
+    composes: text-white from global;
+    composes: bg-black from global;
+}
+
+.icon {
+    composes: pr-0.5 from global;
+}
+
+.emptyRoot {
+    composes: root;
+}

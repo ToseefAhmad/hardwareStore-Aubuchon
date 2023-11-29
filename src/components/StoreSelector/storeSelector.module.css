@@ -1,0 +1,90 @@
+.header {
+    composes: relative from global;
+    composes: pr-15 from global;
+    composes: pl-5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_pr-10 from global;
+    composes: lg_pl-0 from global;
+}
+
+.footer {
+    composes: px-5 from global;
+    composes: pb-5 from global;
+
+    composes: lg_static from global;
+    composes: lg_mt-5 from global;
+    composes: lg_p-0 from global;
+}
+
+.headerTitle {
+    composes: lg_font-xl from global;
+}
+
+.closeButton {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: right-1.5 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: !h-[42px] from global;
+    composes: !w-[42px] from global;
+    composes: text-black-light from global;
+    composes: border-none from global;
+    composes: !rounded-full from global;
+
+    composes: lg_top-[-34px] from global;
+    composes: lg_right-[-34px] from global;
+    composes: lg_translate-y-0 from global;
+}
+
+.searchBar {
+    composes: sticky from global;
+    composes: top-0 from global;
+    composes: z-1 from global;
+    composes: bg-white from global;
+    composes: py-5 from global;
+
+    composes: lg_pt-0 from global;
+}
+
+.finderButton {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.storesListRoot {
+    composes: !p-0 from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: flex-shrink-0 from global;
+    composes: divide-y from global;
+    composes: border-t from global;
+    composes: !overflow-hidden from global;
+
+    composes: lg_min-h-screen from global; /* To fix modal content jumping when popup opened for the first time */
+    composes: lg_border-t-0 from global;
+}
+
+.content {
+    composes: px-5 from global;
+
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: overflow-y-auto from global;
+    composes: overflow-x-hidden from global;
+
+    composes: lg_pr-2.5 from global;
+    composes: lg_pl-0 from global;
+}
+
+.currentStoreBlockRoot {
+    composes: relative from global;
+    composes: py-5 from global;
+    composes: px-5 from global;
+    composes: full-bleed from global;
+    composes: bg-gray-light from global;
+
+    composes: lg_hidden from global;
+}

@@ -1,0 +1,50 @@
+.root {
+    composes: relative from global;
+}
+
+.button {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: absolute from global;
+    composes: -top-15 from global;
+    composes: right-0 from global;
+    composes: z-1 from global;
+    composes: !h-12.5 from global;
+    composes: !w-12.5 from global;
+    composes: text-black/40 from global;
+    composes: !border-0 from global;
+
+    composes: lg_top-[-27px] from global;
+    composes: lg_right-[-26px] from global;
+    composes: lg_!h-[54px] from global; /* stylelint-disable-line */
+    composes: lg_!w-[54px] from global; /* stylelint-disable-line */
+}
+
+.figure {
+    composes: overflow-hidden from global;
+    composes: bg-gray-lighter from global;
+    composes: rounded from global;
+}
+
+.imageRoot {
+    composes: w-full from global;
+    composes: h-[50.75vw] from global;
+
+    composes: lg_h-[459px] from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: max-h-full from global;
+    composes: object-contain from global;
+    composes: object-center from global;
+}
+
+.description {
+    composes: py-2.5 from global;
+    composes: px-5 from global;
+    composes: text-xs from global;
+    composes: bg-white from global;
+
+    composes: lg_py-5 from global;
+    composes: lg_text-sm from global;
+}

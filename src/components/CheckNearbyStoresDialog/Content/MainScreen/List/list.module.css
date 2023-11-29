@@ -1,0 +1,22 @@
+.root {
+    composes: overflow-y-auto from global;
+    composes: flex-grow from global;
+    composes: mx-5 from global;
+    composes: divide-y from global;
+    composes: border-t from global;
+    composes: border-b from global;
+
+    composes: lg_mx-12.5 from global;
+    composes: lg_mb-4 from global;
+}
+
+@media (max-width: 1024px) {
+    .root {
+        scrollbar-width: none; /* Hide scrollbar on Firefox */
+    }
+
+    /* Hide scrollbar on Chrome, Safari, Edge */
+    .root::-webkit-scrollbar {
+        @apply hidden;
+    }
+}

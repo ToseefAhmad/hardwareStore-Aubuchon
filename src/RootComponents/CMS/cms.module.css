@@ -1,0 +1,29 @@
+.root {
+    composes: md_max-w-[1000px] from global;
+    composes: md_mx-auto from global;
+}
+
+.heading {
+    composes: mb-2 from global;
+    composes: mt-4 from global;
+    composes: text-left from global;
+    composes: text-3xl from global;
+
+    /* Medium */
+    composes: md_mt-6 from global;
+    composes: md_text-center from global;
+    composes: md_mb-10 from global;
+    composes: md_text-6xl from global;
+}
+
+.root_empty,
+.root_1column,
+.root_2columnsLeft,
+.root_2columnsRight,
+.root_3columns,
+.root_cmsFullWidth,
+.root_aboutUs,
+.root_categoryFullWidth,
+.root_productFullWidth {
+    composes: root;
+}

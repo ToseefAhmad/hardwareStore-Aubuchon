@@ -1,0 +1,17 @@
+.arrowBase {
+    composes: !top-[92px] from global;
+    composes: !translate-y-none from global;
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-white from global;
+}
+
+.arrowRoot {
+    composes: root from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: arrowBase;
+}
+
+.arrowDisabled {
+    composes: disabled from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: arrowBase;
+}

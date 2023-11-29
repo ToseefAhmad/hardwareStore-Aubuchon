@@ -1,0 +1,11 @@
+{
+  "name": "@magebit/prop-types",
+  "version": "0.0.1",
+  "description": "Add custom React prop-types",
+  "main": "index.js",
+  "author": "Magebit <info@magbeit.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "~17.0.1"
+  }
+}

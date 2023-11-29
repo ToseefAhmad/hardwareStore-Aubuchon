@@ -1,0 +1,5 @@
+.root {
+    composes: relative from global;
+    composes: px-5 from global;
+    composes: lg_px-0 from global;
+}

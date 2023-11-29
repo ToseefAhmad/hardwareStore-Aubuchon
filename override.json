@@ -1,0 +1,15 @@
+{
+    "overridePaths": {
+        "src/components": "@magento/venia-ui/lib/components",
+        "src/pages": "@magento/venia-ui/lib/components",
+        "src/talons": "@magento/peregrine/lib/talons",
+        "src/hooks": "@magento/peregrine/lib/hooks",
+        "src/RootComponents": "@magento/venia-ui/lib/RootComponents",
+        "src/context": "@magento/peregrine/lib/context",
+        "src/store": "@magento/peregrine/lib/store",
+        "src/Apollo/links": "@magento/peregrine/lib/Apollo/links",
+        "src/overrides/venia-ui": "@magento/venia-ui/lib",
+        "src/overrides/peregrine": "@magento/peregrine/lib",
+        "src/pageBuilder": "@magento/pagebuilder/lib"
+    }
+}

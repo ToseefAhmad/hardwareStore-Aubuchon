@@ -1,0 +1,26 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+}
+
+.button {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: !h-10 from global;
+
+    composes: lg_hidden from global;
+}
+
+.buttonText {
+    composes: relative from global;
+    composes: pr-5 from global;
+}
+
+.buttonIcon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: right-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-primary from global;
+}

@@ -1,0 +1,31 @@
+.root {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: tall from '@app/components/Button/button.module.css';
+
+    composes: inline-grid from global;
+    composes: place-content-center from global;
+    composes: w-full from global;
+    composes: text-base from global;
+    composes: text-center from global;
+    composes: no-underline from global;
+}
+
+.content {
+    composes: relative from global;
+    composes: pl-6 from global;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: -left-0.5 from global;
+    composes: top-1/2 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-primary from global;
+}
+
+.phone {
+    composes: hidden from global;
+
+    composes: lg_inline from global;
+}

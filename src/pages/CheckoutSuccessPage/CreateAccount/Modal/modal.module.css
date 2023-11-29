@@ -1,0 +1,15 @@
+.modal {
+    composes: modal from '@app/components/AuthModal/authModal.module.css';
+}
+
+.content {
+    composes: tabContent from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.paragraph {
+    composes: paragraph from '@app/components/CreateAccount/ScreensFactory/ThatIsMe/thatIsMe.module.css';
+}
+
+.errorMessage {
+    composes: text-red from global;
+}

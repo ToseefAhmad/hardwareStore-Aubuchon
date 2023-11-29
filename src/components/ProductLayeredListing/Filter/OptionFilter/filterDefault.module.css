@@ -1,0 +1,70 @@
+.labelContainer {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-1.25 from global;
+}
+
+.checkboxRoot {
+    composes: root from '@app/components/Checkbox/checkbox.module.css';
+
+    composes: grid-cols-items-1 from global;
+    composes: lg_grid-cols-none from global;
+}
+
+.checkboxLabel {
+    composes: checkbox from '@app/components/Checkbox/checkbox.module.css';
+
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: lg_p-0 from global;
+}
+
+.checkboxIcon {
+    composes: icon from '@app/components/Checkbox/checkbox.module.css';
+
+    composes: ml-5 from global;
+    composes: lg_ml-0 from global;
+}
+
+.labelContainer {
+    composes: grid from global;
+    composes: grid-cols-menuItem from global;
+    composes: gap-x-[3px] from global;
+}
+
+.labelLine {
+    composes: label from '@app/components/Checkbox/checkbox.module.css';
+
+    composes: h-6 from global;
+    composes: truncate from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.labelActive {
+    composes: text-black from global;
+    composes: font-semibold from global;
+}
+
+.labelWithRating {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+}
+
+.count {
+    composes: text-primary from global;
+    composes: font-bold from global;
+}
+
+.countWithoutLabel {
+    composes: ml-2.5 from global;
+}
+
+.rootRating {
+    composes: root from '@app/components/ProductCard/Rating/rating.module.css';
+
+    composes: !ml-1.25 from global;
+    composes: mt-1.25 from global;
+    composes: lg_mt-1 from global;
+}

@@ -1,0 +1,8 @@
+.root {
+    composes: w-fit from global;
+    composes: mx-auto from global;
+    composes: animate-toastMobile from global;
+
+    composes: lg_mr-0 from global;
+    composes: lg_animate-toastDesktop from global;
+}

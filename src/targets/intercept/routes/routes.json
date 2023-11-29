@@ -1,0 +1,163 @@
+[
+    {
+        "name": "AccountPage",
+        "pattern": "/account",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "AccountInformationPage",
+        "pattern": "/account-information",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "AddressBookPage",
+        "pattern": "/address-book",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "AddressPage",
+        "pattern": "/address-book/customer-address/:id",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "AddAddressPage",
+        "pattern": "/address-book/create-customer-address",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "RewardsPage",
+        "pattern": "/rewards",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "SavedPaymentsPage",
+        "pattern": "/saved-payments",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "OrderHistory",
+        "pattern": "/order-history",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "OrderViewPage",
+        "pattern": "/order-history/:orderNumber",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in",
+        "shimmer": "@app/pages/AccountPagesSwitcher/accountPagesSwitcher.shimmer"
+    },
+    {
+        "name": "GuestOrderViewPage",
+        "pattern": "/guest/order-history/:orderNumber",
+        "exact": true,
+        "path": "@app/pages/GuestOrderViewPage",
+        "shimmer": "@app/pages/GuestOrderViewPage/guestOrderViewPage.shimmer"
+    },
+    {
+        "name": "OrderCurbsidePickupPage",
+        "pattern": "/order-history/:orderNumber/pickup",
+        "exact": true,
+        "path": "@app/pages/AccountPagesSwitcher",
+        "authed": true,
+        "redirectTo": "/sign-in"
+    },
+    {
+        "name": "GuestOrderPickupPage",
+        "pattern": "/guest/order-history/:orderNumber/pickup",
+        "exact": true,
+        "path": "@app/pages/GuestOrderPickupPage",
+        "shimmer": "@app/pages/GuestOrderPickupPage/guestOrderPickupPage.shimmer"
+    },
+    {
+        "name": "OrderResolver",
+        "pattern": "/order-resolver/:orderNumber",
+        "exact": true,
+        "path": "@app/pages/OrderResolverPage"
+    },
+    {
+        "name": "SitemapPage",
+        "pattern": "/sitemap",
+        "exact": true,
+        "path": "@app/pages/SitemapPage",
+        "shimmer": "@app/pages/SitemapPage/sitemapPage.shimmer"
+    },
+    {
+        "name": "ContactPage",
+        "pattern": "/contact-us",
+        "exact": true,
+        "path": "@app/pages/ContactPage",
+        "shimmer": "@app/pages/ContactPage/contactPage.shimmer"
+    },
+    {
+        "name": "WishlistPage",
+        "pattern": "/wishlist",
+        "exact": true,
+        "path": "@app/components/ErrorView"
+    },
+    {
+        "name": "StoreListPage",
+        "pattern": "/stores",
+        "exact": true,
+        "path": "@app/pages/StoreListPage",
+        "shimmer": "@app/pages/StoreListPage/storeListPage.shimmer"
+    },
+    {
+        "name": "StoreViewPage",
+        "pattern": "/stores/:urlKey",
+        "exact": true,
+        "path": "@app/pages/StoreViewPage",
+        "shimmer": "@app/pages/StoreViewPage/storeViewPage.shimmer"
+    },
+    {
+        "name": "Search",
+        "pattern": "/search",
+        "exact": true,
+        "path": "@app/pages/SearchPage"
+    },
+    {
+        "name": "Thank You Page",
+        "pattern": "/checkout/success",
+        "exact": true,
+        "path": "@app/pages/CheckoutSuccessPage"
+    },
+    {
+        "name": "Try Curbside Page",
+        "pattern": "/try",
+        "exact": true,
+        "path": "@app/pages/TryCurbsidePage"
+    }
+]

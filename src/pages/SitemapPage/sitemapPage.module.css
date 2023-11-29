@@ -1,0 +1,58 @@
+.root {
+    composes: mx-auto from global;
+    composes: mb-7.5 from global;
+
+    composes: lg_mb-17.5 from global;
+
+    composes: xl_max-w-250 from global;
+}
+
+.title {
+    composes: grid from global;
+    composes: my-4 from global;
+
+    composes: md_justify-center from global;
+}
+
+.container {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: justify-items-center from global;
+
+    composes: w-full from global;
+
+    composes: lg_grid-cols-2 from global;
+    composes: lg_gap-x-5 from global;
+
+    composes: xl_grid-cols-3 from global;
+}
+
+.categoryBlock {
+    composes: w-[335px] from global;
+
+    composes: md_w-80 from global;
+}
+
+.categoryBlock:first-of-type > div {
+    @apply border-solid
+        border-t
+        border-gray-light;
+}
+
+/* Starting from screen width 1024px main container will be in grid with 2 columns. */
+.categoryBlock:nth-of-type(2) > div {
+    @apply lg_border-solid
+        lg_border-t
+        lg_border-gray-light;
+}
+
+/* Starting from screen width 1280px main container will be in grid with 3 columns. */
+.categoryBlock:nth-of-type(3) > div {
+    @apply xl_border-solid
+        xl_border-t
+        xl_border-gray-light;
+}
+
+.errorTitle {
+    composes: text-center from global;
+}

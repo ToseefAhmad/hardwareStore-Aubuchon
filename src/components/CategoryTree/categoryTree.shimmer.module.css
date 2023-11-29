@@ -1,0 +1,8 @@
+.listItem {
+    composes: h-[61px] from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+
+    composes: lg_h-[71px] from global;
+}

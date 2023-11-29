@@ -1,0 +1,84 @@
+.mobileRowView {
+    composes: p-5 from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+}
+
+.desktopRowView {
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-addressesTable from global;
+    composes: lg_gap-x-2.5 from global;
+    composes: lg_items-center from global;
+    composes: lg_p-0 from global;
+    composes: lg_pl-7.5 from global;
+    composes: lg_min-h-[60px] from global;
+    composes: lg_min-w-[1000px] from global;
+    composes: lg_text-sm from global;
+    composes: lg_border-l-0 from global;
+    composes: lg_border-r-0 from global;
+    composes: lg_rounded-none from global;
+}
+
+.root {
+    composes: mobileRowView;
+    composes: desktopRowView;
+
+    composes: lg_border-b-0 from global;
+    composes: lg_last_border-b from global;
+}
+
+.cell {
+    composes: overflow-hidden from global;
+    composes: mb-1.25 from global;
+    composes: last-of-type_mb-2.5 from global;
+
+    composes: lg_mb-0 from global;
+    composes: lg_last-of-type_mb-0 from global;
+}
+
+.actionsCell {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-fr from global;
+
+    composes: lg_gap-x-0.5 from global;
+    composes: lg_auto-cols-max from global;
+}
+
+.actionLink {
+    composes: !h-[26px] from global;
+    composes: text-black-light from global;
+    composes: !border-t-0 from global;
+    composes: !border-b-0 from global;
+    composes: !border-l-0 from global;
+    composes: !rounded-none from global;
+
+    composes: lg_!h-7 from global; /* stylelint-disable-line */
+    composes: lg_!w-7 from global; /* stylelint-disable-line */
+    composes: lg_!rounded-full from global; /* stylelint-disable-line */
+    composes: lg_!border-r-0 from global; /* stylelint-disable-line */
+}
+
+.actionButton {
+    composes: secondary from '@app/components/Button/button.module.css';
+    composes: actionLink;
+    composes: border-none from global;
+}
+
+.label {
+    composes: inline-block from global;
+    composes: mr-1.25 from global;
+
+    composes: lg_hidden from global;
+}
+
+.value {
+    composes: inline-block from global;
+    composes: font-semibold from global;
+    composes: break-word from global;
+
+    composes: lg_font-normal from global;
+}

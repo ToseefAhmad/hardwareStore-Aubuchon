@@ -1,0 +1,111 @@
+.root {
+    composes: block from global;
+    composes: items-start from global;
+    composes: gap-x-2.5 from global;
+}
+
+.bold {
+    composes: font-bold from global;
+}
+
+.typographyBase {
+    composes: text-2xs from global;
+    composes: text-black from global;
+
+    composes: lg_text-xs from global;
+}
+
+.stock {
+    composes: typographyBase;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-productAvailableInfo from global;
+    composes: gap-x-2 from global;
+
+    composes: lg_gap-x-[9px] from global;
+}
+
+.notInStock {
+    composes: !gap-x-[7px] from global;
+
+    composes: lg_!gap-x-2 from global; /* stylelint-disable-line */
+}
+
+.icon {
+    composes: text-primary from global;
+}
+
+.bossIcon {
+    composes: self-center from global;
+    composes: lg_static from global;
+    composes: lg_left-0 from global;
+
+    composes: absolute from global;
+    composes: left-[-26px] from global;
+    composes: text-primary from global;
+}
+
+.paragraph {
+    composes: typographyBase;
+}
+
+.link {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+    composes: typographyBase;
+
+    composes: !font-normal from global;
+}
+
+.inStock {
+    composes: bold;
+
+    composes: text-green-lightest from global;
+}
+
+.location {
+    composes: paragraph;
+}
+
+.stockInfo {
+    composes: paragraph;
+}
+
+.categoryLink {
+    composes: root from '@app/components/ProductParentCategoryLink/productParentCategoryLink.module.css';
+
+    composes: capitalize from global;
+    composes: !font-normal from global;
+}
+
+.categoryLinkBoss {
+    composes: root from '@app/components/ProductParentCategoryLink/productParentCategoryLink.module.css';
+    composes: !decoration-dotted from global;
+    composes: !font-normal from global;
+}
+
+.noGap {
+    composes: lg_!gap-x-0 from global; /* stylelint-disable-line */
+}
+
+.notBossProducts {
+    composes: flex from global;
+    composes: gap-x-2.5 from global;
+    composes: lg_gap-x-3.75 from global;
+}
+
+.usefulLinks {
+    composes: whitespace-pre-wrap from global;
+    composes: block from global;
+}
+
+.usefulLinksCard {
+    composes: !block from global;
+    composes: text-2xs from global;
+    composes: text-black from global;
+
+    composes: lg_text-xs from global;
+}
+
+.bossIconCard {
+    composes: !static from global;
+}

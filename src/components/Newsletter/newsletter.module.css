@@ -1,0 +1,96 @@
+.root {
+    composes: w-full from global;
+}
+
+.greetingWrapper {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: mb-2.25 from global;
+    composes: items-center from global;
+
+    composes: xl_flex-row from global;
+    composes: mb-2.5 from global;
+}
+
+.icon {
+    composes: w-7.5 from global;
+    composes: h-7.5 from global;
+    composes: mb-2.25 from global;
+
+    composes: xl_w-10 from global;
+    composes: xl_h-10 from global;
+    composes: xl_mb-0 from global;
+    composes: xl_mr-5 from global;
+}
+
+.greetingTextWrapper {
+    composes: text-center from global;
+
+    composes: xl_text-left from global;
+}
+
+.form {
+    composes: flex from global;
+    composes: w-newsletterFormMobile from global;
+    composes: mx-auto from global;
+    composes: md_w-[50%] from global;
+    composes: xl_w-full from global;
+    composes: xl_mx-0 from global;
+    composes: md_my-0 from global;
+    composes: content-center from global;
+}
+
+.inputWrapper {
+    composes: w-full from global;
+}
+
+.label {
+    composes: hidden from global;
+}
+
+.buttonContainer {
+    composes: flex-shrink-0 from global;
+    composes: ml-[5px] from global;
+    composes: w-[123px] from global;
+    composes: xl_w-[151px] from global;
+}
+
+.loadingContainer {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: bg-[#fcfcfcbf] from global;
+}
+
+.legal {
+    composes: block from global;
+    composes: text-center from global;
+    composes: xl_text-left from global;
+    composes: text-2xs from global;
+    composes: lg_text-xs from global;
+    composes: xl_block from global;
+}
+
+.legalLinks {
+    composes: inline-block from global;
+}
+
+.recaptcha {
+    composes: my-1 from global;
+    composes: grid from global;
+    composes: justify-center from global;
+
+    composes: xl_justify-start from global;
+}
+
+.recaptchaText {
+    composes: text from '@app/components/GoogleReCaptcha/googleReCaptcha.module.css';
+    composes: w-newsletterFormMobile from global;
+    composes: mx-auto from global;
+    composes: md_w-[50%] from global;
+    composes: xl_w-full from global;
+    composes: text-center from global;
+    composes: xl_text-left from global;
+}

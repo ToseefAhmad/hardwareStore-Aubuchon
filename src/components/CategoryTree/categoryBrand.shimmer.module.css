@@ -1,0 +1,5 @@
+.root {
+    composes: m-5 from global;
+    composes: h-[54px] from global;
+    composes: rounded from global;
+}

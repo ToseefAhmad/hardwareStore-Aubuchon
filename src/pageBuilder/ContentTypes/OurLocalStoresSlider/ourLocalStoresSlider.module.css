@@ -1,0 +1,70 @@
+.title {
+    composes: text-3xl from global;
+    composes: text-center from global;
+    composes: mb-5 from global;
+
+    composes: lg_mb-[50px] from global;
+    composes: lg_text-5xl from global;
+}
+
+.storeLinks {
+    composes: root from '@app/pages/SitemapPage/sitemapPage.module.css';
+
+    composes: lg_mt-[25px] from global;
+    composes: xl_max-w-none from global;
+}
+
+.container {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: justify-items-center from global;
+    composes: relative from global;
+    composes: grid-cols-storeIndexesCardsMob from global;
+
+    composes: lg_grid-cols-storeIndexesCardsDesk from global;
+    composes: lg_gap-x-[18px] from global;
+}
+
+.categoryBlock {
+    composes: !w-[333px] from global;
+
+    composes: lg_mt-[-1px] from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-t from global;
+    composes: lg_border-gray-light from global;
+    composes: lg_!w-[270px] from global; /* stylelint-disable-line */
+}
+
+.slider {
+    composes: full-bleed from global;
+    composes: overflow-visible from global;
+    composes: h-[308px] from global;
+
+    composes: lg_no-full-bleed from global;
+    composes: lg_h-[100px] from global;
+}
+
+.borderLine {
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray from global;
+    composes: mt-[50px] from global;
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: full-bleed from global;
+
+    composes: lg_mt-0 from global;
+    composes: lg_no-full-bleed from global;
+    composes: lg_relative from global;
+    composes: lg_top-[65px] from global;
+}
+
+.storeLinksShimmer {
+    composes: lg_mt-[25px] from global;
+    composes: lg_mb-[50px] from global;
+}
+
+.bodyStoreIndex {
+    composes: body from '@app/pages/SitemapPage/StoreLinks/storeLinks.module.css';
+    composes: py-[15px] from global;
+}

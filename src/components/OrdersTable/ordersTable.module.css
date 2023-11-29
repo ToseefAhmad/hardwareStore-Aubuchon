@@ -1,0 +1,41 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+}
+
+.list {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_auto-rows-min from global;
+    composes: lg_items-center from global;
+    composes: lg_gap-y-0 from global;
+    composes: lg_overflow-x-auto from global;
+}
+
+.shimmer {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+    composes: block from global;
+    composes: h-[268px] from global;
+
+    composes: lg_h-[80px] from global;
+    composes: lg_border-b-2 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-white from global;
+}
+
+.shimmer:last-of-type {
+    @apply lg_!border-b-0; /* stylelint-disable-line */
+}
+
+.noDataMessage {
+    composes: text-lg from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+
+    composes: lg_text-base from global;
+    composes: lg_font-normal from global;
+    composes: lg_py-2.5 from global;
+}

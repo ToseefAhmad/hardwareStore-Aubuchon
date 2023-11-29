@@ -1,0 +1,81 @@
+.root {
+    composes: root from './orderDetails.module.css';
+    composes: !mb-0 from global;
+
+    composes: lg_!mb-7.5 from global; /* stylelint-disable-line */
+}
+
+.shimmer {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+
+    composes: w-full from global;
+}
+
+.section {
+    composes: root from '@app/components/Section/section.module.css';
+}
+
+.summarySection {
+    composes: root from './SummarySections/summarySections.module.css';
+}
+
+.navShimmer {
+    composes: shimmer;
+    composes: h-[130px] from global;
+
+    composes: lg_h-[46px] from global;
+}
+
+.sectionTitleShimmer {
+    composes: shimmer;
+
+    composes: h-[34px] from global;
+
+    composes: lg_h-11 from global;
+}
+
+.sectionContentShimmer {
+    composes: shimmer;
+
+    composes: h-[82px] from global;
+
+    composes: lg_h-24 from global;
+}
+
+.progressSectionTitleShimmer {
+    composes: shimmer;
+
+    composes: w-2/4 from global;
+    composes: h-[34px] from global;
+
+    composes: lg_w-1/4 from global;
+    composes: lg_h-11 from global;
+}
+
+.progressBarShimmer {
+    composes: shimmer;
+
+    composes: h-[30px] from global;
+
+    composes: lg_h-[50px] from global;
+}
+
+.progressAdditionalInfoSection {
+    composes: root from './AdditionalInfo/additionalInfo.module.css';
+}
+
+.progressAdditionalInfoItem {
+    composes: shimmer;
+
+    composes: h-6 from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.statusSectionShimmer {
+    composes: shimmer;
+
+    composes: h-[350px] from global;
+
+    composes: lg_h-[185px] from global;
+}

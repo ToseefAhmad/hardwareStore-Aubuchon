@@ -1,0 +1,40 @@
+.root {
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: uppercase from global;
+    composes: text-sm from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: w-full from global;
+
+    composes: lg_!px-4 from global; /* stylelint-disable-line */
+    composes: lg_!py-3 from global; /* stylelint-disable-line */
+    composes: lg_capitalize from global;
+    composes: lg_text-base from global;
+    composes: lg_font-normal from global;
+    composes: lg_!bg-transparent from global; /* stylelint-disable-line */
+}
+
+.content {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: grid-cols-items-1 from global;
+    composes: gap-x-2.5 from global;
+    composes: w-full from global;
+}
+
+.text {
+    composes: text-left from global;
+    composes: no-wrap from global;
+}
+
+.icon {
+    composes: text-primary from global;
+}

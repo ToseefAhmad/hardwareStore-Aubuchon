@@ -1,0 +1,43 @@
+[class*='privacy-policy'] h1 {
+    @apply !mt-5
+        !mb-5
+        md_!mt-6
+        md_!mb-14;
+}
+
+[class*='privacy-policy'] h2 {
+    @apply leading-8
+        md_mb-2;
+}
+
+[class*='privacy-policy'] h5 {
+    @apply md_text-center
+        font-normal
+        mb-5
+        md_mb-12;
+}
+
+[class*='privacy-policy'] a {
+    @apply link-primary
+        font-semibold;
+}
+
+[class*='privacy-policy'] p {
+    @apply mt-2.5
+        md_mt-7;
+}
+
+[class*='privacy-policy'] div:nth-of-type(3) p:nth-of-type(2) {
+    @apply md_mt-5;
+}
+
+[class*='privacy-policy'] div:nth-of-type(3) p:nth-of-type(1n + 3) {
+    @apply mt-2.5
+        md_mt-5;
+}
+
+[class*='privacy-policy'] hr {
+    @apply mt-5
+        mb-3
+        md_my-12.5;
+}

@@ -1,0 +1,95 @@
+.root {
+    composes: fixed from global;
+    composes: right-0 from global;
+    composes: visible from global;
+    composes: -translate-y-full from global;
+    composes: animate-searchBoxFromTop from global;
+    composes: py-[15px] from global;
+    composes: pl-5 from global;
+    composes: pr-3.5 from global;
+}
+
+.root_open {
+    composes: fixed from global;
+    composes: top-0 from global;
+    composes: right-0 from global;
+    composes: bottom-0 from global;
+    composes: w-full from global;
+    composes: lg_w-[600px] from global;
+    composes: bg-white from global;
+    composes: z-20 from global;
+    composes: ml-5 from global;
+    composes: duration-300 from global;
+    composes: py-[15px] from global;
+    composes: pl-5 from global;
+    composes: pr-3.5 from global;
+    composes: overflow-y-scroll from global;
+}
+
+.recentlySearched {
+    composes: pt-[15px] from global;
+}
+
+.sliderTitle {
+    composes: text-base from global;
+    composes: font-semibold from global;
+    composes: mb-2.5 from global;
+}
+
+.itemsList {
+    composes: text-base from global;
+}
+
+.autocompleteButton {
+    composes: w-full from global;
+}
+
+.icon {
+    composes: flex from global;
+}
+
+.searchedItem {
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: mb-[15px] from global;
+}
+
+.clearHistoryButton {
+    composes: text-base from global;
+    composes: font-semibold from global;
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+}
+
+.recentlySearchedTitle {
+    composes: text-base from global;
+    composes: font-semibold from global;
+    composes: mb-2.5 from global;
+}
+
+.headingWrapper {
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: lg_px-0 from global;
+    composes: lg_pt-0 from global;
+    composes: overflow-x-hidden from global;
+}
+
+.closeButton {
+    composes: text-black from global;
+    composes: outline-none from global;
+    composes: hover_text-opacity-100 from global;
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+    composes: p-[10px] from global;
+    composes: relative from global;
+    composes: left-[10px] from global;
+}
+
+.searchSliders {
+    composes: pt-[15px] from global;
+}
+
+.suggestions {
+    composes: pt-[15px] from global;
+}

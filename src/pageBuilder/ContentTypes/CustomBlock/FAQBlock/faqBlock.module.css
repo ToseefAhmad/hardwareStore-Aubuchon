@@ -1,0 +1,57 @@
+.root {
+    composes: grid from global;
+    composes: no-underline from global;
+    composes: rounded from global;
+}
+
+.root p {
+    @apply text-left;
+}
+
+.root p strong {
+    @apply text-base
+        lg_text-lg;
+}
+
+.root a {
+    @apply link-secondary;
+}
+
+.title {
+    composes: mb-3 from global;
+    composes: lg_mb-5 from global;
+    composes: text-sm from global;
+    composes: lg_text-base from global;
+}
+
+.sectionContainer ul {
+    @apply pt-2.5
+        lg_pt-5;
+}
+
+.sectionContainer li {
+    @apply !pl-0;
+}
+
+.sectionContainer li::before {
+    @apply !hidden;
+}
+
+.sectionContainer:nth-child(2) ul {
+    @apply list-disc
+        pl-8;
+}
+
+.sectionContainer strong {
+    @apply text-black;
+}
+
+.sectionContainer {
+    composes: active_bg-transparent from global;
+}
+
+.sectionContainer:first-of-type > div {
+    @apply border-solid
+        border-t
+        border-gray-light;
+}

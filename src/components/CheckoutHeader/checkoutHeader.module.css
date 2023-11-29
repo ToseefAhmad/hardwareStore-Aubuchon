@@ -1,0 +1,46 @@
+.root {
+    composes: relative from global;
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: h-[60px] from global;
+    composes: top-0 from global;
+    composes: z-10 from global;
+    composes: bg-white from global;
+    composes: sticky from global;
+    composes: shadow-b from global;
+
+    composes: lg_h-[100px] from global;
+}
+
+.imageContainer {
+    composes: relative from global;
+    composes: w-[118px] from global;
+    composes: h-6 from global;
+
+    composes: lg_w-[157px] from global;
+    composes: lg_h-8 from global;
+}
+
+.iconButton {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-[3px] from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: h-10 from global;
+    composes: w-10 from global;
+    composes: rounded-full from global;
+    composes: outline-none from global;
+    composes: opacity-40 from global;
+    composes: transition-opacity from global;
+
+    composes: lg_left-[83px] from global;
+
+    composes: hover_opacity-100 from global;
+}
+
+.chevronIcon {
+    composes: text-black from global;
+}

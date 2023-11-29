@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="<%= global.LOCALE %>" data-image-optimizing-origin="<%= process.env.IMAGE_OPTIMIZING_ORIGIN %>" data-media-backend="<%= global.MAGENTO_MEDIA_BACKEND_URL %>">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <meta name="theme-color" content="#006940">
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-touch-fullscreen" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="manifest" />
+
+        <!-- //favicon -->
+        <link rel="icon" type="image/png" size="16*16" href="/assets/icons/aubuchon/Favicon-aubuchon-16x16.png" />
+        <link rel="icon" type="image/png" size="32*32" href="/assets/icons/aubuchon/Favicon-aubuchon-32x32.png" />
+
+        <!--
+            Apple Specific Tags
+
+            To be included until Safari supports WebAppManifest
+            See Docs:
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+            - https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
+        -->
+        <link rel="apple-touch-icon" href="/assets/icons/aubuchon/Apple_touch_icon.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/aubuchon/Apple_touch_icon.png" />
+
+        <!--
+        Apple Icons for Homescreen
+        Sizes: https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/app-icon/
+    -->
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/assets/icons/aubuchon/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+
+        <link rel="preload" href="https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3" as="font" crossorigin="anonymous" />
+        <link rel="preload" href="https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3" as="font" crossorigin="anonymous" />
+        <link rel="preload" href="https://use.typekit.net/af/23e139/00000000000000007735e605/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3" as="font" crossorigin="anonymous" />
+        <link rel="preload" href="https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3" as="font" crossorigin="anonymous" />
+        <link rel="preconnect" href="<%= process.env.MAGENTO_BACKEND_URL %>">
+
+        <!-- Fonts -->
+        <style type="text/css">
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url('https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+                format('woff2'),
+                url('https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+                format('woff'),
+                url('https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3')
+                format('opentype');
+                font-display: swap;
+                font-style: normal;
+                font-weight: 700;
+            }
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url('https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+                format('woff2'),
+                url('https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+                format('woff'),
+                url('https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n6&v=3')
+                format('opentype');
+                font-display: swap;
+                font-style: normal;
+                font-weight: 600;
+            }
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url('https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+                format('woff2'),
+                url('https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+                format('woff'),
+                url('https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3')
+                format('opentype');
+                font-display: swap;
+                font-style: normal;
+                font-weight: 400;
+            }
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url('https://use.typekit.net/af/3322cc/00000000000000007735e616/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+                format('woff2'),
+                url('https://use.typekit.net/af/3322cc/00000000000000007735e616/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+                format('woff'),
+                url('https://use.typekit.net/af/3322cc/00000000000000007735e616/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3')
+                format('opentype');
+                font-display: swap;
+                font-style: italic;
+                font-weight: 400;
+            }
+            @font-face {
+                font-family: 'Proxima Nova';
+                src: url('https://use.typekit.net/af/23e139/00000000000000007735e605/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+                format('woff2'),
+                url('https://use.typekit.net/af/23e139/00000000000000007735e605/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+                format('woff'),
+                url('https://use.typekit.net/af/23e139/00000000000000007735e605/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3')
+                format('opentype');
+                font-display: swap;
+                font-style: normal;
+                font-weight: 500;
+            }
+        </style>
+        <!-- WKND tag -->
+        {{#pageTypeNonce}}
+        <script nonce="{{pageTypeNonce}}">
+            ('<%= global.WUNDERKIND_TAG_URI %>' && function(d) { var e = d.createElement('script'); e.src = `${d.location.protocol}<%= global.WUNDERKIND_TAG_URI %>`; e.async = true; d.getElementsByTagName("head")[0].appendChild(e); }(document));
+        </script>
+        {{/pageTypeNonce}}
+        <!-- /WKND tag -->
+        <!-- UPWARD -->
+        {{#pageTypeNonce}}
+        <script nonce="{{pageTypeNonce}}">
+            // Clear out local storage so the ones that had reached limit with previous implementation
+            // don't get into storage quota limit issues
+            (function () {
+                try {
+                    if (window && window.localStorage && window.localStorage.removeItem) {
+                        window.localStorage.removeItem('apollo-cache-persist-default');
+                    }
+                } catch (e) {
+                    console.log(e);
+                }
+            }())
+
+            window.UPWARD = {};
+
+            {{#brandList}}
+            (function () {
+                window.UPWARD.brandList = {{{brandList}}};
+            })();
+            {{/brandList}}
+
+            {{#pickupStoreList}}
+            (function () {
+                window.UPWARD.pickupStoreList = {{{pickupStoreList}}};
+            })();
+            {{/pickupStoreList}}
+
+            {{#storeConfig}}
+            (function () {
+                window.UPWARD.__STORE_CONFIG__ = {{{storeConfig}}};
+            })();
+            {{/storeConfig}}
+
+            {{#pickupStore}}
+            (function () {
+                var ps = {{{pickupStore}}};
+
+                if ('store_id' in ps) {
+                    window.UPWARD.pickupStoreId = ps.store_id;
+                    window.UPWARD.pickupStoreBrandUid = ps.brand_id;
+                }
+            })();
+            {{/pickupStore}}
+
+            {{#gtmConfig}}
+            (function () {
+                window.UPWARD.gtmConfig = {{{gtmConfig}}};
+            })();
+            {{/gtmConfig}}
+
+            {{#gtmId}}
+            (function () {
+                window.UPWARD.gtmId = "{{{gtmId}}}";
+            })();
+            {{/gtmId}}
+
+            {{#facebookPixelId}}
+            (function () {
+                window.UPWARD.fbPixelId = "{{facebookPixelId}}";
+            })();
+            {{/facebookPixelId}}
+
+            {{#logRocketApiKey}}
+            (function () {
+                window.UPWARD.logRocketApiKey = "{{logRocketApiKey}}";
+            })();
+            {{/logRocketApiKey}}
+
+            (function () {
+                window.UPWARD.userwayAccountId = "<%= global.USERWAY_ACCOUNT_ID %>";
+            })();
+        </script>
+        {{/pageTypeNonce}}
+        <!-- /UPWARD -->
+        <!-- GTM -->
+        {{#pageTypeNonce}}
+        {{#gtmId}}
+        <script nonce="{{pageTypeNonce}}">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0];
+        })(window,document,'script','dataLayer','{{gtmId}}');</script>
+        {{/gtmId}}
+        {{/pageTypeNonce}}
+        <!-- /GTM -->
+        <!-- fbPixel -->
+        {{#pageTypeNonce}}
+        {{#facebookPixelId}}
+        <script nonce="{{pageTypeNonce}}">
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.agent='magebit';n.queue=[];
+                }(window,
+                document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        </script>
+        {{/facebookPixelId}}
+        {{/pageTypeNonce}}
+        <!-- /fbPixel -->
+    </head>
+    <body>
+        <!-- GTM NS -->
+        {{#gtmId}}
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id={{gtmId}}"
+                height="0"
+                width="0"
+                style="display:none;visibility:hidden"
+            ></iframe
+        ></noscript>
+        {{/gtmId}}
+        <!-- /GTM NS -->
+        <!-- fbPixel NS -->
+        {{#facebookPixelId}}
+        <noscript>
+            <img height="1" width="1" style="display:none"
+                 alt="Facebook Pixel {{facebookPixelId}}"
+                 src="https://www.facebook.com/tr?id={{facebookPixelId}}&ev=PageView&noscript=1"/>
+        </noscript>
+        {{/facebookPixelId}}
+        <!-- /fbPixel NS -->
+
+        <div id="root"></div>
+        <!-- Static element to keep trigger reference -->
+        <div id="accessibilityWidget" tabindex="0" style="display: none;"></div>
+
+        <!-- Fallback for when JavaScript is disabled. -->
+        <noscript>
+            <style>
+                .fallback-nojs {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  text-align: center;
+                }
+                .fallback-nojs a {
+                    color: currentColor;
+                }
+                .fallback-heading {
+                    font-family: 'Proxima Nova';
+                    font-weight: 600;
+                    padding-bottom: 16px;
+                    font-size: xx-large;
+                }
+                .fallback-message {
+                    font-family: 'Proxima Nova';
+                }
+                @media only screen and (max-width: 768px) {
+                  .fallback-heading {
+                    font-size: x-large;
+                  }
+                }
+            </style>
+            <div class="fallback-nojs">
+                <div class="fallback-heading">Oops! JavaScript is disabled</div>
+                <div class="fallback-message">
+                  To browse HardwareStore,<br>
+                  <a href="https://www.enable-javascript.com">enable JavaScript in your browser.</a>
+                </div>
+            </div>
+        </noscript>
+        <!-- Inlined Data -->
+        {{#pageTypeNonce}}
+        <script nonce="{{pageTypeNonce}}">
+            try {
+                var INLINED_PAGE_TYPE = JSON.parse("{{pageType}}".replace(/&quot;/g, '"').replace(/&amp;/g, '&'));
+            } catch(error) {}
+        </script>
+
+        {{#webpackChunks}}
+            <script type="text/javascript" src="/{{.}}"></script>
+        {{/webpackChunks}}
+        {{/pageTypeNonce}}
+        <!-- /Inlined Data -->
+        <!-- Userway widget -->
+        <noscript>
+            Please ensure Javascript is enabled for purposes of
+            <a href="https://userway.org">website accessibility</a>
+        </noscript>
+        <!-- /Userway widget -->
+    </body>
+</html>

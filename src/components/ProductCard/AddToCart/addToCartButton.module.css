@@ -1,0 +1,179 @@
+.root {
+    composes: absolute from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: text-sm from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+    composes: transition-all from global;
+    composes: duration-300 from global;
+    composes: max-w-27.5 from global;
+
+    composes: lg_h-auto from global;
+    composes: lg_text-base from global;
+    composes: lg_hover_bg-primaryHover from global;
+    composes: lg_active_bg-primaryActive from global;
+    composes: lg_max-w-38 from global;
+}
+
+.buttonSkeleton {
+    composes: relative from global;
+    composes: py-[3px] from global;
+    composes: px-[15px] from global;
+    composes: h-[34px] from global;
+    composes: min-w-[34px] from global;
+
+    composes: text-white from global;
+    composes: font-semibold from global;
+    composes: outline-none from global;
+    composes: appearance-none from global;
+    composes: transition-colors from global;
+
+    composes: lg_py-[9px] from global;
+    composes: lg_px-[25px] from global;
+    composes: lg_h-auto from global;
+}
+
+.addToCartButton {
+    composes: buttonSkeleton;
+
+    composes: min-w-[82px] from global;
+    composes: lg_min-w-[106px] from global;
+    composes: text-center from global;
+}
+
+.quantityButtonRoot {
+    composes: buttonSkeleton;
+
+    composes: !px-0 from global;
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: w-full from global;
+    composes: text-center from global;
+}
+
+.button {
+    composes: absolute from global;
+    composes: z-1 from global;
+    composes: py-[3px] from global;
+    composes: px-[15px] from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: w-[34px] from global;
+    composes: h-[34px] from global;
+    composes: rounded from global;
+    composes: text-white from global;
+    composes: bg-primaryHover from global;
+
+    composes: lg_py-[9px] from global;
+    composes: lg_w-11 from global;
+    composes: lg_h-11 from global;
+
+    composes: hover_bg-primaryActive from global;
+    composes: focus_outline-none from global;
+    composes: disabled_text-opacity-40 from global;
+    composes: disabled_hover_text-opacity-40 from global;
+    composes: disabled_hover_bg-primaryActive from global;
+    composes: disabled_cursor-not-allowed from global;
+}
+
+.button_decrement {
+    composes: button;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: z-1 from global;
+    composes: bg-primary from global;
+}
+
+.button_increment {
+    composes: button;
+    composes: top-0 from global;
+    composes: right-0 from global;
+}
+
+.input {
+    composes: w-full from global;
+    composes: h-[34px] from global;
+    composes: text-center from global;
+    composes: font-semibold from global;
+    composes: rounded from global;
+    composes: text-white from global;
+    composes: bg-primary from global;
+    composes: pointer-events-none from global;
+
+    composes: lg_pointer-events-auto from global;
+    composes: lg_h-11 from global;
+}
+
+.rootAddToCart {
+    composes: root;
+
+    composes: w-[82px] from global;
+    composes: lg_w-[106px] from global;
+}
+
+.rootFull {
+    composes: root;
+
+    composes: w-full from global;
+}
+
+.rootQty {
+    composes: root;
+
+    composes: !w-[34px] from global;
+    composes: lg_!w-11 from global; /* stylelint-disable-line */
+}
+
+.rootConfigure {
+    composes: root buttonSkeleton;
+}
+
+.rootLightened {
+    composes: root;
+
+    composes: w-[70px] from global;
+    composes: lg_!w-[90px] from global; /* stylelint-disable-line */
+}
+
+.lighted {
+    composes: !text-primary from global;
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-primary from global;
+    composes: rounded from global;
+    composes: !bg-white from global;
+
+    composes: lg_!py-[7px] from global; /* stylelint-disable-line */
+
+    composes: lg_hover_!bg-primary from global; /* stylelint-disable-line */
+    composes: lg_hover_!border-primary from global; /* stylelint-disable-line */
+    composes: lg_hover_!text-white from global; /* stylelint-disable-line */
+    composes: lg_active_!bg-primaryActive from global; /* stylelint-disable-line */
+    composes: lg_active_!border-primaryActive from global; /* stylelint-disable-line */
+    composes: lg_active_!text-white from global; /* stylelint-disable-line */
+}
+
+.addToCartButtonLightened {
+    composes: lighted;
+
+    composes: !py-[3px] from global;
+    composes: !px-1.25 from global;
+    composes: !h-auto from global;
+    composes: !min-w-[70px] from global;
+
+    composes: lg_!px-4 from global; /* stylelint-disable-line */
+    composes: lg_!min-w-[90px] from global; /* stylelint-disable-line */
+}
+
+.rootConfigureLighted {
+    composes: root buttonSkeleton lighted;
+
+    composes: !px-2.5 from global;
+    composes: min-w-[74px] from global;
+
+    composes: lg_!px-4.5 from global; /* stylelint-disable-line */
+    composes: lg_min-w-[97px] from global;
+}

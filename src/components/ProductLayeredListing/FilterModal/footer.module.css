@@ -1,0 +1,34 @@
+.root {
+    composes: relative from global;
+    composes: p-5 from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: flex-shrink-0 from global;
+    composes: gap-y-1.25 from global;
+    composes: bg-white from global;
+}
+
+.rootApplyText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: gap-x-1.25 from global;
+}
+
+.number {
+    composes: inline-grid from global;
+    composes: justify-center from global;
+    composes: align-center from global;
+    composes: items-center from global;
+    composes: min-w-[20px] from global;
+    composes: h-5 from global;
+    composes: text-primary from global;
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: font-bold from global;
+    composes: bg-white from global;
+    composes: rounded-full from global;
+}

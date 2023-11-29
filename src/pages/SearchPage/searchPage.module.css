@@ -1,0 +1,10 @@
+.title {
+    composes: block from global;
+    composes: font-normal from global;
+    composes: lg_mt-7.5 from global;
+}
+
+.strong {
+    composes: font-semibold from global;
+    composes: text-black from global;
+}

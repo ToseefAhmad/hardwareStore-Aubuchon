@@ -1,0 +1,75 @@
+.root {
+    composes: mb-[10px] from global;
+    composes: lg_mb-0 from global;
+}
+
+.title {
+    composes: text-3xl from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-black from global;
+    composes: mb-[20px] from global;
+
+    composes: lg_text-6xl from global;
+    composes: lg_mb-[50px] from global;
+}
+
+.bestsellerCategories {
+    composes: mb-[20px] from global;
+    composes: lg_mb-[30px] from global;
+}
+
+.bestsellerCategory {
+    composes: block from global;
+    composes: py-[10px] from global;
+    composes: lg_py-[12px] from global;
+    composes: px-[40px] from global;
+    composes: whitespace-nowrap from global;
+    composes: no-underline from global;
+
+    composes: font-semibold from global;
+    composes: outline-none from global;
+    composes: appearance-none from global;
+    composes: transition-colors from global;
+
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-r-0 from global;
+}
+
+.topPickIcon {
+    composes: text-primary from global;
+}
+
+.bestsellerCategoryContent {
+    composes: content from '@app/components/Button/button.module.css';
+}
+
+.bestsellerCategoryPrimary {
+    composes: text-white from global;
+    composes: border-primary from global;
+    composes: bg-primary from global;
+    composes: lg_hover_bg-primaryHover from global;
+    composes: lg_active_bg-primaryActive from global;
+}
+
+.bestsellerCategorySecondary {
+    composes: bg-white from global;
+    composes: text-black from global;
+    composes: border-gray from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_hover_border-gray from global;
+    composes: lg_hover_text-black from global;
+    composes: lg_active_bg-black from global;
+    composes: lg_active_border-black from global;
+    composes: lg_active_text-white from global;
+}
+
+.bestsellerCategoryFirst {
+    composes: rounded-l from global;
+}
+
+.bestsellerCategoryLast {
+    composes: rounded-r from global;
+    composes: border-r from global;
+}

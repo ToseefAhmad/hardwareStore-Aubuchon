@@ -1,0 +1,67 @@
+.root {
+    composes: cursor-default from global;
+}
+
+.borderLine {
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-lightest from global;
+    composes: h-[1px] from global;
+    composes: w-full from global;
+    composes: mt-2.5 from global;
+    composes: mb-[15px] from global;
+
+    composes: lg_mt-[15px] from global;
+}
+
+.rootAuthorized {
+    composes: pointer-events-none from global;
+}
+
+.progressBar {
+    composes: h-1 from global;
+    composes: rounded from global;
+    composes: bg-gray-light from global;
+    composes: w-full from global;
+}
+
+.progression {
+    composes: bg-primary from global;
+    composes: rounded from global;
+    composes: h-1 from global;
+}
+
+.mainTitle {
+    composes: flex from global;
+    composes: justify-between from global;
+    composes: pb-1.25 from global;
+    composes: lg_pb-2.5 from global;
+}
+
+.linkBtn {
+    composes: link-secondary from global;
+    composes: focus_!text-black from global; /* stylelint-disable-line */
+    composes: hover_!text-primary from global; /* stylelint-disable-line */
+}
+
+.bonusRewards {
+    composes: text-primary from global;
+    composes: font-semibold from global;
+}
+
+.needToSpend {
+    composes: font-semibold from global;
+}
+
+.description {
+    composes: mt-2.5 from global;
+    composes: lg_mt-[15px] from global;
+}
+
+.isSignedIn {
+    composes: pointer-events-none from global;
+}
+
+.isSignedIn a {
+    @apply !no-underline;
+}

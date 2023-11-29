@@ -1,0 +1,30 @@
+.root {
+    composes: inputRoot from '../Field/message.module.css';
+}
+
+.radioGroup {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: items-center from global;
+    composes: gap-y-2.5 from global;
+}
+
+.radioContainer {
+    composes: root from 'radio.module.css';
+}
+
+.radioContainerNormal {
+    composes: rootNormal from 'radio.module.css';
+}
+
+.radioContainerActive {
+    composes: rootActive from 'radio.module.css';
+}
+
+.radioContainerDisabled {
+    composes: rootDisabled from 'radio.module.css';
+}
+
+.message {
+    composes: mt-[1rem] from global;
+}

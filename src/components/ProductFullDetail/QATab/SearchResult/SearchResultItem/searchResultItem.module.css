@@ -1,0 +1,36 @@
+.item {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-5 from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+    composes: w-full from global;
+    composes: pt-5 from global;
+    composes: pb-[25px] from global;
+    composes: text-left from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+    composes: hover_underline from global;
+
+    composes: lg_pb-5 from global;
+}
+
+.itemTitle {
+    composes: font-semibold from global;
+}
+
+.itemRating {
+    composes: mt-[9px] from global;
+
+    composes: lg_mt-3.75 from global;
+}
+
+.itemIcon {
+    composes: icon from '../../qaTab.module.css';
+    composes: hover_text-opacity-100 from global;
+}
+
+.answerCount {
+    composes: font-semibold from global;
+}

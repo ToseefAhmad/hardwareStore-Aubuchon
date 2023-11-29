@@ -1,0 +1,36 @@
+.root {
+    composes: root from '../AccountPagesSwitcher/accountPagesSwitcher.module.css';
+}
+
+.header {
+    composes: header from '../AccountPagesSwitcher/accountPagesSwitcher.module.css';
+
+    composes: lg_col-start-3 from global;
+}
+
+.title {
+    composes: title from '../AccountPagesSwitcher/accountPagesSwitcher.module.css';
+}
+
+.baseContent {
+    composes: col-start-1 from global;
+    composes: col-end-12 from global;
+    composes: row-start-2 from global;
+    composes: row-end-auto from global;
+
+    composes: lg_col-start-3 from global;
+    composes: lg_col-end-11 from global;
+}
+
+.content {
+    composes: root from '@app/components/OrderDetails/orderDetails.module.css';
+    composes: baseContent;
+}
+
+.checkInLink {
+    composes: checkInLink from '@app/components/OrderDetails/orderDetails.module.css';
+}
+
+.items {
+    composes: items from '@app/components/OrderDetails/orderDetails.module.css';
+}

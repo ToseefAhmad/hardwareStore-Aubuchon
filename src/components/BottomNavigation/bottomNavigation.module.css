@@ -1,0 +1,53 @@
+.root {
+    composes: fixed from global;
+    composes: bottom-0 from global;
+    composes: w-full from global;
+    composes: z-1 from global;
+    composes: translate-y-[250%] from global;
+    composes: transition-all from global;
+    composes: duration-300 from global;
+
+    composes: lg_hidden from global;
+}
+
+.rootFadeIn {
+    composes: root;
+    composes: !translate-y-0 from global;
+}
+
+.storeSwitcherRoot {
+    composes: grid from global;
+    composes: w-full from global;
+}
+
+.mobileTrigger {
+    composes: py-[10px] from global;
+    composes: px-5 from global;
+    composes: flex from global;
+    composes: items-center from global;
+    composes: w-full from global;
+    composes: bg-white from global;
+    composes: shadow-t from global;
+}
+
+.name {
+    composes: name from '@app/components/Header/StoreSwitcher/storeSwitcher.module.css';
+    composes: block from global;
+    composes: text-black from global;
+    composes: leading-[18px] from global;
+}
+
+.info {
+    composes: pr-5 from global;
+}
+
+.rootMasked {
+    composes: root;
+    composes: after_absolute from global;
+    composes: after_top-0 from global;
+    composes: after_left-0 from global;
+    composes: after_w-full from global;
+    composes: after_h-full from global;
+    composes: after_bg-black from global;
+    composes: after_bg-opacity-40 from global;
+}

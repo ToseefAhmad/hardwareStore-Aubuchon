@@ -1,0 +1,38 @@
+.root {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: grid from global;
+    composes: grid-rows-menuBrands from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: bg-white from global;
+    composes: overflow-hidden from global;
+}
+
+.rootLeft {
+    composes: rootLeft from 'categoryTree.module.css';
+}
+
+.rootRight {
+    composes: rootRight from 'categoryTree.module.css';
+}
+
+.item {
+    composes: root from './categoryLeaf.module.css';
+
+    composes: !text-gray-dark from global;
+    composes: !bg-white from global;
+}
+
+.select {
+    composes: sticky from global;
+    composes: top-0 from global;
+    composes: z-1 from global;
+    composes: p-5 from global;
+    composes: text-base from global;
+    composes: bg-white from global;
+
+    composes: lg_text-lg from global;
+}

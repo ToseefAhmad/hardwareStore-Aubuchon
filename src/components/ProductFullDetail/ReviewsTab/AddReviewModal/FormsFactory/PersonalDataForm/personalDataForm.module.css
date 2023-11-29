@@ -1,0 +1,30 @@
+.root {
+    composes: shortFormContainer from '../../shared.module.css';
+}
+
+.header {
+    composes: header from '../../shared.module.css';
+}
+
+.shortForm {
+    composes: shortForm from '../../shared.module.css';
+}
+
+.fieldRoot {
+    composes: fieldRoot from '../../shared.module.css';
+}
+
+.tinyText {
+    composes: tinyText from '../../shared.module.css';
+}
+
+.personalDataFields {
+    composes: grid from global;
+    composes: content-start from global;
+    composes: gap-2.5 from global;
+}
+
+.submitButtonContainer {
+    composes: submitButtonContainer from '../../shared.module.css';
+    composes: shortFormFooter from '../../shared.module.css';
+}

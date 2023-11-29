@@ -1,0 +1,39 @@
+.base {
+    composes: relative from global;
+    composes: pl-2.5 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+    composes: gap-1.25 from global;
+    composes: text-xs from global;
+    composes: lg_text-sm from global;
+    composes: font-bold from global;
+    composes: uppercase from global;
+
+    composes: before_absolute from global;
+    composes: before_top-1/2 from global;
+    composes: before_left-0 from global;
+    composes: before_transform from global;
+    composes: before_-translate-y-1/2 from global;
+    composes: before_w-1.5 from global;
+    composes: before_h-1.5 from global;
+    composes: before_rounded-full from global;
+}
+
+.open {
+    composes: base;
+    composes: text-green from global;
+    composes: before_bg-green from global;
+}
+
+.close {
+    composes: base;
+    composes: text-red from global;
+    composes: before_bg-red from global;
+}
+
+.workHours {
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: normal-case from global;
+}

@@ -1,0 +1,46 @@
+.title {
+    composes: text-3xl from global;
+    composes: leading-[38px] from global;
+    composes: font-semibold from global;
+    composes: text-center from global;
+    composes: text-black from global;
+    composes: mb-5 from global;
+
+    composes: lg_mb-12.5 from global;
+    composes: lg_text-6xl from global;
+}
+
+.productsCarousel [class*='carousel-root'] {
+    @apply lg_!auto-cols-[269px]
+        !auto-cols-[165px]
+        lg_mb-[70px];
+}
+
+.productsCarousel [class*='carousel-root'] img {
+    @apply m-0;
+}
+
+.base {
+    composes: !top-[135px] from global;
+    composes: !translate-y-none from global;
+}
+
+.root {
+    composes: root from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.disabled {
+    composes: disabled from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.root_isInverted {
+    composes: root_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}
+
+.disabled_isInverted {
+    composes: disabled_isInverted from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: base;
+}

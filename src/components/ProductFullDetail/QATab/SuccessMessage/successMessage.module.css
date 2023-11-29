@@ -1,0 +1,3 @@
+.modalRoot {
+    composes: lg_w-[520px] from global;
+}

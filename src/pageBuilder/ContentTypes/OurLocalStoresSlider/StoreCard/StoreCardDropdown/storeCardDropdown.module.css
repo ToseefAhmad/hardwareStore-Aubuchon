@@ -1,0 +1,79 @@
+.root {
+    composes: absolute from global;
+    composes: left-[30px] from global;
+    composes: ml-auto from global;
+    composes: mr-auto from global;
+    composes: z-2 from global;
+    composes: rounded from global;
+    composes: shadow-t from global;
+    composes: p-[21px] from global;
+    composes: mt-1.25 from global;
+    composes: w-[313px] from global;
+    composes: h-[209px] from global;
+    composes: bg-white from global;
+
+    composes: lg_left-[-20px] from global;
+    composes: lg_p-[30px] from global;
+    composes: lg_w-[325px] from global;
+    composes: lg_h-[241px] from global;
+
+    composes: after_absolute from global;
+    composes: after_top-[-3px] from global;
+    composes: after_left-1/2 from global;
+    composes: after_-translate-x-1/2 from global;
+    composes: after_w-0 from global;
+    composes: after_h-0 from global;
+    composes: after_border-l-6 from global;
+    composes: after_border-r-6 from global;
+    composes: after_border-b-6 from global;
+    composes: after_border-solid from global;
+    composes: after_border-l-transparent from global;
+    composes: after_border-r-transparent from global;
+    composes: after_border-b-white from global;
+}
+
+.firstElement {
+    composes: lg_left-5 from global;
+    composes: lg_after_left-[123px] from global;
+}
+
+.lastElement {
+    composes: lg_left-[-60px] from global;
+    composes: lg_after_left-[203px] from global;
+}
+
+.description {
+    composes: truncate from global;
+    composes: whitespace-normal from global;
+    composes: text-left from global;
+    composes: mb-[15px] from global;
+
+    display: -webkit-box; /* stylelint-disable-line */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.title {
+    composes: text-left from global;
+    composes: text-primary from global;
+    composes: mb-2.5 from global;
+}
+
+.link {
+    composes: text-left from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+}
+
+.icon {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: ml-2.5 from global;
+
+    composes: lg_group-hover_text-opacity-100 from global;
+}
+
+.linkContent {
+    composes: flex from global;
+    composes: items-center from global;
+}

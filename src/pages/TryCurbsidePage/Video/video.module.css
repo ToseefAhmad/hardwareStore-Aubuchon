@@ -1,0 +1,17 @@
+.root {
+    composes: relative from global;
+    composes: h-0 from global;
+    composes: pb-videoMobile from global;
+    composes: rounded from global;
+    composes: overflow-hidden from global;
+
+    composes: lg_pb-videoDesktop from global;
+}
+
+.video {
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: top-0 from global;
+    composes: w-full from global;
+    composes: h-full from global;
+}

@@ -1,0 +1,45 @@
+.inputLabel {
+    composes: input from '@app/components/TextInput/textInput.module.css';
+
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-filterInputs from global;
+}
+
+.inputsContainer {
+    composes: grid from global;
+    composes: grid-cols-priceFilter from global;
+    composes: gap-x-1 from global;
+    composes: items-center from global;
+}
+
+.sliderContainer {
+    composes: relative from global;
+    composes: my-5 from global;
+
+    composes: before_content from global;
+    composes: before_absolute from global;
+    composes: before_top-0 from global;
+    composes: before_left-0 from global;
+    composes: before_w-[21px] from global;
+    composes: before_h-1 from global;
+    composes: before_rounded from global;
+    composes: before_bg-gray-light from global;
+
+    composes: after_content from global;
+    composes: after_absolute from global;
+    composes: after_top-0 from global;
+    composes: after_right-0 from global;
+    composes: after_w-[21px] from global;
+    composes: after_h-1 from global;
+    composes: after_rounded from global;
+    composes: after_bg-gray-light from global;
+
+    composes: lg_mt-[3px] from global;
+}
+
+.input {
+    composes: w-full from global;
+    composes: outline-none from global;
+    composes: appearance-none from global;
+}

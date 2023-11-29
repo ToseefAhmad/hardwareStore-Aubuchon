@@ -1,0 +1,20 @@
+.root {
+    composes: text-sm from global;
+    composes: flex from global;
+    composes: justify-center from global;
+    composes: gap-2.5 from global;
+    composes: bg-gray-light from global;
+    composes: w-full from global;
+    composes: font-semibold from global;
+    composes: p-5 from global;
+    composes: text-black from global;
+
+    composes: lg_text-lg from global;
+    composes: lg_p-3 from global;
+}
+
+.clockIcon {
+    composes: flex from global;
+    composes: items-start from global;
+    composes: lg_items-center from global;
+}

@@ -1,0 +1,11 @@
+type GuestCheckoutCustomerInfo {
+    email: String!
+    firstname: String!
+    lastname: String!
+    phone: String!
+    company: String!
+}
+
+extend type Cart {
+    guestCheckoutCustomerInfo: GuestCheckoutCustomerInfo
+}

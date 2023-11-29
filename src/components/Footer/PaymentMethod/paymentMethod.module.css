@@ -1,0 +1,13 @@
+.root {
+    composes: relative from global;
+    composes: mr-0.5 from global;
+}
+
+.shimmer {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: !rounded from global;
+    composes: overflow-hidden from global;
+    composes: h-7.5 from global;
+}

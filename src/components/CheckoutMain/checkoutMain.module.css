@@ -1,0 +1,24 @@
+.root {
+    composes: relative from global;
+    composes: z-1 from global;
+}
+
+.root_masked {
+    composes: root;
+}
+
+.page {
+    composes: mx-auto from global;
+    composes: px-5 from global;
+    composes: lg_px-25 from global;
+    composes: max-w-480 from global;
+    composes: min-h-[32.5rem] from global;
+    composes: sm_min-h-[48rem] from global;
+    composes: md_min-h-[60rem] from global;
+    composes: lg_min-h-[40rem] from global;
+    composes: overflow-clip from global;
+}
+
+.page_masked {
+    composes: page;
+}

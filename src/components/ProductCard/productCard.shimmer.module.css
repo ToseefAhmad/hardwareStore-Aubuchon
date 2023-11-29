@@ -1,0 +1,68 @@
+.content {
+    composes: grid from global;
+    composes: gap-y-[5px] from global;
+    composes: self-start from global;
+
+    composes: lg_gap-y-[10px] from global;
+}
+
+.contentHidden {
+    composes: hidden from global;
+}
+
+.imageContainer {
+    composes: relative from global;
+    composes: p-[10px] from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_p-5 from global;
+}
+
+.image {
+    composes: grid from global;
+    composes: text-center from global;
+}
+
+.info {
+    composes: h-[18px] from global;
+
+    composes: lg_h-5 from global;
+}
+
+.name {
+    composes: h-10 from global;
+
+    composes: lg_h-12 from global;
+}
+
+.nameColumns {
+    composes: h-15 from global;
+
+    composes: lg_h-12 from global;
+}
+
+.price {
+    composes: h-7 from global;
+
+    composes: lg_h-7.5 from global;
+}
+
+.priceColumns {
+    composes: h-6 from global;
+
+    composes: lg_h-[34px] from global;
+}
+
+.bottomPanel {
+    composes: h-7.5 from global;
+    composes: lg_h-[34px] from global;
+}
+
+.bottomPanelColumns {
+    composes: h-[54px] from global;
+
+    composes: lg_h-[34px] from global;
+}

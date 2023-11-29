@@ -1,0 +1,13 @@
+.root {
+    composes: w-fit from global;
+    composes: fixed from global;
+    composes: top-5 from global;
+    composes: right-5 from global;
+    composes: z-toast from global;
+    composes: grid from global;
+    composes: gap-y-2 from global;
+
+    composes: lg_top-12.5 from global;
+    composes: lg_right-12.5 from global;
+    composes: text-end from global;
+}

@@ -1,0 +1,64 @@
+.root {
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: gap-x-[15px] from global;
+    composes: justify-start from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: rounded from global;
+    composes: py-[16px] from global;
+    composes: px-[19px] from global;
+    composes: lg_px-[24px] from global;
+    composes: lg_py-[19px] from global;
+    composes: font-semibold from global;
+}
+
+.rootNormal {
+    composes: lg_hover_border-black from global;
+    composes: cursor-pointer from global;
+}
+
+.rootActive {
+    composes: bg-gray-light from global;
+    composes: border-2 from global;
+    composes: border-primaryHover from global;
+    composes: lg_hover_border-primaryActive from global;
+    composes: py-[15px] from global;
+    composes: px-[18px] from global;
+    composes: lg_px-[23px] from global;
+    composes: lg_py-[18px] from global;
+    composes: cursor-pointer from global;
+}
+
+.rootDisabled {
+    composes: bg-gray-light from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: cursor-not-allowed from global;
+}
+
+.input_base {
+    composes: rounded-full from global;
+    composes: h-[20px] from global;
+    composes: w-[20px] from global;
+}
+
+.input {
+    composes: input_base;
+    composes: appearance-none from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+    composes: checked_border-7 from global;
+    composes: checked_border-primary from global;
+    composes: checked_bg-white from global;
+    composes: disabled_bg-gray-light from global;
+    composes: disabled_checked_border-gray from global;
+}
+
+.input_shimmer {
+    composes: input_base;
+}

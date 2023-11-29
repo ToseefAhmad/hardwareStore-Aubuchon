@@ -1,0 +1,18 @@
+.root {
+    composes: h-[40px] from global;
+    composes: lg_h-[54px] from global;
+}
+
+.item {
+    composes: block from global;
+    composes: py-2 from global;
+    composes: px-3.75 from global;
+    composes: font-semibold from global;
+    composes: whitespace-nowrap from global;
+    composes: no-underline from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_py-[14px] from global;
+    composes: lg_px-7.5 from global;
+}

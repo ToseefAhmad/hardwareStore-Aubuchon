@@ -1,0 +1,92 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: overflow-hidden from global;
+}
+
+.mainSection {
+    composes: scrollable from global;
+    composes: min-h-[25vh] from global;
+    composes: divide-y from global;
+    composes: divide-gray from global;
+    composes: pr-1 from global;
+
+    composes: lg_min-h-[inherit] from global;
+}
+
+.section {
+    composes: pb-2.5 from global;
+    composes: lg_pb-0 from global;
+}
+
+.section:not(:first-of-type) {
+    @apply pt-5 lg_pt-7.5;
+}
+
+.sectionTitle {
+    composes: mb-5 from global;
+    composes: leading-7 from global;
+
+    composes: lg_mb-7.5 from global;
+}
+
+.sectionTitleAdditional {
+    composes: font-normal from global;
+}
+
+.checkboxes {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-2.5 from global;
+    composes: py-5 from global;
+    composes: border-t from global;
+    composes: border-gray from global;
+
+    composes: lg_gap-3 from global;
+    composes: lg_py-7.5 from global;
+}
+
+.checkboxLabel {
+    composes: text-black from global;
+    composes: leading-7 from global;
+    composes: cursor-pointer from global;
+}
+
+.checkboxLabelStrong {
+    composes: text-black from global;
+}
+
+.field {
+    composes: root from '@app/components/Field/field.module.css';
+
+    composes: lg_mb-3 from global;
+}
+
+.hiddenInput {
+    composes: hidden from global;
+}
+
+.checkboxRoot {
+    composes: root from '@app/components/Checkbox/checkbox.module.css';
+
+    composes: !grid-flow-row from global;
+}
+
+.submitButtonContainer {
+    composes: mt-2 from global;
+
+    composes: lg_mt-5 from global;
+}
+
+.nameFieldWrapper {
+    composes: lg_flex from global;
+    composes: lg_gap-2 from global;
+}
+
+.hiddenFields {
+    composes: hidden from global;
+}
+
+.googleReCaptcha {
+    composes: mt-3 from global;
+}

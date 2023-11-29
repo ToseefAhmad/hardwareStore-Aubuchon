@@ -1,0 +1,24 @@
+.root {
+    composes: fixed from global;
+    composes: top-0 from global;
+    composes: left-0 from global;
+    composes: z-10 from global;
+    composes: block from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: opacity-0 from global;
+    composes: invisible from global;
+    composes: bg-black from global;
+    composes: lg_cursor-pointer from global;
+    composes: ease-linear from global;
+    composes: duration-[192ms] from global;
+    composes: transition-all from global;
+}
+
+.root_active {
+    composes: root;
+
+    composes: !opacity-40 from global;
+    composes: !visible from global;
+    composes: duration-[224ms] from global;
+}

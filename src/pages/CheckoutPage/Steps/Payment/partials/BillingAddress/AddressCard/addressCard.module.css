@@ -1,0 +1,30 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-y-1.25 from global;
+    composes: px-5 from global;
+    composes: py-[19px] from global;
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_gap-y-2.5 from global;
+}
+
+.dl {
+    composes: inline from global;
+}
+
+.dt {
+    composes: inline from global;
+    composes: mr-1.25 from global;
+}
+
+.dd {
+    composes: inline from global;
+    composes: font-semibold from global;
+}
+
+.input {
+    display: none;
+}

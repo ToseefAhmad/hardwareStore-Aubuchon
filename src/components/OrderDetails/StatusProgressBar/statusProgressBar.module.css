@@ -1,0 +1,62 @@
+.root {
+    composes: overflow-hidden from global;
+    composes: relative from global;
+    composes: h-7.5 from global;
+    composes: rounded from global;
+    composes: bg-gray-light from global;
+
+    composes: lg_h-12.5 from global;
+}
+
+.progressLine {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: grid from global;
+    composes: content-center from global;
+    composes: justify-items-end from global;
+    composes: rounded from global;
+
+    /* stylelint-disable */
+    background: repeating-linear-gradient(
+        45deg,
+        var(--brand-primary-hover-color),
+        var(--brand-primary-hover-color) 10px,
+        var(--brand-primary-active-color) 10px,
+        var(--brand-primary-active-color) 20px
+    );
+    /* stylelint-enable */
+}
+
+.progressLineFull {
+    composes: !justify-items-center from global;
+}
+
+.progressLineValue {
+    composes: mr-5 from global;
+    composes: font-semibold from global;
+    composes: text-white from global;
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}
+
+.progressLineEmptyValue {
+    composes: ml-4 from global;
+    composes: text-gray-dark from global;
+}
+
+@media (min-width: 1024px) {
+    .progressLine {
+        /* stylelint-disable */
+        background: repeating-linear-gradient(
+            45deg,
+            var(--brand-primary-hover-color),
+            var(--brand-primary-hover-color) 20px,
+            var(--brand-primary-active-color) 20px,
+            var(--brand-primary-active-color) 40px
+        );
+        /* stylelint-enable */
+    }
+}

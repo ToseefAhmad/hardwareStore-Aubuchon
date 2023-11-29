@@ -1,0 +1,11 @@
+.typographyBase {
+    composes: text-sm from global;
+    composes: text-black from global;
+
+    composes: lg_text-base from global;
+}
+
+.root {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+    composes: typographyBase;
+}

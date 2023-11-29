@@ -1,0 +1,60 @@
+.root {
+    composes: w-full from global;
+    composes: mx-auto from global;
+}
+
+.shimmer {
+    composes: root_rectangle from '@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+    composes: block from global;
+}
+
+.shimmerContainer {
+    composes: grid from global;
+    composes: justify-center from global;
+
+    composes: md_max-w-250 from global;
+
+    composes: lg_w-fit from global;
+    composes: lg_mx-auto from global;
+    composes: lg_gap-x-4 from global;
+    composes: lg_grid-cols-2 from global;
+    composes: lg_gap-y-4 from global;
+
+    composes: xl_gap-x-8 from global;
+    composes: xl_grid-cols-3 from global;
+}
+
+.shimmerWrapper {
+    composes: flex from global;
+    composes: w-[335px] from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: py-5 from global;
+    composes: gap-x-3 from global;
+
+    composes: lg_w-80 from global;
+}
+.shimmerWrapper:nth-of-type(1n + 7) {
+    @apply hidden
+        md_flex;
+}
+
+.shimmerWrapper:nth-of-type(1n + 13) {
+    @apply md_hidden
+        lg_flex;
+}
+
+.shimmerBody {
+    composes: shimmer;
+    composes: w-60 from global;
+    composes: h-7.5 from global;
+    composes: col-start-1 from global;
+    composes: col-end-1 from global;
+}
+
+.shimmerIcon {
+    composes: grid from global;
+    composes: col-start-2 from global;
+    composes: col-end-2 from global;
+}

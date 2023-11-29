@@ -1,0 +1,141 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: py-3.75 from global;
+
+    composes: lg_py-5 from global;
+}
+
+.logo {
+    composes: mb-4 from global;
+    composes: h-5 from global;
+}
+
+.address {
+    composes: relative from global;
+    composes: pl-6 from global;
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+}
+
+.addressIcon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: w-3.5 from global;
+    composes: h-4 from global;
+}
+
+.actions {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-2.5 from global;
+
+    composes: lg_gap-5 from global;
+}
+
+.availableInfo {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: grid-cols-productAvailableInfoMobile from global;
+    composes: gap-2.5 from global;
+}
+
+.availableInfoCounter {
+    composes: grid from global;
+    composes: place-content-center from global;
+    composes: w-7.5 from global;
+    composes: h-7.5 from global;
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_w-[34px] from global;
+    composes: lg_h-[34px] from global;
+}
+
+.availableInfoTypographyBase {
+    composes: text-2xs from global;
+    composes: text-black from global;
+
+    composes: lg_text-xs from global;
+}
+
+.availableInfoQty {
+    composes: availableInfoTypographyBase;
+    composes: font-bold from global;
+}
+
+.availableInfoStrong {
+    composes: availableInfoTypographyBase;
+}
+
+.availableInfoParagraph {
+    composes: availableInfoTypographyBase;
+}
+
+.form {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-nearestStorePopupFormMobile from global;
+    composes: gap-1.25 from global;
+    composes: items-center from global;
+
+    composes: lg_grid-cols-nearestStorePopupForm from global;
+}
+
+.addToCartButton {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: !h-10 from global;
+
+    composes: lg_!h-12.5 from global; /* stylelint-disable-line */
+}
+
+/* Stores item classes */
+.storesItemRoot {
+    composes: grid from global;
+}
+
+.storesItemContent {
+    composes: grid from global;
+}
+
+.storesItemInfo {
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: gap-1.25 from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: text-sm from global;
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+    composes: lg_text-base from global;
+    composes: mb-1 from global;
+
+    composes: lg_mb-2.5 from global;
+}
+
+.status {
+    composes: status from '@app/components/WarningContent/Content/content.module.css';
+}
+
+.open {
+    composes: open from '@app/components/WarningContent/Content/content.module.css';
+    composes: before_text-black from global;
+    composes: after_text-black from global;
+}
+
+.close {
+    composes: close from '@app/components/WarningContent/Content/content.module.css';
+    composes: before_text-black from global;
+    composes: after_text-black from global;
+}
+
+.workHours {
+    composes: workHours from '@app/components/StoreComponents/Status/status.module.css';
+    composes: ml-1.25 from global;
+}

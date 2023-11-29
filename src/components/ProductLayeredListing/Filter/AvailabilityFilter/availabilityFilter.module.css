@@ -1,0 +1,84 @@
+.imageContainer {
+    composes: mb-5 from global;
+    composes: px-5 from global;
+    composes: pt-5 from global;
+    composes: min-h-[150px] from global;
+    composes: h-[150px] from global;
+
+    composes: lg_px-0 from global;
+    composes: lg_pt-0 from global;
+    composes: lg_min-h-[120px] from global;
+    composes: lg_h-[120px] from global;
+}
+
+.imageContainerShimmer {
+    composes: imageContainer;
+}
+
+.image {
+    composes: root_rectangle from '~@magento/venia-ui/lib/components/Shimmer/shimmer.module.css';
+
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-cover from global;
+    composes: rounded from global;
+}
+
+.radio {
+    composes: pb-3.75 from global;
+    composes: px-5 from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: lg_mb-3.75 from global;
+    composes: lg_px-0 from global;
+}
+
+.storeButton {
+    composes: mt-5 from global;
+    composes: px-5 from global;
+    composes: order-1 from global;
+
+    composes: lg_px-0 from global;
+}
+
+.info {
+    composes: grid from global;
+    composes: grid-cols-minMaxContent from global;
+    composes: gap-x-1.25 from global;
+    composes: font-normal from global;
+}
+
+.name {
+    composes: truncate from global;
+}
+
+.title {
+    composes: grid from global;
+    composes: grid-cols-storeBlockTitle from global;
+    composes: gap-x-1.25 from global;
+}
+
+.radioRoot {
+    composes: root from '@app/components/RadioGroup/radio.module.css';
+
+    composes: !p-0 from global;
+    composes: !border-0 from global;
+    composes: grid-cols-storeBlockTitle from global;
+    composes: pointer-none from global;
+}
+
+.titleShimmer {
+    composes: h-[26px] from global;
+    composes: w-full from global;
+}
+
+.storeRoot {
+    composes: relative from global;
+    composes: overflow-hidden from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: lg_pt-0 from global;
+    composes: lg_block from global;
+}

@@ -1,0 +1,84 @@
+.root {
+    composes: overflow-hidden from global;
+    composes: relative from global;
+    composes: rounded from global;
+    composes: bg-white from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: before_absolute from global;
+    composes: before_top-[-165px] from global;
+    composes: before_right-[-367px] from global;
+    composes: before_transform from global;
+    composes: before_rotate-[-150deg] from global;
+    composes: before_w-[526px] from global;
+    composes: before_h-[358px] from global;
+    composes: before_bg-no-repeat from global;
+    composes: before_bg-cover from global;
+    composes: before_bg-paint-selection-swatch from global;
+
+    composes: xl_before_-top-14 from global;
+    composes: xl_before_right-[-210px] from global;
+    composes: xl_before_-rotate-45 from global;
+
+    composes: xxl_before_top-[-83px] from global;
+    composes: xxl_before_right-[-130px] from global;
+
+    composes: xxxl_before_right-[-94px] from global;
+}
+
+.content {
+    composes: relative from global;
+    composes: p-5 from global;
+    composes: z-1 from global;
+
+    composes: lg_p-12.5 from global;
+    composes: xxl_h-[207px] from global;
+
+    composes: xl_pr-[256px] from global;
+
+    composes: xxl_pr-[316px] from global;
+
+    composes: xxxl_pr-[481px] from global;
+}
+
+.content :global(.blockContainer) {
+    @apply m-0;
+}
+
+.content figure {
+    @apply overflow-hidden
+        pointer-events-none
+        mt-0
+        mb-3.5
+        w-[84px]
+        h-20
+        lg_w-[104px]
+        lg_h-[100px]
+        xl_absolute
+        xl_top-12.5
+        xl_right-12.5
+        xl_mb-0
+        xl_w-[169px]
+        xl_h-[162px]
+        xxl_right-20
+        xxxl_top-7.5;
+}
+
+.content :global(.blockTitle) {
+    @apply mb-1.5
+        xl_mb-1.25
+        text-gray-dark;
+}
+
+.content :global(.blockDescription) p {
+    @apply text-sm
+        text-gray-dark
+        lg_text-base
+        xl_text-lg;
+}
+
+.content :global(.blockDescription) strong {
+    @apply text-gray-dark;
+}

@@ -1,0 +1,36 @@
+.thumbnailWrapper {
+    composes: relative from global;
+    composes: border from global;
+    composes: p-1.25 from global;
+    composes: border-solid from global;
+    composes: border-gray-lighter from global;
+    composes: rounded from global;
+}
+
+.thumbnail {
+    composes: w-[68px] from global;
+    composes: h-[68px] from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-contain from global;
+}
+
+.quantity {
+    composes: absolute from global;
+    composes: bottom-1.25 from global;
+    composes: left-1.25 from global;
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: w-[18px] from global;
+    composes: h-[18px] from global;
+    composes: text-2xs from global;
+    composes: font-bold from global;
+    composes: text-white from global;
+    composes: rounded from global;
+    composes: bg-primary from global;
+    composes: cursor-default from global;
+}

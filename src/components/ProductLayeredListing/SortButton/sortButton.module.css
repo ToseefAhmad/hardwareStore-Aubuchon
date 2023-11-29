@@ -1,0 +1,170 @@
+.root {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-3.75 from global;
+    composes: w-full from global;
+    composes: lg_w-auto from global;
+}
+
+.menu {
+    composes: relative from global;
+    composes: text-base from global;
+    composes: text-black from global;
+    composes: text-left from global;
+    composes: bg-white from global;
+    composes: list-none from global;
+    composes: bg-clip-padding from global;
+
+    composes: lg_absolute from global;
+    composes: lg_top-[110%] from global;
+    composes: lg_right-0 from global;
+    composes: lg_z-2 from global;
+    composes: lg_mt-0.5 from global;
+    composes: lg_border from global;
+    composes: lg_border-gray from global;
+    composes: lg_rounded from global;
+}
+
+.menuItem {
+    composes: lg_border-b from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-gray from global;
+    composes: lg_last_border-b-0 from global;
+    composes: lg_hover_bg-gray-light from global;
+}
+
+.sortButton {
+    composes: input_base from '@app/components/Field/field.module.css';
+
+    composes: !p-2 from global;
+    composes: !h-10 from global;
+    composes: group from global;
+
+    composes: lg_!py-[9px] from global; /* stylelint-disable-line */
+    composes: lg_!pr-5 from global; /* stylelint-disable-line */
+    composes: lg_!pl-[25px] from global; /* stylelint-disable-line */
+    composes: lg_min-w-[149px] from global;
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+    composes: lg_border from global;
+    composes: lg_border-gray from global;
+    composes: lg_rounded-md from global;
+    composes: lg_font-normal from global;
+    composes: lg_normal-case from global;
+}
+
+.sortButtonContent {
+    composes: content from '@app/components/Button/button.module.css';
+
+    composes: !justify-center from global;
+    composes: gap-x-[2px] from global;
+    composes: font-semibold from global;
+
+    composes: lg_!justify-start from global; /* stylelint-disable-line */
+    composes: lg_!grid-cols-items-1 from global; /* stylelint-disable-line */
+    composes: lg_gap-x-0 from global;
+    composes: lg_font-normal from global;
+}
+
+.desktopText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-menuItem from global;
+    composes: items-center from global;
+    composes: text-left from global;
+}
+
+.sortText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: gap-x-1.25 from global;
+    composes: text-sm from global;
+
+    composes: lg_text-base from global;
+}
+
+.mobileText {
+    composes: lg_hidden from global;
+}
+
+.sortByBlock {
+    composes: hidden from global;
+
+    composes: lg_grid from global;
+    composes: lg_text-center from global;
+    composes: lg_text-base from global;
+    composes: lg_font-semibold from global;
+    composes: lg_items-center from global;
+}
+
+.sortByText {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-1.25 from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: max-h-[25px] from global;
+}
+
+.sortDirection {
+    composes: inline-block from global;
+    composes: text-primary from global;
+}
+
+.desc {
+    composes: sortDirection;
+}
+
+.asc {
+    composes: sortDirection;
+
+    composes: rotate-180 from global;
+}
+
+.icon {
+    composes: hidden from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: lg_inline-block from global;
+    composes: lg_group-hover_text-opacity-100 from global;
+}
+
+.mobileButton {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: p-[15px] from global;
+    composes: relative from global;
+    composes: left-[15px] from global;
+    composes: bottom-[3px] from global;
+}
+
+.header {
+    composes: p-5 from global;
+    composes: pb-3 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-menuItem from global;
+    composes: flex-shrink-0 from global;
+    composes: border-gray-light from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+}
+
+.headerTitle {
+    composes: text-xl from global;
+}
+
+.footer {
+    composes: relative from global;
+    composes: p-5 from global;
+    composes: grid from global;
+    composes: grid-cols-1 from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: flex-shrink-0 from global;
+    composes: gap-y-1.25 from global;
+    composes: bg-white from global;
+}

@@ -1,0 +1,29 @@
+.root {
+    composes: m-0 from global;
+}
+
+.text {
+    composes: mb-5 from global;
+
+    composes: lg_mb-[31px] from global;
+}
+
+.textAreaRoot {
+    composes: inputRoot from '@app/components/Field/message.module.css';
+
+    composes: grid from global;
+
+    composes: lg_mb-2.5 from global;
+}
+
+.textAreaInput {
+    composes: input from '@app/components/TextArea/textArea.module.css';
+
+    composes: !h-[80px] from global;
+    composes: lg_!h-[70px] from global; /* stylelint-disable-line */
+}
+
+.buttonContainer {
+    composes: lg_mx-auto from global;
+    composes: lg_max-w-[195px] from global;
+}

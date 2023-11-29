@@ -1,0 +1,174 @@
+# This is the UPWARD specification file for the Venia storefront.
+# It is used by an UPWARD server implementation, such as upward-js and
+# upward-php, to describe how the server responds to requests.
+# See: https://pwastudio.io/technologies/upward/
+
+# The root properties of an UPWARD spec file are part of a global context
+# that includes request and environment data.
+# These properties are available to other properties and are ultimately
+# populated with Resolvers.
+
+# The root 'status', 'headers', and 'body' properties are required properties
+# in an UPWARD spec file.
+# An UPWARD server uses the resolved values of these properties to create an
+# HTTP response to the client.
+# In this file, these properties get their values from a top-level
+# 'response' object, which is a recommended and best practice approach.
+status: veniaResponse.status
+headers: veniaResponse.headers
+body: veniaResponse.body
+
+# This object is not used anywhere during runtime, this entry declares the
+# static directory as a resource path to copy into dist
+# https://magento.github.io/pwa-studio/tutorials/intercept-a-target/change-static-assets-directory/
+veniaStaticIncludes:
+  resolver: directory
+  directory:
+    resolver: inline
+    inline: './assets'
+
+facebookPixelId:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: facebookPixelId
+      default:
+        inline: ''
+
+brandList:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: brandList
+      default:
+        inline: ''
+
+pickupStoreList:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: pickupStoreList
+      default:
+        inline: ''
+
+pickupStore:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: pickupStore
+      default:
+        inline: ''
+
+gtmId:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: gtmId
+      default:
+        inline: ''
+
+gtmConfig:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: gtmConfig
+      default:
+        inline: ''
+
+logRocketApiKey:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: logRocketApiKey
+      default:
+        inline: ''
+
+storeConfig:
+  resolver: inline
+  inline:
+    value:
+      resolver: conditional
+      when:
+        - matches: env.SCRIPT_NAME
+          pattern: .*\.php$
+          use:
+            resolver: computed
+            type:
+              resolver: inline
+              inline: storeConfig
+      default:
+        inline: '{}'
+
+# Page type data for initial render
+# TODO: Create fragment loader that parses fields from ResolveUrl fragments and adds them here
+veniaPageType:
+  resolver: inline
+  inline:
+    data:
+      resolver: computed
+      type:
+        resolver: inline
+        inline: pageType
+      additional:
+        - type: product
+          fetch: 'uid,id,__typename,sku,url_key,name,brand,review_rating,review_count,description,media_gallery,meta_title,meta_description,meta_keyword,manufacturer_part_number,manufacturer_part_number,upc'
+        - type: cms_page
+          fetch: 'identifier,url_key,content,content_heading,title,page_layout,meta_title,meta_keywords,meta_description'
+        - type: category
+          fetch: 'uid,url_key,is_active,name,categoryDescription,meta_title,meta_description,meta_keywords,breadcrumbs,menu,display_mode,landing_page,cms_block'

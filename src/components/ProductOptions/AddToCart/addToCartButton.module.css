@@ -1,0 +1,88 @@
+.buttonSkeleton {
+    composes: buttonSkeleton from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+}
+
+.quantityButtonRoot {
+    composes: quantityButtonRoot from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !w-10 from global;
+    composes: !h-10 from global;
+
+    composes: lg_!w-11 from global; /* stylelint-disable-line */
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.button {
+    composes: button from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+}
+
+.button_decrement {
+    composes: button_decrement from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !h-10 from global;
+
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.button_increment {
+    composes: button_increment from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !h-10 from global;
+
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.input {
+    composes: input from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !h-10 from global;
+
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.rootButton {
+    composes: root from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !left-[inherit] from global;
+    composes: right-0 from global;
+}
+
+.addToCartButton {
+    composes: addToCartButton from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !px-0 from global;
+    composes: !min-w-[110px] from global;
+    composes: !h-10 from global;
+    composes: text-center from global;
+
+    composes: lg_!min-w-[152px] from global; /* stylelint-disable-line */
+}
+
+.rootAddToCart {
+    composes: rootAddToCart from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+
+    composes: !left-[inherit] from global;
+    composes: right-0 from global;
+    composes: !w-[110px] from global;
+    composes: !h-10 from global;
+    composes: text-center from global;
+
+    composes: lg_!min-w-[152px] from global; /* stylelint-disable-line */
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}
+
+.rootFull {
+    composes: rootButton;
+
+    composes: w-full from global;
+}
+
+.rootQty {
+    composes: rootButton;
+
+    composes: !w-10 from global;
+    composes: !h-10 from global;
+
+    composes: lg_!w-11 from global; /* stylelint-disable-line */
+    composes: lg_!h-11 from global; /* stylelint-disable-line */
+}

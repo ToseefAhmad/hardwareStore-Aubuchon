@@ -1,0 +1,87 @@
+.showGrid {
+    composes: xl_grid from global;
+    composes: xl_gap-7.5 from global;
+    composes: xl_grid-rows-productImageCarousel from global;
+}
+
+.carouselContainer {
+    composes: initial from global;
+    composes: mt-10.5 from global;
+
+    composes: xl_w-productCarouselContainerDesktop from global;
+    composes: xl_h-productCarouselContainerDesktop from global;
+    composes: xl_p-5 from global;
+    composes: xl_rounded from global;
+    composes: xl_border from global;
+    composes: xl_border-solid from global;
+    composes: xl_border-gray-light from global;
+    composes: xl_relative from global;
+    composes: xl_mt-0 from global;
+}
+
+.imageContainer {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: overflow-hidden from global;
+}
+
+.currentImage {
+    composes: block from global;
+    composes: w-full from global;
+    composes: max-h-83.752 from global;
+    composes: mx-auto from global;
+    composes: object-contain from global;
+    composes: object-center from global;
+
+    composes: xl_w-productCarouselImageDesktop from global;
+    composes: xl_h-productCarouselImageDesktop from global;
+    composes: xl_mx-0 from global;
+    composes: xl_max-h-full from global;
+}
+
+.currentImage_placeholder {
+    composes: currentImage;
+}
+
+.thumbnailList {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-center from global;
+    composes: gap-1.25 from global;
+    composes: xl_gap-2.5 from global;
+    composes: z-1 from global;
+}
+
+.sliderDots {
+    composes: slick-dots from global;
+    composes: absolute from global;
+    composes: bottom-[18px] from global;
+}
+
+.sliderDots li {
+    @apply mr-1.25
+        last_mr-0;
+}
+
+.slider :global(.slick-list) {
+    @apply xl_h-[100vw];
+}
+
+.backgroundPlaceholder {
+    composes: mx-auto from global;
+    composes: absolute from global;
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: max-w-70 from global;
+    composes: max-h-70 from global;
+    composes: mt-3.75 from global;
+    composes: top-1/2 from global;
+    composes: left-1/2 from global;
+    composes: -translate-x-1/2 from global;
+    composes: -translate-y-1/2 from global;
+    composes: rounded-full from global;
+
+    composes: xl_mt-0 from global;
+    composes: xl_max-w-137.5 from global;
+    composes: xl_max-h-137.5 from global;
+}

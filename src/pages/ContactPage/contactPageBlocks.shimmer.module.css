@@ -1,0 +1,33 @@
+.root {
+    composes: grid from global;
+    composes: gap-2.5 from global;
+    composes: max-w-[335px] from global;
+    composes: mx-auto from global;
+    composes: mb-7.5 from global;
+
+    composes: md_grid-cols-3 from global;
+    composes: md_max-w-250 from global;
+
+    composes: lg_mb-[50px] from global;
+}
+
+.item {
+    composes: md_h-[264px] from global;
+
+    composes: lg_h-[258px] from global;
+}
+
+.firstItem {
+    composes: item;
+    composes: h-[208px] from global;
+}
+
+.secondItem {
+    composes: item;
+    composes: h-[150px] from global;
+}
+
+.thirdItem {
+    composes: item;
+    composes: h-[198px] from global;
+}

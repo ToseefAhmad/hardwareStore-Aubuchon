@@ -1,0 +1,15 @@
+.root {
+    composes: h-[40px] from global;
+    composes: w-[40px] from global;
+    composes: inline-grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: rounded from global;
+    composes: outline-none from global;
+    composes: transition-colors from global;
+    composes: bg-gray-light from global;
+    composes: text-black from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_active_bg-black from global;
+    composes: lg_active_text-white from global;
+}

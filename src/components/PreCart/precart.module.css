@@ -1,0 +1,95 @@
+.root {
+    composes: root from '@app/components/MiniCart/miniCart.module.css';
+}
+
+.root_open {
+    composes: root_open from '@app/components/MiniCart/miniCart.module.css';
+    composes: overflow-y-scroll from global;
+    composes: overflow-x-hidden from global;
+}
+
+.headingWrapper {
+    composes: headingWrapper from '@app/components/MiniCart/miniCart.module.css';
+}
+
+.closeButton {
+    composes: closeButton from '@app/components/MiniCart/miniCart.module.css';
+}
+
+.contents {
+    composes: relative from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: h-full from global;
+    composes: lg_p-[50px] from global;
+    composes: lg_pr-[44px] from global;
+    composes: pl-[0.625rem] from global;
+    composes: pl-0 from global;
+}
+
+.body {
+    composes: pl-3 from global;
+    composes: pr-3 from global;
+    composes: pt-2.5 from global;
+    composes: lg_pt-5 from global;
+    composes: lg_px-0 from global;
+    composes: lg_mb-2 from global;
+    composes: lg_mx-0 from global;
+    composes: lg_mt-3 from global;
+}
+
+.itemRoot {
+    composes: root from '@app/components/MiniCart/ProductList/item.module.css';
+}
+
+.itemRootMobile {
+    composes: root from '@app/components/MiniCart/ProductList/item.module.css';
+    composes: !grid-cols-preCartAddedItemMobile from global;
+    composes: !pb-2.5 from global;
+}
+
+.itemDetails {
+    composes: grid from global;
+    composes: gap-[4px] from global;
+    composes: lg_gap-0 from global;
+    composes: w-full from global;
+    composes: mt-1 from global;
+}
+
+.itemDeleteButton {
+    composes: hidden from global;
+}
+
+.itemProductCardImageContainer {
+    composes: productCardImageContainer from '@app/components/MiniCart/ProductList/item.module.css';
+}
+
+.itemProductCardImageContainerMobile {
+    composes: productCardImageContainer from '@app/components/MiniCart/ProductList/item.module.css';
+    composes: !px-1.25 from global;
+    composes: !pt-1.25 from global;
+    composes: !pb-5 from global;
+}
+
+[class^='precart-itemProductCardImageContainerMobile'] img {
+    width: 98px !important;
+    height: 98px !important;
+}
+
+.footer {
+    composes: footer from '@app/components/MiniCart/miniCart.module.css';
+}
+
+.footerContents {
+    composes: footerContents from '@app/components/MiniCart/miniCart.module.css';
+}
+
+.buttonsWrapper {
+    composes: mt-5 from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: gap-1.25 from global;
+
+    composes: lg_flex-row from global;
+    composes: lg_gap-2 from global;
+}

@@ -1,0 +1,37 @@
+.root {
+    composes: inputRoot from '../Field/message.module.css';
+}
+
+.select {
+    composes: relative from global;
+}
+
+.input,
+.input_error {
+    composes: input from '../TextInput/textInput.module.css';
+    composes: cursor-pointer from global;
+}
+
+.chevron {
+    composes: absolute from global;
+    composes: right-[24px] from global;
+    composes: top-1/2 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+}
+
+.selectMobile {
+    composes: block from global;
+    composes: md_hidden from global;
+}
+
+.selectDesktop {
+    composes: hidden from global;
+    composes: md_block from global;
+}
+
+.reactSelect svg {
+    @apply h-4;
+}

@@ -1,0 +1,55 @@
+.root {
+    composes: p-5 from global;
+    composes: w-[250px] from global;
+}
+
+.imageContainer {
+    composes: mb-1.25 from global;
+    composes: h-5 from global;
+
+    composes: xl_mb-2.5 from global;
+}
+
+.image {
+    composes: h-full from global;
+}
+
+.info {
+    composes: mb-2.5 from global;
+}
+
+.name {
+    composes: text-sm from global;
+    composes: font-semibold from global;
+
+    composes: xl_text-base from global;
+}
+
+.address {
+    composes: text-xs from global;
+
+    composes: xl_text-xs from global;
+}
+
+.link {
+    composes: block from global;
+    composes: text-sm from global;
+    composes: text-green-light from global;
+    composes: font-semibold from global;
+    composes: no-underline from global;
+
+    composes: xl_text-base from global;
+}
+
+.button {
+    composes: mt-3 from global;
+    composes: py-2 from global;
+    composes: w-full from global;
+    composes: text-sm from global;
+    composes: text-white from global;
+    composes: font-semibold from global;
+    composes: bg-green-light from global;
+    composes: rounded from global;
+
+    composes: xl_text-base from global;
+}

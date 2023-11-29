@@ -1,0 +1,37 @@
+.errorTitle {
+    composes: text-center from global;
+}
+
+.sitemapLinkTitle {
+    composes: title from '@app/components/Accordion/section.module.css';
+    composes: text-black from global;
+    composes: text-base from global;
+    composes: text-left from global;
+    composes: font-semibold from global;
+
+    composes: lg_text-lg from global;
+}
+
+.sitemapLinkBody {
+    composes: root from '@app/components/Accordion/section.module.css';
+    composes: w-full from global;
+}
+
+.subSitemapLinkTitle {
+    composes: text-sm from global;
+    composes: mt-3.75 from global;
+
+    composes: lg_text-base from global;
+    composes: lg_mt-5 from global;
+}
+
+.subSubSitemapLink {
+    composes: text-sm from global;
+    composes: block from global;
+
+    composes: lg_text-base from global;
+}
+
+.subSubSitemapLink:first-of-type {
+    @apply mt-2.5;
+}

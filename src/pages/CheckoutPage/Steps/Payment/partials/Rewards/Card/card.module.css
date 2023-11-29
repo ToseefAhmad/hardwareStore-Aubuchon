@@ -1,0 +1,50 @@
+.root {
+    composes: py-[14px] from global;
+    composes: px-[25px] from global;
+    composes: grid from global;
+    composes: grid-cols-rewardCard from global;
+    composes: gap-2.5 from global;
+    composes: items-center from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_grid-cols-none from global;
+    composes: lg_gap-[17px] from global;
+    composes: lg_py-7 from global;
+}
+
+.strong {
+    composes: block from global;
+    composes: font-semibold from global;
+}
+
+.money {
+    composes: text-primary from global;
+}
+
+.title {
+    composes: text-black from global;
+}
+
+.info {
+    composes: lg_grid from global;
+    composes: lg_grid-cols-rewardCardInfo from global;
+    composes: lg_gap-[25px] from global;
+}
+
+.icon {
+    composes: hidden from global;
+    composes: text-primary from global;
+
+    composes: lg_block from global;
+}
+
+.hidden {
+    composes: !hidden from global;
+}
+
+.secondary {
+    composes: secondary from '@app/components/Button/button.module.css';
+}

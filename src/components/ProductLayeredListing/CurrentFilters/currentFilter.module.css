@@ -1,0 +1,15 @@
+.root {
+    composes: py-2.5 from global;
+    composes: pr-[18px] from global;
+    composes: pl-3.75 from global;
+    composes: text-sm from global;
+    composes: rounded from global;
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-2.5 from global;
+    composes: bg-gray-light from global;
+}
+
+.strong {
+    composes: text-black from global;
+}

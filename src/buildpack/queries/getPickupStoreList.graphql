@@ -1,0 +1,10 @@
+# Get store list with brands
+query {
+    pickupStoreList {
+        id
+        url_key
+        brand {
+            uid
+        }
+    }
+}

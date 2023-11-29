@@ -1,0 +1,226 @@
+.root {
+    composes: pb-17.5 from global;
+    composes: max-h-[548px] from global;
+    composes: lg_pb-0 from global;
+    composes: lg_border-t-0 from global;
+    composes: lg_max-h-[444px] from global;
+    composes: px-2.5 from global;
+    composes: lg_px-0 from global;
+}
+
+.related {
+    composes: full-bleed from global;
+    composes: max-w-[1926px] from global;
+    composes: lg_!w-[112%] from global; /* stylelint-disable-line */
+    composes: pt-7.5 from global;
+    composes: pb-2.5 from global;
+    composes: lg_py-[70px] from global;
+    composes: pl-[0.9375rem] from global;
+    composes: pr-5 from global;
+    composes: lg_px-[100px] from global;
+}
+
+.relatedShimmerRoot {
+    composes: related;
+    composes: pt-0 from global;
+    composes: max-h-[485px] from global;
+    composes: lg_h-auto from global;
+}
+
+.relatedRoot {
+    composes: overflow-y-scroll from global;
+}
+
+.relatedWrapper {
+    composes: pl-3 from global;
+    composes: overflow-scroll from global;
+
+    composes: lg_pl-0 from global;
+}
+.relatedTitle {
+    composes: pl-2.5 from global;
+    composes: pr-5 from global;
+    composes: pt-[8px] from global;
+    composes: lg_pt-0 from global;
+    composes: lg_px-0 from global;
+    composes: lg_mb-[15px] from global;
+    composes: mb-[0.4rem] from global;
+    composes: text-xl from global;
+    composes: lg_text-4xl from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+    composes: lg_border-0 from global;
+}
+
+.productItems {
+    composes: mt-[0.9375rem] from global;
+    composes: gap-3.75 from global;
+    composes: mt-3.75 from global;
+    composes: pt-3.75 from global;
+    composes: first_pt-0 from global;
+}
+
+.productRoot {
+    composes: flex from global;
+    composes: gap-[17px] from global;
+    composes: lg_gap-3.75 from global;
+}
+
+.productRoot:last-child {
+    @apply !gap-y-1.25;
+}
+
+.productImage {
+    composes: h-[120px] from global;
+    composes: w-[120px] from global;
+    composes: block from global;
+    composes: !left-1/2 from global;
+    composes: object-contain from global;
+    composes: translate-x-[-50%] from global;
+    composes: animate-productCardImage from global;
+}
+
+.productContent {
+    composes: grid from global;
+
+    composes: lg_mt-[3px] from global;
+}
+
+.productContentRows {
+    composes: mt-[2px] from global;
+    composes: grid from global;
+    composes: lg_h-full from global;
+    composes: lg_grid-rows-none from global;
+}
+
+.productSku {
+    composes: text-2xs from global;
+    composes: lg_text-2xs from global;
+}
+
+.productName {
+    composes: mt-1.25 from global;
+    composes: text-xs from global;
+    composes: lg_text-xs from global;
+    composes: font-semibold from global;
+    composes: line-clamp-3 from global;
+    composes: lg_line-clamp-2 from global;
+}
+.priceWrapper {
+    composes: mt-[0.4rem] from global;
+}
+.productPrice {
+    composes: inline-block from global;
+    composes: text-base from global;
+    composes: font-medium from global;
+    composes: lg_mt-0 from global;
+    composes: lg_text-base from global;
+    composes: mb-1 from global;
+}
+
+.imageContainer {
+    composes: flex-140 from global;
+    composes: h-[140px] from global;
+    composes: lg_h-auto from global;
+    composes: relative from global;
+    composes: p-[9px] from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_p-[19px] from global;
+}
+.addToCart {
+    composes: absolute from global;
+    composes: bottom-[-15px] from global;
+    composes: lg_bottom-[2px] from global;
+    composes: right-2.5 from global;
+    composes: left-0 from global;
+    composes: lg_right-5 from global;
+}
+
+.productRoot button {
+    @apply !p-0;
+}
+
+.shimmerRoot {
+    composes: flex from global;
+    composes: gap-3.75 from global;
+    composes: mt-3.75 from global;
+    composes: first_mt-0 from global;
+    composes: pt-3.75 from global;
+    composes: first_pt-0 from global;
+}
+
+.shimmerDescription {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: w-full from global;
+    composes: mt-2.5 from global;
+    composes: gap-2 from global;
+}
+
+.shimmerImage {
+    composes: p-2.5 from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+    composes: w-[140px] from global;
+    composes: h-[140px] from global;
+}
+
+.buttonLightened {
+    composes: root from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+    composes: w-[70px] from global;
+    composes: h-[34px] from global;
+    composes: lg_!w-[70px] from global; /* stylelint-disable-line */
+    composes: !w-[70px] from global; /* stylelint-disable-line */
+    composes: !w-[70px] from global; /* stylelint-disable-line */
+    composes: !p-0 from global;
+}
+
+.addToCartButtonLightened {
+    composes: lighted from '@app/components/ProductCard/AddToCart/addToCartButton.module.css';
+    composes: !p-0 from global;
+    composes: !min-w-[70px] from global;
+    composes: h-[34px] from global;
+    composes: lg_!min-w-[70px] from global; /* stylelint-disable-line */
+    composes: !w-[70px] from global; /* stylelint-disable-line */
+}
+
+.info {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-productCardInfo from global;
+    composes: gap-x-[9px] from global;
+    composes: items-center from global;
+    composes: mt-[-1px] from global;
+}
+
+.buttonRoot {
+    composes: absolute from global;
+    composes: bottom-[-29px] from global;
+    composes: left-0 from global;
+    composes: text-sm from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+    composes: transition-all from global;
+    composes: duration-300 from global;
+    composes: max-w-27.5 from global;
+    composes: lg_bottom-0 from global;
+    composes: lg_h-auto from global;
+    composes: lg_text-base from global;
+    composes: lg_hover_bg-primaryHover from global;
+    composes: lg_active_bg-primaryActive from global;
+    composes: lg_max-w-38 from global;
+}
+
+.buttonRootQty {
+    composes: buttonRoot;
+    composes: !w-[34px] from global;
+    composes: lg_!w-11 from global; /* stylelint-disable-line */
+}

@@ -1,0 +1,10 @@
+.item {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-max from global;
+    composes: gap-1.25 from global;
+}
+
+.strong {
+    composes: text-black from global;
+}

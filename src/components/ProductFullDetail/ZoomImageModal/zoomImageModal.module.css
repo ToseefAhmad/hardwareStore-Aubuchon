@@ -1,0 +1,22 @@
+.root {
+    composes: fixed from global;
+    composes: top-auto from global;
+    composes: left-0 from global;
+    composes: bottom-0 from global;
+    composes: w-full from global;
+    composes: visible from global;
+    composes: opacity-100 from global;
+    composes: z-20 from global;
+
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+    background-color: initial;
+
+    composes: lg_translate-y-0 from global;
+    composes: lg_translate-x-0 from global;
+    composes: lg_ !h-auto from global;
+    composes: lg_top-auto from global;
+    composes: lg_left-0 from global;
+    composes: xl_hidden from global;
+}

@@ -1,0 +1,14 @@
+.root {
+    composes: scrollable from global;
+}
+
+@media (max-width: 1024px) {
+    .root {
+        scrollbar-width: none; /* Hide scrollbar on Firefox */
+    }
+
+    /* Hide scrollbar on Chrome, Safari, Edge */
+    .root::-webkit-scrollbar {
+        @apply hidden;
+    }
+}

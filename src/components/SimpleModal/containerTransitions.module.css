@@ -1,0 +1,36 @@
+.enter {
+    @apply transform
+        lg_transform-none
+        translate-y-full
+        transition-all
+        duration-200
+        opacity-0
+        pointer-events-none;
+}
+
+.enterActive {
+    @apply transform
+        lg_transform-none
+        translate-y-0
+        opacity-100
+        lg_transition-opacity
+        lg_duration-200;
+}
+
+.exit {
+    @apply transform
+        lg_transform-none
+        translate-y-0
+        opacity-100
+        lg_pointer-events-none;
+}
+
+.exitActive {
+    @apply transform
+        lg_transform-none
+        translate-y-full
+        transition-all
+        duration-200
+        opacity-0
+        lg_transition-opacity;
+}

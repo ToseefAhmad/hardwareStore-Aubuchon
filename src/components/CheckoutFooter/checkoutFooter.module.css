@@ -1,0 +1,86 @@
+.root {
+    composes: grid from global;
+    composes: pt-10 from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+    composes: bg-bricks-mobile from global;
+    composes: bg-white from global;
+    composes: bg-repeat-x from global;
+
+    composes: lg_gap-7 from global;
+    composes: lg_px-[100px] from global;
+    composes: lg_py-12.5 from global;
+    composes: lg_items-center from global;
+    composes: lg_bg-bricks-desktop from global;
+    composes: lg_grid-cols-checkoutFooter from global;
+
+    grid-template-areas:
+        'ratingBlock'
+        'paymentBlock'
+        'secureBlock';
+    background-position: 0 -4px;
+}
+
+.ratingBlock {
+    composes: mt-[9px] from global;
+    composes: mb-2.5 from global;
+
+    composes: lg_my-0 from global;
+
+    grid-area: ratingBlock;
+
+    composes: lg_flex from global;
+    composes: items-center from global;
+    composes: gap-5 from global;
+}
+
+.paymentBlock {
+    composes: mb-5 from global;
+
+    composes: lg_mb-0 from global;
+
+    grid-area: paymentBlock;
+}
+
+.secureBlock {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: place-content-center from global;
+    composes: pt-2.5 from global;
+    composes: border-t from global;
+
+    composes: lg_py-0 from global;
+    composes: lg_border-t-0 from global;
+
+    grid-area: secureBlock;
+}
+
+.secureBlockParagraph {
+    composes: relative from global;
+    composes: pl-5 from global;
+    composes: text-xs from global;
+    composes: font-semibold from global;
+
+    composes: lg_pl-6 from global;
+    composes: lg_text-sm from global;
+}
+
+.secureBlockIcon {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: left-0 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: text-black-light from global;
+}
+
+.userwayWidget {
+    composes: my-0 from global;
+    composes: mx-auto from global;
+}
+
+@media (min-width: 1024px) {
+    .root {
+        grid-template-areas: 'ratingBlock secureBlock paymentBlock';
+    }
+}

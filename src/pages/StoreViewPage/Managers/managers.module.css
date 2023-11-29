@@ -1,0 +1,48 @@
+.root {
+    grid-area: managers;
+    composes: pt-[22px] from global;
+    composes: pb-5 from global;
+    composes: lg_py-7.5 from global;
+    composes: border-b from global;
+    composes: lg_border-t from global;
+}
+
+.manager {
+    composes: grid from global;
+    composes: grid-cols-storeInfoPageManager from global;
+    composes: gap-x-3.5 from global;
+    composes: mb-2.5 from global;
+    composes: last_mb-0 from global;
+}
+
+.imageContainer {
+    composes: w-15 from global;
+    composes: h-15 from global;
+    composes: mr-4 from global;
+    composes: relative from global;
+    composes: overflow-hidden from global;
+    composes: rounded from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-cover from global;
+}
+
+.description {
+    composes: pt-[7px] from global;
+    composes: block from global;
+
+    composes: lg_pt-1.25 from global;
+}
+
+.name {
+    composes: font-semibold from global;
+    composes: text-black from global;
+}
+
+.job {
+    composes: text-xs from global;
+    composes: capitalize from global;
+}

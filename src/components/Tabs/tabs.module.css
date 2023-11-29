@@ -1,0 +1,59 @@
+.tabsContainer {
+    composes: w-full from global;
+    composes: relative from global;
+    composes: pt-[38px] from global;
+    composes: lg_pt-0 from global;
+
+    composes: before_absolute from global;
+    composes: before_top-0 from global;
+    composes: before_w-5 from global;
+    composes: before_h-6 from global;
+    composes: before_from-white from global;
+    composes: before_-left-5 from global;
+    composes: before_bg-gradient-to-r from global;
+    composes: before_z-1 from global;
+    composes: before_pointer-events-none from global;
+
+    composes: after_absolute from global;
+    composes: after_top-0 from global;
+    composes: after_w-5 from global;
+    composes: after_h-6 from global;
+    composes: after_from-white from global;
+    composes: after_-right-5 from global;
+    composes: after_bg-gradient-to-l from global;
+    composes: after_pointer-events-none from global;
+}
+
+.tabs {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: -left-5 from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: w-screen from global;
+    composes: px-5 from global;
+    composes: whitespace-nowrap from global;
+    composes: no-scrollbar from global;
+    composes: overflow-auto from global;
+
+    composes: lg_static from global;
+    composes: lg_w-full from global;
+    composes: lg_px-0 from global;
+    composes: lg_overflow-hidden from global;
+    composes: xxl_grid-cols-4 from global;
+}
+
+.tabContent {
+    composes: pt-5 from global;
+}
+
+.tabUnderline {
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: bottom-0 from global;
+    composes: w-2 from global;
+    composes: h-0.5 from global;
+    composes: bg-primary from global;
+    composes: transition-tabUnderline from global;
+    composes: duration-200 from global;
+}

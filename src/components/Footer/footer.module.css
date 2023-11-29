@@ -1,0 +1,121 @@
+.root {
+    composes: pt-[29px] from global;
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+    composes: bg-bricks-mobile from global;
+    composes: bg-white from global;
+    composes: bg-repeat-x from global;
+
+    composes: xl_pt-[70px] from global;
+    composes: lg_bg-bricks-desktop from global;
+
+    background-position: 0 -1px;
+}
+
+.container {
+    composes: max-w-[1920px] from global;
+    composes: mx-auto from global;
+    composes: px-5 from global;
+
+    composes: xl_px-[100px] from global;
+}
+
+.content {
+    composes: flex from global;
+    composes: flex-col from global;
+
+    composes: xl_flex-row from global;
+    composes: xl_justify-between from global;
+}
+
+.section {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: py-5 from global;
+    composes: items-center from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: xl_py-7.5 from global;
+    composes: xl_items-start from global;
+}
+
+.sectionNoBorder {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: py-5 from global;
+    composes: items-center from global;
+
+    composes: xl_py-7.5 from global;
+    composes: xl_items-start from global;
+}
+
+.leftBlockSection {
+    composes: xl_w-[30.233%] from global;
+}
+
+.rightBlockSection {
+    composes: xl_w-[19.42%] from global;
+}
+
+.newsletter {
+    composes: section;
+}
+
+.social {
+    composes: sectionNoBorder;
+}
+
+.membership {
+    composes: section;
+
+    composes: xl_ml-0 from global;
+    composes: xl_border-b-0 from global;
+}
+
+.orderStatus {
+    composes: section;
+
+    composes: hidden from global;
+    composes: lg_flex from global;
+    composes: xl_ml-0 from global;
+}
+
+.linkList {
+    composes: pt-7.5 from global;
+
+    composes: xl_w-[16.45%] from global;
+}
+
+.brandingWrapper {
+    composes: border-solid from global;
+    composes: border-t from global;
+    composes: border-gray-light from global;
+
+    composes: xl_mt-17.5 from global;
+}
+
+.branding {
+    composes: container;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: items-center from global;
+    composes: pb-[4.6875rem] from global;
+    composes: pt-[15px] from global;
+
+    composes: xl_pb-[15px] from global;
+    composes: xl_pt-3.5 from global;
+    composes: xl_flex-row-reverse from global;
+    composes: xl_justify-between from global;
+}
+
+.copyright {
+    composes: link-secondary from global;
+    composes: pt-2.25 from global;
+    composes: text-xs from global;
+
+    composes: lg_pt-0 from global;
+    composes: lg_text-sm from global;
+}

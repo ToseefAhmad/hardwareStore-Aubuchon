@@ -1,0 +1,6 @@
+.root {
+    composes: overflow-hidden from global;
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+}

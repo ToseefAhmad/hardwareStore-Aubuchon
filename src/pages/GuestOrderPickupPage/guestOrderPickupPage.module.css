@@ -1,0 +1,19 @@
+.root {
+    composes: root from '../GuestOrderViewPage/guestOrderViewPage.module.css';
+}
+
+.header {
+    composes: header from '../GuestOrderViewPage/guestOrderViewPage.module.css';
+}
+
+.title {
+    composes: title from '../GuestOrderViewPage/guestOrderViewPage.module.css';
+}
+
+.backLink {
+    composes: backLink from '../AccountPagesSwitcher/accountPagesSwitcher.module.css';
+}
+
+.content {
+    composes: baseContent from '../GuestOrderViewPage/guestOrderViewPage.module.css';
+}

@@ -1,0 +1,58 @@
+.hidden {
+    composes: opacity-0 from global;
+    composes: invisible from global;
+}
+
+.visible {
+    composes: opacity-100 from global;
+    composes: visible from global;
+
+    composes: before_absolute from global;
+    composes: before_block from global;
+    composes: before_w-[0.265rem] from global;
+    composes: before_h-[0.265rem] from global;
+    composes: before_-top-0.5 from global;
+    composes: before_left-1/2 from global;
+    composes: before_-translate-x-1/2 from global;
+    composes: before_rotate-45 from global;
+    composes: before_bg-white from global;
+}
+
+.root {
+    composes: lg_absolute from global;
+    composes: lg_z-1 from global;
+    composes: lg_top-[48px] from global;
+    composes: lg_left-0 from global;
+    composes: lg_right-0 from global;
+    composes: lg_bg-white from global;
+    composes: lg_rounded from global;
+    composes: lg_shadow-b from global;
+    composes: lg_duration-200 from global;
+    composes: lg_ease-linear from global;
+    composes: lg_transition-visibility from global;
+
+    composes: lg_top-[63px] from global;
+}
+
+.root_hidden {
+    composes: root;
+    composes: hidden;
+}
+
+.root_visible {
+    composes: root;
+    composes: visible;
+}
+
+.suggestions {
+    composes: xl_grid from global;
+    composes: xl_grid-flow-col from global;
+
+    composes: xl_grid-cols-searchResultsSmallDesktop from global;
+    composes: xxl_grid-cols-searchResultsDesktop from global;
+}
+
+.loader {
+    composes: py-[13px] from global;
+    composes: text-center from global;
+}

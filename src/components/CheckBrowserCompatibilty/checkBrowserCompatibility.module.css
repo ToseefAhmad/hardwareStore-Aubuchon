@@ -1,0 +1,80 @@
+.modal {
+    composes: lg_!top-10 from global; /* stylelint-disable-line */
+    composes: lg_!translate-y-0 from global; /* stylelint-disable-line */
+    composes: lg_p-12.5 from global;
+    composes: lg_pt-[75px] from global;
+    composes: lg_w-[520px] from global;
+}
+
+.closeButton {
+    composes: closeButton from '@app/components/AuthModal/Content/content.module.css';
+}
+
+.modal {
+    padding: 30px !important;
+    padding-top: 20px !important;
+}
+
+.cancel_button_wrapper {
+    display: flex;
+    text-align: right;
+    flex-direction: row-reverse;
+    margin-bottom: 1rem;
+}
+
+.cancel_button {
+    display: block;
+    color: gray;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.content_wrapper p {
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: #1d201f;
+}
+
+@media screen and (max-width: 500px) {
+    .content_wrapper p {
+        font-size: 1.25rem;
+    }
+}
+
+.cancel_button:hover {
+    color: black;
+    background-color: #d7d8d9;
+}
+
+.message {
+    margin-bottom: 2rem;
+}
+
+.button_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.close_btn {
+    display: block;
+    background-color: #006940;
+    width: 100%;
+    text-align: center;
+    padding: 0.25rem;
+    color: white;
+    height: 3.125rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.close_btn:hover {
+    background-color: #0a5839;
+}
+
+.modal_wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,64 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: grid-cols-1 from global;
+
+    composes: lg_grid-cols-12 from global;
+}
+
+.header {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-max from global;
+    composes: items-center from global;
+    composes: py-5 from global;
+    composes: col-span-full from global;
+    composes: row-start-1 from global;
+    composes: row-end-2 from global;
+
+    composes: lg_py-7.5 from global;
+}
+
+.title {
+    composes: text-3xl from global;
+
+    composes: lg_text-6xl from global;
+}
+
+.sidebar {
+    composes: hidden from global;
+    composes: col-span-4 from global;
+    composes: row-start-2 from global;
+    composes: row-end-auto from global;
+    composes: pr-7.5 from global;
+
+    composes: lg_block from global;
+    composes: xl_col-span-3 from global;
+}
+
+.menuWrap {
+    composes: border from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+}
+
+.content {
+    composes: col-start-1 from global;
+    composes: col-end-12 from global;
+    composes: row-start-2 from global;
+    composes: row-end-auto from global;
+
+    composes: lg_col-start-5 from global;
+}
+
+.backLink {
+    composes: mr-4 from global;
+    composes: h-6 from global;
+    composes: w-7.5 from global;
+    composes: text-black-light from global;
+    composes: bg-gray-lighter from global;
+    composes: border-gray-lighter from global;
+
+    composes: lg_hidden from global;
+}

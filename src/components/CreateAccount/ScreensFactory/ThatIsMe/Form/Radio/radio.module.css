@@ -1,0 +1,35 @@
+.radioContainer {
+    composes: root from '@app/components/RadioGroup/radio.module.css';
+    composes: !p-0 from global;
+    composes: text-sm from global;
+    composes: text-black from global;
+    composes: font-normal from global;
+    composes: leading-7 from global;
+    composes: border-none from global;
+    composes: transition-colors from global;
+    composes: group from global;
+
+    composes: lg_text-base from global;
+    composes: lg_leading-7 from global;
+}
+
+.radioContainerNormal {
+    composes: rootNormal from '@app/components/RadioGroup/radio.module.css';
+}
+
+.radioContainerDisabled {
+    composes: rootDisabled from '@app/components/RadioGroup/radio.module.css';
+
+    composes: !bg-transparent from global;
+}
+
+.radioInput {
+    composes: input from '@app/components/RadioGroup/radio.module.css';
+
+    composes: lg_group-hover_border-black from global;
+    composes: lg_group-hover_checked_border-primary from global;
+}
+
+.strong {
+    composes: text-black from global;
+}

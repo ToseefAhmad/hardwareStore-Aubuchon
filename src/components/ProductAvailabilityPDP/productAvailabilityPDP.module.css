@@ -1,0 +1,99 @@
+.root {
+    composes: grid from global;
+    composes: gap-x-1.25 from global;
+    composes: gap-y-2.5 from global;
+
+    composes: lg_flex from global;
+    composes: lg_flex-wrap from global;
+    composes: lg_gap-x-3.75 from global;
+
+    composes: text-sm from global;
+    composes: text-black from global;
+
+    composes: lg_text-base from global;
+}
+
+.bold {
+    composes: font-bold from global;
+}
+
+.stock {
+    composes: stock from '@app/components/ProductFullDetail/productFullDetail.module.css';
+
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-productAvailableInfo from global;
+    composes: gap-x-2 from global;
+    composes: items-center from global;
+
+    composes: lg_gap-x-[9px] from global;
+}
+
+.stockBoss {
+    composes: stock;
+    composes: after_!hidden from global; /* stylelint-disable-line */
+}
+
+.notInStock {
+    composes: !gap-x-2 from global;
+
+    composes: lg_!gap-x-3.75 from global; /* stylelint-disable-line */
+}
+
+.icon {
+    composes: absolute from global;
+    composes: left-[-26px] from global;
+    composes: h-6 from global;
+    composes: text-primary from global;
+
+    composes: lg_h-[26px] from global;
+}
+
+.bossIcon {
+    composes: bossIcon from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.link {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+
+    composes: inline-block from global;
+    composes: gap-3.75 from global;
+    composes: !font-normal from global;
+}
+
+.stockInfo {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-max-content from global;
+    composes: gap-x-2.5 from global;
+
+    composes: lg_gap-x-3.75 from global;
+}
+
+.inStock {
+    composes: bold;
+
+    composes: text-green-lightest from global;
+}
+
+.categoryLink {
+    composes: root from '@app/components/ProductParentCategoryLink/productParentCategoryLink.module.css';
+    composes: !font-normal from global;
+}
+
+.categoryLinkBoss {
+    composes: categoryLinkBoss from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.bossProducts {
+    composes: pl-[25px] from global;
+    composes: lg_pl-0 from global;
+}
+
+.notBossProducts {
+    composes: notBossProducts from '@app/components/ProductAvailability/productAvailability.module.css';
+}
+
+.usefulLinks {
+    composes: usefulLinks from '@app/components/ProductAvailability/productAvailability.module.css';
+}

@@ -1,0 +1,33 @@
+.root {
+    composes: shortFormContainer from '../../shared.module.css';
+}
+
+.header {
+    composes: header from '../../shared.module.css';
+}
+
+.shortForm {
+    composes: shortForm from '../../shared.module.css';
+}
+
+.shortFormFooter {
+    composes: shortFormFooter from '../../shared.module.css';
+}
+
+.fieldRoot {
+    composes: fieldRoot from '../../shared.module.css';
+}
+
+.inputNote {
+    composes: inputNote from '../../shared.module.css';
+}
+
+.mediaFormButtonsWrapper {
+    composes: mediaFormButtonsWrapper from '../../shared.module.css';
+}
+
+.formNote {
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}

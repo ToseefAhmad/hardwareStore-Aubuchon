@@ -1,0 +1,41 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: w-full from global;
+    composes: text-center from global;
+
+    composes: xl_text-left from global;
+}
+
+.text {
+    composes: mb-2.5 from global;
+    composes: !text-center from global;
+
+    composes: xl_mt-2.5 from global;
+    composes: xl_!text-left from global; /* stylelint-disable-line */
+}
+
+.links {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-max from global;
+    composes: gap-[26px] from global;
+    composes: justify-center from global;
+
+    composes: xl_justify-start from global;
+}
+
+.signUpLink {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+    composes: relative from global;
+
+    composes: after_pointer-events-none from global;
+    composes: after_absolute from global;
+    composes: after_top-1/2 from global;
+    composes: after_-right-4 from global;
+    composes: after_transform from global;
+    composes: after_-translate-y-1/2 from global;
+    composes: after_w-1.5 from global;
+    composes: after_h-0.5 from global;
+    composes: after_bg-gray from global;
+}

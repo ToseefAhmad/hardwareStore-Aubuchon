@@ -1,0 +1,163 @@
+.list {
+    composes: grid from global;
+    composes: grid-cols-3 from global;
+    composes: gap-1.25 from global;
+    composes: h-full from global;
+}
+
+.fullHeight {
+    composes: overflow-auto from global;
+}
+
+.item {
+    composes: grid from global;
+    composes: grid-cols-2 from global;
+    composes: gap-1.25 from global;
+
+    composes: lg_grid-cols-4 from global;
+    composes: h-[100px] from global;
+}
+
+.modalContainer {
+    composes: py-5 from global;
+    composes: !h-screen from global;
+    composes: gap-y-5 from global;
+
+    composes: lg_!top-10 from global; /* stylelint-disable-line */
+    composes: lg_p-5 from global;
+    composes: lg_w-[1230px] from global;
+    composes: lg_!translate-y-0 from global; /* stylelint-disable-line */
+    composes: lg_!max-h-[650px] from global; /* stylelint-disable-line */
+}
+
+.closeButton {
+    composes: opacity-40 from global;
+    composes: hover_opacity-100 from global;
+
+    composes: lg_absolute from global;
+    composes: lg_top-4 from global;
+    composes: lg_right-2 from global;
+    composes: lg_hover_text-opacity-100 from global;
+    composes: p-[15px] from global;
+}
+
+.header {
+    composes: px-5 from global;
+    composes: pb-5 from global;
+    composes: grid from global;
+    composes: gap-y-2 from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: border-solid from global;
+
+    composes: lg_p-0 from global;
+    composes: lg_border-none from global;
+}
+
+.content {
+    composes: px-5 from global;
+    composes: grid from global;
+    composes: overflow-hidden from global;
+    composes: h-full from global;
+    composes: grid-rows-colorStep from global;
+
+    composes: lg_px-0 from global;
+}
+
+.footer {
+    composes: px-5 from global;
+    composes: flex-shrink-0 from global;
+
+    composes: lg_px-0 from global;
+    composes: lg_mb-[15px] from global;
+}
+
+.selectColor {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-2.5 from global;
+    composes: items-center from global;
+    composes: justify-center from global;
+    composes: grid-cols-1 from global;
+}
+
+.secondary {
+    composes: secondary from '@app/components/Button/button.module.css';
+
+    composes: !text-gray-dark from global;
+    composes: lg_active_!text-white from global; /* stylelint-disable-line */
+    composes: rounded from global;
+    composes: !border-0 from global;
+    composes: bg-select-color from global;
+    composes: bg-origin-border from global;
+    composes: !p-[3px] from global;
+
+    background-clip: content-box, border-box;
+}
+
+.swatchColorSmall {
+    composes: w-5 from global;
+    composes: h-5 from global;
+    composes: rounded from global;
+}
+
+.searchInput {
+    composes: input_base from '@app/components/Field/field.module.css';
+    composes: m-0 from global;
+    composes: pl-3.75 from global;
+    composes: pr-10 from global;
+    composes: h-10 from global;
+    composes: w-full from global;
+    composes: max-w-full from global;
+    composes: text-sm from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+
+    composes: lg_pl-[25px] from global;
+    composes: lg_pr-7.5 from global;
+    composes: lg_h-10 from global;
+    composes: lg_text-base from global;
+}
+
+.searchRoot {
+    composes: w-full from global;
+    composes: mb-5 from global;
+    composes: bg-transparent from global;
+
+    composes: lg_mb-5 from global;
+}
+
+.searchIcon {
+    composes: grid from global;
+    composes: h-10 from global;
+    composes: w-10 from global;
+    composes: bg-primary from global;
+    composes: rounded-r from global;
+    composes: rounded-l-none from global;
+    composes: text-white from global;
+
+    composes: lg_h-10 from global;
+    composes: lg_w-10 from global;
+    composes: lg_cursor-pointer from global;
+}
+
+.icon {
+    composes: icon from '@app/components/Field/fieldIcons.module.css';
+
+    composes: !right-0 from global;
+}
+
+.headerTitle {
+    composes: text-xl from global;
+    composes: font-semibold from global;
+}
+
+.grayLine {
+    composes: full-bleed from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: border-solid from global;
+}

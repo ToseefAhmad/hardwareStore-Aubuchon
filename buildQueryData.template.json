@@ -1,0 +1,1089 @@
+{
+    "mediaUrl": "${MAGENTO_BACKEND_URL}media/",
+    "storeConfigData": {
+        "store_code": "default",
+        "code": "default",
+        "locale": "en_US",
+        "secure_base_media_url": "${MAGENTO_BACKEND_URL}media/",
+        "store_name": "HardwareStore.com",
+        "newsletter_enabled": true
+    },
+    "availableStores": {
+        "availableStores": [
+            {
+                "store_code": "default",
+                "id": 1,
+                "secure_base_media_url": "${MAGENTO_BACKEND_URL}media/",
+                "store_name": "HardwareStore.com",
+                "default_display_currency_code": "USD"
+            }
+        ]
+    },
+    "possibleTypes": {
+        "AggregationOptionInterface": [
+            "AggregationOption"
+        ],
+        "AttributeMetadataInterface": [
+            "ProductAttributeMetadata"
+        ],
+        "UiInputTypeInterface": [
+            "UiAttributeTypeSelect",
+            "UiAttributeTypeMultiSelect",
+            "UiAttributeTypeBoolean",
+            "UiAttributeTypeAny",
+            "UiAttributeTypeTextarea",
+            "UiAttributeTypeTextEditor",
+            "UiAttributeTypePageBuilder",
+            "UiAttributeTypeFixedProductTax"
+        ],
+        "CartAddressInterface": [
+            "BillingCartAddress",
+            "ShippingCartAddress"
+        ],
+        "CartItemInterface": [
+            "SimpleCartItem",
+            "VirtualCartItem",
+            "DownloadableCartItem",
+            "BundleCartItem",
+            "ConfigurableCartItem",
+            "GiftCardCartItem"
+        ],
+        "ProductInterface": [
+            "VirtualProduct",
+            "SimpleProduct",
+            "DownloadableProduct",
+            "BundleProduct",
+            "GroupedProduct",
+            "ConfigurableProduct",
+            "GiftCardProduct"
+        ],
+        "CategoryInterface": [
+            "CategoryTree"
+        ],
+        "AttributeOptionInterface": [
+            "AttributeOption"
+        ],
+        "MediaGalleryInterface": [
+            "ProductImage",
+            "ProductVideo"
+        ],
+        "ProductLinksInterface": [
+            "ProductLinks"
+        ],
+        "RoutableInterface": [
+            "CategoryTree",
+            "CmsPage",
+            "VirtualProduct",
+            "SimpleProduct",
+            "DownloadableProduct",
+            "BundleProduct",
+            "GroupedProduct",
+            "ConfigurableProduct",
+            "GiftCardProduct",
+            "CustomRedirect"
+        ],
+        "GiftRegistryDynamicAttributeInterface": [
+            "GiftRegistryDynamicAttribute",
+            "GiftRegistryRegistrantDynamicAttribute"
+        ],
+        "GiftRegistryItemInterface": [
+            "GiftRegistryItem"
+        ],
+        "GiftRegistryDynamicAttributeMetadataInterface": [
+            "GiftRegistryDynamicAttributeMetadata"
+        ],
+        "CreditMemoItemInterface": [
+            "DownloadableCreditMemoItem",
+            "BundleCreditMemoItem",
+            "CreditMemoItem",
+            "GiftCardCreditMemoItem"
+        ],
+        "OrderItemInterface": [
+            "DownloadableOrderItem",
+            "BundleOrderItem",
+            "OrderItem",
+            "GiftCardOrderItem"
+        ],
+        "InvoiceItemInterface": [
+            "DownloadableInvoiceItem",
+            "BundleInvoiceItem",
+            "InvoiceItem",
+            "GiftCardInvoiceItem"
+        ],
+        "ShipmentItemInterface": [
+            "BundleShipmentItem",
+            "ShipmentItem",
+            "GiftCardShipmentItem"
+        ],
+        "WishlistItemInterface": [
+            "SimpleWishlistItem",
+            "VirtualWishlistItem",
+            "DownloadableWishlistItem",
+            "BundleWishlistItem",
+            "GroupedProductWishlistItem",
+            "ConfigurableWishlistItem",
+            "GiftCardWishlistItem"
+        ],
+        "LayerFilterItemInterface": [
+            "LayerFilterItem",
+            "SwatchLayerFilterItem"
+        ],
+        "GiftRegistryOutputInterface": [
+            "MoveCartItemsToGiftRegistryOutput",
+            "GiftRegistryOutput"
+        ],
+        "GiftRegistryItemUserErrorInterface": [
+            "MoveCartItemsToGiftRegistryOutput",
+            "GiftRegistryItemUserErrors"
+        ],
+        "ErrorInterface": [
+            "NoSuchEntityUidError",
+            "InternalError"
+        ],
+        "AttributeOptionsInterface": [
+            "AttributeOptions",
+            "UiAttributeTypeSelect",
+            "UiAttributeTypeMultiSelect",
+            "UiAttributeTypeBoolean"
+        ],
+        "SelectableInputTypeInterface": [
+            "UiAttributeTypeSelect",
+            "UiAttributeTypeMultiSelect",
+            "UiAttributeTypeBoolean"
+        ],
+        "PhysicalProductInterface": [
+            "SimpleProduct",
+            "BundleProduct",
+            "GroupedProduct",
+            "ConfigurableProduct",
+            "GiftCardProduct"
+        ],
+        "CustomizableOptionInterface": [
+            "CustomizableAreaOption",
+            "CustomizableDateOption",
+            "CustomizableDropDownOption",
+            "CustomizableMultipleOption",
+            "CustomizableFieldOption",
+            "CustomizableFileOption",
+            "CustomizableRadioOption",
+            "CustomizableCheckboxOption"
+        ],
+        "CustomizableProductInterface": [
+            "VirtualProduct",
+            "SimpleProduct",
+            "DownloadableProduct",
+            "BundleProduct",
+            "ConfigurableProduct",
+            "GiftCardProduct"
+        ],
+        "SwatchDataInterface": [
+            "ImageSwatchData",
+            "TextSwatchData",
+            "ColorSwatchData"
+        ],
+        "SwatchLayerFilterItemInterface": [
+            "SwatchLayerFilterItem"
+        ]
+    },
+    "pickupStore": {
+        "id": 3,
+        "brand": {
+            "uid": "MQ=="
+        }
+    },
+    "pickupStoreBrands": [
+        {
+            "uid": "MQ==",
+            "name": "Aubuchon Hardware",
+            "identifier": "aubuchon",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/logo_aubuchon-hardware.svg",
+            "cms_about_us_page": "aubuchon-hardware",
+            "primary_color": "#006940",
+            "primary_hover_color": "#0a5839",
+            "primary_active_color": "#094d32",
+            "social_facebook": "https://www.facebook.com/aubuchonhardware/",
+            "social_instagram": "https://www.instagram.com/aubuchonhardware/",
+            "social_twitter": "https://twitter.com/aubuchonhrdware?lang=en",
+            "social_youtube": "https://www.youtube.com/user/aubuchonhardware"
+        },
+        {
+            "uid": "NA==",
+            "name": "Lyndonville Hardware & Lumber",
+            "identifier": "lyndonville",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/logo_lyndonville.svg",
+            "cms_about_us_page": "lyndonville-hardware-lumber",
+            "primary_color": "#C10230",
+            "primary_hover_color": "#A8022A",
+            "primary_active_color": "#8F0124",
+            "social_facebook": "https://www.facebook.com/LyndonvilleHardwareLumber",
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "Nw==",
+            "name": "Village Hardware",
+            "identifier": "village",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/Village_Hardware_Horz..svg",
+            "cms_about_us_page": "village-hardware",
+            "primary_color": "#00953b",
+            "primary_hover_color": "#03722f",
+            "primary_active_color": "#045323",
+            "social_facebook": "https://www.facebook.com/VillageHardwareAlexandria.VA",
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "MTA=",
+            "name": "Cornell's Hardware",
+            "identifier": "cornells",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/CornellsFINAL_web.svg",
+            "cms_about_us_page": "cornells-hardware",
+            "primary_color": "#9e150a",
+            "primary_hover_color": "#bc180f",
+            "primary_active_color": "#ed1c24",
+            "social_facebook": null,
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "MTM=",
+            "name": "Martin's Hardware & Lumber",
+            "identifier": "martins",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/Martins_web_logo.svg",
+            "cms_about_us_page": "martins-hardware-lumber",
+            "primary_color": "#be1e2d",
+            "primary_hover_color": "#991c2b",
+            "primary_active_color": "#6b0a1a",
+            "social_facebook": null,
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "MTY=",
+            "name": "True Value",
+            "identifier": "true",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/True_Value_web_R3.svg",
+            "cms_about_us_page": "true-value-hardware",
+            "primary_color": "#c60c30",
+            "primary_hover_color": "#a00e31",
+            "primary_active_color": "#720a23",
+            "social_facebook": null,
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "MTk=",
+            "name": "Campbell's Hardware",
+            "identifier": "campbells",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/Campells_outline.svg",
+            "cms_about_us_page": "campbells-hardware",
+            "primary_color": "#000000",
+            "primary_hover_color": "#3a3738",
+            "primary_active_color": "#6b6969",
+            "social_facebook": null,
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        },
+        {
+            "uid": "MjM=",
+            "name": "Zimmerman's Hardware",
+            "identifier": "zimmermans",
+            "logo": "${MAGENTO_BACKEND_URL}media/storepickup/brand/Zimmermans_web_1.svg",
+            "cms_about_us_page": "zimmermans-hardware",
+            "primary_color": "#e21d38",
+            "primary_hover_color": "#a31a31",
+            "primary_active_color": "#771525",
+            "social_facebook": null,
+            "social_instagram": null,
+            "social_twitter": null,
+            "social_youtube": null
+        }
+    ],
+    "pickupStoreList": [
+        {
+            "id": 3,
+            "url_key": "001-fitchburg-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 4,
+            "url_key": "003-meredith-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 5,
+            "url_key": "004-gardner-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 6,
+            "url_key": "006-moultonboro-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 7,
+            "url_key": "007-tewksbury-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 8,
+            "url_key": "008-clinton-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 10,
+            "url_key": "017-turners-falls-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 11,
+            "url_key": "018-shelburne-falls-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 12,
+            "url_key": "025-saint-johnsbury-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 14,
+            "url_key": "032-franklin-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 15,
+            "url_key": "034-stafford-springs-ct",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 17,
+            "url_key": "037-webster-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 18,
+            "url_key": "040-brewer-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 19,
+            "url_key": "042-ludlow-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 20,
+            "url_key": "044-walpole-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 21,
+            "url_key": "045-montpelier-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 22,
+            "url_key": "049-barre-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 23,
+            "url_key": "051-waterbury-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 26,
+            "url_key": "055-newport-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 27,
+            "url_key": "057-morrisville-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 28,
+            "url_key": "062-hardwick-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 29,
+            "url_key": "063-middlebury-vt-29",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 30,
+            "url_key": "064-augusta-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 31,
+            "url_key": "065-littleton-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 32,
+            "url_key": "070-putnam-ct",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 35,
+            "url_key": "076-swanton-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 36,
+            "url_key": "079-fair-haven-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 37,
+            "url_key": "089-wareham-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 38,
+            "url_key": "090-wells-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 39,
+            "url_key": "091-manchester-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 40,
+            "url_key": "092-berlin-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 41,
+            "url_key": "094-williamstown-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 43,
+            "url_key": "096-north-adams-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 44,
+            "url_key": "097-lisbon-falls-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 46,
+            "url_key": "100-milton-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 47,
+            "url_key": "101-winchester-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 48,
+            "url_key": "103-rumford-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 49,
+            "url_key": "104-southbridge-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 50,
+            "url_key": "106-lincoln-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 51,
+            "url_key": "107-north-windham-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 53,
+            "url_key": "124-newport-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 54,
+            "url_key": "133-waterville-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 55,
+            "url_key": "135-naples-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 56,
+            "url_key": "141-concord-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 57,
+            "url_key": "144-haverhill-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 58,
+            "url_key": "151-middleboro-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 59,
+            "url_key": "152-carver-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 60,
+            "url_key": "155-sandwich-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 61,
+            "url_key": "156-so-sandwich-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 62,
+            "url_key": "159-cotuit-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 63,
+            "url_key": "161-jeffersonville-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 64,
+            "url_key": "163-warner-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 65,
+            "url_key": "164-buxton-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 66,
+            "url_key": "168-hillsboro-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 67,
+            "url_key": "171-belfast-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 68,
+            "url_key": "173-shelburne-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 69,
+            "url_key": "175-lee-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 70,
+            "url_key": "178-dover-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 71,
+            "url_key": "182-cohasset-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 72,
+            "url_key": "183-hinesburg-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 73,
+            "url_key": "187-lancaster-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 74,
+            "url_key": "188-stow-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 75,
+            "url_key": "189-ossipee-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 76,
+            "url_key": "191-bristol-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 77,
+            "url_key": "016-norway-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 78,
+            "url_key": "022-lincoln-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 79,
+            "url_key": "033-great-barrington-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 80,
+            "url_key": "039-windsor-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 82,
+            "url_key": "056-old-town-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 83,
+            "url_key": "069-lunenburg-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 84,
+            "url_key": "074-easthampton-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 85,
+            "url_key": "083-vergennes-vt",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 86,
+            "url_key": "108-farmington-me",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 87,
+            "url_key": "118-greenfield-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 88,
+            "url_key": "148-ayer-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 89,
+            "url_key": "153-kingston-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 90,
+            "url_key": "158-pocasset-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 91,
+            "url_key": "167-alton-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 92,
+            "url_key": "172-falmouth-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 93,
+            "url_key": "176-newmarket-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 94,
+            "url_key": "181-plymouth-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 98,
+            "url_key": "080-allenstown-nh",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 99,
+            "url_key": "190-ipswich-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 100,
+            "url_key": "192-beverly-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 101,
+            "url_key": "010-peru-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 102,
+            "url_key": "060-gouverneur-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 103,
+            "url_key": "075-elizabethtown-ny-103",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 104,
+            "url_key": "084-ticonderoga-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 106,
+            "url_key": "113-tupper-lake-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 108,
+            "url_key": "120-plattsburgh-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 110,
+            "url_key": "132-easton-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 111,
+            "url_key": "140-west-carthage-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 112,
+            "url_key": "177-richfield-springs-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 113,
+            "url_key": "136-lake-placid-ny",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 118,
+            "url_key": "193-sudbury-ma",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 124,
+            "url_key": "198-lyndonville-vt-124",
+            "brand": {
+                "uid": "NA=="
+            }
+        },
+        {
+            "id": 129,
+            "url_key": "194-monroe-ct",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 130,
+            "url_key": "195-alexandria-va",
+            "brand": {
+                "uid": "Nw=="
+            }
+        },
+        {
+            "id": 133,
+            "url_key": "201-south-royalton-vt-133",
+            "brand": {
+                "uid": "MQ=="
+            }
+        },
+        {
+            "id": 135,
+            "url_key": "202-eastchester-ny",
+            "brand": {
+                "uid": "MTA="
+            }
+        },
+        {
+            "id": 139,
+            "url_key": "203-bristol-vt",
+            "brand": {
+                "uid": "MTM="
+            }
+        },
+        {
+            "id": 142,
+            "url_key": "204-madison-me",
+            "brand": {
+                "uid": "MTk="
+            }
+        },
+        {
+            "id": 145,
+            "url_key": "205-skowhegan-me",
+            "brand": {
+                "uid": "MTk="
+            }
+        },
+        {
+            "id": 148,
+            "url_key": "206-winslow-me",
+            "brand": {
+                "uid": "MTk="
+            }
+        },
+        {
+            "id": 151,
+            "url_key": "207-farmingdale-me",
+            "brand": {
+                "uid": "MTk="
+            }
+        },
+        {
+            "id": 154,
+            "url_key": "200-new-hope-pa",
+            "brand": {
+                "uid": "MTY="
+            }
+        },
+        {
+            "id": 157,
+            "url_key": "199-richboro-pa",
+            "brand": {
+                "uid": "MTY="
+            }
+        },
+        {
+            "id": 160,
+            "url_key": "196-blue-bell-pa",
+            "brand": {
+                "uid": "MTY="
+            }
+        },
+        {
+            "id": 163,
+            "url_key": "197-doylestown-pa",
+            "brand": {
+                "uid": "MTY="
+            }
+        },
+        {
+            "id": 170,
+            "url_key": "208-burtonsville-md",
+            "brand": {
+                "uid": "MjM="
+            }
+        }
+    ],
+    "gtmSettings": {
+        "analytics_active": true,
+        "analytics_catalog_page": "Catalog Page",
+        "analytics_crosssell_block": "Cross-sell",
+        "analytics_upsell_block": "Up-sell",
+        "analytics_related_block": "Related Products",
+        "analytics_search_page": "Search Results",
+        "analytics_promotions": "Label"
+    }
+}

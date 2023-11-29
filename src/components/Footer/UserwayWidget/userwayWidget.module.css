@@ -1,0 +1,9 @@
+.root {
+    composes: text-primary from global;
+    composes: justify-start from global;
+    composes: flex from global;
+    composes: pt-3.5 from global;
+}
+.icon {
+    composes: cursor-pointer from global;
+}

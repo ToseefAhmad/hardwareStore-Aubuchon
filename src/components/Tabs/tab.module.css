@@ -1,0 +1,27 @@
+.root {
+    composes: relative from global;
+    composes: text-center from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+
+    composes: lg_hover_after_absolute from global;
+    composes: lg_hover_after_-bottom-px from global;
+    composes: lg_hover_after_left-0 from global;
+    composes: lg_hover_after_block from global;
+    composes: lg_hover_after_w-full from global;
+    composes: lg_hover_after_h-0.5 from global;
+    composes: lg_hover_after_bg-primary from global;
+    composes: lg_hover_after_bg-opacity-75 from global;
+}
+
+.tabButton {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: pb-2.5 from global;
+    composes: px-5 from global;
+    composes: font-semibold from global;
+    composes: leading-7 from global;
+
+    composes: lg_text-base from global;
+}

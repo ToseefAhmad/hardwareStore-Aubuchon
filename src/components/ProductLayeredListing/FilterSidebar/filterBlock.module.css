@@ -1,0 +1,60 @@
+.root {
+    composes: grid from global;
+    composes: lg_mb-7.5 from global;
+}
+
+.trigger {
+    composes: py-3.75 from global;
+    composes: px-5 from global;
+    composes: text-black from global;
+    composes: font-semibold from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: group from global;
+
+    composes: lg_py-[17px] from global;
+    composes: lg_pr-[25px] from global;
+    composes: lg_pl-[25px] from global;
+    composes: lg_bg-gray-light from global;
+    composes: lg_rounded from global;
+    composes: lg_border-b-0 from global;
+}
+
+.triggerCollapsed {
+    composes: lg_mb-5 from global;
+}
+
+.header {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-filterHeader from global;
+}
+
+.name {
+    composes: text-left from global;
+    composes: uppercase from global;
+
+    composes: lg_normal-case from global;
+}
+
+.icon {
+    composes: text-primary from global;
+    composes: text-opacity-100 from global;
+
+    composes: lg_text-black from global;
+    composes: lg_text-opacity-40 from global;
+    composes: lg_group-hover_text-opacity-100 from global;
+}
+
+.iconActive {
+    composes: icon;
+
+    composes: !text-primary from global;
+    composes: !text-opacity-100 from global;
+}
+
+.number {
+    composes: text-primary from global;
+}

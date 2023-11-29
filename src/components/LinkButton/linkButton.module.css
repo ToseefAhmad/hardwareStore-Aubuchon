@@ -1,0 +1,16 @@
+.root {
+    composes: outline-none from global;
+    composes: appearance-none from global;
+    composes: inline from global;
+    composes: text-left from global;
+}
+
+.rootPrimary {
+    composes: root;
+    composes: link-primary from global;
+}
+
+.rootSecondary {
+    composes: root;
+    composes: link-secondary from global;
+}

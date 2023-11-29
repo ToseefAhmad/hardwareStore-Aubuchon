@@ -1,0 +1,30 @@
+.root {
+    composes: absolute from global;
+    composes: right-0 from global;
+    composes: top-0 from global;
+    composes: text-xs from global;
+    composes: tranform from global;
+    composes: translate-y-inputMsg from global;
+}
+
+.root_error {
+    composes: root;
+    composes: text-red from global;
+    composes: font-semibold from global;
+    composes: leading-6 from global;
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-x-2.5 from global;
+    composes: items-center from global;
+}
+
+.inputRoot {
+    composes: relative from global;
+}
+
+.newLine {
+    composes: relative from global;
+    composes: pl-8 from global;
+    composes: !translate-y-0 from global;
+    composes: justify-self-start from global;
+}

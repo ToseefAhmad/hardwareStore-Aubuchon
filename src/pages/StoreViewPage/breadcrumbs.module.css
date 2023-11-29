@@ -1,0 +1,15 @@
+.breadcrumbs {
+    composes: hidden from global;
+    composes: lg_grid from global;
+    composes: grid-cols-storeInfoBreadcrumbs from global;
+    composes: gap-x-2.5 from global;
+    composes: text-sm from global;
+    composes: leading-7 from global;
+    composes: mt-5 from global;
+    composes: mb-2.5 from global;
+}
+
+.divider {
+    composes: my-auto from global;
+    composes: opacity-40 from global;
+}

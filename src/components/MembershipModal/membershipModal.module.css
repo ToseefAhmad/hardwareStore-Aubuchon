@@ -1,0 +1,6 @@
+.modal {
+    composes: lg_!top-10 from global; /* stylelint-disable-line */
+    composes: lg_!translate-y-0 from global; /* stylelint-disable-line */
+    composes: lg_p-12.5 from global;
+    composes: lg_w-[520px] from global;
+}

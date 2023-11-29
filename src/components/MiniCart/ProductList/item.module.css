@@ -1,0 +1,177 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-miniCartItemMobile from global;
+    composes: lg_grid-cols-miniCartItemDesktop from global;
+    composes: items-center from global;
+    composes: gap-x-3.75 from global;
+    composes: lg_gap-x-5 from global;
+    composes: border-b from global;
+    composes: last_border-b-0 from global;
+    composes: border-gray-light from global;
+    composes: opacity-100 from global;
+    composes: py-5 from global;
+
+    composes: first_pt-0 from global;
+}
+
+.root_disabled {
+    composes: root;
+    composes: opacity-50 from global;
+}
+
+.details {
+    composes: grid from global;
+    composes: w-full from global;
+}
+
+.nameWrapper {
+    composes: grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: gap-2.5 from global;
+    composes: justify-items-start from global;
+    composes: lg_justify-start from global;
+    composes: lg_items-center from global;
+}
+
+.name {
+    composes: text-xs from global;
+    composes: leading-[1.125rem] from global;
+    composes: lg_text-sm from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+}
+
+.stockStatus {
+    composes: text-red from global;
+}
+
+.contentWrapper {
+    composes: grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_justify-between from global;
+    composes: gap-y-2.5 from global;
+    composes: mt-1.25 from global;
+    composes: lg_mt-3.75 from global;
+}
+
+.content {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-3.75 from global;
+    composes: items-center from global;
+}
+
+.quantity {
+    composes: w-[120px] from global;
+    composes: lg_w-[110px] from global;
+}
+
+.quantityForm {
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}
+
+.quantityForm_hidden {
+    composes: quantityForm;
+    composes: scale-x-0 from global;
+    composes: origin-left from global;
+}
+
+.quantityButton {
+    composes: absolute from global;
+    composes: bottom-0 from global;
+    composes: left-0 from global;
+    composes: w-[34px] from global;
+    composes: h-[34px] from global;
+    composes: rounded from global;
+    composes: font-semibold from global;
+    composes: text-white from global;
+    composes: bg-green-light from global;
+
+    composes: hover_bg-primary from global;
+}
+
+.quantityWrapperMobile {
+    composes: absolute from global;
+    composes: bottom-2.5 from global;
+    composes: left-2.5 from global;
+}
+
+.currency {
+    composes: mr-1 from global;
+}
+
+.price {
+    composes: text-base from global;
+    composes: lg_text-xl from global;
+    composes: leading-[28px] from global;
+    composes: lg_leading-[30px] from global;
+    composes: font-medium from global;
+}
+
+.price_sm {
+    composes: text-xs from global;
+    composes: leading-5 from global;
+}
+
+.totalPrice {
+    composes: price;
+    composes: text-black from global;
+}
+
+.totalPrice_crossed {
+    composes: price_sm;
+    composes: line-through from global;
+}
+
+.priceWithDiscount {
+    composes: price;
+    composes: text-yellow-dark from global;
+}
+
+.deleteButton {
+    composes: ml-auto from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+
+    composes: hover_text-opacity-100 from global;
+}
+
+.thumbnailWrapper {
+    composes: relative from global;
+    composes: border from global;
+    composes: p-2.5 from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: rounded from global;
+}
+
+.thumbnail {
+    composes: w-[118px] from global;
+    composes: lg_w-[58px] from global;
+    composes: h-[118px] from global;
+    composes: lg_h-[58px] from global;
+}
+
+.image {
+    composes: w-full from global;
+    composes: h-full from global;
+    composes: object-contain from global;
+}
+
+.notAvailableIcon {
+    composes: text-red from global;
+
+    composes: lg_mt-[3px] from global;
+    composes: lg_self-start from global;
+}
+
+.outOfStockNotice {
+    composes: text-red from global;
+}
+
+.productCardImageContainer {
+    composes: imageContainer from '@app/components/ProductCard/productCard.module.css';
+}

@@ -1,0 +1,8 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: content-start from global;
+    composes: gap-y-5 from global;
+
+    composes: lg_gap-y-7.5 from global;
+}

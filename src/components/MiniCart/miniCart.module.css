@@ -1,0 +1,273 @@
+.root {
+    composes: fixed from global;
+    composes: right-0 from global;
+    composes: invisible from global;
+    composes: opacity-0 from global;
+    composes: translate-x-[1000px] from global;
+}
+
+.root_open {
+    composes: fixed from global;
+    composes: top-0 from global;
+    composes: right-0 from global;
+    composes: bottom-0 from global;
+    composes: w-full from global;
+    composes: lg_w-[600px] from global;
+    composes: bg-white from global;
+    composes: visible from global;
+    composes: opacity-100 from global;
+    composes: z-20 from global;
+
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}
+
+.contents {
+    composes: relative from global;
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: h-full from global;
+    composes: pb-[70px] from global;
+    composes: lg_p-[50px] from global;
+    composes: overflow-y-auto from global;
+}
+
+.contents_open {
+    composes: contents;
+}
+
+.headingWrapper {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+
+    composes: justify-between from global;
+    composes: p-[20px] from global;
+    composes: lg_px-0 from global;
+    composes: lg_pt-0 from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+}
+
+.totalQuantity {
+    composes: text-primary from global;
+}
+
+.closeButton {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: outline-none from global;
+    composes: hover_text-opacity-100 from global;
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}
+
+.quantity {
+    composes: opacity-100 from global;
+    composes: px-5 from global;
+    composes: lg_px-0 from global;
+    composes: pt-5 from global;
+    composes: lg_pt-2.5 from global;
+
+    composes: transition from global;
+    composes: duration-200 from global;
+    composes: ease-in-out from global;
+}
+
+.quantity_loading {
+    composes: quantity;
+    composes: opacity-50 from global;
+}
+
+.pickupStore {
+    composes: px-5 from global;
+    composes: lg_px-0 from global;
+    composes: mt-5 from global;
+    composes: lg_mt-7.5 from global;
+    composes: lg_leading-normal from global;
+}
+
+.pickupStoreName {
+    composes: font-semibold from global;
+    composes: text-black from global;
+}
+
+.pickupStoreChange {
+    composes: font-semibold from global;
+    composes: text-primary from global;
+    composes: hover_text-primaryHover from global;
+}
+
+.body {
+    composes: m-5 from global;
+    composes: lg_mx-0 from global;
+    composes: lg_mt-[29px] from global;
+    composes: lg_overflow-y-auto from global;
+}
+
+.itemsShortView {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: auto-cols-min from global;
+    composes: gap-1.25 from global;
+    composes: mb-2.5 from global;
+}
+
+.itemsShortViewLastItem {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: w-20 from global;
+    composes: h-20 from global;
+    composes: font-semibold from global;
+    composes: rounded from global;
+    composes: text-black from global;
+    composes: bg-gray-light from global;
+}
+
+.expandItemsButtonIcon {
+    composes: ml-1 from global;
+    composes: text-primary from global;
+}
+
+.hideItemsButton {
+    composes: mt-5 from global;
+}
+
+.footer {
+    composes: pb-0 from global;
+    composes: mx-5 from global;
+    composes: lg_mx-0 from global;
+}
+
+.footerContents {
+    composes: mb-5 from global;
+}
+
+.unavailabilityNotice {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-3.75 from global;
+    composes: px-5 from global;
+    composes: lg_px-7.5 from global;
+    composes: py-3.75 from global;
+    composes: lg_py-5 from global;
+    composes: mb-5 from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+}
+
+.unavailabilityNoticeIcon {
+    composes: pt-1 from global;
+    composes: text-red from global;
+}
+
+.unavailabilityNoticeText {
+    composes: lg_leading-normal from global;
+}
+
+.unavailabilityNoticeDate {
+    composes: font-semibold from global;
+}
+
+.pricingWrapper {
+    composes: grid from global;
+    composes: gap-1.25 from global;
+    composes: lg_gap-2.5 from global;
+}
+
+.price {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-between from global;
+    composes: items-center from global;
+    composes: opacity-100 from global;
+    composes: text-base from global;
+    composes: leading-7 from global;
+}
+
+.priceClassSubTotal {
+    composes: price;
+    composes: font-semibold from global;
+}
+
+.borderLine {
+    composes: border-b from global;
+    composes: border-gray-light from global;
+    composes: my-1 from global;
+}
+
+.price_loading {
+    composes: price;
+    composes: opacity-50 from global;
+}
+
+.promoCodeToggle {
+    composes: price;
+    composes: gap-[11px] from global;
+
+    composes: hover_text-black from global;
+}
+
+.promoCodeInputWrapper {
+    composes: mt-2.5 from global;
+}
+
+.promoCodeArrow {
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+}
+
+.promoCodeArrow_open {
+    composes: promoCodeArrow;
+    composes: text-opacity-100 from global;
+}
+
+.discount {
+    composes: font-semibold from global;
+    composes: text-primary from global;
+}
+
+.currency {
+    composes: mr-1 from global;
+}
+
+.checkoutButtonWrapper {
+    composes: absolute from global;
+    composes: lg_static from global;
+    composes: bottom-5 from global;
+    composes: left-5 from global;
+    composes: right-5 from global;
+    composes: leading-7 from global;
+    composes: lg_leading-[30px] from global;
+}
+
+.checkoutPrice {
+    composes: font-bold from global;
+}
+
+.checkoutText {
+    composes: font-semibold from global;
+}
+
+/* Styles for empty cart */
+.contents_open_empty {
+    composes: contents;
+    composes: grid from global;
+    composes: auto-rows-auto from global;
+    composes: pb-0 from global;
+    composes: lg_pb-0 from global;
+}
+
+.bodyEmpty {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+}
+
+.emptyCartIcon {
+    composes: block from global;
+    composes: mb-5 from global;
+    composes: text-primary from global;
+}

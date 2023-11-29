@@ -1,0 +1,44 @@
+.root {
+    composes: h-[50px] from global;
+    composes: w-[50px] from global;
+    composes: outline-none from global;
+    composes: transition-colors from global;
+    composes: rounded-full from global;
+    composes: text-black from global;
+}
+
+.root_normalPriority {
+    composes: root;
+    composes: bg-white from global;
+    composes: outline-gray from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_hover_text-black from global;
+    composes: lg_active_bg-black from global;
+    composes: lg_active_text-white from global;
+}
+
+.root_normalDisabledPriority {
+    composes: root;
+    composes: bg-white from global;
+    composes: outline-gray from global;
+    composes: text-black from global;
+    composes: text-opacity-30 from global;
+    composes: cursor-not-allowed from global;
+}
+
+.root_highPriority {
+    composes: root;
+    composes: bg-gray-light from global;
+    composes: lg_hover_bg-gray from global;
+    composes: lg_hover_text-black from global;
+    composes: lg_active_bg-black from global;
+    composes: lg_active_text-white from global;
+}
+
+.root_highDisabledPriority {
+    composes: root;
+    composes: bg-gray-light from global;
+    composes: text-black from global;
+    composes: text-opacity-30 from global;
+    composes: cursor-not-allowed from global;
+}

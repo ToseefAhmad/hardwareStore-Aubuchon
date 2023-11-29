@@ -1,0 +1,136 @@
+.summary {
+    composes: p-5 from global;
+    composes: font-semibold from global;
+    composes: bg-gray-light from global;
+    composes: rounded from global;
+
+    composes: lg_grid from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_grid-cols-2 from global;
+    composes: lg_p-7.5 from global;
+}
+
+.summaryMain {
+    composes: pb-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+
+    composes: lg_py-[27px] from global;
+    composes: lg_pr-7.5 from global;
+    composes: lg_border-b-0 from global;
+    composes: lg_border-r from global;
+}
+
+.rating {
+    composes: pt-1.25 from global;
+    composes: pb-2.5 from global;
+
+    composes: lg_pt-[3px] from global;
+    composes: lg_leading-[30px] from global;
+}
+
+.productRating {
+    composes: text-primary from global;
+}
+
+.summaryDetails {
+    composes: pt-5 from global;
+
+    composes: lg_pt-0.5 from global;
+    composes: lg_pl-7.5 from global;
+}
+
+.reviewsCount {
+    composes: pb-[3px] from global;
+    composes: lg_pb-1.25 from global;
+}
+
+.productReviewsCount {
+    composes: text-primary from global;
+}
+
+.ratingBreakdownItem {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-reviewsRatingBreakdown from global;
+    composes: gap-2.5 from global;
+    composes: mt-[7px] from global;
+    composes: text-xs from global;
+}
+
+.ratingBreakdownKey {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+}
+
+.ratingBreakdownItemIcon {
+    composes: inline-block from global;
+    composes: align-middle from global;
+    composes: pb-0.5 from global;
+}
+
+.ratingBreakdownItemRating {
+    composes: ml-1.25 from global;
+}
+
+.ratingBreakdownBar {
+    composes: w-full from global;
+    composes: h-1 from global;
+    composes: align-middle from global;
+    composes: bg-white from global;
+    composes: rounded from global;
+    composes: my-auto from global;
+}
+
+.ratingBreakdownBarFilled {
+    composes: h-1 from global;
+    composes: bg-primary from global;
+    composes: rounded from global;
+}
+
+.ratingBreakdownPercentage {
+    composes: text-right from global;
+}
+
+.filtersWrapper {
+    composes: py-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+
+    composes: lg_py-3.75 from global;
+}
+
+.filters {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-1.25 from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_gap-2.5 from global;
+    composes: lg_grid-cols-reviewFilters from global;
+}
+
+.selectInputs {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-2 from global;
+    composes: gap-1.25 from global;
+
+    composes: lg_gap-2.5 from global;
+    composes: lg_order-1 from global;
+}
+
+.pagination {
+    composes: mt-2.5 from global;
+
+    composes: lg_mt-5 from global;
+}
+
+.reviewListItem {
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray from global;
+}

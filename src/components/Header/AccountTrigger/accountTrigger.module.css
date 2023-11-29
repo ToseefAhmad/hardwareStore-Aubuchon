@@ -1,0 +1,39 @@
+.root {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-6 from global;
+}
+
+.trigger {
+    composes: relative from global;
+    composes: clickable from global;
+    composes: font-semibold from global;
+    composes: text-sm from global;
+    composes: text-white from global;
+    composes: outline-none from global;
+
+    composes: lg_hover_text-white from global;
+    composes: lg_hover_text-decoration-dotted from global;
+    composes: lg_hover_text-decoration-white from global;
+    composes: focus_text-decoration-dotted from global;
+    composes: focus_text-decoration-white from global;
+
+    composes: before_absolute from global;
+    composes: before_-left-3.75 from global;
+    composes: before_w-1 from global;
+    composes: before_h-1 from global;
+    composes: before_bg-white from global;
+    composes: before_opacity-40 from global;
+    composes: before_rounded from global;
+}
+
+.trigger:first-of-type {
+    @apply before_hidden;
+}
+
+.loaderIcon {
+    composes: indicator from '@magento/venia-ui/lib/components/LoadingIndicator/indicator.module.css';
+    composes: w-6 from global;
+    composes: h-6 from global;
+}

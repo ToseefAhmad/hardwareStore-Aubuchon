@@ -1,0 +1,28 @@
+.root {
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: gap-5 from global;
+    composes: mb-7.5 from global;
+
+    composes: xl_gap-12.5 from global;
+}
+
+.checkInLink {
+    composes: lg_place-self-center from global;
+    composes: lg_min-w-[194px] from global;
+}
+
+.items {
+    composes: grid from global;
+    composes: gap-7.5 from global;
+    composes: mt-2.5 from global;
+
+    composes: xl_gap-12.5 from global;
+    composes: xl_mt-0 from global;
+}
+
+.submitBtn {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: lg_h-[56px] from global;
+    composes: lg_w-[194px] from global;
+}

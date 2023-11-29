@@ -1,0 +1,53 @@
+.root {
+    /* Mobile */
+    composes: grid from global;
+    composes: gap-y-2.5 from global;
+    composes: -mt-1 from global;
+    composes: mb-2 from global;
+
+    /* As it is cms content (richContent), not to override margins for it, just margin fix for 1 exact block. */
+    composes: md_-mb-2 from global;
+    composes: md_mt-2 from global;
+}
+
+.textAndImageContainer {
+    /* Mobile */
+    composes: grid from global;
+    composes: grid-cols-membershipPageColumns from global;
+    composes: gap-x-4 from global;
+
+    /* Desktop */
+    composes: md_gap-x-5 from global;
+}
+
+.textAndImageContainer svg {
+    @apply text-primary;
+}
+
+.imgItem {
+    /* Mobile */
+    composes: w-10 from global;
+    composes: h-10 from global;
+    composes: rounded from global;
+    composes: bg-primary-light from global;
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: items-center from global;
+    composes: mx-0 from global;
+
+    /* Desktop */
+    composes: md_w-12.5 from global;
+    composes: md_h-12.5 from global;
+}
+
+.textItem {
+    /* Mobile */
+    composes: h-full from global;
+    composes: grid from global;
+    composes: items-center from global;
+    composes: col-start-2 from global;
+    composes: col-end-2 from global;
+
+    /* Desktop */
+    composes: md_h-12.5 from global;
+}

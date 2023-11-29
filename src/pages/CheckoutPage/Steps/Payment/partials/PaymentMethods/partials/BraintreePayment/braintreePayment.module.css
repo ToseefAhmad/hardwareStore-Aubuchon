@@ -1,0 +1,15 @@
+.root {
+    composes: lg_mb-[-7px] from global;
+}
+
+.label {
+    composes: label from './Form/form.module.css';
+
+    composes: mb-1.25 from global;
+}
+
+.selectShimmer {
+    composes: h-[50px] from global;
+
+    composes: lg_h-14 from global;
+}

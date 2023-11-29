@@ -1,0 +1,45 @@
+.root {
+    composes: grid from global;
+    composes: gap-x-1.25 from global;
+    composes: grid-cols-storeSearchBar from global;
+
+    composes: xl_grid-cols-storeSearchBarL from global;
+    composes: xl_gap-x-2.5 from global;
+}
+
+.searchField {
+    composes: relative from global;
+}
+
+.searchInput {
+    composes: input from '@app/components/TextInput/textInput.module.css';
+    composes: !h-10 from global;
+    composes: !py-3 from global;
+    composes: !pr-3 from global;
+    composes: !pl-5 from global;
+    composes: xl_!h-12.5 from global; /* stylelint-disable-line */
+    composes: xl_!px-[25px] from global; /* stylelint-disable-line */
+}
+
+.button,
+.searchButton {
+    composes: grid from global;
+    composes: bg-primary from global;
+    composes: text-white from global;
+    composes: rounded from global;
+    composes: hover_bg-primaryHover from global;
+    composes: active_bg-primaryActive from global;
+}
+
+.searchButton {
+    composes: absolute from global;
+    composes: h-10 from global;
+    composes: w-10 from global;
+    composes: top-0 from global;
+    composes: -right-px from global;
+    composes: rounded-r from global;
+    composes: rounded-l-none from global;
+
+    composes: xl_w-12.5 from global;
+    composes: xl_h-12.5 from global;
+}

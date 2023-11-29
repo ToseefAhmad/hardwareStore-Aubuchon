@@ -1,0 +1,109 @@
+.modalWrapper {
+    composes: pt-4 from global;
+    composes: pl-9 from global;
+    composes: pr-9 from global;
+    composes: pb-9 from global;
+    composes: bg-white from global;
+    composes: h-auto from global;
+}
+
+.zoomTop {
+    composes: flex from global;
+    composes: items-center from global;
+    composes: gap-2.5 from global;
+    composes: justify-center from global;
+}
+
+.title {
+    composes: text-center from global;
+    composes: flex-auto from global;
+}
+
+.closeIcon {
+    composes: cursor-pointer from global;
+    composes: ml-auto from global;
+}
+
+.zoomWraper {
+    composes: relative from global;
+    composes: my-3 from global;
+}
+
+.imageWrapperZoom {
+    composes: max-w-[343px] from global;
+    composes: !h-[343px] from global;
+    composes: !m-auto from global;
+}
+
+.thumbnailList {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-center from global;
+    composes: gap-3 from global;
+    composes: z-1 from global;
+    composes: mt-3 from global;
+}
+
+.thumbnailList span {
+    @apply w-[50px]  h-[50px];
+}
+
+.thumbnaiSelectedRoot {
+    composes: root from '@app/components/ProductImageCarousel/thumbnail.module.css';
+    composes: border-b-4 from global;
+    composes: border-solid from global;
+    composes: border-white from global;
+}
+.thumbnaiSelected {
+    composes: rootSelected from '@app/components/ProductImageCarousel/thumbnail.module.css';
+    composes: border-b-4 from global;
+    composes: border-solid from global;
+    composes: border-green from global;
+}
+
+.slider {
+    composes: mt-4 from global;
+    composes: lg_mt-6 from global;
+}
+
+.imageSlider {
+    composes: w-[50px] from global;
+}
+
+.activeImageSlider {
+    composes: imageSlider;
+    composes: border-b-4 from global;
+    composes: border-solid from global;
+    composes: border-green from global;
+}
+
+.sliderImage {
+    composes: w-[50px] from global;
+    composes: h-[50px] from global;
+    composes: object-cover from global;
+    composes: lg_w-[75px] from global;
+    composes: lg_h-[75px] from global;
+}
+
+.sliderRoot {
+    composes: root from '@app/components/ReactSnapSlider/partials/Carousel/carousel.module.css';
+}
+
+.sliderArrows {
+    composes: root_highPriority from '@app/components/ArrowButton/arrowButton.module.css';
+    composes: base from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: h-[30px] from global;
+    composes: w-[30px] from global;
+}
+
+.sliderArrowLeft {
+    composes: left from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: h-[30px] from global;
+    composes: w-[30px] from global;
+}
+
+.sliderArrowRight {
+    composes: right from '@app/components/ReactSnapSlider/partials/Arrow/arrow.module.css';
+    composes: h-[30px] from global;
+    composes: w-[30px] from global;
+}

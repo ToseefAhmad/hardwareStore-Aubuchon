@@ -1,0 +1,38 @@
+.root {
+    composes: root from './services.module.css';
+
+    composes: !mb-5 from global;
+}
+
+.title {
+    composes: title from './services.module.css';
+}
+
+.container {
+    composes: container from './services.module.css';
+}
+
+.list {
+    composes: list from './services.module.css';
+}
+
+.item {
+    composes: h-[45px] from global;
+    composes: border-b from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+
+    composes: lg_h-[54px] from global;
+}
+
+.serviceToggle {
+    composes: serviceToggle from './services.module.css';
+}
+
+.hiddenItem {
+    composes: hiddenItem from './services.module.css';
+}
+
+.buttonContent {
+    composes: h-10 from global;
+}

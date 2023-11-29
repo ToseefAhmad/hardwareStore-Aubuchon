@@ -1,0 +1,26 @@
+.title {
+    composes: inline-block from global;
+    composes: text-capitalize from global;
+    composes: font-semibold from global;
+    composes: text-xl from global;
+
+    composes: lg_text-4xl from global;
+}
+
+.button {
+    composes: px-[15px] from global;
+    composes: py-[15px] from global;
+    composes: text-black from global;
+    composes: text-opacity-40 from global;
+    composes: relative from global;
+    composes: bottom-1 from global;
+    composes: lg_bottom-0 from global;
+    composes: left-1 from global;
+    composes: lg_left-2 from global;
+    composes: lg_hover_text-opacity-100 from global;
+}
+
+.buttonBack {
+    composes: px-[10px] from global;
+    composes: text-primary from global;
+}

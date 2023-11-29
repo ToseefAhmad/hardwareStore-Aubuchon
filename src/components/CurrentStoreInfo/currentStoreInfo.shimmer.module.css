@@ -1,0 +1,13 @@
+.root {
+    composes: root from './currentStoreInfo.module.css';
+
+    composes: !grid-cols-none from global;
+    composes: !p-0 from global;
+}
+
+.content {
+    composes: h-[100px] from global;
+    composes: w-full from global;
+
+    composes: lg_h-[190px] from global;
+}

@@ -1,0 +1,92 @@
+.root {
+    composes: relative from global;
+    composes: grid from global;
+    composes: grid-flow-row from global;
+    composes: pl-11 from global;
+    composes: pr-2 from global;
+    composes: py-2 from global;
+    composes: border-2 from global;
+    composes: rounded from global;
+
+    composes: lg_grid-flow-col from global;
+    composes: lg_justify-start from global;
+    composes: lg_gap-x-1 from global;
+    composes: lg_pl-[54px] from global;
+    composes: lg_pr-3 from global;
+    composes: lg_py-3 from global;
+}
+
+.paragraph {
+    composes: text-sm from global;
+
+    composes: lg_text-base from global;
+}
+
+.icon {
+    composes: absolute from global;
+    composes: top-3 from global;
+    composes: left-[18px] from global;
+
+    composes: lg_top-[17px] from global;
+    composes: lg_left-[23px] from global;
+}
+
+.iconRed {
+    composes: text-red from global;
+}
+
+.iconGreen {
+    composes: text-green from global;
+}
+
+.iconYellow {
+    composes: text-yellow from global;
+}
+
+.error {
+    composes: bg-red-light from global;
+    composes: border-red from global;
+}
+
+.success {
+    composes: bg-green-lighter from global;
+    composes: border-green from global;
+}
+
+.warning {
+    composes: bg-yellow-light from global;
+    composes: border-yellow from global;
+}
+
+.info {
+    composes: bg-gray-light from global;
+    composes: border-gray from global;
+}
+
+.buttons {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+    composes: gap-x-[26px] from global;
+}
+
+.linkButton {
+    composes: rootSecondary from '@app/components/LinkButton/linkButton.module.css';
+    composes: relative from global;
+    composes: text-sm from global;
+
+    composes: lg_text-base from global;
+}
+
+.linkButton:not(:first-of-type) {
+    @apply before_absolute
+        before_top-1/2
+        before_-left-4
+        before_transform
+        before_-translate-y-1/2
+        before_w-1.5
+        before_h-0.5
+        before_bg-black-light
+        before_rounded
+        lg_before_-left-5;
+}

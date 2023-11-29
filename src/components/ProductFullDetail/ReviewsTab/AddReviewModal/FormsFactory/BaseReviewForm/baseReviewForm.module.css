@@ -1,0 +1,160 @@
+.guidelinesNotice {
+    composes: relative from global;
+    composes: mt-2.5 from global;
+    composes: pb-[21px] from global;
+    composes: after_block from global;
+    composes: after_absolute from global;
+    composes: after_-left-5 from global;
+    composes: after_bottom-0 from global;
+    composes: after_h-px from global;
+    composes: after_w-screen from global;
+    composes: after_bg-gray-light from global;
+
+    composes: lg_pb-7.5 from global;
+    composes: lg_border-solid from global;
+    composes: lg_border-b from global;
+    composes: lg_border-gray-light from global;
+    composes: lg_after_hidden from global;
+}
+
+.guidelinesButton {
+    composes: inline-block from global;
+    composes: link-primary from global;
+    composes: font-semibold from global;
+}
+
+.guidelinesText {
+    composes: mt-1.25 from global;
+
+    composes: mt-2.5 from global;
+}
+
+.guidelinesTextItem {
+    composes: mb-1.25 from global;
+
+    composes: mb-2.5 from global;
+}
+
+.guidelinesList {
+    composes: list-unordered from global;
+}
+
+.productInfo {
+    composes: tinyText from '../../shared.module.css';
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-reviewProductInfoMobile from global;
+    composes: gap-5 from global;
+    composes: py-5 from global;
+    composes: border-solid from global;
+    composes: border-b from global;
+    composes: border-gray-light from global;
+}
+
+.productAboutContainer {
+    composes: my-auto from global;
+}
+
+.smallerText {
+    composes: text-xs from global;
+    composes: lg_text-sm from global;
+}
+
+.aboutTitle {
+    composes: mb-1.25 from global;
+    composes: smallerText;
+}
+
+.photosOrVideos {
+    composes: smallerText;
+    composes: mt-2.5 from global;
+    composes: mb-1.25 from global;
+}
+
+.productName {
+    composes: smallerText;
+}
+
+.header {
+    composes: header from '../../shared.module.css';
+}
+
+.overallRatingFieldRoot {
+    composes: relative from global;
+    composes: fieldRoot from '../../shared.module.css';
+    composes: mb-5 from global;
+
+    composes: lg_gap-2.5 from global;
+}
+
+.fieldRoot {
+    composes: fieldRoot from '../../shared.module.css';
+    composes: mt-2.5 from global;
+}
+
+.textArea {
+    composes: textArea_base from '../../shared.module.css';
+    composes: blur-none from global;
+}
+
+.reviewFieldNote {
+    composes: mt-0.5 from global;
+    composes: mb-2.5 from global;
+    composes: tinyText from '../../shared.module.css';
+}
+
+.reviewTitleFieldNote {
+    composes: mt-2.5 from global;
+    composes: tinyText from '../../shared.module.css';
+}
+
+.mediaButtons {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: grid-cols-2 from global;
+    composes: gap-1.25 from global;
+
+    composes: lg_gap-2.5 from global;
+    composes: lg_leading-[30px] from global;
+}
+
+.mediaButtonsNote {
+    composes: my-2.5 from global;
+    composes: tinyText from '../../shared.module.css';
+}
+
+.fileUploadInput {
+    composes: hidden from global;
+}
+
+.reviewMediaContainer {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: gap-1 from global;
+    composes: justify-start from global;
+    composes: mb-2.5 from global;
+    composes: overflow-y-scroll from global;
+
+    composes: lg_gap-2.5 from global;
+    composes: lg_grid-cols-5 from global;
+}
+
+.imageContainer {
+    composes: imageContainer from '../../shared.module.css';
+}
+
+.imageRoot {
+    composes: imageRoot from '../../shared.module.css';
+}
+
+.image {
+    composes: image from '../../shared.module.css';
+}
+
+.removeMediaItemButton {
+    composes: removeMediaItemButton from '../../shared.module.css';
+}
+
+.submitButtonContainer {
+    composes: submitButtonContainer from '../../shared.module.css';
+}

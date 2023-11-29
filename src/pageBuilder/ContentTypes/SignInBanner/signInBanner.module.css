@@ -1,0 +1,73 @@
+.root {
+    composes: grid from global;
+    composes: items-center from global;
+    composes: font-semibold from global;
+    composes: full-bleed from global;
+    composes: py-5 from global;
+    composes: px-[17px] from global;
+
+    composes: lg_gap-2.5 from global;
+    composes: lg_my-0 from global;
+    composes: lg_grid-cols-filterHeader from global;
+    composes: lg_max-w-[1920px] from global;
+    composes: lg_!px-2.5 from global; /* stylelint-disable-line */
+    composes: xl_gap-[42px] from global;
+    composes: xxl_!px-[100px] from global; /* stylelint-disable-line */
+}
+
+.perksList {
+    composes: grid from global;
+    composes: justify-start from global;
+    composes: gap-2.5 from global;
+    composes: mb-5 from global;
+
+    composes: lg_gap-1.5 from global;
+    composes: lg_h-[50px] from global;
+    composes: lg_grid-flow-col from global;
+    composes: lg_mb-0 from global;
+    composes: lg_justify-around from global;
+    composes: xl_justify-start from global;
+    composes: xl_!gap-[42px] from global; /* stylelint-disable-line */
+}
+
+.perksListItem {
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: justify-start from global;
+    composes: items-center from global;
+    composes: gap-x-2.5 from global;
+    composes: !pl-0 from global;
+    composes: ml-0.5 from global;
+
+    composes: lg_ml-0 from global;
+    composes: lg_first_mb-0 from global;
+    composes: lg_first_text-lg from global;
+    composes: first_mb-[5px] from global;
+    composes: first_ml-0 from global;
+
+    composes: before_!hidden from global; /* stylelint-disable-line */
+}
+
+.perksIcon {
+    composes: grid from global;
+    composes: justify-center from global;
+    composes: content-center from global;
+    composes: text-primary from global;
+}
+
+.signInButton {
+    composes: primary from '@app/components/Button/button.module.css';
+    composes: text-sm from global;
+    composes: px-10 from global;
+    composes: lg_px-2 from global;
+    composes: xl_px-10 from global;
+    composes: py-[9px] from global;
+    composes: h-[50px] from global;
+
+    composes: lg_text-base from global;
+    composes: lg_h-11 from global;
+}
+
+.mainTitle {
+    composes: text-primary from global;
+}

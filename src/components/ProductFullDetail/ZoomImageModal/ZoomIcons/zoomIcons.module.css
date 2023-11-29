@@ -1,0 +1,57 @@
+.zoomIconsWrapper {
+    composes: absolute from global;
+    composes: top-0 from global;
+    composes: right-[-10px] from global;
+    composes: z-10 from global;
+}
+
+.zoomWraper {
+    composes: relative from global;
+    composes: first_mb-2 from global;
+}
+
+.zoomDescription {
+    composes: absolute from global;
+    composes: top-1/2 from global;
+    composes: right-3 from global;
+    composes: -translate-y-1/2 from global;
+    composes: pl-3 from global;
+    composes: pt-0.75 from global;
+
+    composes: rounded-r-none from global;
+    composes: rounded-full from global;
+    composes: opacity-0 from global;
+    composes: w-[118px] from global;
+    composes: text-base from global;
+    composes: transition-opacity from global;
+    composes: duration-300 from global;
+    composes: bg-gray-light from global;
+    composes: h-8 from global;
+}
+
+.zoomDescriptionActive {
+    composes: zoomDescription;
+    composes: opacity-100 from global;
+}
+
+.zoomIconInWrapper {
+    composes: text-black from global;
+    composes: cursor-pointer from global;
+    composes: bg-gray-light from global;
+    composes: p-2 from global;
+    composes: rounded-full from global;
+    composes: shadow-xl from global;
+    composes: border from global;
+    composes: relative from global;
+    composes: border-solid from global;
+    composes: border-gray-light from global;
+    composes: active_border-black from global;
+}
+
+.zoomIconInWrapper svg {
+    @apply opacity-40;
+}
+
+.zoomIconOutWrapper {
+    composes: zoomIconInWrapper;
+}

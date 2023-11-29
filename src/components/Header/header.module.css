@@ -1,0 +1,204 @@
+.root {
+    composes: relative from global;
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: h-auto from global;
+    composes: top-0 from global;
+    composes: w-full from global;
+    composes: z-10 from global;
+    composes: mb-1.25 from global;
+    composes: bg-white from global;
+    composes: lg_sticky from global;
+    composes: lg_shadow-b from global;
+
+    composes: lg_mb-0 from global;
+}
+
+.container {
+    composes: mx-auto from global;
+    composes: max-w-[1720px] from global;
+    composes: box-content from global;
+}
+
+.switchers {
+    composes: mx-auto from global;
+    composes: relative from global;
+    composes: w-full from global;
+    composes: h-full from global;
+}
+
+.switchersContainer {
+    composes: hidden from global;
+
+    composes: lg_inline-block from global;
+    composes: lg_mr-[2%] from global;
+    composes: xl_mr-[3%] from global;
+    composes: xxl_mr-11 from global;
+    composes: lg_h-full from global;
+    composes: lg_min-w-[183px] from global;
+}
+
+.open {
+    composes: root;
+}
+
+.toolbar {
+    composes: container;
+    composes: pt-[18px] from global;
+    composes: pb-0 from global;
+    composes: flex from global;
+    composes: flex-wrap from global;
+    composes: items-center from global;
+    composes: w-full from global;
+    composes: mb-[7px] from global;
+
+    composes: lg_relative from global;
+    composes: lg_py-[25px] from global;
+    composes: lg_px-5 from global;
+    composes: lg_mb-0 from global;
+}
+
+.logo {
+    composes: lg_w-[157px] from global;
+    composes: lg_h-8 from global;
+}
+
+.primaryActions {
+    composes: flex from global;
+    composes: mr-[15px] from global;
+    composes: ml-5 from global;
+
+    composes: lg_mr-[2%] from global;
+    composes: lg_ml-0 from global;
+    composes: xl_mr-[3%] from global;
+    composes: xxl_mr-12.5 from global;
+}
+
+.logoContainer {
+    composes: flex from global;
+    composes: items-center from global;
+
+    composes: lg_mr-[2%] from global;
+    composes: xl_mr-[3%] from global;
+    composes: xxl_mr-12.5 from global;
+}
+
+.secondaryActions {
+    composes: px-5 from global;
+    composes: py-[15px] from global;
+    composes: mr-0 from global;
+    composes: flex from global;
+    composes: flex-grow from global;
+    composes: w-full from global;
+    composes: order-1 from global;
+    composes: bg-primary from global;
+
+    composes: lg_mr-[2%] from global;
+    composes: lg_p-0 from global;
+    composes: lg_w-auto from global;
+    composes: lg_order-none from global;
+    composes: lg_bg-white from global;
+    composes: xl_mr-[3%] from global;
+    composes: xxl_mr-12.5 from global;
+}
+
+.switchers {
+    composes: inline-block from global;
+}
+
+.input {
+    composes: input from '../TextInput/textInput.module.css';
+    composes: !h-10 from global;
+    composes: flex-grow from global;
+    composes: lg_!h-[50px] from global; /* stylelint-disable-line */
+}
+
+.searchFallback {
+    composes: flex-grow from global;
+}
+
+.loader {
+    animation-fill-mode: both;
+    animation-delay: -0.16s !important;
+
+    composes: relative from global;
+    composes: top-[-2.5em] from global;
+    composes: mt-1 from global;
+    composes: mx-auto from global;
+    composes: mb-0 from global;
+    composes: w-[2em] from global;
+    composes: h-[2em] from global;
+    composes: text-primary from global;
+    composes: text-[6px] from global;
+    composes: translate-z-0 from global;
+    composes: rounded-full from global;
+    composes: animate-loader from global;
+    composes: lg_top-[-1.5em] from global;
+
+    composes: before_content from global;
+    composes: before_absolute from global;
+    composes: before_w-[2em] from global;
+    composes: before_h-[2em] from global;
+    composes: before_text-primary from global;
+    composes: before_left-[-3.5em] from global;
+    composes: before_rounded-full from global;
+    composes: before_animate-loader from global;
+
+    composes: after_content from global;
+    composes: after_absolute from global;
+    composes: after_w-[2em] from global;
+    composes: after_h-[2em] from global;
+    composes: after_text-primary from global;
+    composes: after_left-[3.5em] from global;
+    composes: after_rounded-full from global;
+    composes: after_animate-loader from global;
+}
+
+.loader::before {
+    animation-delay: -0.32s !important;
+}
+
+.loader::after {
+    animation-delay: 0s !important;
+}
+
+.pageIndicatorRoot {
+    composes: absolute from global;
+    composes: left-0 from global;
+    composes: bottom-0 from global;
+    composes: w-full from global;
+    composes: h-[2px] from global;
+    composes: overflow-hidden from global;
+}
+
+/* stylelint-disable max-line-length */
+.pageIndicatorOff {
+    composes: indicator_off from '~@magento/venia-ui/lib/components/PageLoadingIndicator/pageLoadingIndicator.module.css';
+    composes: bg-orange from global;
+}
+
+.pageIndicatorLoading {
+    composes: indicator_loading from '~@magento/venia-ui/lib/components/PageLoadingIndicator/pageLoadingIndicator.module.css';
+    composes: bg-orange from global;
+}
+
+.pageIndicatorDone {
+    composes: indicator_done from '~@magento/venia-ui/lib/components/PageLoadingIndicator/pageLoadingIndicator.module.css';
+    composes: bg-orange from global;
+}
+/* stylelint-enable max-line-length */
+
+.mobileSearch {
+    composes: secondaryActions;
+    composes: z-10 from global;
+    composes: relative from global;
+    composes: top-0 from global;
+    composes: shadow-b from global;
+    composes: transition-all from global;
+    composes: duration-300 from global;
+}
+
+.mobileSearch_hidden {
+    composes: mobileSearch;
+    composes: hidden from global;
+}

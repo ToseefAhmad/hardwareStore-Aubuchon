@@ -1,0 +1,73 @@
+.root {
+    composes: inputRoot from '../Field/message.module.css';
+    composes: grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+}
+
+.checkbox {
+    composes: inline-grid from global;
+    composes: grid-flow-col from global;
+    composes: items-center from global;
+    composes: justify-start from global;
+    composes: gap-x-3.75 from global;
+    composes: relative from global;
+}
+
+.input_base {
+    composes: rounded from global;
+    composes: h-5 from global;
+    composes: w-5 from global;
+    composes: appearance-none from global;
+    composes: peer from global;
+    composes: border from global;
+    composes: border-solid from global;
+    composes: border-gray from global;
+}
+
+.input {
+    composes: input_base;
+    composes: cursor-pointer from global;
+    composes: bg-white from global;
+    composes: lg_hover_border-black from global;
+    composes: checked_bg-primary from global;
+    composes: checked_border-primary from global;
+    composes: lg_checked_hover_border-primaryActive from global;
+    composes: lg_checked_hover_bg-primaryAcitve from global;
+}
+
+.inputDisabled {
+    composes: input_base;
+    composes: cursor-not-allowed from global;
+    composes: bg-gray-light from global;
+}
+
+.icon {
+    composes: text-white from global;
+    composes: pointer-events-none from global;
+    composes: absolute from global;
+    composes: left-1.25 from global;
+    composes: top-1/2 from global;
+    composes: transform from global;
+    composes: -translate-y-1/2 from global;
+    composes: peer-disabled_text-gray-dark from global;
+    composes: peer-disabled_text-opacity-40 from global;
+}
+
+.label {
+    composes: text-black from global;
+    composes: !gap-x-2.5 from global;
+    composes: cursor-pointer from global;
+    composes: peer-checked_font-semibold from global;
+    composes: peer-disabled_cursor-not-allowed from global;
+    composes: peer-disabled_font-normal from global;
+}
+
+.input_shimmer {
+    composes: input_base;
+}
+
+.checkboxRating {
+    composes: !gap-x-2.5 from global;
+}

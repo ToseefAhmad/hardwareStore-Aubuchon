@@ -1,0 +1,36 @@
+/* stylelint-disable */
+.root {
+    --leftViewportElement: 0;
+    --scrollBarWidth: var(--global-scrollbar-width, 0px);
+    composes: bg-scroll from global;
+    composes: md_bg-local from global;
+}
+/* stylelint-enable */
+
+.contained {
+    composes: root;
+    composes: max-w-[1720px] from global;
+    composes: !ml-auto from global;
+    composes: !mr-auto from global;
+    composes: w-full from global;
+    composes: mb-5 from global;
+}
+
+.fullBleed {
+    composes: root;
+    width: calc(100vw - var(--scrollBarWidth)); /* stylelint-disable-line */
+    transform: translateX(-50%);
+    composes: ml-[50%] from global;
+}
+
+.videoOverlay {
+    -webkit-transform: translate3d(0, 0, 0); /* stylelint-disable-line */
+    composes: inset-0 from global;
+    composes: absolute from global;
+    composes: z-[-99] from global;
+}
+
+.root :global [id*='jarallax-container'] video,
+.root :global [id*='jarallax-container'] iframe {
+    @apply invisible;
+}

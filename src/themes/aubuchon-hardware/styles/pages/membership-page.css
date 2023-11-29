@@ -1,0 +1,218 @@
+[class*='membership'] .imgAndTextContainer {
+    @apply !mb-2.5;
+}
+
+[class*='membership'] [class*='columnGroup'] {
+    @apply !flex-row;
+}
+
+[class*='membership'] [class*='columnGroup'] [class*='column'] {
+    flex-basis: auto;
+
+    @apply !justify-center;
+}
+
+[class*='membership'] [class*='columnGroup'] [class*='column']:nth-of-type(2) {
+    @apply !w-fit
+        ml-4
+        md_ml-5;
+}
+
+[class*='membership'] h1 {
+    @apply md_!mt-7;
+}
+
+[class*='membership'] h2 {
+    @apply font-normal;
+}
+
+[class*='membership'] h2 strong {
+    @apply !font-bold;
+}
+
+[class*='membership'] p {
+    @apply text-justify;
+}
+
+[class*='membership'] .subHeaderForTheBlock {
+    @apply !mb-6;
+}
+
+[class*='membership'] .imgContainer {
+    @apply bg-primary-light
+        rounded
+        !w-10
+        h-10
+        md_!w-12.5
+        md_h-12.5
+        items-center;
+}
+
+[class*='membership'] .imgContainer img {
+    @apply m-0
+        rounded-none;
+}
+
+[class*='membership'] .specificText {
+    @apply bg-gray-light
+        py-4
+        px-5
+        rounded
+        !mb-0
+        md_py-7.5
+        md_mt-9;
+}
+
+[class*='membership'] .specificText p {
+    @apply text-xs
+        md_text-sm;
+}
+
+[class*='membership'] .createAccountBlockContainer {
+    @apply relative
+        z-1
+        grid
+        justify-center
+        justify-items-center
+        bg-primary
+        py-3.75
+        px-5
+        rounded
+        mt-7
+        md_mt-11
+        h-[238px]
+        md_h-[317px]
+        md_max-w-250
+        overflow-hidden;
+    @apply before_block
+        before_absolute
+        before_top-5
+        before_left-1/2
+        before_-z-1
+        before_-translate-x-1/2
+        before_w-[500px]
+        before_h-[500px]
+        before_bg-white
+        before_opacity-5
+        before_rounded-full
+        before_animate-membershipBigCircle
+        xs_before_w-[136vw]
+        xs_before_h-[136vw]
+        xl_before_top-[50px]
+        xl_before_left-auto
+        xl_before_translate-x-0
+        xl_before_!w-[960px]
+        xl_before_!h-[960px]
+        after_block
+        after_absolute
+        after_top-[60px]
+        after_left-1/2
+        after_-z-1
+        after_-translate-x-1/2
+        after_w-[420px]
+        after_h-[420px]
+        after_bg-white
+        after_opacity-5
+        after_rounded-full
+        after_animate-membershipSmallCircle
+        xs_after_w-[110vw]
+        xs_after_h-[110vw]
+        xl_after_top-[130px]
+        xl_after_left-auto
+        xl_after_translate-x-0
+        xl_after_!w-[800px]
+        xl_after_!h-[800px];
+}
+
+[class*='membership'] .createAccountBlockContainer div {
+    @apply !m-0;
+}
+
+[class*='membership'] .createAccountBlockContainer figure {
+    @apply m-0;
+}
+
+[class*='membership'] .createAccountBlockContainer img {
+    @apply m-0
+        mt-1
+        md_mt-9;
+}
+
+[class*='membership'] .createAccountBlockContainer h3 {
+    @apply m-0
+        mt-5
+        text-white
+        text-center
+        font-semibold;
+}
+
+[class*='membership'] .createAccountBlockContainer p {
+    @apply text-white
+        font-normal
+        md_mt-1;
+}
+
+[class*='membership'] .createAccountBlockContainer button {
+    @apply !min-w-45
+        -mt-1
+        md_!min-w-48;
+}
+
+[class*='membership'] .faqBlock h2 {
+    @apply !text-2xl
+        md_!text-5xl
+        font-semibold
+        text-center;
+}
+
+[class*='membership'] .faqBlock p strong {
+    @apply font-semibold
+        text-base
+        md_text-lg
+        text-black;
+}
+
+[class*='membership'] [class*='richContent']:nth-of-type(8) .membershipImage {
+    @apply md_mt-4;
+}
+
+[class*='membership'] .membershipImage img {
+    @apply rounded-none
+        relative
+        inset-x-1/2
+        mx-[-50vw]
+        max-w-screen
+        w-screen
+        h-membershipPageImageMobile
+        md_rounded-lg
+        md_inset-0
+        md_mx-0
+        md_max-w-full
+        md_w-full
+        lg_h-membershipPageImageDesktop;
+}
+
+[class*='membership'] h2[class*='faqHeading'] {
+    @apply text-2xl
+        lg_text-5xl
+        text-left
+        md_text-center
+        font-semibold
+        mt-4;
+}
+
+@media only screen and (min-width: 1280px) {
+    [class*='membership'] .createAccountBlockContainer::after {
+        @apply animate-membershipSmallCircleDesktop;
+    }
+
+    [class*='membership'] .createAccountBlockContainer::before {
+        @apply animate-membershipBigCircleDesktop;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    [class*='membership'] [class*='shimmerRoot'] {
+        @apply !h-membershipPageImageMobile;
+    }
+}

@@ -1,0 +1,102 @@
+.root {
+    composes: shortFormContainer from '../../shared.module.css';
+}
+
+.header {
+    composes: header from '../../shared.module.css';
+}
+
+.shortFormWrapper {
+    composes: shortFormWrapper from '../../shared.module.css';
+}
+
+.shortForm {
+    composes: shortForm from '../../shared.module.css';
+}
+
+.shortFormFooter {
+    composes: shortFormFooter from '../../shared.module.css';
+}
+
+.imageContainer {
+    composes: imageContainer from '../../shared.module.css';
+}
+
+.imageRoot {
+    composes: imageRoot from '../../shared.module.css';
+}
+
+.image {
+    composes: image from '../../shared.module.css';
+}
+
+.fieldRoot {
+    composes: fieldRoot from '../../shared.module.css';
+}
+
+.captionTextInBraces {
+    composes: font-normal from global;
+}
+
+.inputNote {
+    composes: inputNote from '../../shared.module.css';
+    composes: mt-0.5 from global;
+}
+
+.mediaItemPreview {
+    composes: grid from global;
+    composes: gap-5 from global;
+    composes: grid-cols-reviewsAddMediaImage from global;
+
+    composes: justify-start from global;
+    composes: mb-5 from global;
+}
+
+.mediaItemPreviewLoadingBarContainer {
+    composes: relative from global;
+    composes: w-full from global;
+}
+
+.mediaItemPreviewLoadingBar {
+    composes: absolute from global;
+    composes: bottom-5 from global;
+    composes: w-full from global;
+}
+
+.progressBar {
+    composes: rounded from global;
+    composes: overflow-hidden from global;
+    composes: w-full from global;
+    composes: mt-[11px] from global;
+}
+
+.bar {
+    composes: block from global;
+    composes: bg-gray-light from global;
+}
+
+.progress {
+    composes: block from global;
+    composes: bg-primary from global;
+    composes: h-1 from global;
+    composes: w-0 from global;
+    composes: animate-reviewImageLoader from global;
+}
+
+.textArea {
+    composes: textArea_base from '../../shared.module.css';
+}
+
+.mediaFormButtonsWrapper {
+    composes: mediaFormButtonsWrapper from '../../shared.module.css';
+}
+
+.removeMediaItemButton {
+    composes: removeMediaItemButton from '../../shared.module.css';
+}
+
+.formNote {
+    composes: text-xs from global;
+
+    composes: lg_text-sm from global;
+}

@@ -1,0 +1,33 @@
+.root {
+    composes: flex from global;
+    composes: flex-col from global;
+    composes: w-full from global;
+
+    composes: xl_flex-row from global;
+    composes: xl_justify-between from global;
+    composes: items-start from global;
+}
+
+.textWrapper {
+    composes: mb-2.5 from global;
+    composes: text-center from global;
+
+    composes: xl_text-left from global;
+}
+
+.linkList {
+    composes: flex from global;
+    composes: xl_mb-2 from global;
+}
+
+.linkItem:not(:first-child) {
+    @apply ml-[5px];
+}
+
+.left {
+    composes: items-start from global;
+}
+
+.center {
+    composes: items-center from global;
+}

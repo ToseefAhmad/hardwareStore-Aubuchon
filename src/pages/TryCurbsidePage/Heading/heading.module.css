@@ -1,0 +1,29 @@
+.root {
+    composes: h-9.5 from global;
+    composes: mb-2.5 from global;
+    composes: overflow-x-hidden from global;
+
+    composes: lg_h-14 from global;
+    composes: lg_mb-5 from global;
+}
+
+.typewrite {
+    composes: w-fit from global;
+    composes: pr-2.5 from global;
+    composes: font-semibold from global;
+    composes: text-3xl from global;
+    composes: overflow-hidden from global;
+    composes: whitespace-nowrap from global;
+    composes: relative from global;
+    composes: after_absolute from global;
+    composes: after_right-0 from global;
+    composes: after_top-1/2 from global;
+    composes: after_-translate-y-1/2 from global;
+    composes: after_inline-block from global;
+    composes: after_w-0.5 from global;
+    composes: after_h-6 from global;
+    composes: after_animate-blinkCaret from global;
+
+    composes: lg_text-7xl from global;
+    composes: lg_after_h-11 from global;
+}

@@ -1,0 +1,80 @@
+.root {
+    composes: xl_grid from global;
+    composes: gap-x-5 from global;
+    composes: xl_mb-12.5 from global;
+    composes: grid-cols-storeLocatorPage from global;
+
+    grid-template-areas:
+        'title .'
+        'searchbar map'
+        'list map'
+        'list map'
+        'list map';
+}
+
+.title {
+    composes: text-3xl from global;
+    composes: font-semibold from global;
+    composes: text-black from global;
+    composes: my-5 from global;
+    composes: leading-9.5 from global;
+
+    composes: xl_mt-[26px] from global;
+    composes: xl_mb-7.5 from global;
+    composes: xl_text-6xl from global;
+}
+
+.search {
+    composes: h-10 from global;
+    composes: w-full from global;
+    composes: mb-5 from global;
+}
+
+.map {
+    composes: mb-2.5 from global;
+    composes: w-full from global;
+    composes: h-[500px] from global;
+
+    composes: xl_h-full from global;
+
+    grid-area: map;
+}
+
+.list {
+    grid-area: list;
+}
+
+.storesListRoot {
+    composes: w-full from global;
+    composes: h-[450px] from global;
+
+    composes: xl_h-[694px] from global;
+}
+
+.search {
+    grid-area: searchbar;
+}
+
+.content {
+    composes: content from '@app/components/StoresItem/storesItem.module.css';
+
+    composes: grid-cols-storesListItemSm from global;
+    composes: !items-center from global;
+
+    composes: lg_!grid-cols-storesListItemLg from global; /* stylelint-disable-line */
+    composes: lg_!items-start from global; /* stylelint-disable-line */
+}
+
+.statusOpen {
+    composes: statusOpen from '@app/components/StoresItem/storesItem.module.css';
+
+    composes: !pl-5 from global;
+}
+
+.imageContainer {
+    composes: imageContainer from '@app/components/StoresItem/storesItem.module.css';
+
+    composes: !mb-[-2px] from global;
+
+    composes: lg_!mb-0 from global; /* stylelint-disable-line */
+}
